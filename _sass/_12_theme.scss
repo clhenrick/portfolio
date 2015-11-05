@@ -7,6 +7,13 @@
           box-sizing: border-box;
 }
 
+// filter buttons
+#filters {
+  > button {
+    text-transform: uppercase;
+  }
+}
+
 // isotope columns
 .grid {  
   width: 100%;
@@ -28,17 +35,17 @@
   display: inline-block;
   margin: 0.5%;
   padding: 5px;
-  background-color: #999;
+  background-color: lighten(#999, 20);
 
   &.width2 { 
     width: 49%; 
     min-height: 300px;
-    background-color: red;
+    background-color: lighten(red, 30);
   }
 
   &.width3 {
     width: 74%;
     min-height: 400px;
-    background-color: blue;
+    background-color: lighten(blue, 30);
   }
 }

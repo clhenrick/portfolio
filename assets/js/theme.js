@@ -13,4 +13,7 @@ $(document).ready(function(){
     $grid.isotope({ filter: filterVal});
   });
 
+  // shuffles the order of the items
+  $grid.isotope('shuffle');
+
 });
