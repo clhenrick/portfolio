@@ -9,11 +9,11 @@
 - title: Work
   url: "/work/"
   side: left
-  dropdown:
-  - title: "Interactive Work"
-    url: "/work/interactive/"
-  - title: "Print Cartography"
-    url: "/work/print-cartography/"
+  # dropdown:
+  # - title: "Interactive Work"
+  #   url: "/work/interactive/"
+  # - title: "Print Cartography"
+  #   url: "/work/print-cartography/"
 
 - title: About
   url: "/info/"
