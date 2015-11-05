@@ -36,7 +36,7 @@ header: no
     <p>some web work</p>
   </div>
   <div class="grid-item web data-viz">
-    <p>some data-viz</p>
+    <p>*some other data-viz*</p>
   </div>
   <div class="grid-item web">
     <p>some more web</p>
@@ -56,7 +56,7 @@ header: no
       <img class="item-img" src="{{ img }}">
     </a>
     <div class="item-meta">
-      <a href="{% post-url %}">
+      <a href="{{ post-url }}">
         <h4 class="item-title">{{ title }}</h4>
       </a>
       <p class="item-description">{{ description }}</p>
