@@ -7,6 +7,11 @@ $('audio,video').mediaelementplayer();
 
 <script src="{{ site.url }}{{ site.baseurl }}/assets/js/javascript.min.js"></script>
 
+{% if page.url == '/work/' %}
+<script src="{{ site.url }}{{ site.baseurl }}/assets/js/isotope.pkgd.js"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/assets/js/theme.js"></script>
+{% endif %}
+
 
 {% if page.header.image_fullwidth %}
 <script>
