@@ -1,0 +1,67 @@
+{
+  "work" : [
+    {
+      "title" : "Am I Rent Stabilized?",
+      "tags" : ["web", "data-viz"],
+      "description" : "A civic web app to inform NYC renters about rent stabilization.",
+      "img" : "airs_thumb.png",
+      "size" : "width3"
+    },
+    {
+      "title" : "",
+      "tags" : [],
+      "description" : "",
+      "img" : "",
+      "size" : "width2"
+    },
+    {
+      "title" : "",
+      "tags" : [],
+      "description" : "",
+      "img" : "",
+      "size" : "width2"
+    },
+    {
+      "title" : "",
+      "tags" : [],
+      "description" : "",
+      "img" : "",
+      "size" : "width2"
+    },
+    {
+      "title" : "",
+      "tags" : [],
+      "description" : "",
+      "img" : "",
+      "size" : "width2"
+    },
+    {
+      "title" : "",
+      "tags" : [],
+      "description" : "",
+      "img" : "",
+      "size" : "width2"
+    },
+    {
+      "title" : "",
+      "tags" : [],
+      "description" : "",
+      "img" : "",
+      "size" : "width2"
+    },
+    {
+      "title" : "",
+      "tags" : [],
+      "description" : "",
+      "img" : "",
+      "size" : "width2"
+    },
+    {
+      "title" : "",
+      "tags" : [],
+      "description" : "",
+      "img" : "",
+      "size" : "width2"
+    }
+  ]
+}
