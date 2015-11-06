@@ -1,8 +1,8 @@
 ---
 layout: page-fullwidth
 show_meta: false
-title: "My Work"
-subheadline: "Use the buttons below to filter..."
+title: "Portfolio"
+subheadline: ""
 permalink: "/work/"
 header: no
 ---
