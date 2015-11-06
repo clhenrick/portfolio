@@ -103,7 +103,7 @@
     },
     {
       "title" : "Oakland: Then and Now - Coastal Grasslands",
-      "tags" : ["carto"],
+      "tags" : ["carto", "print"],
       "description" : "Historic coastal grassland, bay and shoreline over the current day built up land area of Oakland, CA.",
       "description_long" : "A prototype map design for the Oakland Museum of California. This map shows historic coastal grassland areas, and a historic bay and shoreline over the current day built up land area for an exhibit titled Oakland: Then and Now.",
       "thumb" : "oak_then_now_grassland_thumb.png",
@@ -113,7 +113,7 @@
     },
     {
       "title" : "Oakland: Then and Now - Oak Woodland",
-      "tags" : ["carto"],
+      "tags" : ["carto", "print"],
       "description" : "Historic oak woodland, bay and shoreline over the current day built up land area of Oakland, CA.",
       "description_long" : "A prototype map design for the Oakland Museum of California. This map shows historic oak woodland areas, and a historic bay and shoreline over the current day built up land area for an exhibit titled Oakland: Then and Now.",
       "thumb" : "oak_then_now_grassland_thumb.png",
@@ -123,7 +123,7 @@
     },
     {
       "title" : "Chinook Recovery Priority Watersheds",
-      "tags" : ["carto"],
+      "tags" : ["carto", "print"],
       "description" : "Coastal recovery watersheds for Salmon and Steelhead in California",
       "description_long" : "This map was created at GreenInfo Network with Alexandra Barnish, and is a working draft showing only the coastal recovery watersheds for Salmon and Steelhead in California. Central valley recovery watersheds are not shown on this version of the map. For the most recent version please visit Sustainable Conservation's Partners in Restoration program.",
       "thumb" : "",
@@ -133,7 +133,7 @@
     },
     {
       "title" : "CA Private Public Land",
-      "tags" : ["carto"],
+      "tags" : ["carto", "print"],
       "description" : "Private and publically owned land in California.",
       "description_long" : "This map was created at GreenInfo Network with Alexandra Barnish for Sustainable Conservation's Partners in Restoration program.",
       "thumb" : "",
@@ -143,7 +143,7 @@
     },
     {
       "title" : "Ontario",
-      "tags" : ["carto"],
+      "tags" : ["carto", "print"],
       "description" : "The province of Ontario, Canada.",
       "description_long" : "A map of the province of Ontario, Canada created using Natural Earth 1:10m vector GIS data for the *Moon: Ontario* travel guide from Avalon Travel Publishing",
       "thumb" : "",
@@ -153,7 +153,7 @@
     },
     {
       "title" : "Galapagos Islands",
-      "tags" : ["carto"],
+      "tags" : ["carto", "print"],
       "description" : "A map showing the Galapagos Islands",
       "description_long" : "",
       "thumb" : "",
@@ -163,7 +163,7 @@
     },
     {
       "title" : "Afghanistan and Pakistan",
-      "tags" : ["carto"],
+      "tags" : ["carto", "print"],
       "description" : "Map of Afghanistan and Pakistan for the book Dirty Wars.",
       "description_long" : "Map of Afghanistan and Pakistan for the book Dirty Wars: The World is a Battlefield, by Jeremy Scahill. Published by Nation Books.",
       "thumb" : "",
@@ -173,7 +173,7 @@
     },
     {
       "title" : "South East Asia",
-      "tags" : ["carto"],
+      "tags" : ["carto", "print"],
       "description" : "A map of Thailand, Laos, and Cambodia.",
       "description_long" : "Another map for a 9 book series on the backpacking trips taken by globetrotter David Koester. Natural Earth vector and relief data were employed for sound cartographic design.",
       "thumb" : "",
@@ -183,7 +183,7 @@
     },
     {
       "title" : "The North Coast",
-      "tags" : ["carto"],
+      "tags" : ["carto", "print"],
       "description" : "A split frame map I created for *Moon: Northern California.*",
       "description_long" : "A split frame map I created for Moon: Northern California. Open data from Cal Atlas and CPAD were used to make this map.",
       "thumb" : "",
@@ -193,7 +193,7 @@
     },
     {
       "title" : "Downtown Toronto",
-      "tags" : ["carto"],
+      "tags" : ["carto", "print"],
       "description" : "A map of downtown Toronto, Canada.",
       "description_long" : "",
       "thumb" : "",
@@ -203,7 +203,7 @@
     },
     {
       "title" : "Downtown Guanajuato",
-      "tags" : ["carto"],
+      "tags" : ["carto", "print"],
       "description" : "A map of downtown Guanajuato, Mexico.",
       "description_long" : "",
       "thumb" : "",
@@ -213,14 +213,3 @@
     }
   ]
 }
-
-    // {
-    //   "title" : "",
-    //   "tags" : [""],
-    //   "description" : "",
-    //   "description_long" : "",
-    //   "thumb" : "",
-    //   "img" : "",
-    //   "size" : "width2",
-    //   "date" : "2015-01-01"
-    // }
