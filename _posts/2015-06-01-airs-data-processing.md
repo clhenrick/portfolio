@@ -47,13 +47,15 @@ A [Python script](https://github.com/clhenrick/dhcr-rent-stabilized-data/blob/ma
 
 After processing and geocoding the DHCR data it was imported into a PostgreSQL database using [CSVkit](https://csvkit.readthedocs.org/en/0.9.1/)'s csvsql command as follows:  
 
-```bash
-csvsql --db postgres:///nyc_pluto --insert dhcr_rs_geocoded.csv --table dhcr_rs
-```
+{% highlight bash %}
+csvsql --db postgres:///nyc_pluto \
+--insert dhcr_rs_geocoded.csv \
+--table dhcr_rs
+{% endhighlight %}
 
 From here PostgreSQL was then used to analyze the data. [Here is a link to the entire SQL code](https://github.com/clhenrick/dhcr-rent-stabilized-data/blob/master/scripts/select_pluto_from_dhcr.sql), but the most important queries are the following:
 	
-```	sql
+{% highlight sql %}
 -- select the number of properties in the dhcr list the nyc map pluto data
 -- returns 47,130 rows
 SELECT Count(a.bbl) FROM 
@@ -76,7 +78,10 @@ CREATE TABLE map_pluto2014v2_likely_rs AS
         (
             SELECT DISTINCT bbl FROM map_pluto2014v2 
             WHERE yearbuilt < 1974 AND unitsres >= 6 
-                AND (ownername NOT ILIKE 'new york city housing authority' or ownername NOT ILIKE 'nycha')
+                AND (
+                ownername NOT ILIKE 'new york city housing authority' 
+                or ownername NOT ILIKE 'nycha'
+                )
                 AND bldgclASs NOT ILIKE 'r%'    
         ) AS a
         LEFT JOIN
@@ -86,7 +91,7 @@ CREATE TABLE map_pluto2014v2_likely_rs AS
         ) AS b 
         ON a.bbl = b.bbl
         WHERE b.bbl IS NULL;
-```
+{% endhighlight %}
 
 These two queries tell us:  
 
@@ -96,7 +101,7 @@ These two queries tell us:
 
 From here I created a table that combines data from both queries as well as a flag that states whether or not the property is listed in the DHCR data.  
 	
-```sql
+{% highlight sql %}
 CREATE TABLE map_pluto_not_dhcr AS
   	SELECT not_dhcr.address, 
               not_dhcr.unitsres, 
@@ -189,13 +194,13 @@ SELECT Count(*) FROM map_pluto_likely_rs WHERE geom IS NULL;
     -- returns 0 rows
 SELECT Sum(unitsres) AS total_res_units FROM map_pluto_likely_rs;
     -- returns 1,962,469
-```
+{% endhighlight %}
 	
 ### 4. Further Data Processing Using CartoDB
 
 Lastly, the data was imported into CartoDB and some final tweaks to the data were made. Mainly this involved removing properties that belong to the New York City Housing Authority. To find out how many different spellings of this agency name were in the table, I did a spatial intersect with the [NYCHA property data](https://data.cityofnewyork.us/Housing-Development/Map-of-NYCHA-Developments/i9rv-hdr5).
 
-```sql
+{% highlight sql %}
 --  Remove all properties owned by the NYC Housing Authority that were missed.
 --  This involved doing a spatial intersect with polygon centroids created from 
 -- a shapefile of NYCHA properties from 2011 to determine all spellings of "NYCHA"
@@ -230,7 +235,7 @@ UPDATE map_pluto_likely_rs set borough = 'Brooklyn' WHERE borough = 'BK';
 UPDATE map_pluto_likely_rs set borough = 'Staten Island' WHERE borough = 'SI';
 UPDATE map_pluto_likely_rs set borough = 'Bronx' WHERE borough = 'BX';
 UPDATE map_pluto_likely_rs set borough = 'Manhattan' WHERE borough = 'MN';
-```	
+{% endhighlight %}
 
 ## Creating Catchment Area Polygons For Local Tenants Rights Organizations
 
@@ -246,7 +251,7 @@ The data was then imported into CartoDB for use with *Am I Rent Stabilized?*. Wh
 
 For example:
 
-```sql
+{% highlight sql %}
 SELECT * FROM nyc_tenants_rights_service_areas
 WHERE 
 ST_Contains(
@@ -255,15 +260,66 @@ ST_Contains(
    'Point(-73.917104 40.694827)', 4326
   )      
 );
-```
+{% endhighlight %}
 
 If a user's address is within a group's cachment area, then that group's information is passed into a modal in the app. This modal displays information such as the group's website url, phone number, contact person, and/or address. As what's present in this data varies from group to group, a Handlebars.js helper function is used to check if the data exists before passing it to the Handlebars HTML template:
 
-<script src="https://gist.github.com/clhenrick/96b76eb44a384bc8492e.js"></script>
+{% highlight javascript %}
+var H = Handlebars;
+
+H.registerHelper('each', function(context, options) {
+  var ret = "";
+  for(var i=0, j=context.length; i<j; i++) {
+    ret = ret + options.fn(context[i]);
+  }
+  return ret;
+});
+
+H.registerHelper('if', function(conditional, options) {
+  if (conditional) {
+    return options.fn(this);
+  } else {
+    return options.inverse(this);
+  }
+});
+{% endhighlight %}
 
 The Handlebars HTML template looks like this:
 
-<script src="https://gist.github.com/clhenrick/14fa9334cc839471abcb.js"></script>
+{% highlight handlebars %}
+{% raw %}
+    <!-- handlebars template for local tenants rights group list -->
+    <script id="org-template" type="text/x-handlebars-template">
+      <div class="org-container">
+        <a href="#close" title="Close" class="close">X</a>
+        <h1>
+          Here are some groups that help people with housing 
+          issues in your neighborhood:
+        </h1> 
+        {{#each orgs}}
+          <div class="tr-org-info">          
+            <h3>{{name}}</h3>
+            {{#if website}}
+            <p class="website-url"><span>Website: </span><a target="_blank" href="{{website}}">{{website}}</a></p>
+            {{/if}}
+            {{#if phone}}
+            <p class="phone-no"><span>Phone: </span>{{phone}}</p>
+            {{/if}}
+            {{#if address}}
+            <p class="address"><span>Address: </span>{{address}}</p>
+            {{/if}}
+            {{#if email}}
+            <p class="email"><span>Email: </span>{{email}}</p>
+            {{/if}}
+            <p class="description"><span>Description: </span><br>
+              {{description}}
+            </p>
+          </div>
+        {{/each}}
+      </div>
+    </script>
+{% endraw %}
+{% endhighlight %}
 
 That's about it, thanks for reading and please feel free to [ping me]({{site.url}}/contact) if you have any questions or comments.
 

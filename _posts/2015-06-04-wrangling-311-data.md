@@ -33,16 +33,16 @@ What we need is a way to bulk load the data.
 
 Prior to writing the pgloader script a good first step was to pull out the 30 or so 311 complaint field names and rename them to be database friendly. A quick n dirty bash script did the job, it replaces spaces with underscores and converts text to lower case by grabbing the first line of the CSV file using **head** and piping it through **sed** and **tr**, then writing the output to a text file:  
 
-```bash
+{% highlight bash %}
 FILE_IN="311_requests_2014_to_present.csv"
 FILE_OUT="311_field_list.txt"
 head -n 1 $FILE_IN  | tr ',' '\n'| sed -e 's/ /_/g' | tr '[A-Z]' '[a-z]' > $FILE_OUT
-```
+{% endhighlight %}
 
 The list of field names was then used below to in the **pgloader** script.  
 Here's the **pgloader** script I ended up using to import the 311 complaints data:
 
-```sql
+{% highlight sql %}
 LOAD CSV
   FROM '/Users/clhenrick/Downloads/311_requests_2014_to_present.csv'
   INTO postgresql:///nyc_311?requests
@@ -113,16 +113,16 @@ LOAD CSV
        fields optionally enclosed by '"',  
        fields terminated by ','
 ;
-```
+{% endhighlight %}
 
 ## Data Analysis
 After I imported the data to Postgres I had some fun. Prior to getting down to analysis the data was indexed, vacuum analyzed, and clustered. These steps are very helpful to speed up queries:
 
-```sql
+{% highlight sql %}
 CREATE UNIQUE INDEX requests_idx ON requests (unique_key);
 VACUUM ANALYZE requests;
 CLUSTER requests USING requests_idx;
-```
+{% endhighlight %}
 
 Thus I was able to accomplish the following:
 

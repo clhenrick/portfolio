@@ -98,7 +98,7 @@ As you can see, the total and per-capita data are structured in such a way that 
 
 The output JSON data format I decided on would look something like the following schema:
 
-```json    
+{% highlight json %}
 {
     "country-one" : { // eg: United States
       "category-one" : { // eg: production
@@ -185,7 +185,7 @@ The output JSON data format I decided on would look something like the following
   "country-two" : {...}, // eg: Canada        
   "country-three" : {...} // eg: China
 }
-```
+{% endhighlight %}
 
 As you can see the raw data will be re-structured into arrays of objects, where each object contains the year and data-value for that year. These arrays are contained in an object representing a sub-category, which is contained in an object representing a category, which are then contained in objects for each country. Having the data structured this way would make the logic for toggling between category and subcategory in the interactive's user interface fairly straight-forward to code and integrate with D3.
 
@@ -193,7 +193,7 @@ As you can see the raw data will be re-structured into arrays of objects, where 
 
 To parse the data from it's original structure to the JSON structure I ended up writing a Node JS script that would take CSV files I downloaded for each worksheet, convert them to [multi-dimensional arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Creating_a_two-dimensional_array), and then output values from those arrays into objects containing the year and data-value. The key parts of the script are the following functions:
 
-```javascript
+{% highlight javascript %}
 function iterateMultiArray(arr,x,y) {
     // iterates over a multi-dimensional array
     // returns an array of numeric values
@@ -242,7 +242,7 @@ function filterFloat(value) {
         return Number(value);
   return NaN;
 }
-```
+{% endhighlight %}
 
 The function `iterateMultiArray` loops over values in a multi-dimensional array that is a result of using Node's file system module and a third party fast-csv module to read and parse each CSV file. You can think of mulit-dimensional arrays as lying on an x, y coordinate system that increases from top to bottom and left to right. So the y coordinate will be starting point for the outer array and the x coordinate will be the starting place for the inner array. A nested for-loop then retrieves the value from the inner array. That value is then converted from a string to a number data type and pushed to a temporary array. Finally, when the for-loops finish the temporary array is mapped to an array of years. However, if the data value returned from `filterFloat()` is null (`NaN`) then no object is created for that particular year. Finally an array of objects is returned.
 
