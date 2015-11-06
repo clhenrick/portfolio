@@ -55,7 +55,7 @@ function go(file) {
 function makeHbs(){
   dataStore.work.forEach(function(el,i){
     // console.log(typeof el);
-    var name = el.date + '-' + el.title.toLowerCase().split(' ').join('-');
+    var name = el.date + '-' + el.title.toLowerCase().replace(/[^a-zA-Z ]/g, "").split(' ').join('-');
     var html = hbsTemplate(el);
     // console.log(name, '\n', html);
     writeMD(name,html);
