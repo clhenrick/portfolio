@@ -30,6 +30,10 @@ $(document).ready(function(){
       $grid.isotope({ filter: filterVal});
     });
 
+    $('.shuffle').on('click', function() {
+      $grid.isotope('shuffle');  
+    });
+
     // shuffles the order of the items
     $grid.isotope('shuffle');
   }
