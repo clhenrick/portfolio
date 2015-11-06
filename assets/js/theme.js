@@ -19,7 +19,7 @@ $(document).ready(function(){
     $grid.isotope({
       itemSelector: '.grid-item',
       layoutMode: 'packery',
-      packery : {
+      packery: {
         columnWidth: '.grid-sizer',
         percentPosition: true
       }
