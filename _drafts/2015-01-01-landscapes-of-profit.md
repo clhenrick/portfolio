@@ -13,3 +13,6 @@ header: no
 
 ![An analysis of property transaction data to promote a 1% flip tax in NYC.]()
 
+
+
+[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

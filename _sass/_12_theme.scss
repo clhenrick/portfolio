@@ -7,14 +7,19 @@
           box-sizing: border-box;
 }
 
-// filter buttons
+// portfolio back arrow
+.back-arrow {
+  font-size: $font-size-h1;
+}
+
+// portfolio filter buttons
 #filters {
   > button {
     text-transform: uppercase;
   }
 }
 
-// isotope columns
+// isotope grid area
 .grid {  
   width: 100%;
   // height: 100%;
@@ -28,7 +33,7 @@
   }
 }
 
-
+// isotope grid items
 .grid-item,
 .grid-sizer {
   width: 20%;

@@ -13,3 +13,6 @@ header: no
 
 ![A map of downtown Toronto, Canada.]()
 
+
+
+[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)
