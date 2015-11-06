@@ -1,6 +1,6 @@
 var fs = require('fs'),
     Handlebars = require('handlebars'),
-    work = '../assets/data/work.json',
+    work = '../_data/work.json',
     templateFile = '../_data/portfolio-page.hbs',
     outDir = '../_drafts/',
     dataStore = null,
@@ -55,7 +55,7 @@ function go(file) {
 function makeHbs(){
   dataStore.work.forEach(function(el,i){
     // console.log(typeof el);
-    var name = el.date + '-' + el.title.toLowerCase().replace(/[^a-zA-Z ]/g, "")
+    var name = el.date + '-' + el.title.toLowerCase().replace(/[^\w\s]/gi, '')
                  .split(' ').join('-') + '.md';
     var html = hbsTemplate(el);
     // console.log(name, '\n', html);
