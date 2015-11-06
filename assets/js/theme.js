@@ -10,7 +10,7 @@ $(document).ready(function(){
     $.getJSON('../assets/data/work.json', function(data) {
       console.log(data.work);
       var markup = template(data);
-      $("#target").html(markup);
+      $(markup).appendTo("#target");
       initMasonry();
     });
   }
@@ -18,7 +18,11 @@ $(document).ready(function(){
   function initMasonry() {
     $grid.isotope({
       itemSelector: '.grid-item',
-      layoutMode: 'packery'
+      layoutMode: 'packery',
+      packery : {
+        columnWidth: '.grid-sizer',
+        percentPosition: true
+      }
     });
 
     // layout Isotope after all images have loaded

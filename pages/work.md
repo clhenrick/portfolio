@@ -18,7 +18,9 @@ header: no
 </div>
 
 <!-- to-do: create and populate these with templates & JSON data -->
-<div id="target" class="grid print carto"></div>
+<div id="target" class="grid print carto">
+  <div class="grid-sizer"></div>
+</div>
 
 <!-- template for rendering isotope grid items -->
 <script id="item-template" type="text/x-handlebars-template">

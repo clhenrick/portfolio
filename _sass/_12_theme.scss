@@ -18,7 +18,6 @@
 .grid {  
   width: 100%;
   // height: 100%;
-  border: 1px solid #999;
   background-color: #fff;
 
   /* clear fix */
@@ -29,9 +28,14 @@
   }
 }
 
+
+.grid-item,
+.grid-sizer {
+  width: 20%;
+}
+
 .grid-item { 
-  float: left;
-  width: 25%; 
+  float: left; 
   min-height: 200px;
   display: inline-block;
   margin: 0;
@@ -40,12 +44,12 @@
   border: 1px solid #fff;
 
   &.width2 { 
-    width: 50%; 
+    width: 40%; 
     background-color: lighten(red, 30);
   }
 
   &.width3 {
-    width: 75%;
+    width: 60%;
     background-color: lighten(blue, 30);
   }
 
