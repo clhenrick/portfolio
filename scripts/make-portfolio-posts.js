@@ -1,8 +1,8 @@
 var fs = require('fs'),
       Handlebars = require('handlebars'),
       work = '../assets/data/work.json',
-      templateFile = '../_data/item.hbs',
-      outTest = 'test.html',
+      templateFile = '../_data/portfolio-page.hbs',
+      outDir = '../_drafts/',
       dataStore = null,
       hbsTemplate = null;
 
@@ -53,13 +53,23 @@ function go(file) {
 }
 
 function makeHbs(){
-  // dataStore.work.forEach(function(el,i){
-  //   console.log(typeof el);
-  //   var html = hbsTemplate(el);
-  //   console.log(html);
-  // });
-  var html = hbsTemplate(dataStore);
-  console.log(html);
+  dataStore.work.forEach(function(el,i){
+    // console.log(typeof el);
+    var name = el.date + '-' + el.title.toLowerCase().split(' ').join('-');
+    var html = hbsTemplate(el);
+    // console.log(name, '\n', html);
+    writeMD(name,html);
+  });
+  // var html = hbsTemplate(dataStore);
+  // console.log(html);
+}
+
+function writeMD(fileName, markup) {
+  var writeDir = outDir + fileName;
+  fs.writeFile(writeDir,markup,'utf-8', function(err,written,string){
+    if (err) { return console.err(err); }
+    console.log('wrote: ', fileName);
+  });
 }
 
 [work, templateFile].forEach(function(el,i){
