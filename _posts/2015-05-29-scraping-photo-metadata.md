@@ -16,9 +16,9 @@ While each photo was taken with geo location tracking enabled, there was some po
 
 For example, a sensible naming convention could have been something like:  
 
-```
+{% highlight bash %}
 <building-number>-<street>-<census-tract>.jpg
-```  
+{% endhighlight %}
 
 The way in which the Urban Ecologies students then mapped the photos after they were collected was using Google Earth to produce a KML file of the photos' locations. The problem with this approach is that for some reason unknown to me, the KML they produced only has ~700 features while there are a total of 1008 photos. I didn't learn this until after the Urban Ecologies group shared then survey data, KML, and photos with me. 
 
@@ -45,21 +45,20 @@ Next up, integrating the survey photos and data to the Bushwick Community Map!
 ##Code:
 ### SQL to parse photo title from file name:
 In CartoDB I eneded up creating a new column for the exif geojson and populating it with a substring of the filename, the title without the file extension, so that I could join the Exif GeoJSON and Flickr JSON datasets.  
-The following query did the trick:
+The following query did the trick:  
 
-```sql
+{% highlight sql %}
 SELECT substring(file_name_column, '(.+?)(\.[^.]*$|$)') FROM table_name;
-```  
+{% endhighlight %}
+
 [stackoverflow credit](http://stackoverflow.com/questions/624870/regex-get-filename-without-extension-in-one-shot)
 
 
 ###Exif Data Extract
+Node JS script to grab lat lon data from images. Processes a director of images and writes a geojson file containing the image name, lat, lon, modify data. Usage: {% highlight bash %} $ touch photo_data.json && node parse_photos.js > photo_data.json {% endhighlight %}
 
-```javascript
-// script to grab lat lon data from images
-// processes a director of images and writes a geojson file containing the image name, lat, lon, modify data
-// usage: touch photo_data.json && node parse_photos.js > photo_data.json
 
+{% highlight javascript %}
 var fs = require('graceful-fs');
 var ExifImage = require('exif').ExifImage;
 var exifCount = 0;
@@ -145,11 +144,12 @@ function readDataDir(path) {
 }
 
 readDataDir('../all_photos/');
-```
+{% endhighlight %}
 
 ### Flickr API Code
+Node JS script to grab data from the Flickr API.
 
-```javascript
+{% highlight javascript %}
 var fs = require('fs'),
       jf = require('jsonfile'),
       Flickr = require('flickrapi'),
@@ -248,5 +248,4 @@ function processGeoJson() {
 }
 
 processGeoJson();
-```
-[^ Back to the top](#top)
+{% endhighlight %}

@@ -3,6 +3,7 @@ title: Using CartoDB for creating data driven web pages
 layout: page
 date: 2015-10-07
 teaser: Using CartoDB.js, SQL API with the jQuery Data Tables API to create an interactive resource guide.
+header: no
 categories:
   - data cartodb data-tables
 ---
@@ -35,14 +36,15 @@ One of the common issues of working with data is having to run similar tasks rep
 
 A simple task might be to remove any trailing white space from a field that contains text:
 
-```sql
+{% highlight sql %}
 -- remove trailing whitespace
-UPDATE table_name SET field_name = regexp_replace(field_name, '\s+$', '', 'g');
-```
+UPDATE table_name 
+SET field_name = regexp_replace(field_name, '\s+$', '', 'g');
+{% endhighlight %}
 
 Or perhaps you may want to create additional columns based on existing data in a table that will be used by your web app but not displayed to the user. One such example is to simplify data from a field, such as for boroughs:
 
-```sql
+{% highlight sql %}
 -- add a column to store the borough code:
 ALTER TABLE table_name ADD COLUMN borough TEXT;
 
@@ -54,7 +56,7 @@ UPDATE table_name SET borough = 'QN' WHERE addressline2 ILIKE 'queens%';
 UPDATE table_name SET borough = 'SI' WHERE addressline2 ILIKE 'staten island%';
 UPDATE table_name SET borough = 'N/A' WHERE addressline2 IS NULL OR addressline2 ILIKE '%n/a%';
 UPDATE table_name SET borough = 'N/A' WHERE borough IS NULL;
-```
+{% endhighlight %}
 
 Then any time you need to update the data in CartoDB you can just copy and paste your SQL code into the dashboard SQL window and re-run your workflow. As soon as you update your data in CartoDB, the changes will be reflected on any webpage you have that is using that data.
 
@@ -63,19 +65,19 @@ On top of a intuitive and easy to use dashboard, CartoDB provides a RESTful SQL 
 
 At the time of this writing the CartoDB SQL API endpoint is in the following format:
 
-```http
+{% highlight text %}
 https://{account}.cartodb.com/api/v2/sql?q={SQL statement}&api_key={Your API key}
-```
+{% endhighlight %}
 
 You would simply replace `{account}` with your CartoDB account name and `{SQL statement}` with your SQL query, eg:
 
-```http
+{% highlight text %}
 https://my_account_name.cartodb.com/api/v2/sql?q=SELECT * FROM my_table
-```
+{% endhighlight %}
 
 The Response will be in JSON format and have the following structure:
 
-```json
+{% highlight json %}
 {
     "rows": [
         {...},
@@ -94,11 +96,11 @@ The Response will be in JSON format and have the following structure:
     "fields": {...},
     "total_rows": 1649
 }
-```
+{% endhighlight %}
 
 Each row has data stored in an object with the column name as the key and that column's respective row as the value:
 
-```json
+{% highlight json %}
 {
     "nameoforganization": "Community Parents, Inc.",
     "neighborhood": "Bedford-Stuyvesant",
@@ -112,11 +114,11 @@ Each row has data stored in an object with the column name as the key and that c
     "category1": "Pre-School & Childcare",
     ...
 }
-```
+{% endhighlight %}
 
 For the resource guide we are building for the Women's City Club I pass JSON data from the CartoDB SQL API to the [jQuery Data Table API](https://www.datatables.net/) to render a searchable and interactive HTML table:
 
-```javascript
+{% highlight javascript %}
   // create the dataTable from the CartoDB SQL API response
   var dtable = $('#data-table').DataTable({
     ajax : {
@@ -127,7 +129,7 @@ For the resource guide we are building for the Women's City Club I pass JSON dat
     order : [[0, "asc"]],
     columns : dtableColumns
   });
-```
+{% endhighlight %}
 
 Where `queryURIencoded` is a variable containing the CartoDB SQL API endpoint with the SQL query I've provided, [URI encoded](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI).
 
@@ -136,7 +138,7 @@ And why would they call it **Carto**DB if you couldn't make a map with it? Carto
 
 For the Resource Guide we are building this is how the data being displayed on the map changes, as well as the map's zoom level and extent, after the user applies filters through the UI:
 
-```javascript
+{% highlight javascript %}
 function updateMap(ids) {
   var cdb_ids, sql, bbox_sql, sql_encoded, url;
   
@@ -176,7 +178,7 @@ function getBounds(url) {
     map.fitBounds(L.latLngBounds(bounds));
   });
 }
-  ```
+{% endhighlight %}
   
 When the user applies filters to the dataset, the Data Tables API sends an array of ids from the filtered rows to the the `updateMap` function. The ids are then joined using using a comma as a delimiter and inserted into an SQL `WHERE` clause. A second query is created that will grab the filtered feature's geographic extent using the PostGIS functions [ST_AsGeoJSON](http://postgis.org/docs/ST_AsGeoJSON.html), [ST_SetSRID](http://postgis.refractions.net/docs/ST_SetSRID.html), and [ST_Extent](http://postgis.net/docs/ST_Extent.html). The first query eventually is passed to the CartoDB javascript library to update the features being displayed on the map. The second query is passed to the function `getBounds` which performs an AJAX request to the CartoDB SQL API endpoint. The features returned from this query are then passed to Leaflet's [map.fitBounds](http://leafletjs.com/reference.html#map-fitbounds) method which centers the map and changes the zoom level to fit the map to a specified geographic area.
   
