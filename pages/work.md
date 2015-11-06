@@ -13,7 +13,6 @@ header: no
   <button data-filter=".web">interactive</button>
   <button data-filter=".data-viz">data viz</button>  
   <button data-filter=".carto">cartographic design</button>
-  <button data-filter=".print">print</button>
   <button class="shuffle">shuffle!</button>
 </div>
 
