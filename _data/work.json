@@ -1,0 +1,215 @@
+{
+  "author" : "Chris L Henrick",
+  "work" : [
+    {
+      "title" : "Am I Rent Stabilized?",
+      "tags" : ["web", "data-viz"],
+      "description" : "A civic web app to inform NYC renters about rent stabilization.",
+      "description_long" : "",
+      "thumb" : "airs_thumb.png",
+      "img" : "",
+      "size" : "width3 height2",
+      "date" : "2015-01-01"
+    },
+    {
+      "title" : "Bushwick Community Map",
+      "tags" : ["web", "data-viz", "carto"],
+      "description" : "A map to track issues around urban development in Bushwick, NY",
+      "description_long" : "",
+      "thumb" : "nwb_map_thumb.png",
+      "img" : "",
+      "size" : "width3 height2",
+      "date" : "2015-01-01"
+    },
+    {
+      "title" : "Greenpoint Williamsburg Toxicity Map",
+      "tags" : ["web", "data-viz", "carto"],
+      "description" : "A map to inform residents of north Brooklyn about environmental hazards.",
+      "description_long" : "",
+      "thumb" : "nag_toxicity_map_thumb.png",
+      "img" : "",
+      "size" : "width3 height2",
+      "date" : "2015-01-01"
+    },
+    {
+      "title" : "A Thru-Hike on the Pacific Crest Trail",
+      "tags" : ["web", "carto"],
+      "description" : "A web project documenting my brother's experience thru-hiking the PCT.",
+      "description_long" : "",
+      "thumb" : "map_story_thumb.png",
+      "img" : "",
+      "size" : "width2 height3",
+      "date" : "2015-01-01"
+    },
+    {
+      "title" : "Guess That Hood NYC!",
+      "tags" : ["web", "carto"],
+      "description" : "A game that allows users to guess neighborhood names in NYC.",
+      "description_long" : "",
+      "thumb" : "guess_hood_thumb.png",
+      "img" : "",
+      "size" : "width2",
+      "date" : "2015-01-01"
+    },
+    {
+      "title" : "Landscapes of Profit",
+      "tags" : ["web","data-viz"],
+      "description" : "An analysis of property transaction data to promote a 1% flip tax in NYC.",
+      "description_long" : "",
+      "thumb" : "lop_thumb.png",
+      "img" : "",
+      "size" : "width2",
+      "date" : "2015-01-01"
+    },
+    {
+      "title" : "Visualizing CO2 and GNI",
+      "tags" : ["data-viz"],
+      "description" : "An interactive Processing sketch that visualizes data relating to climate change from the World Bank Data Indicators.",
+      "description_long" : "",
+      "thumb" : "visualize_climate_thumb.png",
+      "img" : "",
+      "size" : "width2",
+      "date" : "2015-01-01"
+    },
+    {
+      "title" : "Prospect Park non euclidean map",
+      "tags" : ["carto"],
+      "description" : "A non-euclidean map of Prospect Park, Brooklyn",
+      "description_long" : "",
+      "thumb" : "non_euclidean.png",
+      "img" : "",
+      "size" : "width2 height2",
+      "date" : "2015-01-01"
+    },
+    {
+      "title" : "Graffiti, Rat Sightings, & Wifi Hotspots",
+      "tags" : ["web", "carto"],
+      "description" : "Graffiti, rat sightings, and wi-fi hotspots from NYC open-data.",
+      "description_long" : "",
+      "thumb" : "",
+      "img" : "",
+      "size" : "",
+      "date" : "2015-01-01"
+    },
+    {
+      "title" : "From Coast to Coast",
+      "tags" : ["web", "carto", "data-viz"],
+      "description" : "Visualizing my move from the SF Bay Area to NYC with D3JS.",
+      "description_long" : "",
+      "thumb" : "coast_to_thumb.png",
+      "img" : "",
+      "size" : "height2",
+      "date" : "2015-01-01"
+    },
+    {
+      "title" : "Oakland Then and Now: Coastal Grasslands",
+      "tags" : ["carto", "print"],
+      "description" : "Historic coastal grassland, bay and shoreline over the current day built up land area of Oakland, CA.",
+      "description_long" : "A prototype map design for the Oakland Museum of California. This map shows historic coastal grassland areas, and a historic bay and shoreline over the current day built up land area for an exhibit titled Oakland: Then and Now.",
+      "thumb" : "oak_then_now_grassland_thumb.png",
+      "img" : "",
+      "size" : "width2",
+      "date" : "2015-01-01"
+    },
+    {
+      "title" : "Oakland Then and Now: Oak Woodland",
+      "tags" : ["carto", "print"],
+      "description" : "Historic oak woodland, bay and shoreline over the current day built up land area of Oakland, CA.",
+      "description_long" : "A prototype map design for the Oakland Museum of California. This map shows historic oak woodland areas, and a historic bay and shoreline over the current day built up land area for an exhibit titled Oakland: Then and Now.",
+      "thumb" : "oak_then_now_grassland_thumb.png",
+      "img" : "",
+      "size" : "width2",
+      "date" : "2015-01-01"
+    },
+    {
+      "title" : "Chinook Recovery Priority Watersheds",
+      "tags" : ["carto", "print"],
+      "description" : "Coastal recovery watersheds for Salmon and Steelhead in California",
+      "description_long" : "This map was created at GreenInfo Network with Alexandra Barnish, and is a working draft showing only the coastal recovery watersheds for Salmon and Steelhead in California. Central valley recovery watersheds are not shown on this version of the map. For the most recent version please visit Sustainable Conservation's Partners in Restoration program.",
+      "thumb" : "",
+      "img" : "",
+      "size" : "height2",
+      "date" : "2015-01-01"
+    },
+    {
+      "title" : "CA Private Public Land",
+      "tags" : ["carto", "print"],
+      "description" : "Private and publically owned land in California.",
+      "description_long" : "This map was created at GreenInfo Network with Alexandra Barnish for Sustainable Conservation's Partners in Restoration program.",
+      "thumb" : "",
+      "img" : "",
+      "size" : "height2",
+      "date" : "2015-01-01"
+    },
+    {
+      "title" : "Ontario",
+      "tags" : ["carto", "print"],
+      "description" : "The province of Ontario, Canada.",
+      "description_long" : "A map of the province of Ontario, Canada created using Natural Earth 1:10m vector GIS data for the *Moon: Ontario* travel guide from Avalon Travel Publishing",
+      "thumb" : "",
+      "img" : "",
+      "size" : "width2 height1",
+      "date" : "2015-01-01"
+    },
+    {
+      "title" : "Galapagos Islands",
+      "tags" : ["carto", "print"],
+      "description" : "A map showing the Galapagos Islands",
+      "description_long" : "",
+      "thumb" : "",
+      "img" : "",
+      "size" : "width2 height1",
+      "date" : "2015-01-01"
+    },
+    {
+      "title" : "Afghanistan and Pakistan",
+      "tags" : ["carto", "print"],
+      "description" : "Map of Afghanistan and Pakistan for the book Dirty Wars.",
+      "description_long" : "Map of Afghanistan and Pakistan for the book Dirty Wars: The World is a Battlefield, by Jeremy Scahill. Published by Nation Books.",
+      "thumb" : "",
+      "img" : "",
+      "size" : "width2 height2",
+      "date" : "2015-01-01"
+    },
+    {
+      "title" : "South East Asia",
+      "tags" : ["carto", "print"],
+      "description" : "A map of Thailand, Laos, and Cambodia.",
+      "description_long" : "Another map for a 9 book series on the backpacking trips taken by globetrotter David Koester. Natural Earth vector and relief data were employed for sound cartographic design.",
+      "thumb" : "",
+      "img" : "",
+      "size" : "height2",
+      "date" : "2015-01-01"
+    },
+    {
+      "title" : "The North Coast",
+      "tags" : ["carto", "print"],
+      "description" : "A split frame map I created for *Moon: Northern California.*",
+      "description_long" : "A split frame map I created for Moon: Northern California. Open data from Cal Atlas and CPAD were used to make this map.",
+      "thumb" : "",
+      "img" : "",
+      "size" : "height2",
+      "date" : "2015-01-01"
+    },
+    {
+      "title" : "Downtown Toronto",
+      "tags" : ["carto", "print"],
+      "description" : "A map of downtown Toronto, Canada.",
+      "description_long" : "",
+      "thumb" : "",
+      "img" : "",
+      "size" : "width2 height1",
+      "date" : "2015-01-01"
+    },
+    {
+      "title" : "Downtown Guanajuato",
+      "tags" : ["carto", "print"],
+      "description" : "A map of downtown Guanajuato, Mexico.",
+      "description_long" : "",
+      "thumb" : "",
+      "img" : "",
+      "size" : "width2 height1",
+      "date" : "2015-01-01"
+    }
+  ]
+}

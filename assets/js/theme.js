@@ -2,19 +2,6 @@ $(document).ready(function(){
 
   var $grid = $('.grid');
 
-  function loadWork() {
-    // get the Handlebars template
-    var template = Handlebars.templates["item.hbs"];
-    
-    // feed it some JSON
-    $.getJSON('../assets/data/work.json', function(data) {
-      console.log(data.work);
-      var markup = template(data);
-      $(markup).appendTo("#target");
-      initMasonry();
-    });
-  }
-
   function initMasonry() {
     $grid.isotope({
       itemSelector: '.grid-item',
@@ -46,5 +33,5 @@ $(document).ready(function(){
     $grid.isotope('shuffle');
   }
   
-  loadWork();
+  initMasonry();
 });

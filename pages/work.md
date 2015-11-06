@@ -20,19 +20,17 @@ header: no
 <!-- to-do: create and populate these with templates & JSON data -->
 <div id="target" class="grid print carto">
   <div class="grid-sizer"></div>
-</div>
-
-<!-- template for rendering isotope grid items -->
-<script id="item-template" type="text/x-handlebars-template">
-    <div class="grid-item {{ size }}  {{ type }}">
-    <a href="{{ post-url }}">
-      <img class="item-img" src="{{ img }}">
-    </a>
-    <div class="item-meta">
-      <a href="{{ post-url }}">
-        <h4 class="item-title">{{ title }}</h4>
+  {% for item in site.data.work.work %}
+    <div class="grid-item {{ item.size }} {% for tag in item.tags %}} {{tag}} {% endfor %}">
+      <a href="{{ site.url }}{{ site.baseurl }}/portfolio/{{item.date}}-{{item.title | slugify}}/">
+        <img class="item-img" src="">
       </a>
-      <p class="item-description">{{ description }}</p>
-    </div>
-  </div>  
-</script>
+      <div class="item-meta">
+        <a href="{{ site.url }}{{ site.baseurl }}/portfolio/{{item.date}}-{{item.title | slugify}}/">
+          <h4 class="item-title">{{ item.title }}</h4>
+        </a>
+        <p class="item-description">{{ item.description }}</p>
+      </div>
+    </div>  
+  {% endfor %}
+</div>
