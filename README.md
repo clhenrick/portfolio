@@ -16,11 +16,11 @@ From the root of this repo do: `handlebars _data/item.hbs -f assets/js/work.js -
 Should be done by creating new posts tagged with `portfolio` in the `_posts/portfolio/` directory.
 
 ## TO DO List:
-- [ ] Node JS script to generate posts in `_posts/portfolio/` from `assets/data/work.json`
+- [x] Node JS script to generate posts in `_posts/portfolio/` from `assets/data/work.json`
 
-- [ ] liquid logic to only render blog posts in `_posts/blog/`
+- [ ] ~~liquid logic to only render blog posts in `_posts/blog/`~~
 
-- [ ] liquid logic to create masonry layout from `_posts/portfolio/`
+- [x] liquid logic to create masonry layout from `_posts/portfolio/`
 
 - [ ] move blog posts from chenrickmfadt.wordpress:  
     - see: http://import.jekyllrb.com/docs/wordpress/
