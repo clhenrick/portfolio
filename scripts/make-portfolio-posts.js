@@ -34,7 +34,7 @@ Handlebars.registerHelper('list', function(items, options){
 
 function go(file) {
   fs.readFile(file, function(err,data){
-    if (err) return console.err(err);
+    if (err) return console.error(err);
     
     if (file === work) {
       dataStore = JSON.parse(data);  
@@ -55,9 +55,8 @@ function go(file) {
 function makeHbs(){
   dataStore.work.forEach(function(el,i){
     // console.log(typeof el);
-    var name = el.date + '-' + el.title
-      .toLowerCase().replace(/[^a-zA-Z ]/g, "")
-      .split(' ').join('-') + '.md';
+    var name = el.date + '-' + el.title.toLowerCase().replace(/[^a-zA-Z ]/g, "")
+                 .split(' ').join('-') + '.md';
     var html = hbsTemplate(el);
     // console.log(name, '\n', html);
     writeMD(name,html);
@@ -67,7 +66,7 @@ function makeHbs(){
 function writeMD(fileName, markup) {
   var writeDir = outDir + fileName;
   fs.writeFile(writeDir,markup,'utf-8', function(err,written,string){
-    if (err) { return console.err(err); }
+    if (err) { return console.error(err); }
     console.log('wrote: ', fileName);
   });
 }
