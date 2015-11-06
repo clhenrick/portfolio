@@ -1,0 +1,13 @@
+{{#each work}}
+<div class="grid-item {{size}}  {{#each tags}} {{this}} {{/each}}">
+  <a href="{{post-url}}">
+    <img class="item-img" src="">
+  </a>
+  <div class="item-meta">
+    <a href="{{post-url}}">
+      <h4 class="item-title">{{title}}</h4>
+    </a>
+    <p class="item-description">{{description}}</p>
+  </div>
+</div>  
+{{/each}}
