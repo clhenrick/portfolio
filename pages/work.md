@@ -10,10 +10,10 @@ header: no
 <!-- use isotope.js to create and organize content here -->
 <div id="filters" class="button-group filter-button-group">
   <button data-filter="*">all</button>
-  <button data-filter=".print">print</button>
   <button data-filter=".web">interactive</button>
-  <button data-filter=".data-viz">data viz</button>
+  <button data-filter=".data-viz">data viz</button>  
   <button data-filter=".carto">cartographic design</button>
+  <button data-filter=".print">print</button>
   <button class="shuffle">shuffle!</button>
 </div>
 

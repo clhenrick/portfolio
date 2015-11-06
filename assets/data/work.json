@@ -8,7 +8,7 @@
       "description_long" : "",
       "thumb" : "airs_thumb.png",
       "img" : "",
-      "size" : "width3",
+      "size" : "width3 height2",
       "date" : "2015-01-01"
     },
     {
@@ -18,7 +18,7 @@
       "description_long" : "",
       "thumb" : "nwb_map_thumb.png",
       "img" : "",
-      "size" : "width3",
+      "size" : "width3 height2",
       "date" : "2015-01-01"
     },
     {
@@ -28,7 +28,7 @@
       "description_long" : "",
       "thumb" : "nag_toxicity_map_thumb.png",
       "img" : "",
-      "size" : "width3",
+      "size" : "width3 height2",
       "date" : "2015-01-01"
     },
     {
@@ -38,7 +38,7 @@
       "description_long" : "",
       "thumb" : "map_story_thumb.png",
       "img" : "",
-      "size" : "width3",
+      "size" : "width2 height3",
       "date" : "2015-01-01"
     },
     {
@@ -48,7 +48,7 @@
       "description_long" : "",
       "thumb" : "guess_hood_thumb.png",
       "img" : "",
-      "size" : "width3",
+      "size" : "width2",
       "date" : "2015-01-01"
     },
     {
@@ -78,7 +78,7 @@
       "description_long" : "",
       "thumb" : "non_euclidean.png",
       "img" : "",
-      "size" : "width3",
+      "size" : "width2 height2",
       "date" : "2015-01-01"
     },
     {
@@ -88,7 +88,7 @@
       "description_long" : "",
       "thumb" : "",
       "img" : "",
-      "size" : "width2",
+      "size" : "",
       "date" : "2015-01-01"
     },
     {
@@ -98,7 +98,7 @@
       "description_long" : "",
       "thumb" : "coast_to_thumb.png",
       "img" : "",
-      "size" : "width2",
+      "size" : "height2",
       "date" : "2015-01-01"
     },
     {
@@ -128,7 +128,7 @@
       "description_long" : "This map was created at GreenInfo Network with Alexandra Barnish, and is a working draft showing only the coastal recovery watersheds for Salmon and Steelhead in California. Central valley recovery watersheds are not shown on this version of the map. For the most recent version please visit Sustainable Conservation's Partners in Restoration program.",
       "thumb" : "",
       "img" : "",
-      "size" : "width2 height3",
+      "size" : "height2",
       "date" : "2015-01-01"
     },
     {
@@ -138,7 +138,7 @@
       "description_long" : "This map was created at GreenInfo Network with Alexandra Barnish for Sustainable Conservation's Partners in Restoration program.",
       "thumb" : "",
       "img" : "",
-      "size" : "width2 height3",
+      "size" : "height2",
       "date" : "2015-01-01"
     },
     {
@@ -148,7 +148,7 @@
       "description_long" : "A map of the province of Ontario, Canada created using Natural Earth 1:10m vector GIS data for the *Moon: Ontario* travel guide from Avalon Travel Publishing",
       "thumb" : "",
       "img" : "",
-      "size" : "width2",
+      "size" : "width2 height1",
       "date" : "2015-01-01"
     },
     {
@@ -158,7 +158,7 @@
       "description_long" : "",
       "thumb" : "",
       "img" : "",
-      "size" : "width2",
+      "size" : "width2 height1",
       "date" : "2015-01-01"
     },
     {
@@ -168,7 +168,7 @@
       "description_long" : "Map of Afghanistan and Pakistan for the book Dirty Wars: The World is a Battlefield, by Jeremy Scahill. Published by Nation Books.",
       "thumb" : "",
       "img" : "",
-      "size" : "width2",
+      "size" : "width2 height2",
       "date" : "2015-01-01"
     },
     {
@@ -178,7 +178,7 @@
       "description_long" : "Another map for a 9 book series on the backpacking trips taken by globetrotter David Koester. Natural Earth vector and relief data were employed for sound cartographic design.",
       "thumb" : "",
       "img" : "",
-      "size" : "width2",
+      "size" : "height2",
       "date" : "2015-01-01"
     },
     {
@@ -188,7 +188,7 @@
       "description_long" : "A split frame map I created for Moon: Northern California. Open data from Cal Atlas and CPAD were used to make this map.",
       "thumb" : "",
       "img" : "",
-      "size" : "width2",
+      "size" : "height2",
       "date" : "2015-01-01"
     },
     {
@@ -198,7 +198,7 @@
       "description_long" : "",
       "thumb" : "",
       "img" : "",
-      "size" : "width2",
+      "size" : "width2 height1",
       "date" : "2015-01-01"
     },
     {
@@ -208,7 +208,7 @@
       "description_long" : "",
       "thumb" : "",
       "img" : "",
-      "size" : "width2",
+      "size" : "width2 height1",
       "date" : "2015-01-01"
     }
   ]

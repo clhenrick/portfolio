@@ -17,7 +17,7 @@
 // isotope columns
 .grid {  
   width: 100%;
-  height: 100%;
+  // height: 100%;
   border: 1px solid #999;
   background-color: #fff;
 
@@ -30,22 +30,30 @@
 }
 
 .grid-item { 
-  width: 24%; 
+  float: left;
+  width: 25%; 
   min-height: 200px;
   display: inline-block;
-  margin: 0.5%;
+  margin: 0;
   padding: 5px;
   background-color: lighten(#999, 20);
+  border: 1px solid #fff;
 
   &.width2 { 
-    width: 49%; 
-    min-height: 300px;
+    width: 50%; 
     background-color: lighten(red, 30);
   }
 
   &.width3 {
-    width: 74%;
-    min-height: 400px;
+    width: 75%;
     background-color: lighten(blue, 30);
+  }
+
+  &.height1 {
+    min-height: 300px;
+  }
+
+  &.height2 {
+    min-height: 400px;
   }
 }

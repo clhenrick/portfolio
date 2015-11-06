@@ -10,7 +10,7 @@ Personal portfolio and blog of Chris Henrick using the [Feeling Resposive](http:
 ### Precompiling Handlebars
 Make sure [Node JS](https://nodejs.org) and [Handlebars](http://handlebarsjs.com/) are installed.
 
-From the root of this repo do: `handlebars _data/item.hbs -f assets/js/work-template.js -k each`
+From the root of this repo do: `handlebars _data/item.hbs -f assets/js/work.js -k each`
 
 ## Updating
 Should be done by creating new posts tagged with `portfolio` in the `_posts/portfolio/` directory.
