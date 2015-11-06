@@ -13,7 +13,7 @@ widget1:
   url: '/work/'
   text: '<strong>Encompasses:</strong> <br/>1. Data Visualizaton <br/>2. Web Development<br/>3. Cartographic Design<br/>4. Open Source GIS<br/>5. Data Wrangling'
 widget2:
-  title: "Coding Blog"
+  title: "Blog"
   url: '/blog/'
   text: 'My ramblings on previous projects and solving problems relating to the web, data, cartography, and design.' 
 widget3:
