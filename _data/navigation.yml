@@ -18,6 +18,11 @@
 - title: About
   url: "/info/"
   side: left
+  dropdown: 
+    - title: CV
+      url: "/info/cv/"
+    - title: Talks
+      url: "/info/talks/"
 
 # - title: "Templates"
 #   url: "/design/"
