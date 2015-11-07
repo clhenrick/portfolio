@@ -5,10 +5,10 @@
       "title" : "Am I Rent Stabilized?",
       "tags" : ["web", "data-viz"],
       "description" : "A civic web app to inform NYC renters about rent stabilization.",
-      "description_long" : "",
+      "description_long" : "Am I Rent Stabilized is a web application that encourages New York City tenants to find out if their landlord may be illegally overcharging them for a rent stabilized apartment and if so, motivates them to take action. It is an attempt at using open data as a prompt for civic action, rather than solely for visualization and analysis. The app asks the user to input their address and checks it against a database of properties that are likely to have rent stabilized apartments. From here the app recommends a course of action and informs the user of their nearest tenants rights group so they can get help. The app features a responsive interface that is mobile friendly, and its content can be toggled to either Spanish or Chinese for non-english speakers.",
       "tech" : ["CartoDB.JS", "CartoDB SQL API", "NYC GeoClient API", "GSAP Animation JS", "SCSS", "Handlebars.JS", "Gulp.JS", "AWS S3", "AWS CloudFront"],
       "thumb" : "airs01-thumb.jpg",
-      "imgs" : ["airs01.jpg"],
+      "imgs" : ["airs01.jpg", "airs02.jpg", "airs03.jpg", "airs04.jpg", "airs05.jpg", "airs06.jpg", "airs07.jpg", "airs08.jpg", "airs09.jpg", "airs10.jpg", "airs11.jpg", "airs12.jpg", "airs13.jpg", "airs14.jpg", "airs15.jpg", "airs16.jpg"],
       "link" : "https://amirentstabilized.com",
       "size" : "width3 height2",
       "date" : "2015-01-01"
@@ -17,13 +17,13 @@
       "title" : "Bushwick Community Map",
       "tags" : ["web", "data-viz", "carto"],
       "description" : "A map to track issues around urban development in Bushwick, NY",
-      "description_long" : "",
+      "description_long" : "The Northwest Bushwick Community Map is meant to be a resource for local community organizations and tenants rights groups to easily access disparate information around land use, housing and urban development for the neighborhood of Bushwick in Brooklyn, NY. It is also intended to be a tool to inform NYC residents about what kinds of indicators may be used to predict new urban development and help prevent displacement of residents in their own neighborhoods. Recently I had the opportunity to work with the original author of the map and some fellow designers in the MFA DT program at Parsons to improve the map’s design and functionality.",
       "tech" : ["CartoDB.JS", "Odyssey.JS", "Leaflet.JS", "Mapbox.JS", "Underscore.JS", "JQuery"],
       "thumb" : "bcm01-thumb.jpg",
-      "imgs" : ["bcm01.jpg", "bcm02.jpg", "bcm03.jpg","bcm04.jpg","bcm05.jpg"],
-      "link" : "http://buswickcommunitymap.org",
+      "imgs" : ["bcm01.jpg", "bcm02.jpg", "bcm03.jpg", "bcm04.jpg", "bcm05.jpg", "bcm06.jpg", "bcm07.jpg", "bcm08.jpg"],
+      "link" : "http://www.bushwickcommunitymap.org",
       "size" : "width3 height2",
-      "date" : "2015-01-01"
+      "date" : "2014-12-20"
     },
     {
       "title" : "Greenpoint Williamsburg Toxicity Map",
@@ -58,6 +58,17 @@
       "date" : "2015-01-01"
     },
     {
+      "title" : "Tracking the Energy Titans",
+      "tags" : ["web", "data-viz"],
+      "description" : "A data-visualization comparing energy use between the U.S., Canada, and China.",
+      "description_long" : "Created for the Woodrow Wilson Center, this interactive data-visualization allows users to compare and contrast various types of energy usage among the three countries.",
+      "thumb" : "tracking-energy-titans-thumb.jpg",
+      "imgs" : ["tracking-energy-titans.jpg"],
+      "tech" : ["D3.JS","JQuery","Node.JS","Gulp.JS","SCSS"],
+      "size" : "width2",
+      "date" : "2015-01-01"
+    },
+    {
       "title" : "Guess That Hood NYC!",
       "tags" : ["web", "carto"],
       "description" : "A game that allows users to guess neighborhood names in NYC.",
@@ -72,7 +83,7 @@
       "tags" : ["web","data-viz"],
       "description" : "An analysis of property transaction data to promote a 1% flip tax in NYC.",
       "description_long" : "",
-      "thumb" : "lop_thumb.jpg",
+      "thumb" : "lop-thumb.jpg",
       "imgs" : [""],
       "size" : "width2",
       "date" : "2015-01-01"

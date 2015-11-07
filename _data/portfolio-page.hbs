@@ -11,14 +11,20 @@ category:
 header: no
 ---
 
+{{#if link}}
+<strong>Project Link:</strong> <a href="{{link}}" target="_blank">{{title}}</a>
+{{/if}}
+
+{{#if description_long}}
 {{description_long}}
+{{/if}}
 
 {{#if tech}}
 <strong>Technologies Used:</strong> {{#each tech }} - {{this}} {{/each}}
 {{/if}}
 
 {{#each imgs}}
-<img src="\{{site.url}}\{{site.baseurl}}/images/{{this}}" alt="{{this}}">
+<img class="portfolio" src="\{{site.url}}\{{site.baseurl}}/images/{{this}}" alt="{{this}}">
 
 {{/each}}
 

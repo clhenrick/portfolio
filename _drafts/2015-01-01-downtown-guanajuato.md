@@ -14,7 +14,7 @@ header: no
 
 
 
-<img src="{{site.url}}{{site.baseurl}}/images/" alt="">
+<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/" alt="">
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)
