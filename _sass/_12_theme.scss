@@ -16,6 +16,10 @@
 #filters {
   > button {
     text-transform: uppercase;
+
+    &.active {
+      background-color: $ci-2;
+    }
   }
 }
 
@@ -45,7 +49,7 @@
   display: inline-block;
   margin: 0;
   padding: 5px;
-  background-color: lighten(#999, 30);
+  background-color: lighten($grey-1, 5);
   border: 1px solid #fff;
 
   &.width2 { 

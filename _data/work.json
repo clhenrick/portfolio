@@ -193,8 +193,8 @@
       "tags" : ["carto", "print"],
       "description" : "Map of Afghanistan and Pakistan for the book Dirty Wars.",
       "description_long" : "Map of Afghanistan and Pakistan for the book Dirty Wars: The World is a Battlefield, by Jeremy Scahill. Published by Nation Books.",
-      "thumb" : "",
-      "imgs" : [""],
+      "thumb" : "afg-pak-thumb.jpg",
+      "imgs" : ["afg-pak.jpg"],
       "size" : "width2 height2",
       "date" : "2015-01-01"
     },

@@ -23,9 +23,16 @@ $(document).ready(function(){
       var filterVal = $(this).attr('data-filter');
       $grid.isotope('shuffle');
       $grid.isotope({ filter: filterVal});
+      
+      if (!$(this).hasClass('shuffle')){
+        $('#filters > button').removeClass('active');
+        $(this).addClass('active');
+      }
     });
 
     $('.shuffle').on('click', function() {
+      $('#filters > button').removeClass('active');
+      $('button.all').addClass('active');
       $grid.isotope('shuffle');  
     });
 
