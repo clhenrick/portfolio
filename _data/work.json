@@ -6,8 +6,10 @@
       "tags" : ["web", "data-viz"],
       "description" : "A civic web app to inform NYC renters about rent stabilization.",
       "description_long" : "",
-      "thumb" : "airs_thumb.png",
-      "img" : "",
+      "tech" : ["CartoDB.JS", "CartoDB SQL API", "NYC GeoClient API", "GSAP Animation JS", "SCSS", "Handlebars.JS", "Gulp.JS", "AWS S3", "AWS CloudFront"],
+      "thumb" : "airs01-thumb.jpg",
+      "imgs" : ["airs01.jpg"],
+      "link" : "https://amirentstabilized.com",
       "size" : "width3 height2",
       "date" : "2015-01-01"
     },
@@ -16,8 +18,10 @@
       "tags" : ["web", "data-viz", "carto"],
       "description" : "A map to track issues around urban development in Bushwick, NY",
       "description_long" : "",
-      "thumb" : "nwb_map_thumb.png",
-      "img" : "",
+      "tech" : ["CartoDB.JS", "Odyssey.JS", "Leaflet.JS", "Mapbox.JS", "Underscore.JS", "JQuery"],
+      "thumb" : "bcm01-thumb.jpg",
+      "imgs" : ["bcm01.jpg", "bcm02.jpg", "bcm03.jpg","bcm04.jpg","bcm05.jpg"],
+      "link" : "http://buswickcommunitymap.org",
       "size" : "width3 height2",
       "date" : "2015-01-01"
     },
@@ -25,9 +29,11 @@
       "title" : "Greenpoint Williamsburg Toxicity Map",
       "tags" : ["web", "data-viz", "carto"],
       "description" : "A map to inform residents of north Brooklyn about environmental hazards.",
-      "description_long" : "",
-      "thumb" : "nag_toxicity_map_thumb.png",
-      "img" : "",
+      "description_long" : "The NAG Greenpoint-Williamsburg ToxiCity Map is an interactive map of toxic “hot spots” in Greenpoint and Williamsburg. Data used to compile this map came from city, state and federal sources, guided by on-the-ground knowledge from local activists. Click through the data layers on the map to understand some neighborhood trends such as population density and asthma hospital visits, and locate some specific sites such as former NuHart Plastics factory and the Exxon oil spill. Sites that have already been remediated and sites that require future remediation are included on this map.",
+      "tech" : ["CartoDB.JS", "Leaflet.JS", "MapBox Studio Classic", "CartoCSS", "Node JS", "Pelias Geocoder", "Handlebars.JS", "JQuery"],
+      "thumb" : "nag-toxicity-map01-thumb.jpg",
+      "imgs" : ["nag-toxicity-map01.jpg", "nag-toxicity-map02.jpg","nag-toxicity-map03.jpg","nag-toxicity-map04.jpg","nag-toxicity-map05.jpg","nag-toxicity-map06.jpg","nag-toxicity-map07.jpg","nag-toxicity-map08.jpg"],
+      "link" : "https://clhenrick.github.io/greenpoint_williamsburg_toxicity_map/",
       "size" : "width3 height2",
       "date" : "2015-01-01"
     },
@@ -36,9 +42,19 @@
       "tags" : ["web", "carto"],
       "description" : "A web project documenting my brother's experience thru-hiking the PCT.",
       "description_long" : "",
-      "thumb" : "map_story_thumb.png",
-      "img" : "",
+      "thumb" : "map_story_thumb.jpg",
+      "imgs" : [""],
       "size" : "width2 height3",
+      "date" : "2015-01-01"
+    },
+    {
+      "title" : "WCC Resource Guide",
+      "tags" : ["web", "data-viz"],
+      "description" : "An interactive resource guide for NYC residents.",
+      "description_long" : "",
+      "thumb" : "wcc-resource-guide-thumb.jpg",
+      "imgs" : ["wcc-resource-guide.jpg"],
+      "size" : "width2",
       "date" : "2015-01-01"
     },
     {
@@ -46,8 +62,8 @@
       "tags" : ["web", "carto"],
       "description" : "A game that allows users to guess neighborhood names in NYC.",
       "description_long" : "",
-      "thumb" : "guess_hood_thumb.png",
-      "img" : "",
+      "thumb" : "guess_hood_thumb.jpg",
+      "imgs" : [""],
       "size" : "width2",
       "date" : "2015-01-01"
     },
@@ -56,8 +72,8 @@
       "tags" : ["web","data-viz"],
       "description" : "An analysis of property transaction data to promote a 1% flip tax in NYC.",
       "description_long" : "",
-      "thumb" : "lop_thumb.png",
-      "img" : "",
+      "thumb" : "lop_thumb.jpg",
+      "imgs" : [""],
       "size" : "width2",
       "date" : "2015-01-01"
     },
@@ -66,8 +82,8 @@
       "tags" : ["data-viz"],
       "description" : "An interactive Processing sketch that visualizes data relating to climate change from the World Bank Data Indicators.",
       "description_long" : "",
-      "thumb" : "visualize_climate_thumb.png",
-      "img" : "",
+      "thumb" : "visualize_climate_thumb.jpg",
+      "imgs" : [""],
       "size" : "width2",
       "date" : "2015-01-01"
     },
@@ -76,8 +92,8 @@
       "tags" : ["carto"],
       "description" : "A non-euclidean map of Prospect Park, Brooklyn",
       "description_long" : "",
-      "thumb" : "non_euclidean.png",
-      "img" : "",
+      "thumb" : "non_euclidean.jpg",
+      "imgs" : [""],
       "size" : "width2 height2",
       "date" : "2015-01-01"
     },
@@ -87,7 +103,7 @@
       "description" : "Graffiti, rat sightings, and wi-fi hotspots from NYC open-data.",
       "description_long" : "",
       "thumb" : "",
-      "img" : "",
+      "imgs" : [""],
       "size" : "",
       "date" : "2015-01-01"
     },
@@ -96,8 +112,8 @@
       "tags" : ["web", "carto", "data-viz"],
       "description" : "Visualizing my move from the SF Bay Area to NYC with D3JS.",
       "description_long" : "",
-      "thumb" : "coast_to_thumb.png",
-      "img" : "",
+      "thumb" : "coast_to_thumb.jpg",
+      "imgs" : [""],
       "size" : "height2",
       "date" : "2015-01-01"
     },
@@ -106,8 +122,8 @@
       "tags" : ["carto", "print"],
       "description" : "Historic coastal grassland, bay and shoreline over the current day built up land area of Oakland, CA.",
       "description_long" : "A prototype map design for the Oakland Museum of California. This map shows historic coastal grassland areas, and a historic bay and shoreline over the current day built up land area for an exhibit titled Oakland: Then and Now.",
-      "thumb" : "oak_then_now_grassland_thumb.png",
-      "img" : "",
+      "thumb" : "oak_then_now_grassland_thumb.jpg",
+      "imgs" : [""],
       "size" : "width2",
       "date" : "2015-01-01"
     },
@@ -116,8 +132,8 @@
       "tags" : ["carto", "print"],
       "description" : "Historic oak woodland, bay and shoreline over the current day built up land area of Oakland, CA.",
       "description_long" : "A prototype map design for the Oakland Museum of California. This map shows historic oak woodland areas, and a historic bay and shoreline over the current day built up land area for an exhibit titled Oakland: Then and Now.",
-      "thumb" : "oak_then_now_grassland_thumb.png",
-      "img" : "",
+      "thumb" : "oak_then_now_grassland_thumb.jpg",
+      "imgs" : [""],
       "size" : "width2",
       "date" : "2015-01-01"
     },
@@ -127,7 +143,7 @@
       "description" : "Coastal recovery watersheds for Salmon and Steelhead in California",
       "description_long" : "This map was created at GreenInfo Network with Alexandra Barnish, and is a working draft showing only the coastal recovery watersheds for Salmon and Steelhead in California. Central valley recovery watersheds are not shown on this version of the map. For the most recent version please visit Sustainable Conservation's Partners in Restoration program.",
       "thumb" : "",
-      "img" : "",
+      "imgs" : [""],
       "size" : "height2",
       "date" : "2015-01-01"
     },
@@ -137,7 +153,7 @@
       "description" : "Private and publically owned land in California.",
       "description_long" : "This map was created at GreenInfo Network with Alexandra Barnish for Sustainable Conservation's Partners in Restoration program.",
       "thumb" : "",
-      "img" : "",
+      "imgs" : [""],
       "size" : "height2",
       "date" : "2015-01-01"
     },
@@ -147,7 +163,7 @@
       "description" : "The province of Ontario, Canada.",
       "description_long" : "A map of the province of Ontario, Canada created using Natural Earth 1:10m vector GIS data for the *Moon: Ontario* travel guide from Avalon Travel Publishing",
       "thumb" : "",
-      "img" : "",
+      "imgs" : [""],
       "size" : "width2 height1",
       "date" : "2015-01-01"
     },
@@ -157,7 +173,7 @@
       "description" : "A map showing the Galapagos Islands",
       "description_long" : "",
       "thumb" : "",
-      "img" : "",
+      "imgs" : [""],
       "size" : "width2 height1",
       "date" : "2015-01-01"
     },
@@ -167,7 +183,7 @@
       "description" : "Map of Afghanistan and Pakistan for the book Dirty Wars.",
       "description_long" : "Map of Afghanistan and Pakistan for the book Dirty Wars: The World is a Battlefield, by Jeremy Scahill. Published by Nation Books.",
       "thumb" : "",
-      "img" : "",
+      "imgs" : [""],
       "size" : "width2 height2",
       "date" : "2015-01-01"
     },
@@ -177,7 +193,7 @@
       "description" : "A map of Thailand, Laos, and Cambodia.",
       "description_long" : "Another map for a 9 book series on the backpacking trips taken by globetrotter David Koester. Natural Earth vector and relief data were employed for sound cartographic design.",
       "thumb" : "",
-      "img" : "",
+      "imgs" : [""],
       "size" : "height2",
       "date" : "2015-01-01"
     },
@@ -187,7 +203,7 @@
       "description" : "A split frame map I created for *Moon: Northern California.*",
       "description_long" : "A split frame map I created for Moon: Northern California. Open data from Cal Atlas and CPAD were used to make this map.",
       "thumb" : "",
-      "img" : "",
+      "imgs" : [""],
       "size" : "height2",
       "date" : "2015-01-01"
     },
@@ -197,7 +213,7 @@
       "description" : "A map of downtown Toronto, Canada.",
       "description_long" : "",
       "thumb" : "",
-      "img" : "",
+      "imgs" : [""],
       "size" : "width2 height1",
       "date" : "2015-01-01"
     },
@@ -207,7 +223,7 @@
       "description" : "A map of downtown Guanajuato, Mexico.",
       "description_long" : "",
       "thumb" : "",
-      "img" : "",
+      "imgs" : [""],
       "size" : "width2 height1",
       "date" : "2015-01-01"
     }

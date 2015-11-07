@@ -45,17 +45,15 @@
   display: inline-block;
   margin: 0;
   padding: 5px;
-  background-color: lighten(#999, 20);
+  background-color: lighten(#999, 30);
   border: 1px solid #fff;
 
   &.width2 { 
     width: 40%; 
-    background-color: lighten(red, 30);
   }
 
   &.width3 {
     width: 60%;
-    background-color: lighten(blue, 30);
   }
 
   &.height1 {
@@ -65,4 +63,9 @@
   &.height2 {
     min-height: 400px;
   }
+}
+
+// child container for each item's title & short description
+.item-meta {
+  padding: 5px;
 }

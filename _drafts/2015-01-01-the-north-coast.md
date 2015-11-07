@@ -11,8 +11,10 @@ category:
 header: no
 ---
 
-![A split frame map I created for *Moon: Northern California.*]()
-
 A split frame map I created for Moon: Northern California. Open data from Cal Atlas and CPAD were used to make this map.
+
+
+<img src="{{site.url}}{{site.baseurl}}/images/" alt="">
+
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

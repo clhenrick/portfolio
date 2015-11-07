@@ -11,8 +11,11 @@ category:
 header: no
 ---
 
-![A civic web app to inform NYC renters about rent stabilization.]()
 
+
+<strong>Technologies Used:</strong>  - CartoDB.JS  - CartoDB SQL API  - NYC GeoClient API  - GSAP Animation JS  - SCSS  - Handlebars.JS  - Gulp.JS  - AWS S3  - AWS CloudFront 
+
+<img src="{{site.url}}{{site.baseurl}}/images/airs01.jpg" alt="airs01.jpg">
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

@@ -16,6 +16,12 @@ From the root of this repo do: `handlebars _data/item.hbs -f assets/js/work.js -
 Should be done by creating new posts tagged with `portfolio` in the `_posts/portfolio/` directory.
 
 ## TO DO List:
+- [ ] Make thumbnails & resize images
+
+- [ ] CV / Resume
+
+- [ ] Talks
+
 - [x] Node JS script to generate posts in `_posts/portfolio/` from `assets/data/work.json`
 
 - [ ] ~~liquid logic to only render blog posts in `_posts/blog/`~~

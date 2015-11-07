@@ -11,8 +11,10 @@ category:
 header: no
 ---
 
-![A non-euclidean map of Prospect Park, Brooklyn]()
 
+
+
+<img src="{{site.url}}{{site.baseurl}}/images/" alt="">
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

@@ -11,8 +11,15 @@ category:
 header: no
 ---
 
-![{{description}}]({{img}})
-
 {{description_long}}
+
+{{#if tech}}
+<strong>Technologies Used:</strong> {{#each tech }} - {{this}} {{/each}}
+{{/if}}
+
+{{#each imgs}}
+<img src="\{{site.url}}\{{site.baseurl}}/images/{{this}}" alt="{{this}}">
+
+{{/each}}
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio]({{ site.url }}{{ site.baseurl }}/work/)

@@ -11,8 +11,10 @@ category:
 header: no
 ---
 
-![A web project documenting my brother&#x27;s experience thru-hiking the PCT.]()
 
+
+
+<img src="{{site.url}}{{site.baseurl}}/images/" alt="">
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)
