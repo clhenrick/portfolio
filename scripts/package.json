@@ -1,0 +1,27 @@
+{
+  "name": "portfolio-scripts",
+  "version": "1.0.0",
+  "description": "portfolio scripts for clhenrick",
+  "main": "make-portfolio-posts.js",
+  "scripts": {
+    "test": "n/a"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clhenrick/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "jekyll",
+    "liquid"
+  ],
+  "author": "chris l henrick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clhenrick/portfolio/issues"
+  },
+  "homepage": "https://github.com/clhenrick/portfolio#readme",
+  "dependencies": {
+    "handlebars": "^4.0.4"
+  }
+}
