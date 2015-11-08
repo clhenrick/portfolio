@@ -17,21 +17,37 @@ The NAG Greenpoint-Williamsburg ToxiCity Map is an interactive map of toxic “h
 
 <strong>Technologies Used:</strong>  - CartoDB.JS  - Leaflet.JS  - MapBox Studio Classic  - CartoCSS  - Node JS  - Pelias Geocoder  - Handlebars.JS  - JQuery 
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map01.jpg" alt="nag-toxicity-map01.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map01.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map01.jpg" alt="nag-toxicity-map01.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map02.jpg" alt="nag-toxicity-map02.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map02.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map02.jpg" alt="nag-toxicity-map02.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map03.jpg" alt="nag-toxicity-map03.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map03.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map03.jpg" alt="nag-toxicity-map03.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map04.jpg" alt="nag-toxicity-map04.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map04.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map04.jpg" alt="nag-toxicity-map04.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map05.jpg" alt="nag-toxicity-map05.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map05.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map05.jpg" alt="nag-toxicity-map05.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map06.jpg" alt="nag-toxicity-map06.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map06.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map06.jpg" alt="nag-toxicity-map06.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map07.jpg" alt="nag-toxicity-map07.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map07.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map07.jpg" alt="nag-toxicity-map07.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map08.jpg" alt="nag-toxicity-map08.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map08.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map08.jpg" alt="nag-toxicity-map08.jpg">
+</a>
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

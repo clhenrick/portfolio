@@ -14,7 +14,9 @@ header: no
 
 
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/" alt="">
+<a href="{{site.url}}{{site.baseurl}}/images/" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/" alt="">
+</a>
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

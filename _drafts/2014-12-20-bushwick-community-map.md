@@ -17,21 +17,37 @@ The Northwest Bushwick Community Map is meant to be a resource for local communi
 
 <strong>Technologies Used:</strong>  - CartoDB.JS  - Odyssey.JS  - Leaflet.JS  - Mapbox.JS  - Underscore.JS  - JQuery 
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/bcm01.jpg" alt="bcm01.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/bcm01.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/bcm01.jpg" alt="bcm01.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/bcm02.jpg" alt="bcm02.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/bcm02.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/bcm02.jpg" alt="bcm02.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/bcm03.jpg" alt="bcm03.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/bcm03.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/bcm03.jpg" alt="bcm03.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/bcm04.jpg" alt="bcm04.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/bcm04.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/bcm04.jpg" alt="bcm04.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/bcm05.jpg" alt="bcm05.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/bcm05.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/bcm05.jpg" alt="bcm05.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/bcm06.jpg" alt="bcm06.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/bcm06.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/bcm06.jpg" alt="bcm06.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/bcm07.jpg" alt="bcm07.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/bcm07.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/bcm07.jpg" alt="bcm07.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/bcm08.jpg" alt="bcm08.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/bcm08.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/bcm08.jpg" alt="bcm08.jpg">
+</a>
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

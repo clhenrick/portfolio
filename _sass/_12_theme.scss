@@ -27,7 +27,8 @@
 .grid {  
   width: 100%;
   // height: 100%;
-  background-color: #fff;
+  background-color: $grey-9;
+  border: 1px solid $grey-9;
 
   /* clear fix */
   &:after {
@@ -50,7 +51,7 @@
   margin: 0;
   padding: 5px;
   background-color: lighten($grey-1, 5);
-  border: 1px solid #fff;
+  border: 2px solid $grey-9;
 
   &.width2 { 
     width: 40%; 

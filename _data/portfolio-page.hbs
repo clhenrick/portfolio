@@ -16,7 +16,7 @@ header: no
 {{/if}}
 
 {{#if description_long}}
-{{description_long}}
+{{{description_long}}}
 {{/if}}
 
 {{#if tech}}
@@ -24,7 +24,9 @@ header: no
 {{/if}}
 
 {{#each imgs}}
-<img class="portfolio" src="\{{site.url}}\{{site.baseurl}}/images/{{this}}" alt="{{this}}">
+<a href="\{{site.url}}\{{site.baseurl}}/images/{{this}}" target="_blank">
+  <img class="portfolio" src="\{{site.url}}\{{site.baseurl}}/images/{{this}}" alt="{{this}}">
+</a>
 
 {{/each}}
 

@@ -12,10 +12,12 @@ header: no
 ---
 
 
-This map was created at GreenInfo Network with Alexandra Barnish for Sustainable Conservation&#x27;s Partners in Restoration program.
+This map was created at GreenInfo Network with Alexandra Barnish for Sustainable Conservation's Partners in Restoration program.
 
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/" alt="">
+<a href="{{site.url}}{{site.baseurl}}/images/" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/" alt="">
+</a>
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

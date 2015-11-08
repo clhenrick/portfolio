@@ -17,37 +17,69 @@ Am I Rent Stabilized is a web application that encourages New York City tenants 
 
 <strong>Technologies Used:</strong>  - CartoDB.JS  - CartoDB SQL API  - NYC GeoClient API  - GSAP Animation JS  - SCSS  - Handlebars.JS  - Gulp.JS  - AWS S3  - AWS CloudFront 
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs01.jpg" alt="airs01.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/airs01.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs01.jpg" alt="airs01.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs02.jpg" alt="airs02.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/airs02.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs02.jpg" alt="airs02.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs03.jpg" alt="airs03.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/airs03.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs03.jpg" alt="airs03.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs04.jpg" alt="airs04.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/airs04.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs04.jpg" alt="airs04.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs05.jpg" alt="airs05.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/airs05.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs05.jpg" alt="airs05.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs06.jpg" alt="airs06.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/airs06.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs06.jpg" alt="airs06.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs07.jpg" alt="airs07.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/airs07.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs07.jpg" alt="airs07.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs08.jpg" alt="airs08.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/airs08.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs08.jpg" alt="airs08.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs09.jpg" alt="airs09.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/airs09.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs09.jpg" alt="airs09.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs10.jpg" alt="airs10.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/airs10.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs10.jpg" alt="airs10.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs11.jpg" alt="airs11.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/airs11.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs11.jpg" alt="airs11.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs12.jpg" alt="airs12.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/airs12.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs12.jpg" alt="airs12.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs13.jpg" alt="airs13.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/airs13.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs13.jpg" alt="airs13.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs14.jpg" alt="airs14.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/airs14.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs14.jpg" alt="airs14.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs15.jpg" alt="airs15.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/airs15.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs15.jpg" alt="airs15.jpg">
+</a>
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs16.jpg" alt="airs16.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/airs16.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs16.jpg" alt="airs16.jpg">
+</a>
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

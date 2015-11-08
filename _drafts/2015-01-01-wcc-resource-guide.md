@@ -14,7 +14,9 @@ header: no
 
 
 
-<img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/wcc-resource-guide.jpg" alt="wcc-resource-guide.jpg">
+<a href="{{site.url}}{{site.baseurl}}/images/wcc-resource-guide.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/wcc-resource-guide.jpg" alt="wcc-resource-guide.jpg">
+</a>
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

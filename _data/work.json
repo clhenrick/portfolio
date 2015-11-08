@@ -38,12 +38,13 @@
       "date" : "2015-01-01"
     },
     {
-      "title" : "A Thru-Hike on the Pacific Crest Trail",
+      "title" : "A Thru Hike on the Pacific Crest Trail",
       "tags" : ["web", "carto"],
       "description" : "A web project documenting my brother's experience thru-hiking the PCT.",
       "description_long" : "",
-      "thumb" : "map_story_thumb.jpg",
-      "imgs" : [""],
+      "link" : "http://clhenrick.github.io/Major-Studio-Two/map-story/html/",
+      "thumb" : "thru-hike-pct01-thumb.jpg",
+      "imgs" : ["thru-hike-pct01.jpg", "thru-hike-pct02.jpg", "thru-hike-pct03.jpg","thru-hike-pct04.jpg","thru-hike-pct05.jpg"],
       "size" : "width2 height3",
       "date" : "2015-01-01"
     },
@@ -73,6 +74,7 @@
       "tags" : ["web", "carto"],
       "description" : "A game that allows users to guess neighborhood names in NYC.",
       "description_long" : "",
+      "link" : "https://vimeo.com/97669886",
       "thumb" : "guess_hood_thumb.jpg",
       "imgs" : [""],
       "size" : "width2",
@@ -93,20 +95,22 @@
       "tags" : ["data-viz"],
       "description" : "An interactive Processing sketch that visualizes data relating to climate change from the World Bank Data Indicators.",
       "description_long" : "",
-      "thumb" : "visualize_climate_thumb.jpg",
-      "imgs" : [""],
-      "size" : "width2",
+      "thumb" : "co2-gni-viz-thumb.jpg",
+      "imgs" : ["co2-gni-viz.jpg"],
+      "tech" : ["Processing","QGIS","SQL"],
+      "size" : "width2 height2",
       "date" : "2015-01-01"
     },
     {
       "title" : "Prospect Park non euclidean map",
       "tags" : ["carto"],
       "description" : "A non-euclidean map of Prospect Park, Brooklyn",
-      "description_long" : "",
-      "thumb" : "non_euclidean.jpg",
-      "imgs" : [""],
+      "description_long" : "A non-euclidean “map” of Prospect Park, Brooklyn. Created using a GoPro camera mounted to my head, iMovie for video editing and Open-Frameworks for combining the video shots into one screen space. Inspired by the theory of artist and cartographer Dennis Wood and work by Annette Kim, Associate Professor of Urban Studies and Planning at <a href=\"http://slab.scripts.mit.edu/wp/maps/narrative-maps/\">MIT's SLAB</a>",
+      "thumb" : "ppnc-thumb.jpg",
+      "tech" : ["Go-Pro","OpenFrameworks"],
+      "imgs" : ["ppnc.jpg"],
       "size" : "width2 height2",
-      "date" : "2015-01-01"
+      "date" : "2013-12-16"
     },
     {
       "title" : "Graffiti, Rat Sightings, and Wifi Hotspots",
@@ -133,8 +137,8 @@
       "tags" : ["carto", "print"],
       "description" : "Historic coastal grassland, bay and shoreline over the current day built up land area of Oakland, CA.",
       "description_long" : "A prototype map design for the Oakland Museum of California. This map shows historic coastal grassland areas, and a historic bay and shoreline over the current day built up land area for an exhibit titled Oakland: Then and Now.",
-      "thumb" : "oak_then_now_grassland_thumb.jpg",
-      "imgs" : [""],
+      "thumb" : "oak-then-now-grass-thumb.jpg",
+      "imgs" : ["oak-then-now-grass.jpg"],
       "size" : "width2",
       "date" : "2015-01-01"
     },
@@ -143,8 +147,8 @@
       "tags" : ["carto", "print"],
       "description" : "Historic oak woodland, bay and shoreline over the current day built up land area of Oakland, CA.",
       "description_long" : "A prototype map design for the Oakland Museum of California. This map shows historic oak woodland areas, and a historic bay and shoreline over the current day built up land area for an exhibit titled Oakland: Then and Now.",
-      "thumb" : "oak_then_now_grassland_thumb.jpg",
-      "imgs" : [""],
+      "thumb" : "oak-then-now-oak-thumb.jpg",
+      "imgs" : ["oak-then-now-oak.jpg"],
       "size" : "width2",
       "date" : "2015-01-01"
     },
@@ -195,6 +199,7 @@
       "description_long" : "Map of Afghanistan and Pakistan for the book Dirty Wars: The World is a Battlefield, by Jeremy Scahill. Published by Nation Books.",
       "thumb" : "afg-pak-thumb.jpg",
       "imgs" : ["afg-pak.jpg"],
+      "tech" : ["Adobe Illustrator", "MAPublisher", "QGIS", "Natural Earth 1:10m Vector Data"],
       "size" : "width2 height2",
       "date" : "2015-01-01"
     },
@@ -211,10 +216,11 @@
     {
       "title" : "The North Coast",
       "tags" : ["carto", "print"],
-      "description" : "A split frame map I created for *Moon: Northern California.*",
-      "description_long" : "A split frame map I created for Moon: Northern California. Open data from Cal Atlas and CPAD were used to make this map.",
-      "thumb" : "",
-      "imgs" : [""],
+      "description" : "A split frame map I created for Moon: Northern California.",
+      "description_long" : "Open data from Cal Atlas and CPAD were used to make this map.",
+      "tech" : ["Adobe Illustrator", "MAPublisher", "QGIS"],
+      "thumb" : "north-coast-thumb.jpg",
+      "imgs" : ["north-coast.jpg"],
       "size" : "height2",
       "date" : "2015-01-01"
     },
