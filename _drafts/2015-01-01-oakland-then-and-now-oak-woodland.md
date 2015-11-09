@@ -19,5 +19,4 @@ A prototype map design for the Oakland Museum of California. This map shows hist
   <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/oak-then-now-oak.jpg" alt="oak-then-now-oak.jpg">
 </a>
 
-
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

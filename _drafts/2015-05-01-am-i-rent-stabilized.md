@@ -3,7 +3,7 @@ layout: page-fullwidth
 show_meta: true
 title: "Am I Rent Stabilized?"
 teaser: "A civic web app to inform NYC renters about rent stabilization."
-date: "2015-01-01"
+date: "2015-05-01"
 tags:
   - web data-viz 
 category:
@@ -20,66 +20,50 @@ Am I Rent Stabilized is a web application that encourages New York City tenants 
 <a href="{{site.url}}{{site.baseurl}}/images/airs01.jpg" target="_blank">
   <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs01.jpg" alt="airs01.jpg">
 </a>
-
 <a href="{{site.url}}{{site.baseurl}}/images/airs02.jpg" target="_blank">
   <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs02.jpg" alt="airs02.jpg">
 </a>
-
 <a href="{{site.url}}{{site.baseurl}}/images/airs03.jpg" target="_blank">
   <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs03.jpg" alt="airs03.jpg">
 </a>
-
 <a href="{{site.url}}{{site.baseurl}}/images/airs04.jpg" target="_blank">
   <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs04.jpg" alt="airs04.jpg">
 </a>
-
 <a href="{{site.url}}{{site.baseurl}}/images/airs05.jpg" target="_blank">
   <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs05.jpg" alt="airs05.jpg">
 </a>
-
 <a href="{{site.url}}{{site.baseurl}}/images/airs06.jpg" target="_blank">
   <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs06.jpg" alt="airs06.jpg">
 </a>
-
 <a href="{{site.url}}{{site.baseurl}}/images/airs07.jpg" target="_blank">
   <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs07.jpg" alt="airs07.jpg">
 </a>
-
 <a href="{{site.url}}{{site.baseurl}}/images/airs08.jpg" target="_blank">
   <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs08.jpg" alt="airs08.jpg">
 </a>
-
 <a href="{{site.url}}{{site.baseurl}}/images/airs09.jpg" target="_blank">
   <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs09.jpg" alt="airs09.jpg">
 </a>
-
 <a href="{{site.url}}{{site.baseurl}}/images/airs10.jpg" target="_blank">
   <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs10.jpg" alt="airs10.jpg">
 </a>
-
 <a href="{{site.url}}{{site.baseurl}}/images/airs11.jpg" target="_blank">
   <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs11.jpg" alt="airs11.jpg">
 </a>
-
 <a href="{{site.url}}{{site.baseurl}}/images/airs12.jpg" target="_blank">
   <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs12.jpg" alt="airs12.jpg">
 </a>
-
 <a href="{{site.url}}{{site.baseurl}}/images/airs13.jpg" target="_blank">
   <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs13.jpg" alt="airs13.jpg">
 </a>
-
 <a href="{{site.url}}{{site.baseurl}}/images/airs14.jpg" target="_blank">
   <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs14.jpg" alt="airs14.jpg">
 </a>
-
 <a href="{{site.url}}{{site.baseurl}}/images/airs15.jpg" target="_blank">
   <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs15.jpg" alt="airs15.jpg">
 </a>
-
 <a href="{{site.url}}{{site.baseurl}}/images/airs16.jpg" target="_blank">
   <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs16.jpg" alt="airs16.jpg">
 </a>
-
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

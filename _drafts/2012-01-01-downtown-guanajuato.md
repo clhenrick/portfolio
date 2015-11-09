@@ -3,7 +3,7 @@ layout: page-fullwidth
 show_meta: true
 title: "Downtown Guanajuato"
 teaser: "A map of downtown Guanajuato, Mexico."
-date: "2015-01-01"
+date: "2012-01-01"
 tags:
   - carto print 
 category:
@@ -14,9 +14,8 @@ header: no
 
 
 
-<a href="{{site.url}}{{site.baseurl}}/images/" target="_blank">
-  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/" alt="">
+<a href="{{site.url}}{{site.baseurl}}/images/guanajuato-dt.jpg" target="_blank">
+  <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/guanajuato-dt.jpg" alt="guanajuato-dt.jpg">
 </a>
-
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

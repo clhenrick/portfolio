@@ -13,10 +13,10 @@ header: no
 
 
 
+<strong>Technologies Used:</strong>  - CartoDB.JS  - Node.JS  - DataTables API  - Twitter Bootstrap 
 
 <a href="{{site.url}}{{site.baseurl}}/images/wcc-resource-guide.jpg" target="_blank">
   <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/wcc-resource-guide.jpg" alt="wcc-resource-guide.jpg">
 </a>
-
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)
