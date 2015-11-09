@@ -21,9 +21,12 @@ header: no
   <div class="grid-sizer"></div>
   {% for item in site.data.work.work %}
     <div class="grid-item {{ item.size }} {% for tag in item.tags %}} {{tag}} {% endfor %}">
+      
+      {% if item.thumb.size != 0  %}      
       <a href="{{ site.url }}{{ site.baseurl }}/portfolio/{{item.date}}-{{item.title | slugify}}/">
         <img class="item-img" src="{{ site.url }}{{ site.baseurl }}/images/{{item.thumb}}">
       </a>
+      {% endif %}
       <div class="item-meta">
         <a href="{{ site.url }}{{ site.baseurl }}/portfolio/{{item.date}}-{{item.title | slugify}}/">
           <h4 class="item-title">{{ item.title }}</h4>

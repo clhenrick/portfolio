@@ -1,3 +1,21 @@
+{{#if video}}
+---
+layout: video
+show_meta: true
+title: "{{title}}"
+teaser: "{{description}}"
+tags:
+    - {{#each tags}}{{this}} {{/each}}
+category:
+    - portfolio
+iframe: "<iframe width='970' height='546' src='{{video.embed}}' frameborder='0' allowfullscreen></iframe>"
+video:
+    embedURL: "{{video.embed}}"
+    contentURL: "{{video.url}}"
+    thumbnailUrl: ""
+header: no
+---
+{{else}}
 ---
 layout: page-fullwidth
 show_meta: true
@@ -10,6 +28,7 @@ category:
   - portfolio
 header: no
 ---
+{{/if}}
 
 {{#if link}}
 <strong>Project Link:</strong> <a href="{{link}}" target="_blank">{{title}}</a>
@@ -23,11 +42,12 @@ header: no
 <strong>Technologies Used:</strong> {{#each tech }} - {{this}} {{/each}}
 {{/if}}
 
+{{#unless video}}
 {{#each imgs}}
 <a href="\{{site.url}}\{{site.baseurl}}/images/{{this}}" target="_blank">
   <img class="portfolio" src="\{{site.url}}\{{site.baseurl}}/images/{{this}}" alt="{{this}}">
 </a>
-
 {{/each}}
+{{/unless}}
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio]({{ site.url }}{{ site.baseurl }}/work/)

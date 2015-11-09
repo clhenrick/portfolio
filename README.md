@@ -51,6 +51,10 @@ Should be done by creating new posts tagged with `portfolio` in the `_posts/port
 
 - [ ] index with Google’s SEO & custom search
 
+## Deploying Jekyll With Git On A Remote VPS
+- https://www.digitalocean.com/community/tutorials/how-to-deploy-jekyll-blogs-with-git
+- https://www.digitalocean.com/community/tutorials/how-to-get-started-with-jekyll-on-an-ubuntu-vps
+
 ## Helpful Architecture Info:
 ### jekyll
 - http://jekyllrb.com/docs/variables/

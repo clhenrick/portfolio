@@ -11,7 +11,7 @@
       "imgs" : ["airs01.jpg", "airs02.jpg", "airs03.jpg", "airs04.jpg", "airs05.jpg", "airs06.jpg", "airs07.jpg", "airs08.jpg", "airs09.jpg", "airs10.jpg", "airs11.jpg", "airs12.jpg", "airs13.jpg", "airs14.jpg", "airs15.jpg", "airs16.jpg"],
       "link" : "https://amirentstabilized.com",
       "size" : "width3 height2",
-      "date" : "2015-01-01"
+      "date" : "2015-05-01"
     },
     {
       "title" : "Bushwick Community Map",
@@ -35,7 +35,7 @@
       "imgs" : ["nag-toxicity-map01.jpg", "nag-toxicity-map02.jpg","nag-toxicity-map03.jpg","nag-toxicity-map04.jpg","nag-toxicity-map05.jpg","nag-toxicity-map06.jpg","nag-toxicity-map07.jpg","nag-toxicity-map08.jpg"],
       "link" : "https://clhenrick.github.io/greenpoint_williamsburg_toxicity_map/",
       "size" : "width3 height2",
-      "date" : "2015-01-01"
+      "date" : "2015-11-01"
     },
     {
       "title" : "A Thru Hike on the Pacific Crest Trail",
@@ -46,7 +46,7 @@
       "thumb" : "thru-hike-pct01-thumb.jpg",
       "imgs" : ["thru-hike-pct01.jpg", "thru-hike-pct02.jpg", "thru-hike-pct03.jpg","thru-hike-pct04.jpg","thru-hike-pct05.jpg"],
       "size" : "width2 height3",
-      "date" : "2015-01-01"
+      "date" : "2014-03-01"
     },
     {
       "title" : "WCC Resource Guide",
@@ -55,6 +55,8 @@
       "description_long" : "",
       "thumb" : "wcc-resource-guide-thumb.jpg",
       "imgs" : ["wcc-resource-guide.jpg"],
+      "tech" : ["CartoDB.JS", "Node.JS", "DataTables API", "Twitter Bootstrap"],
+      "link" : "http://resourceguide.wccny.org/",
       "size" : "width2",
       "date" : "2015-01-01"
     },
@@ -75,17 +77,22 @@
       "description" : "A game that allows users to guess neighborhood names in NYC.",
       "description_long" : "",
       "link" : "https://vimeo.com/97669886",
-      "thumb" : "guess_hood_thumb.jpg",
-      "imgs" : [""],
+      "thumb" : "guess-that-hood-thumb.jpg",
+      "imgs" : ["guess-that-hood.jpg"],
+      "tech": ["MongoDB", "jQuery", "Leaflet.JS", "GeoJSON", "HTML5", "CSS3"],
+      "video" : {
+          "url" : "https://vimeo.com/97669886",
+          "embed" : "https://player.vimeo.com/video/97669886"
+        },
       "size" : "width2",
-      "date" : "2015-01-01"
+      "date" : "2014-04-01"
     },
     {
       "title" : "Landscapes of Profit",
       "tags" : ["web","data-viz"],
       "description" : "An analysis of property transaction data to promote a 1% flip tax in NYC.",
       "description_long" : "",
-      "thumb" : "lop-thumb.jpg",
+      "thumb" : "",
       "imgs" : [""],
       "size" : "width2",
       "date" : "2015-01-01"
@@ -93,13 +100,13 @@
     {
       "title" : "Visualizing CO2 and GNI",
       "tags" : ["data-viz"],
-      "description" : "An interactive Processing sketch that visualizes data relating to climate change from the World Bank Data Indicators.",
+      "description" : "An interactive Processing sketch that visualizes data relating to climate change from the World Bank's Indicators Data.",
       "description_long" : "",
       "thumb" : "co2-gni-viz-thumb.jpg",
       "imgs" : ["co2-gni-viz.jpg"],
       "tech" : ["Processing","QGIS","SQL"],
       "size" : "width2 height2",
-      "date" : "2015-01-01"
+      "date" : "2014-04-04"
     },
     {
       "title" : "Prospect Park non euclidean map",
@@ -120,17 +127,22 @@
       "thumb" : "",
       "imgs" : [""],
       "size" : "",
-      "date" : "2015-01-01"
+      "date" : "2013-11-01"
     },
     {
       "title" : "From Coast to Coast",
       "tags" : ["web", "carto", "data-viz"],
       "description" : "Visualizing my move from the SF Bay Area to NYC with D3JS.",
       "description_long" : "",
-      "thumb" : "coast_to_thumb.jpg",
-      "imgs" : [""],
-      "size" : "height2",
-      "date" : "2015-01-01"
+      "thumb" : "coast-2-coast-thumb.jpg",
+      "imgs" : ["coast-2-coast.jpg"],
+      "video" : {
+        "url": "https://vimeo.com/89143409",
+        "embed" : "https://player.vimeo.com/video/89143409"
+        },
+      "tech" : ["D3.JS", "JQuery", "QGIS"],
+      "size" : "",
+      "date" : "2013-06-01"
     },
     {
       "title" : "Oakland Then and Now: Coastal Grasslands",
@@ -140,7 +152,7 @@
       "thumb" : "oak-then-now-grass-thumb.jpg",
       "imgs" : ["oak-then-now-grass.jpg"],
       "size" : "width2",
-      "date" : "2015-01-01"
+      "date" : "2013-01-01"
     },
     {
       "title" : "Oakland Then and Now: Oak Woodland",
@@ -157,8 +169,9 @@
       "tags" : ["carto", "print"],
       "description" : "Coastal recovery watersheds for Salmon and Steelhead in California",
       "description_long" : "This map was created at GreenInfo Network with Alexandra Barnish, and is a working draft showing only the coastal recovery watersheds for Salmon and Steelhead in California. Central valley recovery watersheds are not shown on this version of the map. For the most recent version please visit Sustainable Conservation's Partners in Restoration program.",
-      "thumb" : "",
-      "imgs" : [""],
+      "thumb" : "chinook-thumb.jpg",
+      "imgs" : ["chinook.jpg"],
+      "tech" : ["ArcGIS", "Adobe Illustrator"],
       "size" : "height2",
       "date" : "2015-01-01"
     },
@@ -167,30 +180,31 @@
       "tags" : ["carto", "print"],
       "description" : "Private and publically owned land in California.",
       "description_long" : "This map was created at GreenInfo Network with Alexandra Barnish for Sustainable Conservation's Partners in Restoration program.",
-      "thumb" : "",
-      "imgs" : [""],
+      "thumb" : "public-private-thumb.jpg",
+      "imgs" : ["public-private.jpg"],
+      "tech" : ["ArcGIS", "Adobe Illustrator"],
       "size" : "height2",
-      "date" : "2015-01-01"
+      "date" : "2010-06-01"
     },
     {
       "title" : "Ontario",
       "tags" : ["carto", "print"],
       "description" : "The province of Ontario, Canada.",
       "description_long" : "A map of the province of Ontario, Canada created using Natural Earth 1:10m vector GIS data for the *Moon: Ontario* travel guide from Avalon Travel Publishing",
-      "thumb" : "",
-      "imgs" : [""],
+      "thumb" : "ontario-thumb.jpg",
+      "imgs" : ["ontario.jpg"],
       "size" : "width2 height1",
-      "date" : "2015-01-01"
+      "date" : "2012-01-01"
     },
     {
       "title" : "Galapagos Islands",
       "tags" : ["carto", "print"],
       "description" : "A map showing the Galapagos Islands",
       "description_long" : "",
-      "thumb" : "",
-      "imgs" : [""],
+      "thumb" : "galapagos-thumb.jpg",
+      "imgs" : ["galapagos.jpg"],
       "size" : "width2 height1",
-      "date" : "2015-01-01"
+      "date" : "2013-01-01"
     },
     {
       "title" : "Afghanistan and Pakistan",
@@ -201,17 +215,17 @@
       "imgs" : ["afg-pak.jpg"],
       "tech" : ["Adobe Illustrator", "MAPublisher", "QGIS", "Natural Earth 1:10m Vector Data"],
       "size" : "width2 height2",
-      "date" : "2015-01-01"
+      "date" : "2013-01-01"
     },
     {
       "title" : "South East Asia",
       "tags" : ["carto", "print"],
       "description" : "A map of Thailand, Laos, and Cambodia.",
       "description_long" : "Another map for a 9 book series on the backpacking trips taken by globetrotter David Koester. Natural Earth vector and relief data were employed for sound cartographic design.",
-      "thumb" : "",
-      "imgs" : [""],
+      "thumb" : "se-asia-thumb.jpg",
+      "imgs" : ["se-asia.jpg"],
       "size" : "height2",
-      "date" : "2015-01-01"
+      "date" : "2013-01-01"
     },
     {
       "title" : "The North Coast",
@@ -222,27 +236,28 @@
       "thumb" : "north-coast-thumb.jpg",
       "imgs" : ["north-coast.jpg"],
       "size" : "height2",
-      "date" : "2015-01-01"
+      "date" : "2013-01-01"
     },
     {
       "title" : "Downtown Toronto",
       "tags" : ["carto", "print"],
       "description" : "A map of downtown Toronto, Canada.",
       "description_long" : "",
-      "thumb" : "",
-      "imgs" : [""],
+      "thumb" : "toronto-dt-thumb.jpg",
+      "imgs" : ["toronto-dt.jpg"],
+      "tech" : ["Adobe Illustrator"],
       "size" : "width2 height1",
-      "date" : "2015-01-01"
+      "date" : "2012-01-01"
     },
     {
       "title" : "Downtown Guanajuato",
       "tags" : ["carto", "print"],
       "description" : "A map of downtown Guanajuato, Mexico.",
       "description_long" : "",
-      "thumb" : "",
-      "imgs" : [""],
+      "thumb" : "guanajuato-dt-thumb.jpg",
+      "imgs" : ["guanajuato-dt.jpg"],
       "size" : "width2 height1",
-      "date" : "2015-01-01"
+      "date" : "2012-01-01"
     }
   ]
 }
