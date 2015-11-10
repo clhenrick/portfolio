@@ -27,7 +27,7 @@ $(document).ready(function(){
 
     $('#filters').on('click', 'button', function() {
       var filterVal = $(this).attr('data-filter');
-      $grid.isotope('shuffle');
+      // $grid.isotope('shuffle');
       $grid.isotope({ filter: filterVal});
       
       if (!$(this).hasClass('shuffle')){

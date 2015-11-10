@@ -2,7 +2,7 @@
 layout: video
 show_meta: true
 title: "Prospect Park non euclidean map"
-teaser: "A non-euclidean map of Prospect Park, Brooklyn"
+teaser: "A &quot;non-euclidean map&quot; of Prospect Park, Brooklyn"
 tags:
     - carto 
 category:
