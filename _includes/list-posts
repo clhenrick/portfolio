@@ -35,12 +35,15 @@
 
 
   {% elsif category %}
+
+    {% if category contains "portfolio" %}
+    {% else %}
     
     {% for post in site.categories.[category] limit:include.entries offset:include.offset %}
       <li><a href="{{ site.url }}{{ post.url }}">{% if post.subheadline %}{{ post.subheadline }} &middot; {% endif %}<strong>{{ post.title }}</strong></a></li>
     {% endfor %}
       <li class="text-right"><a href="{{ site.url }}/blog/archive/"><strong>{{ site.data.language.more }}</strong></a></li>
-
+    {% endif %}
 
   {% elsif tag %}
 

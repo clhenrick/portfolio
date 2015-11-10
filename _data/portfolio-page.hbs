@@ -7,13 +7,14 @@ teaser: "{{description}}"
 tags:
     - {{#each tags}}{{this}} {{/each}}
 category:
-    - portfolio
+    - work
 iframe: "<iframe width='970' height='546' src='{{video.embed}}' frameborder='0' allowfullscreen></iframe>"
 video:
     embedURL: "{{video.embed}}"
     contentURL: "{{video.url}}"
-    thumbnailUrl: ""
+    thumbnailUrl: "{{imgs}}"
 header: no
+permalink: "/work/{{permalink}}"
 ---
 {{else}}
 ---
@@ -25,8 +26,9 @@ date: "{{date}}"
 tags:
   - {{#each tags}}{{this}} {{/each}}
 category:
-  - portfolio
+  - work
 header: no
+permalink: "/work/{{permalink}}"
 ---
 {{/if}}
 
@@ -43,11 +45,17 @@ header: no
 {{/if}}
 
 {{#unless video}}
+{{#if tiles}}
+  <iframe class="tiles" width='100%' height='100%' frameBorder='0' src='{{tiles}}'></iframe>
+{{else}}
 {{#each imgs}}
-<a href="\{{site.url}}\{{site.baseurl}}/images/{{this}}" target="_blank">
-  <img class="portfolio" src="\{{site.url}}\{{site.baseurl}}/images/{{this}}" alt="{{this}}">
-</a>
+  <a href="\{{site.url}}\{{site.baseurl}}/images/{{this}}" target="_blank">
+    <img class="portfolio" src="\{{site.url}}\{{site.baseurl}}/images/{{this}}" alt="{{this}}">
+  </a>
+
 {{/each}}
+{{/if}}
+
 {{/unless}}
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio]({{ site.url }}{{ site.baseurl }}/work/)

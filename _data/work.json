@@ -41,10 +41,11 @@
       "title" : "A Thru Hike on the Pacific Crest Trail",
       "tags" : ["web", "carto"],
       "description" : "A web project documenting my brother's experience thru-hiking the PCT.",
-      "description_long" : "",
+      "description_long" : "An attempt at creating an NY Times style interactive. As the user scrolls down a map animates and reveals information relating to the story.",
       "link" : "http://clhenrick.github.io/Major-Studio-Two/map-story/html/",
       "thumb" : "thru-hike-pct01-thumb.jpg",
       "imgs" : ["thru-hike-pct01.jpg", "thru-hike-pct02.jpg", "thru-hike-pct03.jpg","thru-hike-pct04.jpg","thru-hike-pct05.jpg"],
+      "tech" : ["Leaflet", "jQuery", "GeoJSON"],
       "size" : "width2 height3",
       "date" : "2014-03-01"
     },
@@ -58,7 +59,7 @@
       "tech" : ["CartoDB.JS", "Node.JS", "DataTables API", "Twitter Bootstrap"],
       "link" : "http://resourceguide.wccny.org/",
       "size" : "width2",
-      "date" : "2015-01-01"
+      "date" : "2015-09-01"
     },
     {
       "title" : "Tracking the Energy Titans",
@@ -66,10 +67,11 @@
       "description" : "A data-visualization comparing energy use between the U.S., Canada, and China.",
       "description_long" : "Created for the Woodrow Wilson Center, this interactive data-visualization allows users to compare and contrast various types of energy usage among the three countries.",
       "thumb" : "tracking-energy-titans-thumb.jpg",
-      "imgs" : ["tracking-energy-titans.jpg"],
+      "imgs" : ["tracking-energy-titans01.jpg", "tracking-energy-titans02.jpg", "tracking-energy-titans03.jpg", "tracking-energy-titans04.jpg"],
       "tech" : ["D3.JS","JQuery","Node.JS","Gulp.JS","SCSS"],
+      "link" : "http://www.newsecuritybeat.org/energytitans/",
       "size" : "width2",
-      "date" : "2015-01-01"
+      "date" : "2015-06-01"
     },
     {
       "title" : "Guess That Hood NYC!",
@@ -115,6 +117,10 @@
       "description_long" : "A non-euclidean “map” of Prospect Park, Brooklyn. Created using a GoPro camera mounted to my head, iMovie for video editing and Open-Frameworks for combining the video shots into one screen space. Inspired by the theory of artist and cartographer Dennis Wood and work by Annette Kim, Associate Professor of Urban Studies and Planning at <a href=\"http://slab.scripts.mit.edu/wp/maps/narrative-maps/\">MIT's SLAB</a>",
       "thumb" : "ppnc-thumb.jpg",
       "tech" : ["Go-Pro","OpenFrameworks"],
+      "video" : {
+        "url" : "https://vimeo.com/81728484",
+        "embed" : "https://player.vimeo.com/video/81728484"
+        },
       "imgs" : ["ppnc.jpg"],
       "size" : "width2 height2",
       "date" : "2013-12-16"
@@ -122,10 +128,13 @@
     {
       "title" : "Graffiti, Rat Sightings, and Wifi Hotspots",
       "tags" : ["web", "carto"],
-      "description" : "Graffiti, rat sightings, and wi-fi hotspots from NYC open-data.",
-      "description_long" : "",
-      "thumb" : "",
-      "imgs" : [""],
+      "description" : "Graffiti, rat sightings, and wi-fi hotspots in NYC.",
+      "description_long" : "Graffiti, rat sightings, and wi-fi hotspots, inspired by Stamen's <a target=\"_blank\" href=\"http://maps.stamen.com/trees-cabs-crime/#13/37.7629/-122.4400\">Trees-Cabs-Crime</a> created from NYC 311 data.",
+      "thumb" : "graffiti-rats-wifi-thumb.jpg",
+      "imgs" : ["graffiti-rats-wifi.jpg"],
+      "tech" : ["TileMill", "CartoCSS", "QGIS", "MapBox"],
+      "link" : "http://b.parsons.edu/~henrc131/MajorStudio1/seven/03_nyc-graffiti-rats-wifi/",
+      "tiles" : "http://b.parsons.edu/~henrc131/MajorStudio1/seven/03_nyc-graffiti-rats-wifi/",
       "size" : "",
       "date" : "2013-11-01"
     },
