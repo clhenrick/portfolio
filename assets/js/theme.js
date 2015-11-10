@@ -12,6 +12,8 @@ $(document).ready(function(){
     //   }
     // });
 
+    // test
+
     // layout Isotope after all images have loaded
     $grid.imagesLoaded(function() {
       $grid.isotope({
