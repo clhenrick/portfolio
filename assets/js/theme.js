@@ -3,21 +3,27 @@ $(document).ready(function(){
   var $grid = $('.grid');
 
   function initMasonry() {
-    $grid.isotope({
-      itemSelector: '.grid-item',
-      layoutMode: 'packery',
-      packery: {
-        columnWidth: '.grid-sizer',
-        percentPosition: true
-      }
-    });
+    // $grid.isotope({
+    //   itemSelector: '.grid-item',
+    //   layoutMode: 'packery',
+    //   packery: {
+    //     columnWidth: '.grid-sizer',
+    //     percentPosition: true
+    //   }
+    // });
 
     // layout Isotope after all images have loaded
-    // $grid.imagesLoaded(function() {
-    //   $grid.isotope({
-    //     //options
-    //   });
-    // });
+    $grid.imagesLoaded(function() {
+      $grid.isotope({
+        itemSelector: '.grid-item',
+        layoutMode: 'packery',
+        packery: {
+          columnWidth: '.grid-sizer',
+          gutter: '.gutter-sizer',
+          percentPosition: true
+        }
+      });
+    });
 
     $('#filters').on('click', 'button', function() {
       var filterVal = $(this).attr('data-filter');
@@ -36,8 +42,6 @@ $(document).ready(function(){
       $grid.isotope('shuffle');  
     });
 
-    // shuffles the order of the items
-    $grid.isotope('shuffle');
   }
   
   initMasonry();
