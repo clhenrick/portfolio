@@ -18,6 +18,7 @@ The Northwest Bushwick Community Map is meant to be a resource for local communi
 
 <strong>Technologies Used:</strong>  - CartoDB.JS  - Odyssey.JS  - Leaflet.JS  - Mapbox.JS  - Underscore.JS  - JQuery 
 
+
   <a href="{{site.url}}{{site.baseurl}}/images/bcm01.jpg" target="_blank">
     <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/bcm01.jpg" alt="bcm01.jpg">
   </a>

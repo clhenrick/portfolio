@@ -17,6 +17,7 @@ This map was created at GreenInfo Network with Alexandra Barnish for Sustainable
 
 <strong>Technologies Used:</strong>  - ArcGIS  - Adobe Illustrator 
 
+
   <a href="{{site.url}}{{site.baseurl}}/images/public-private.jpg" target="_blank">
     <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/public-private.jpg" alt="public-private.jpg">
   </a>

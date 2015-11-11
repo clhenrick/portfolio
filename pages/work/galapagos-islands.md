@@ -15,6 +15,7 @@ permalink: "/work/galapagos-islands.html"
 
 
 
+
   <a href="{{site.url}}{{site.baseurl}}/images/galapagos.jpg" target="_blank">
     <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/galapagos.jpg" alt="galapagos.jpg">
   </a>

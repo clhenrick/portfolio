@@ -15,6 +15,7 @@ permalink: "/work/downtown-guanajuato.html"
 
 
 
+
   <a href="{{site.url}}{{site.baseurl}}/images/guanajuato-dt.jpg" target="_blank">
     <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/guanajuato-dt.jpg" alt="guanajuato-dt.jpg">
   </a>

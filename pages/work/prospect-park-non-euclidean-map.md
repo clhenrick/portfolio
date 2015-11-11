@@ -22,4 +22,5 @@ A non-euclidean “map” of Prospect Park, Brooklyn. Created using a GoPro came
 <strong>Technologies Used:</strong>  - Go-Pro  - OpenFrameworks 
 
 
+
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

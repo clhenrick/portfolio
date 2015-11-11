@@ -18,6 +18,7 @@ An attempt at creating an NY Times style interactive. As the user scrolls down a
 
 <strong>Technologies Used:</strong>  - Leaflet  - jQuery  - GeoJSON 
 
+
   <a href="{{site.url}}{{site.baseurl}}/images/thru-hike-pct01.jpg" target="_blank">
     <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/thru-hike-pct01.jpg" alt="thru-hike-pct01.jpg">
   </a>

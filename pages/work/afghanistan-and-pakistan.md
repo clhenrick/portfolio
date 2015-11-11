@@ -17,6 +17,7 @@ Map of Afghanistan and Pakistan for the book Dirty Wars: The World is a Battlefi
 
 <strong>Technologies Used:</strong>  - Adobe Illustrator  - MAPublisher  - QGIS  - Natural Earth 1:10m Vector Data 
 
+
   <a href="{{site.url}}{{site.baseurl}}/images/afg-pak.jpg" target="_blank">
     <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/afg-pak.jpg" alt="afg-pak.jpg">
   </a>

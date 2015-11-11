@@ -18,6 +18,7 @@ Graffiti, rat sightings, and wi-fi hotspots, inspired by Stamen's <a target="_bl
 
 <strong>Technologies Used:</strong>  - TileMill  - CartoCSS  - QGIS  - MapBox 
 
+
   <iframe class="tiles" width='100%' height='100%' frameBorder='0' src='http://b.parsons.edu/~henrc131/MajorStudio1/seven/03_nyc-graffiti-rats-wifi/'></iframe>
 
 
