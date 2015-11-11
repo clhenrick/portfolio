@@ -3,16 +3,15 @@ $(document).ready(function(){
   var $grid = $('.grid');
 
   function initMasonry() {
-    // $grid.isotope({
-    //   itemSelector: '.grid-item',
-    //   layoutMode: 'packery',
-    //   packery: {
-    //     columnWidth: '.grid-sizer',
-    //     percentPosition: true
-    //   }
-    // });
-
-    // test
+    $grid.isotope({
+      itemSelector: '.grid-item',
+      layoutMode: 'packery',
+      packery: {
+        columnWidth: '.grid-sizer',
+        gutter: '.gutter-sizer',
+        percentPosition: true
+      }
+    });
 
     // layout Isotope after all images have loaded
     $grid.imagesLoaded(function() {
@@ -29,8 +28,8 @@ $(document).ready(function(){
 
     $('#filters').on('click', 'button', function() {
       var filterVal = $(this).attr('data-filter');
-      // $grid.isotope('shuffle');
       $grid.isotope({ filter: filterVal});
+      $grid.isotope('shuffle');
       
       if (!$(this).hasClass('shuffle')){
         $('#filters > button').removeClass('active');
