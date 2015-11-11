@@ -2,9 +2,15 @@
 title: Scraping Photo Metadata
 layout: page
 date: 2015-05-29
-teaser: Scraping digital photo exif data using Node JS for web mapping.
-categories: 
-  - data web-scraping node-js web-mapping flickr-api cartodb
+teaser: "Scraping digital photo exif data using Node JS for web mapping."
+subheadline: ""
+tags: 
+    - data 
+    - web-scraping 
+    - node-js 
+    - web-mapping 
+    - flickr-api 
+    - cartodb
 ---
 
 Now that my time as a grad student at the [Parsons MFA Design and Technology program](http://www.newschool.edu/parsons/mfa-design-technology/) is finished, I've finally had some time to come back to a project I worked on in the fall of last year, the [Bushwick Community Map](http://www.bushwickcommunitymap.org). One important piece that has yet to be added to this project is data that was collected from a participatory mapping survey developed with the [North West Bushwick Community Group](http://www.nwbcommunity.org/) and students from the [Parsons Urban Ecologies program](http://www.newschool.edu/parsons/ms-design-urban-ecology/) last Fall. The survey involved mapping landuse in [Bushwick](http://en.wikipedia.org/wiki/Bushwick,_Brooklyn) (eg: vacant lots and lots being used for informal purposes), abandoned buildings, and new construction. This data was collected as teams walked through the various census tracts in Bushwick, making observations on each block, and then filling out a form describing either a lot or building, recording the address, number of floors, state of distress, etc as well as photographing the site. 

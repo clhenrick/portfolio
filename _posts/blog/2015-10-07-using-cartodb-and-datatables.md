@@ -2,10 +2,13 @@
 title: Using CartoDB for creating data driven web pages
 layout: page
 date: 2015-10-07
-teaser: Using CartoDB.js, SQL API with the jQuery Data Tables API to create an interactive resource guide.
+teaser: "Using CartoDB.js, SQL API with the jQuery Data Tables API to create an interactive resource guide."
 header: no
-categories:
-  - data cartodb data-tables
+subheadline: NULL
+tags:
+    - data 
+    - cartodb 
+    - data-tables
 ---
 
 ## Topics Covered

@@ -2,9 +2,11 @@
 title: Wrangling NYC's 311 data
 layout: page
 date: 2015-06-03
-teaser: Battling the task of downloading 311 data and importing it into PostgreSQL for analysis.
-categories: 
-  - data postgresql open-data
+teaser: "Battling the task of downloading 311 data and importing it into PostgreSQL for analysis."
+tags: 
+    - data 
+    - postgresql 
+    - open-data
 ---
 
 I've been lucky to have the opportunity to work with the incredibly talented author [Rebecca Solnit](http://rebeccasolnit.net/) on her new book, Impossible Metropolis, an NYC Atlas. Rebecca has previously completed atlases for two other cities; [Infinite City, a San Francisco Atlas](http://rebeccasolnit.net/book/infinite-city-a-san-francisco-atlas/); and [Unfathomable City, a New Orleans Atlas](http://rebeccasolnit.net/book/unfathomable-city-a-new-orleans-atlas/); and they are anything but traditional city planning maps. While Rebecca is not a cartographer by trade (she hires others to make the maps in her books) she has a deep appreciation and in-depth knowledge of the field and thus draws inspiration from the rich history of printed maps. Rebecca has added her own unique touch and brought life to the maps in her books; they range from being quirky, mystifying, poignant, politically charged, or celebratory. Her maps offer a refreshing perspective on map making in the current deluge of maps that are bound to the web mercator projection, algorithmically rendered, and at times just plain ugly.
