@@ -26,7 +26,7 @@ WCCNY asked to have the guide exist in a searchable and filterable format, so [j
 
 You can visit the guide by clicking on the image below:
 <br><br>
-[![screen shot of the WCCNY Resource Guide]({{site.url}}/assets/wcc-resource-guide.png)](http://resourceguide.wccny.org/)
+[![screen shot of the WCCNY Resource Guide]({{site.urlimg}}wcc-resource-guide.png)](http://resourceguide.wccny.org/)
 
 ## What is CartoDB?
 Put simply [CartoDB](http://cartodb.com) is web platform that focuses on making it easy to map and analyze geospatial data. It is built on top of a suite of open source software for database management, GIS, and web-mapping. With CartoDB you can drag and drop data into its dashboard and instantly start prototyping an interactive map data-vizualization or querying your data with [SQL](https://en.wikipedia.org/wiki/SQL). They've built quite a large following in the GIS, web-development, and Cartography world, provide plenty of educational materials and tutorials to get you started, and have great customer service and support.

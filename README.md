@@ -18,6 +18,8 @@ Should be done by creating new posts tagged with `portfolio` in the `_posts/port
 ## TO DO List:
 - [x] Make thumbnails & resize images
 
+- [ ] Make portfolio mobile friendly
+
 - [ ] presentations
 
 - [ ] CV / Resume
@@ -37,15 +39,15 @@ Should be done by creating new posts tagged with `portfolio` in the `_posts/port
     - do: `gem install jekyll-import`
     - see: https://github.com/jekyll/jekyll-import/blob/v0.7.1/lib/jekyll-import/importers/wordpress.rb
 
-- [ ] move site to clhenrick.io(?)
+- [x] move site to clhenrick.io(?)
 
-- [ ] forward chrishenrick.com to clhenrick.io(?)
+- [ ] ~~forward chrishenrick.com to clhenrick.io(?)~~
 
-- [ ] add portfolio images for print work
-    - [ ] resize existing images to be smaller file size
-    - [ ] create thumbnails for them? Probably depends on masonry.js
+- [x] add portfolio images for print work
+    - [x] resize existing images to be smaller file size
+    - [x] create thumbnails for them? Probably depends on masonry.js
     
-- [ ] add portfolio projects for web work (AIRS, Bushwick, Toxicity Map, etc)
+- [x] add portfolio projects for web work (AIRS, Bushwick, Toxicity Map, etc)
 
 - [ ] create a logo!
 

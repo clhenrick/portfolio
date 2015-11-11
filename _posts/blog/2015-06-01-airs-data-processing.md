@@ -24,17 +24,17 @@ tags:
 The development of the app stems from a [Freedom of Information Law request](https://github.com/clhenrick/dhcr-rent-stabilized-data#foil-request-info) I made in the Fall of 2014 for the [New York Department of Homes and Community Renewal](http://www.nyshcr.org/)'s list of rent-stabilized buildings in a machine readable format. When I obtained the data I was then able to do an analysis on the NYC's taxlot dataset, [MapPLUTO](http://www.nyc.gov/html/dcp/html/bytes/applbyte.shtml#pluto), to determine what properties in NYC likely have rent stabilized apartments, and are either registered or not registered with the DHCR. This is important as registration of rent-regulated apartments is essentially voluntary as it's not enforced by any city or state agency (as far as I'm aware of) so it's easy for landlords in NYC to lie to tenants about their apartment being rent-stabilized.
 
 The first thing I did was map this data (those of you who know me are saying; "of course you did!"). Red are properties that are not on the DHCR's list while blue are ones that are.
-[![]({{site.url}}/assets/likely_rs_map.png)](http://cdb.io/1bfz09d)
+[![]({{site.urlimg}}likely_rs_map.png)](http://cdb.io/1bfz09d)
 
 Visualizing the data was great, however I was interested in pushing the usefulness of this dataset a little further. After I shared my discovery with [Caroline Woolard](http://carolinewoolard.com/), an NYC based artist and activist, she suggested using the data in an app to let people know if they are rent stabilized. The rest is history. 
 
 Here are some screen shots of a few of the slides from the app's landing page: 
 
-![]({{site.url}}/assets/airs_landing_page.png)
+![]({{site.urlimg}}airs_landing_page.png)
 
-![]({{site.url}}/assets/airs_address_search.png)
+![]({{site.urlimg}}airs_address_search.png)
 
-![]({{site.url}}/assets/airs_search_result_yes.png)
+![]({{site.urlimg}}airs_search_result_yes.png)
 
 ## DHCR & MapPLUTO Data Processing
 *Am I Rent Stabilized?* uses the dataset I created of properties that likely have rent stabilized apartments in NYC. I chose to stash this database on CartoDB so that I could take advantage of CartoDB's SQL API and the CartoDB.JS library with the app. However I did a lot of data processing on my local machine before importing the data into CartoDB. This is mainly because the MapPLUTO dataset is too large to import into CartoDB without a paid plan that gives you more storage space. 

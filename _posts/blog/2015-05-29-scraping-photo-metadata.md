@@ -18,7 +18,7 @@ Now that my time as a grad student at the [Parsons MFA Design and Technology pro
 ## Data Problems
 While each photo was taken with geo location tracking enabled, there was some poor management of the photographs collected by various teams. Granted the photos were logically grouped by census tract in folders on Google Drive, yet no unified naming convention was used to name the photographs. 
 
-![]({{site.url}}/assets/photo-naming.png)
+![]({{site.urlimg}}photo-naming.png)
 
 For example, a sensible naming convention could have been something like:  
 
@@ -28,7 +28,7 @@ For example, a sensible naming convention could have been something like:
 
 The way in which the Urban Ecologies students then mapped the photos after they were collected was using Google Earth to produce a KML file of the photos' locations. The problem with this approach is that for some reason unknown to me, the KML they produced only has ~700 features while there are a total of 1008 photos. I didn't learn this until after the Urban Ecologies group shared then survey data, KML, and photos with me. 
 
-![]({{site.url}}/assets/bushwick_photos_qgis.png)
+![]({{site.urlimg}}bushwick_photos_qgis.png)
 
 To make working with the photos easier I first uploaded all 1008 photos to [Flickr](https://www.flickr.com/) which genorously gives all users a whole terabyte of free storage. I then used the [Flickr API](https://www.flickr.com/services/api/) to [grab the URLs and title for each uploaded photo](#flickr-api-code) and store them in a JSON file. For some reason I wasn't able to see the geo data for the photos using this method which definitely would have helped save some time. 
 
@@ -44,7 +44,7 @@ I ended up finding a Node JS library that worked pretty well called [Exif](https
 
 The end result is that I successfully geocoded 1006 out of 1008 of the photos so that they can now be added to the Bushwick Community Map. 
 
-![]({{site.url}}/assets/bushwick_final_data_cartodb.png)
+![]({{site.urlimg}}bushwick_final_data_cartodb.png)
 
 Next up, integrating the survey photos and data to the Bushwick Community Map!
 

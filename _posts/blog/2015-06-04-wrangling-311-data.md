@@ -23,7 +23,7 @@ I prefer using **PostgreSQL** (also referred to as **Postgres**) as my go-to dat
 Typically I use **csvkit**'s [csvsql command line tool](http://csvkit.readthedocs.org/en/latest/scripts/csvsql.html) to import CSV data into **Postgres**. This normally works fairly well, but not in the case of a 1.5 GB CSV file. Basically, attempting to do this row by row *is not the answer!*  
 The following Allen Iverson poster comes to mind:
 
-![war is not the answer]({{site.url}}/assets/warisnottheanswer1.jpg)
+![war is not the answer]({{site.urlimg}}warisnottheanswer1.jpg)
 
 What we need is a way to bulk load the data.
 
