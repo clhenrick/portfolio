@@ -21,6 +21,10 @@
       background-color: $ci-2;
     }
   }
+
+  @media only screen and (max-width: 40em)  {
+    display: none;
+  }
 }
 
 // isotope grid area
@@ -48,6 +52,10 @@
 
 .gutter-sizer {
   width: 1%;
+  
+  @media only screen and (max-width: 40em)  {
+    width: 2%;
+  }
 }
 
 .grid-item { 
@@ -81,6 +89,12 @@
 
   &.height2 {
     min-height: 400px;
+  }
+}
+
+.grid-item, .grid-item.width2, .grid-item.width3 {
+  @media only screen and (max-width: 40em)  {
+    width: 100%;
   }
 }
 

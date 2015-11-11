@@ -10,7 +10,7 @@
       "thumb" : "airs01-thumb.jpg",
       "imgs" : ["airs01.jpg", "airs02.jpg", "airs03.jpg", "airs04.jpg", "airs05.jpg", "airs06.jpg", "airs07.jpg", "airs08.jpg", "airs09.jpg", "airs10.jpg", "airs11.jpg", "airs12.jpg", "airs13.jpg", "airs14.jpg", "airs15.jpg", "airs16.jpg"],
       "link" : "https://amirentstabilized.com",
-      "size" : "width3 height2",
+      "size" : "width3",
       "date" : "2015-05-01"
     },
     {
@@ -22,7 +22,7 @@
       "thumb" : "bcm01-thumb.jpg",
       "imgs" : ["bcm01.jpg", "bcm02.jpg", "bcm03.jpg", "bcm04.jpg", "bcm05.jpg", "bcm06.jpg", "bcm07.jpg", "bcm08.jpg"],
       "link" : "http://www.bushwickcommunitymap.org",
-      "size" : "width3 height2",
+      "size" : "width3 ",
       "date" : "2014-12-20"
     },
     {
@@ -34,7 +34,7 @@
       "thumb" : "nag-toxicity-map01-thumb.jpg",
       "imgs" : ["nag-toxicity-map01.jpg", "nag-toxicity-map02.jpg","nag-toxicity-map03.jpg","nag-toxicity-map04.jpg","nag-toxicity-map05.jpg","nag-toxicity-map06.jpg","nag-toxicity-map07.jpg","nag-toxicity-map08.jpg"],
       "link" : "https://clhenrick.github.io/greenpoint_williamsburg_toxicity_map/",
-      "size" : "width3 height2",
+      "size" : "width3 ",
       "date" : "2015-11-01"
     },
     {
@@ -69,7 +69,7 @@
       "thumb" : "thru-hike-pct01-thumb.jpg",
       "imgs" : ["thru-hike-pct01.jpg", "thru-hike-pct02.jpg", "thru-hike-pct03.jpg","thru-hike-pct04.jpg","thru-hike-pct05.jpg"],
       "tech" : ["Leaflet", "jQuery", "GeoJSON"],
-      "size" : "width2 height3",
+      "size" : "width2",
       "date" : "2014-03-01"
     },
     {
@@ -108,7 +108,7 @@
       "thumb" : "co2-gni-viz-thumb.jpg",
       "imgs" : ["co2-gni-viz.jpg"],
       "tech" : ["Processing","QGIS","SQL"],
-      "size" : "width2 height2",
+      "size" : "width2 ",
       "date" : "2014-04-04"
     },
     {
@@ -123,7 +123,7 @@
         "embed" : "https://player.vimeo.com/video/81728484"
         },
       "imgs" : ["ppnc.jpg"],
-      "size" : "width2 height2",
+      "size" : "width2 ",
       "date" : "2013-12-16"
     },
     {
@@ -182,7 +182,7 @@
       "thumb" : "chinook-thumb.jpg",
       "imgs" : ["chinook.jpg"],
       "tech" : ["ArcGIS", "Adobe Illustrator"],
-      "size" : "height2",
+      "size" : "",
       "date" : "2015-01-01"
     },
     {
@@ -193,7 +193,7 @@
       "thumb" : "public-private-thumb.jpg",
       "imgs" : ["public-private.jpg"],
       "tech" : ["ArcGIS", "Adobe Illustrator"],
-      "size" : "height2",
+      "size" : "",
       "date" : "2010-06-01"
     },
     {
@@ -224,7 +224,7 @@
       "thumb" : "afg-pak-thumb.jpg",
       "imgs" : ["afg-pak.jpg"],
       "tech" : ["Adobe Illustrator", "MAPublisher", "QGIS", "Natural Earth 1:10m Vector Data"],
-      "size" : "width2 height2",
+      "size" : "width2 ",
       "date" : "2013-01-01"
     },
     {
@@ -234,7 +234,7 @@
       "description_long" : "Another map for a 9 book series on the backpacking trips taken by globetrotter David Koester. Natural Earth vector and relief data were employed for sound cartographic design.",
       "thumb" : "se-asia-thumb.jpg",
       "imgs" : ["se-asia.jpg"],
-      "size" : "height2",
+      "size" : "",
       "date" : "2013-01-01"
     },
     {
@@ -245,7 +245,7 @@
       "tech" : ["Adobe Illustrator", "MAPublisher", "QGIS"],
       "thumb" : "north-coast-thumb.jpg",
       "imgs" : ["north-coast.jpg"],
-      "size" : "height2",
+      "size" : "",
       "date" : "2013-01-01"
     },
     {
