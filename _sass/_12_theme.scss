@@ -29,7 +29,7 @@
   // padding-left: 5px;
   // padding-top: 5px;
   background-color: $grey-1;
-  border: 1px solid $grey-1;
+  // border: 1px solid $grey-1;
 
   /* clear fix */
   &:after {
@@ -43,7 +43,7 @@
 .grid-item,
 .grid-sizer {
   // width: calc(20% - 5px);
-  width: 19.2%;
+  width: 32.66666666666%;
 }
 
 .gutter-sizer {
@@ -67,12 +67,12 @@
 
   &.width2 { 
     // width: calc(40% - 5px); 
-    width: 38.4%;
+    width: 32.66666666666%;
   }
 
   &.width3 {
     // width: calc(60% - 5px);
-    width: 57.6%;
+    width: 32.66666666666%;
   }
 
   &.height1 {
