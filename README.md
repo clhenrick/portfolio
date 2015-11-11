@@ -14,23 +14,22 @@ To run Jekyll in a dev environment do:
 `jekyll serve --config _config.yml,_config_dev.yml`
 
 ## Updating
-Add a new object to `_data/work.json` containing the following:
+Add a new object to the `work` array in `_data/work.json` containing the following:
 
-```
-"title" : "Prospect Park non euclidean map", // required: title of the project
-"tags" : ["carto"], // required: any relevant tags
-"description" : "A \"non-euclidean map\" of Prospect Park, Brooklyn", // short description shown in `/work/`
-"description_long" : "A non-euclidean “map” of Prospect Park, Brooklyn. Created using a GoPro camera mounted to my head, iMovie for video editing and Open-Frameworks for combining the video shots into one screen space. Inspired by the theory of artist and cartographer Dennis Wood and work by Annette Kim, Associate Professor of Urban Studies and Planning at <a href=\"http://slab.scripts.mit.edu/wp/maps/narrative-maps/\">MIT's SLAB</a>", // long description shown in the corresponding project page
-"thumb" : "ppnc-thumb.jpg", // required: thumb nail image
-"tech" : ["Go-Pro","OpenFrameworks"], // whatever tech was used
-"video" : {
-"url" : "https://vimeo.com/81728484", // link to a video if the project has one
-"embed" : "https://player.vimeo.com/video/81728484" // link to the embed url for the video
-},
-"imgs" : ["ppnc.jpg"], // required: any images associated with the project
-"size" : "width2 ", // size to give to the project (depreciated / unnecessary)
-"date" : "2013-12-16" // date the project was created
-```
+- "title" : required: title of the project
+- "tags" : an array of relevant tags
+- "description" : a short description shown in `/work/`
+- "description_long" : a long description shown in the corresponding project page
+- "thumb" : required: thumb nail image
+- "tech" : an array containing the names of whatever tech was used
+- "video" : an object containing the following if the project has a video
+  - "url" : link to a video if the project has one 
+    ( eg: "https://vimeo.com/81728484")
+  - "embed" : link to the embed url for the video
+    (eg: "https://player.vimeo.com/video/81728484")
+- "imgs" : ["ppnc.jpg"], // required: any images associated with the project
+- "size" : "width2 ", // size to give to the project (depreciated / unnecessary)
+- "date" : date the project was created in the format of Year-Month-Day, eg: "2014-11-02"
 
 Then `cd` to the `scripts` dir and do `node make-portfolio-pages.js`
 
