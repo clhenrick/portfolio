@@ -3,6 +3,7 @@ title: Data Processing Methodology for "Tracking the Energy Titans"
 layout: page
 date: 2015-08-10
 teaser: "Parsing irregularly formatted CSV files for a visualizaiton with D3JS."
+header: no
 tags:
     - data 
     - node-js 

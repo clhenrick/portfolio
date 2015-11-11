@@ -3,7 +3,7 @@ title: Scraping Photo Metadata
 layout: page
 date: 2015-05-29
 teaser: "Scraping digital photo exif data using Node JS for web mapping."
-subheadline: ""
+header: no
 tags: 
     - data 
     - web-scraping 
@@ -48,10 +48,11 @@ The end result is that I successfully geocoded 1006 out of 1008 of the photos so
 
 Next up, integrating the survey photos and data to the Bushwick Community Map!
 
-##Code:
-### SQL to parse photo title from file name:
+##Code
+<h3>Extracting the Photos' Titles From File Names</h3>
+
 In CartoDB I eneded up creating a new column for the exif geojson and populating it with a substring of the filename, the title without the file extension, so that I could join the Exif GeoJSON and Flickr JSON datasets.  
-The following query did the trick:  
+The following SQL query did the trick:  
 
 {% highlight sql %}
 SELECT substring(file_name_column, '(.+?)(\.[^.]*$|$)') FROM table_name;
