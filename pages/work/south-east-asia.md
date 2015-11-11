@@ -9,7 +9,7 @@ tags:
 category:
   - work
 header: no
-permalink: "/work/"
+permalink: "/work/south-east-asia.html"
 ---
 
 
@@ -22,4 +22,4 @@ Another map for a 9 book series on the backpacking trips taken by globetrotter D
 
 
 
-[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/work.md)
+[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

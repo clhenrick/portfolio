@@ -9,7 +9,7 @@ tags:
 category:
   - work
 header: no
-permalink: "/work/"
+permalink: "/work/oakland-then-and-now-coastal-grasslands.html"
 ---
 
 
@@ -22,4 +22,4 @@ A prototype map design for the Oakland Museum of California. This map shows hist
 
 
 
-[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/work.md)
+[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

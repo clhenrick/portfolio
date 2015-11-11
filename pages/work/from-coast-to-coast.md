@@ -13,7 +13,7 @@ video:
     contentURL: "https://vimeo.com/89143409"
     thumbnailUrl: "coast-2-coast.jpg"
 header: no
-permalink: "/work/"
+permalink: "/work/from-coast-to-coast.html"
 ---
 
 
@@ -21,4 +21,4 @@ permalink: "/work/"
 <strong>Technologies Used:</strong>  - D3.JS  - JQuery  - QGIS 
 
 
-[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/work.md)
+[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

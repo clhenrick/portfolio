@@ -2,7 +2,7 @@ var fs = require('fs'),
     Handlebars = require('handlebars'),
     work = '../_data/work.json',
     templateFile = '../_data/portfolio-page.hbs',
-    outDir = '../pages/',
+    outDir = '../pages/work/',
     dataStore = null,
     hbsTemplate = null;
 

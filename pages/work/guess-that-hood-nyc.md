@@ -13,7 +13,7 @@ video:
     contentURL: "https://vimeo.com/97669886"
     thumbnailUrl: "guess-that-hood.jpg"
 header: no
-permalink: "/work/"
+permalink: "/work/guess-that-hood-nyc.html"
 ---
 
 <strong>Project Link:</strong> <a href="https://vimeo.com/97669886" target="_blank">Guess That Hood NYC!</a>
@@ -22,4 +22,4 @@ permalink: "/work/"
 <strong>Technologies Used:</strong>  - MongoDB  - jQuery  - Leaflet.JS  - GeoJSON  - HTML5  - CSS3 
 
 
-[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/work.md)
+[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

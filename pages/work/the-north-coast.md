@@ -9,7 +9,7 @@ tags:
 category:
   - work
 header: no
-permalink: "/work/"
+permalink: "/work/the-north-coast.html"
 ---
 
 
@@ -23,4 +23,4 @@ Open data from Cal Atlas and CPAD were used to make this map.
 
 
 
-[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/work.md)
+[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

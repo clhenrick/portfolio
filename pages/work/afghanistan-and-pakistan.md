@@ -9,7 +9,7 @@ tags:
 category:
   - work
 header: no
-permalink: "/work/"
+permalink: "/work/afghanistan-and-pakistan.html"
 ---
 
 
@@ -23,4 +23,4 @@ Map of Afghanistan and Pakistan for the book Dirty Wars: The World is a Battlefi
 
 
 
-[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/work.md)
+[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

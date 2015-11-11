@@ -9,7 +9,7 @@ tags:
 category:
   - work
 header: no
-permalink: "/work/"
+permalink: "/work/chinook-recovery-priority-watersheds.html"
 ---
 
 
@@ -23,4 +23,4 @@ This map was created at GreenInfo Network with Alexandra Barnish, and is a worki
 
 
 
-[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/work.md)
+[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

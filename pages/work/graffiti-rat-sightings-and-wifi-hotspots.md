@@ -9,7 +9,7 @@ tags:
 category:
   - work
 header: no
-permalink: "/work/"
+permalink: "/work/graffiti-rat-sightings-and-wifi-hotspots.html"
 ---
 
 <strong>Project Link:</strong> <a href="http://b.parsons.edu/~henrc131/MajorStudio1/seven/03_nyc-graffiti-rats-wifi/" target="_blank">Graffiti, Rat Sightings, and Wifi Hotspots</a>
@@ -21,4 +21,4 @@ Graffiti, rat sightings, and wi-fi hotspots, inspired by Stamen's <a target="_bl
   <iframe class="tiles" width='100%' height='100%' frameBorder='0' src='http://b.parsons.edu/~henrc131/MajorStudio1/seven/03_nyc-graffiti-rats-wifi/'></iframe>
 
 
-[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/work.md)
+[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

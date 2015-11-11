@@ -2,14 +2,14 @@
 layout: page-fullwidth
 show_meta: true
 title: "A Thru Hike on the Pacific Crest Trail"
-teaser: "A web project documenting my brother&#x27;s experience thru-hiking the PCT."
+teaser: "An interactive web documentary about my brother&#x27;s experience thru-hiking the PCT."
 date: "2014-03-01"
 tags:
-  - web carto 
+  - web 
 category:
   - work
 header: no
-permalink: "/work/"
+permalink: "/work/a-thru-hike-on-the-pacific-crest-trail.html"
 ---
 
 <strong>Project Link:</strong> <a href="http://clhenrick.github.io/Major-Studio-Two/map-story/html/" target="_blank">A Thru Hike on the Pacific Crest Trail</a>
@@ -40,4 +40,4 @@ An attempt at creating an NY Times style interactive. As the user scrolls down a
 
 
 
-[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/work.md)
+[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

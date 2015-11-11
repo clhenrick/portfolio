@@ -9,7 +9,7 @@ tags:
 category:
   - work
 header: no
-permalink: "/work/"
+permalink: "/work/am-i-rent-stabilized.html"
 ---
 
 <strong>Project Link:</strong> <a href="https://amirentstabilized.com" target="_blank">Am I Rent Stabilized?</a>
@@ -84,4 +84,4 @@ Am I Rent Stabilized is a web application that encourages New York City tenants 
 
 
 
-[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/work.md)
+[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

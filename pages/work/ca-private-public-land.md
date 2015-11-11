@@ -9,7 +9,7 @@ tags:
 category:
   - work
 header: no
-permalink: "/work/"
+permalink: "/work/ca-private-public-land.html"
 ---
 
 
@@ -23,4 +23,4 @@ This map was created at GreenInfo Network with Alexandra Barnish for Sustainable
 
 
 
-[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/work.md)
+[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

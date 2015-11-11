@@ -9,7 +9,7 @@ tags:
 category:
   - work
 header: no
-permalink: "/work/"
+permalink: "/work/tracking-the-energy-titans.html"
 ---
 
 <strong>Project Link:</strong> <a href="http://www.newsecuritybeat.org/energytitans/" target="_blank">Tracking the Energy Titans</a>
@@ -36,4 +36,4 @@ Created for the Woodrow Wilson Center, this interactive data-visualization allow
 
 
 
-[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/work.md)
+[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

@@ -9,7 +9,7 @@ tags:
 category:
   - work
 header: no
-permalink: "/work/"
+permalink: "/work/bushwick-community-map.html"
 ---
 
 <strong>Project Link:</strong> <a href="http://www.bushwickcommunitymap.org" target="_blank">Bushwick Community Map</a>
@@ -52,4 +52,4 @@ The Northwest Bushwick Community Map is meant to be a resource for local communi
 
 
 
-[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/work.md)
+[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

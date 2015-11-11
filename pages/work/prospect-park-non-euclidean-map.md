@@ -2,7 +2,7 @@
 layout: video
 show_meta: true
 title: "Prospect Park non euclidean map"
-teaser: "A non-euclidean map of Prospect Park, Brooklyn"
+teaser: "A &quot;non-euclidean map&quot; of Prospect Park, Brooklyn"
 tags:
     - carto 
 category:
@@ -13,7 +13,7 @@ video:
     contentURL: "https://vimeo.com/81728484"
     thumbnailUrl: "ppnc.jpg"
 header: no
-permalink: "/work/"
+permalink: "/work/prospect-park-non-euclidean-map.html"
 ---
 
 
@@ -22,4 +22,4 @@ A non-euclidean “map” of Prospect Park, Brooklyn. Created using a GoPro came
 <strong>Technologies Used:</strong>  - Go-Pro  - OpenFrameworks 
 
 
-[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/work.md)
+[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

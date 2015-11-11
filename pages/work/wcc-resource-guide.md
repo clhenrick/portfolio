@@ -9,7 +9,7 @@ tags:
 category:
   - work
 header: no
-permalink: "/work/"
+permalink: "/work/wcc-resource-guide.html"
 ---
 
 <strong>Project Link:</strong> <a href="http://resourceguide.wccny.org/" target="_blank">WCC Resource Guide</a>
@@ -23,4 +23,4 @@ permalink: "/work/"
 
 
 
-[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/work.md)
+[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)
