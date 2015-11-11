@@ -15,8 +15,8 @@ Updating the portfolio works like this:
 To run Jekyll in a dev environment do:  
 `jekyll serve --config _config.yml,_config_dev.yml`
 
-## Updating
-Add a new object to the `work` array in `_data/work.json` containing the following:
+## Adding a New Project
+To add a new project add a new object entry to the `work` array in `_data/work.json` containing the following attributes:
 
 - "title" : required: title of the project
 - "tags" : an array of relevant tags
