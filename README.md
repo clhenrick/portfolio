@@ -1,6 +1,8 @@
 # CLHENRICK
 Personal portfolio and blog of Chris Henrick using the [Feeling Resposive](http://phlow.github.io/feeling-responsive/) Jekyll theme. Forked from [Phlow](https://github.com/Phlow/feeling-responsive)
 
+This site is live at [clhenrick.io](http://clhenrick.io)
+
 ## Migrating Portfolio
 To migrate work from an existing portfolio I created `JSON` data containing information for each project. This data lives in `_data/work.json` and is used to generate each page for a project as well as created the portfolio overview page.
 
