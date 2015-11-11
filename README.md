@@ -6,7 +6,7 @@ To migrate work from an existing portfolio I created `JSON` data containing info
 
 Updating the portfolio works like this:  
 
-1. Edit `assets/data/work.json` as needed.
+1. Edit `_data/work.json` as needed.
 2. `cd scripts/ && npm install`
 3. from the `scripts/` dir do `node make-portfolio-posts.js`
 
@@ -16,22 +16,20 @@ To run Jekyll in a dev environment do:
 ## Updating
 Add a new object to `_data/work.json` containing the following:
 
-```json
-    {
-      "title" : "Prospect Park non euclidean map", // required: title of the project
-      "tags" : ["carto"], // required: any relevant tags
-      "description" : "A \"non-euclidean map\" of Prospect Park, Brooklyn", // short description shown in `/work/`
-      "description_long" : "A non-euclidean “map” of Prospect Park, Brooklyn. Created using a GoPro camera mounted to my head, iMovie for video editing and Open-Frameworks for combining the video shots into one screen space. Inspired by the theory of artist and cartographer Dennis Wood and work by Annette Kim, Associate Professor of Urban Studies and Planning at <a href=\"http://slab.scripts.mit.edu/wp/maps/narrative-maps/\">MIT's SLAB</a>", // long description shown in the corresponding project page
-      "thumb" : "ppnc-thumb.jpg", // required: thumb nail image
-      "tech" : ["Go-Pro","OpenFrameworks"], // whatever tech was used
-      "video" : {
-        "url" : "https://vimeo.com/81728484", // link to a video if the project has one
-        "embed" : "https://player.vimeo.com/video/81728484" // link to the embed url for the video
-        },
-      "imgs" : ["ppnc.jpg"], // required: any images associated with the project
-      "size" : "width2 ", // size to give to the project (depreciated / unnecessary)
-      "date" : "2013-12-16" // date the project was created
-    }
+```
+"title" : "Prospect Park non euclidean map", // required: title of the project
+"tags" : ["carto"], // required: any relevant tags
+"description" : "A \"non-euclidean map\" of Prospect Park, Brooklyn", // short description shown in `/work/`
+"description_long" : "A non-euclidean “map” of Prospect Park, Brooklyn. Created using a GoPro camera mounted to my head, iMovie for video editing and Open-Frameworks for combining the video shots into one screen space. Inspired by the theory of artist and cartographer Dennis Wood and work by Annette Kim, Associate Professor of Urban Studies and Planning at <a href=\"http://slab.scripts.mit.edu/wp/maps/narrative-maps/\">MIT's SLAB</a>", // long description shown in the corresponding project page
+"thumb" : "ppnc-thumb.jpg", // required: thumb nail image
+"tech" : ["Go-Pro","OpenFrameworks"], // whatever tech was used
+"video" : {
+"url" : "https://vimeo.com/81728484", // link to a video if the project has one
+"embed" : "https://player.vimeo.com/video/81728484" // link to the embed url for the video
+},
+"imgs" : ["ppnc.jpg"], // required: any images associated with the project
+"size" : "width2 ", // size to give to the project (depreciated / unnecessary)
+"date" : "2013-12-16" // date the project was created
 ```
 
 Then `cd` to the `scripts` dir and do `node make-portfolio-pages.js`
