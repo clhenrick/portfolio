@@ -1,30 +1,55 @@
 # CLHENRICK
 Personal portfolio and blog of Chris Henrick using the [Feeling Resposive](http://phlow.github.io/feeling-responsive/) Jekyll theme. Forked from [Phlow](https://github.com/Phlow/feeling-responsive)
 
+This site is live at [clhenrick.io](http://clhenrick.io)
+
 ## Migrating Portfolio
-1. Edit `assets/data/work.json`
-2. Precompile Handlebars templates (see below)
-3. Add any necessary images
-4. Run Jekyll: `jekyll serve --config _config.yml,_config_dev.yml`
+To migrate work from an existing portfolio I created `JSON` data containing information for each project. This data lives in `_data/work.json` and is used to generate each page for a project as well as created the portfolio overview page.
 
-### Precompiling Handlebars
-Make sure [Node JS](https://nodejs.org) and [Handlebars](http://handlebarsjs.com/) are installed.
+Updating the portfolio works like this:  
 
-From the root of this repo do: `handlebars _data/item.hbs -f assets/js/work.js -k each`
+1. Edit `_data/work.json` as needed.
+2. `cd scripts/ && npm install`
+3. from the `scripts/` dir do `node make-portfolio-posts.js`
 
-## Updating
-Should be done by creating new posts tagged with `portfolio` in the `_posts/portfolio/` directory.
+To run Jekyll in a dev environment do:  
+`jekyll serve --config _config.yml,_config_dev.yml`
+
+## Adding a New Project
+To add a new project add a new object entry to the `work` array in `_data/work.json` containing the following attributes:
+
+- "title" : required: title of the project
+- "tags" : an array of relevant tags
+- "description" : a short description shown in `/work/`
+- "description_long" : a long description shown in the corresponding project page
+- "thumb" : required: thumb nail image
+- "tech" : an array containing the names of whatever tech was used
+- "video" : an object containing the following if the project has a video
+  - "url" : link to a video if the project has one  
+    ( eg: "https://vimeo.com/81728484")
+  - "embed" : link to the embed url for the video  
+    (eg: "https://player.vimeo.com/video/81728484")
+- "imgs" : required: an array of any images associated with the project
+- "size" : size to give to the project that corresponds to a `CSS` class 
+  (depreciated / unnecessary)
+- "date" : date the project was created in the format of Year-Month-Day, eg: "2014-11-02"
+
+Then `cd` to the `scripts` dir and do `node make-portfolio-pages.js`
 
 ## TO DO List:
-- [ ] Make thumbnails & resize images
+- [x] Make thumbnails & resize images
 
-- [ ] CV / Resume
+- [x] Make portfolio mobile friendly
 
-- [ ] Talks
+- [ ] add presentations as a git sub-module
+
+- [ ] add CV / Resume
+
+- [ ] add Talks
 
 - [x] Node JS script to generate posts in `_posts/portfolio/` from `assets/data/work.json`
 
-- [ ] ~~liquid logic to only render blog posts in `_posts/blog/`~~
+- [x] ~~liquid logic to only render blog posts in `_posts/blog/`~~
 
 - [x] liquid logic to create masonry layout from `_posts/portfolio/`
 
@@ -35,21 +60,25 @@ Should be done by creating new posts tagged with `portfolio` in the `_posts/port
     - do: `gem install jekyll-import`
     - see: https://github.com/jekyll/jekyll-import/blob/v0.7.1/lib/jekyll-import/importers/wordpress.rb
 
-- [ ] move site to clhenrick.io(?)
+- [x] move site to clhenrick.io(?)
 
-- [ ] forward chrishenrick.com to clhenrick.io(?)
+- [ ] ~~forward chrishenrick.com to clhenrick.io(?)~~
 
-- [ ] add portfolio images for print work
-    - [ ] resize existing images to be smaller file size
-    - [ ] create thumbnails for them? Probably depends on masonry.js
+- [x] add portfolio images for print work
+    - [x] resize existing images to be smaller file size
+    - [x] create thumbnails for them? Probably depends on masonry.js
     
-- [ ] add portfolio projects for web work (AIRS, Bushwick, Toxicity Map, etc)
+- [x] add portfolio projects for web work (AIRS, Bushwick, Toxicity Map, etc)
 
 - [ ] create a logo!
 
 - [ ] generate favicons & touch icons from logo using [real favicon generator](http://realfavicongenerator.net/)
 
-- [ ] index with Google’s SEO & custom search
+- [ ] index with Google’s SEO & custom search using sitemap.xml
+
+## Deploying Jekyll With Git On A Remote VPS
+- https://www.digitalocean.com/community/tutorials/how-to-deploy-jekyll-blogs-with-git
+- https://www.digitalocean.com/community/tutorials/how-to-get-started-with-jekyll-on-an-ubuntu-vps
 
 ## Helpful Architecture Info:
 ### jekyll

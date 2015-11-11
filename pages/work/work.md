@@ -16,20 +16,21 @@ header: no
   <button class="shuffle">shuffle!</button>
 </div>
 
-<!-- to-do: create and populate these with templates & JSON data -->
+<!-- this pulls in projects from _data/work.json -->
 <div id="target" class="grid print carto">
+  <div class="gutter-sizer"></div>
   <div class="grid-sizer"></div>
   {% for item in site.data.work.work %}
     <div class="grid-item {{ item.size }} {% for tag in item.tags %}} {{tag}} {% endfor %}">
-      <a href="{{ site.url }}{{ site.baseurl }}/portfolio/{{item.date}}-{{item.title | slugify}}/">
-        <img class="item-img" src="{{ site.url }}{{ site.baseurl }}/images/{{item.thumb}}">
-      </a>
-      <div class="item-meta">
-        <a href="{{ site.url }}{{ site.baseurl }}/portfolio/{{item.date}}-{{item.title | slugify}}/">
+      <a href="{{ site.url }}{{ site.baseurl }}/work/{{item.title | slugify}}.html">
+        {% if item.thumb.size != 0  %}      
+          <img class="item-img" src="{{ site.url }}{{ site.baseurl }}/images/{{item.thumb}}">
+        {% endif %}
+        <div class="item-meta">
           <h4 class="item-title">{{ item.title }}</h4>
-        </a>
-        <p class="item-description">{{ item.description }}</p>
-      </div>
+          <p class="item-description">{{ item.description }}</p>
+        </div>
+      </a>
     </div>  
   {% endfor %}
 </div>

@@ -22,8 +22,7 @@ description: "The portfolio and blog of Chris Henrick; geo web developer & carto
 author: clhenrick
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
-#
-url: 'https://clhenrick.github.io/feeling-responsive'
+url: 'http://clhenrick.io'
 baseurl: ''
 
 # This is for the editing function in _/includes/improve_content
@@ -37,7 +36,7 @@ improve_content: https://github.com/clhenrick/feeling-responsive/edit/gh-pages
 # Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
-urlimg: 'https://clhenrick.github.io/feeling-responsive/images/'
+urlimg: '/images/'
 
 
 # Logo size is 600x80 pixels
@@ -45,7 +44,7 @@ logo: "logo.png"
 
 
 # Paginates all X entries
-paginate: 5
+paginate: 3
 
 
 # Pagination path › Important for blog page in /blog/ to work
@@ -135,7 +134,7 @@ defaults:
 #  /____/_____/\____/    Verify Website to Webmaster Tools
 
 # google_author:             "https://plus.google.com/u/0/118311555303973066167"
-# google_site_verification:  "Vk0IOJ2jwG_qEoG7fuEXYqv0m2rLa8P778Fi_GrsgEQ"
+google_site_verification:  "hb0oFgJAnd2i2LvJYSEIofF5sc24xc8hx2tTNittvHA"
 # bing_webmastertools_id:    "0FB4C028ABCF07C908C54386ABD2D97F"
 # alexa_verify_id:         ""
 
@@ -220,7 +219,7 @@ sass:
 #
 # used in _includes/footer_scripts
 
-#google_analytics_tracking_id: ''
+google_analytics_tracking_id: 'UA-69968207-1'
 
 
 

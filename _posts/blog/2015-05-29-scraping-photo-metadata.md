@@ -2,9 +2,15 @@
 title: Scraping Photo Metadata
 layout: page
 date: 2015-05-29
-teaser: Scraping digital photo exif data using Node JS for web mapping.
-categories: 
-  - data web-scraping node-js web-mapping flickr-api cartodb
+teaser: "Scraping digital photo exif data using Node JS for web mapping."
+header: no
+tags: 
+    - data 
+    - web-scraping 
+    - node-js 
+    - web-mapping 
+    - flickr-api 
+    - cartodb
 ---
 
 Now that my time as a grad student at the [Parsons MFA Design and Technology program](http://www.newschool.edu/parsons/mfa-design-technology/) is finished, I've finally had some time to come back to a project I worked on in the fall of last year, the [Bushwick Community Map](http://www.bushwickcommunitymap.org). One important piece that has yet to be added to this project is data that was collected from a participatory mapping survey developed with the [North West Bushwick Community Group](http://www.nwbcommunity.org/) and students from the [Parsons Urban Ecologies program](http://www.newschool.edu/parsons/ms-design-urban-ecology/) last Fall. The survey involved mapping landuse in [Bushwick](http://en.wikipedia.org/wiki/Bushwick,_Brooklyn) (eg: vacant lots and lots being used for informal purposes), abandoned buildings, and new construction. This data was collected as teams walked through the various census tracts in Bushwick, making observations on each block, and then filling out a form describing either a lot or building, recording the address, number of floors, state of distress, etc as well as photographing the site. 
@@ -12,7 +18,7 @@ Now that my time as a grad student at the [Parsons MFA Design and Technology pro
 ## Data Problems
 While each photo was taken with geo location tracking enabled, there was some poor management of the photographs collected by various teams. Granted the photos were logically grouped by census tract in folders on Google Drive, yet no unified naming convention was used to name the photographs. 
 
-![]({{site.url}}/assets/photo-naming.png)
+![]({{site.urlimg}}photo-naming.png)
 
 For example, a sensible naming convention could have been something like:  
 
@@ -22,7 +28,7 @@ For example, a sensible naming convention could have been something like:
 
 The way in which the Urban Ecologies students then mapped the photos after they were collected was using Google Earth to produce a KML file of the photos' locations. The problem with this approach is that for some reason unknown to me, the KML they produced only has ~700 features while there are a total of 1008 photos. I didn't learn this until after the Urban Ecologies group shared then survey data, KML, and photos with me. 
 
-![]({{site.url}}/assets/bushwick_photos_qgis.png)
+![]({{site.urlimg}}bushwick_photos_qgis.png)
 
 To make working with the photos easier I first uploaded all 1008 photos to [Flickr](https://www.flickr.com/) which genorously gives all users a whole terabyte of free storage. I then used the [Flickr API](https://www.flickr.com/services/api/) to [grab the URLs and title for each uploaded photo](#flickr-api-code) and store them in a JSON file. For some reason I wasn't able to see the geo data for the photos using this method which definitely would have helped save some time. 
 
@@ -38,14 +44,15 @@ I ended up finding a Node JS library that worked pretty well called [Exif](https
 
 The end result is that I successfully geocoded 1006 out of 1008 of the photos so that they can now be added to the Bushwick Community Map. 
 
-![]({{site.url}}/assets/bushwick_final_data_cartodb.png)
+![]({{site.urlimg}}bushwick_final_data_cartodb.png)
 
 Next up, integrating the survey photos and data to the Bushwick Community Map!
 
-##Code:
-### SQL to parse photo title from file name:
+##Code
+<h3>Extracting the Photos' Titles From File Names</h3>
+
 In CartoDB I eneded up creating a new column for the exif geojson and populating it with a substring of the filename, the title without the file extension, so that I could join the Exif GeoJSON and Flickr JSON datasets.  
-The following query did the trick:  
+The following SQL query did the trick:  
 
 {% highlight sql %}
 SELECT substring(file_name_column, '(.+?)(\.[^.]*$|$)') FROM table_name;

@@ -10,8 +10,8 @@
       "thumb" : "airs01-thumb.jpg",
       "imgs" : ["airs01.jpg", "airs02.jpg", "airs03.jpg", "airs04.jpg", "airs05.jpg", "airs06.jpg", "airs07.jpg", "airs08.jpg", "airs09.jpg", "airs10.jpg", "airs11.jpg", "airs12.jpg", "airs13.jpg", "airs14.jpg", "airs15.jpg", "airs16.jpg"],
       "link" : "https://amirentstabilized.com",
-      "size" : "width3 height2",
-      "date" : "2015-01-01"
+      "size" : "width3",
+      "date" : "2015-05-01"
     },
     {
       "title" : "Bushwick Community Map",
@@ -22,30 +22,30 @@
       "thumb" : "bcm01-thumb.jpg",
       "imgs" : ["bcm01.jpg", "bcm02.jpg", "bcm03.jpg", "bcm04.jpg", "bcm05.jpg", "bcm06.jpg", "bcm07.jpg", "bcm08.jpg"],
       "link" : "http://www.bushwickcommunitymap.org",
-      "size" : "width3 height2",
+      "size" : "width3 ",
       "date" : "2014-12-20"
     },
     {
       "title" : "Greenpoint Williamsburg Toxicity Map",
       "tags" : ["web", "data-viz", "carto"],
       "description" : "A map to inform residents of north Brooklyn about environmental hazards.",
-      "description_long" : "The NAG Greenpoint-Williamsburg ToxiCity Map is an interactive map of toxic “hot spots” in Greenpoint and Williamsburg. Data used to compile this map came from city, state and federal sources, guided by on-the-ground knowledge from local activists. Click through the data layers on the map to understand some neighborhood trends such as population density and asthma hospital visits, and locate some specific sites such as former NuHart Plastics factory and the Exxon oil spill. Sites that have already been remediated and sites that require future remediation are included on this map.",
+      "description_long" : "The NAG Greenpoint-Williamsburg ToxiCity Map is an interactive map of toxic “hot spots” in Greenpoint and Williamsburg. Data used to compile this map came from city, state and federal sources, guided by on-the-ground knowledge from local activists. Click through the data layers on the map to understand some neighborhood trends such as population density and asthma hospital visits, and locate some specific sites such as former NuHart Plastics factory and the Exxon oil spill. Sites that have already been remediated and sites that require future remediation are included on this map.<br><br>This project was created with the help of Bowon Chung and Jessie Braden via Pratt's Spatial Analysis and Visualization Initiative.",
       "tech" : ["CartoDB.JS", "Leaflet.JS", "MapBox Studio Classic", "CartoCSS", "Node JS", "Pelias Geocoder", "Handlebars.JS", "JQuery"],
       "thumb" : "nag-toxicity-map01-thumb.jpg",
       "imgs" : ["nag-toxicity-map01.jpg", "nag-toxicity-map02.jpg","nag-toxicity-map03.jpg","nag-toxicity-map04.jpg","nag-toxicity-map05.jpg","nag-toxicity-map06.jpg","nag-toxicity-map07.jpg","nag-toxicity-map08.jpg"],
       "link" : "https://clhenrick.github.io/greenpoint_williamsburg_toxicity_map/",
-      "size" : "width3 height2",
-      "date" : "2015-01-01"
+      "size" : "width3 ",
+      "date" : "2015-11-01"
     },
     {
-      "title" : "A Thru Hike on the Pacific Crest Trail",
-      "tags" : ["web", "carto"],
-      "description" : "A web project documenting my brother's experience thru-hiking the PCT.",
-      "description_long" : "",
-      "link" : "http://clhenrick.github.io/Major-Studio-Two/map-story/html/",
-      "thumb" : "thru-hike-pct01-thumb.jpg",
-      "imgs" : ["thru-hike-pct01.jpg", "thru-hike-pct02.jpg", "thru-hike-pct03.jpg","thru-hike-pct04.jpg","thru-hike-pct05.jpg"],
-      "size" : "width2 height3",
+      "title" : "Landscapes of Profit",
+      "tags" : ["web","data-viz"],
+      "description" : "An analysis of property transaction data to promote a 1% flip tax in NYC.",
+      "description_long" : "Distribution of a proposed 1% \"flip tax\" on all real estate transactions in 2014 that occured within a two year period from 2003 - 2014, per New York City Council District. How much money would your district have for community spaces and affordable housing?<br><br>This project is a collaboration between Dan Taeyoung, Caroline Woolard, John Krauss, Chris Henrick, and Ingrid Burrington. Interactive version to come soon!",
+      "link" : "http://www.landscapesofprofit.com/",
+      "thumb" : "landscapes-profit-thumb.jpg",
+      "imgs" : ["landscapes-profit.jpg"],
+      "size" : "width2",
       "date" : "2015-01-01"
     },
     {
@@ -55,8 +55,22 @@
       "description_long" : "",
       "thumb" : "wcc-resource-guide-thumb.jpg",
       "imgs" : ["wcc-resource-guide.jpg"],
+      "tech" : ["CartoDB.JS", "Node.JS", "DataTables API", "Twitter Bootstrap"],
+      "link" : "http://resourceguide.wccny.org/",
       "size" : "width2",
-      "date" : "2015-01-01"
+      "date" : "2015-09-01"
+    },
+    {
+      "title" : "A Thru Hike on the Pacific Crest Trail",
+      "tags" : ["web"],
+      "description" : "An interactive web documentary about my brother's experience thru-hiking the PCT.",
+      "description_long" : "An attempt at creating an NY Times style interactive. As the user scrolls down a map animates and reveals information relating to the story.",
+      "link" : "http://clhenrick.github.io/Major-Studio-Two/map-story/html/",
+      "thumb" : "thru-hike-pct01-thumb.jpg",
+      "imgs" : ["thru-hike-pct01.jpg", "thru-hike-pct02.jpg", "thru-hike-pct03.jpg","thru-hike-pct04.jpg","thru-hike-pct05.jpg"],
+      "tech" : ["Leaflet", "jQuery", "GeoJSON"],
+      "size" : "width2",
+      "date" : "2014-03-01"
     },
     {
       "title" : "Tracking the Energy Titans",
@@ -64,10 +78,11 @@
       "description" : "A data-visualization comparing energy use between the U.S., Canada, and China.",
       "description_long" : "Created for the Woodrow Wilson Center, this interactive data-visualization allows users to compare and contrast various types of energy usage among the three countries.",
       "thumb" : "tracking-energy-titans-thumb.jpg",
-      "imgs" : ["tracking-energy-titans.jpg"],
+      "imgs" : ["tracking-energy-titans01.jpg", "tracking-energy-titans02.jpg", "tracking-energy-titans03.jpg", "tracking-energy-titans04.jpg"],
       "tech" : ["D3.JS","JQuery","Node.JS","Gulp.JS","SCSS"],
+      "link" : "http://www.newsecuritybeat.org/energytitans/",
       "size" : "width2",
-      "date" : "2015-01-01"
+      "date" : "2015-06-01"
     },
     {
       "title" : "Guess That Hood NYC!",
@@ -75,62 +90,69 @@
       "description" : "A game that allows users to guess neighborhood names in NYC.",
       "description_long" : "",
       "link" : "https://vimeo.com/97669886",
-      "thumb" : "guess_hood_thumb.jpg",
-      "imgs" : [""],
+      "thumb" : "guess-that-hood-thumb.jpg",
+      "imgs" : ["guess-that-hood.jpg"],
+      "tech": ["MongoDB", "jQuery", "Leaflet.JS", "GeoJSON", "HTML5", "CSS3"],
+      "video" : {
+          "url" : "https://vimeo.com/97669886",
+          "embed" : "https://player.vimeo.com/video/97669886"
+        },
       "size" : "width2",
-      "date" : "2015-01-01"
-    },
-    {
-      "title" : "Landscapes of Profit",
-      "tags" : ["web","data-viz"],
-      "description" : "An analysis of property transaction data to promote a 1% flip tax in NYC.",
-      "description_long" : "",
-      "thumb" : "lop-thumb.jpg",
-      "imgs" : [""],
-      "size" : "width2",
-      "date" : "2015-01-01"
+      "date" : "2014-04-01"
     },
     {
       "title" : "Visualizing CO2 and GNI",
       "tags" : ["data-viz"],
-      "description" : "An interactive Processing sketch that visualizes data relating to climate change from the World Bank Data Indicators.",
+      "description" : "An interactive Processing sketch that visualizes data relating to climate change from the World Bank's Indicators Data.",
       "description_long" : "",
       "thumb" : "co2-gni-viz-thumb.jpg",
       "imgs" : ["co2-gni-viz.jpg"],
       "tech" : ["Processing","QGIS","SQL"],
-      "size" : "width2 height2",
-      "date" : "2015-01-01"
+      "size" : "width2 ",
+      "date" : "2014-04-04"
     },
     {
       "title" : "Prospect Park non euclidean map",
       "tags" : ["carto"],
-      "description" : "A non-euclidean map of Prospect Park, Brooklyn",
+      "description" : "A \"non-euclidean map\" of Prospect Park, Brooklyn",
       "description_long" : "A non-euclidean “map” of Prospect Park, Brooklyn. Created using a GoPro camera mounted to my head, iMovie for video editing and Open-Frameworks for combining the video shots into one screen space. Inspired by the theory of artist and cartographer Dennis Wood and work by Annette Kim, Associate Professor of Urban Studies and Planning at <a href=\"http://slab.scripts.mit.edu/wp/maps/narrative-maps/\">MIT's SLAB</a>",
       "thumb" : "ppnc-thumb.jpg",
       "tech" : ["Go-Pro","OpenFrameworks"],
+      "video" : {
+        "url" : "https://vimeo.com/81728484",
+        "embed" : "https://player.vimeo.com/video/81728484"
+        },
       "imgs" : ["ppnc.jpg"],
-      "size" : "width2 height2",
+      "size" : "width2 ",
       "date" : "2013-12-16"
     },
     {
       "title" : "Graffiti, Rat Sightings, and Wifi Hotspots",
       "tags" : ["web", "carto"],
-      "description" : "Graffiti, rat sightings, and wi-fi hotspots from NYC open-data.",
-      "description_long" : "",
-      "thumb" : "",
-      "imgs" : [""],
+      "description" : "Graffiti, rat sightings, and wi-fi hotspots in NYC.",
+      "description_long" : "Graffiti, rat sightings, and wi-fi hotspots, inspired by Stamen's <a target=\"_blank\" href=\"http://maps.stamen.com/trees-cabs-crime/#13/37.7629/-122.4400\">Trees-Cabs-Crime</a> created from NYC 311 data.",
+      "thumb" : "graffiti-rats-wifi-thumb.jpg",
+      "imgs" : ["graffiti-rats-wifi.jpg"],
+      "tech" : ["TileMill", "CartoCSS", "QGIS", "MapBox"],
+      "link" : "http://b.parsons.edu/~henrc131/MajorStudio1/seven/03_nyc-graffiti-rats-wifi/",
+      "tiles" : "http://b.parsons.edu/~henrc131/MajorStudio1/seven/03_nyc-graffiti-rats-wifi/",
       "size" : "",
-      "date" : "2015-01-01"
+      "date" : "2013-11-01"
     },
     {
       "title" : "From Coast to Coast",
       "tags" : ["web", "carto", "data-viz"],
       "description" : "Visualizing my move from the SF Bay Area to NYC with D3JS.",
       "description_long" : "",
-      "thumb" : "coast_to_thumb.jpg",
-      "imgs" : [""],
-      "size" : "height2",
-      "date" : "2015-01-01"
+      "thumb" : "coast-2-coast-thumb.jpg",
+      "imgs" : ["coast-2-coast.jpg"],
+      "video" : {
+        "url": "https://vimeo.com/89143409",
+        "embed" : "https://player.vimeo.com/video/89143409"
+        },
+      "tech" : ["D3.JS", "JQuery", "QGIS"],
+      "size" : "",
+      "date" : "2013-06-01"
     },
     {
       "title" : "Oakland Then and Now: Coastal Grasslands",
@@ -140,7 +162,7 @@
       "thumb" : "oak-then-now-grass-thumb.jpg",
       "imgs" : ["oak-then-now-grass.jpg"],
       "size" : "width2",
-      "date" : "2015-01-01"
+      "date" : "2013-01-01"
     },
     {
       "title" : "Oakland Then and Now: Oak Woodland",
@@ -157,9 +179,10 @@
       "tags" : ["carto", "print"],
       "description" : "Coastal recovery watersheds for Salmon and Steelhead in California",
       "description_long" : "This map was created at GreenInfo Network with Alexandra Barnish, and is a working draft showing only the coastal recovery watersheds for Salmon and Steelhead in California. Central valley recovery watersheds are not shown on this version of the map. For the most recent version please visit Sustainable Conservation's Partners in Restoration program.",
-      "thumb" : "",
-      "imgs" : [""],
-      "size" : "height2",
+      "thumb" : "chinook-thumb.jpg",
+      "imgs" : ["chinook.jpg"],
+      "tech" : ["ArcGIS", "Adobe Illustrator"],
+      "size" : "",
       "date" : "2015-01-01"
     },
     {
@@ -167,30 +190,31 @@
       "tags" : ["carto", "print"],
       "description" : "Private and publically owned land in California.",
       "description_long" : "This map was created at GreenInfo Network with Alexandra Barnish for Sustainable Conservation's Partners in Restoration program.",
-      "thumb" : "",
-      "imgs" : [""],
-      "size" : "height2",
-      "date" : "2015-01-01"
+      "thumb" : "public-private-thumb.jpg",
+      "imgs" : ["public-private.jpg"],
+      "tech" : ["ArcGIS", "Adobe Illustrator"],
+      "size" : "",
+      "date" : "2010-06-01"
     },
     {
       "title" : "Ontario",
       "tags" : ["carto", "print"],
       "description" : "The province of Ontario, Canada.",
       "description_long" : "A map of the province of Ontario, Canada created using Natural Earth 1:10m vector GIS data for the *Moon: Ontario* travel guide from Avalon Travel Publishing",
-      "thumb" : "",
-      "imgs" : [""],
+      "thumb" : "ontario-thumb.jpg",
+      "imgs" : ["ontario.jpg"],
       "size" : "width2 height1",
-      "date" : "2015-01-01"
+      "date" : "2012-01-01"
     },
     {
       "title" : "Galapagos Islands",
       "tags" : ["carto", "print"],
       "description" : "A map showing the Galapagos Islands",
       "description_long" : "",
-      "thumb" : "",
-      "imgs" : [""],
+      "thumb" : "galapagos-thumb.jpg",
+      "imgs" : ["galapagos.jpg"],
       "size" : "width2 height1",
-      "date" : "2015-01-01"
+      "date" : "2013-01-01"
     },
     {
       "title" : "Afghanistan and Pakistan",
@@ -200,18 +224,18 @@
       "thumb" : "afg-pak-thumb.jpg",
       "imgs" : ["afg-pak.jpg"],
       "tech" : ["Adobe Illustrator", "MAPublisher", "QGIS", "Natural Earth 1:10m Vector Data"],
-      "size" : "width2 height2",
-      "date" : "2015-01-01"
+      "size" : "width2 ",
+      "date" : "2013-01-01"
     },
     {
       "title" : "South East Asia",
       "tags" : ["carto", "print"],
       "description" : "A map of Thailand, Laos, and Cambodia.",
       "description_long" : "Another map for a 9 book series on the backpacking trips taken by globetrotter David Koester. Natural Earth vector and relief data were employed for sound cartographic design.",
-      "thumb" : "",
-      "imgs" : [""],
-      "size" : "height2",
-      "date" : "2015-01-01"
+      "thumb" : "se-asia-thumb.jpg",
+      "imgs" : ["se-asia.jpg"],
+      "size" : "",
+      "date" : "2013-01-01"
     },
     {
       "title" : "The North Coast",
@@ -221,28 +245,29 @@
       "tech" : ["Adobe Illustrator", "MAPublisher", "QGIS"],
       "thumb" : "north-coast-thumb.jpg",
       "imgs" : ["north-coast.jpg"],
-      "size" : "height2",
-      "date" : "2015-01-01"
+      "size" : "",
+      "date" : "2013-01-01"
     },
     {
       "title" : "Downtown Toronto",
       "tags" : ["carto", "print"],
       "description" : "A map of downtown Toronto, Canada.",
       "description_long" : "",
-      "thumb" : "",
-      "imgs" : [""],
+      "thumb" : "toronto-dt-thumb.jpg",
+      "imgs" : ["toronto-dt.jpg"],
+      "tech" : ["Adobe Illustrator"],
       "size" : "width2 height1",
-      "date" : "2015-01-01"
+      "date" : "2012-01-01"
     },
     {
       "title" : "Downtown Guanajuato",
       "tags" : ["carto", "print"],
       "description" : "A map of downtown Guanajuato, Mexico.",
       "description_long" : "",
-      "thumb" : "",
-      "imgs" : [""],
+      "thumb" : "guanajuato-dt-thumb.jpg",
+      "imgs" : ["guanajuato-dt.jpg"],
       "size" : "width2 height1",
-      "date" : "2015-01-01"
+      "date" : "2012-01-01"
     }
   ]
 }

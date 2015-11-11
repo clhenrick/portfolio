@@ -21,14 +21,19 @@
       background-color: $ci-2;
     }
   }
+
+  @media only screen and (max-width: 40em)  {
+    display: none;
+  }
 }
 
 // isotope grid area
 .grid {  
-  width: 100%;
-  // height: 100%;
-  background-color: $grey-9;
-  border: 1px solid $grey-9;
+  width: 100%;;
+  // padding-left: 5px;
+  // padding-top: 5px;
+  background-color: $grey-1;
+  // border: 1px solid $grey-1;
 
   /* clear fix */
   &:after {
@@ -41,7 +46,16 @@
 // isotope grid items
 .grid-item,
 .grid-sizer {
-  width: 20%;
+  // width: calc(20% - 5px);
+  width: 32.66666666666%;
+}
+
+.gutter-sizer {
+  width: 1%;
+  
+  @media only screen and (max-width: 40em)  {
+    width: 2%;
+  }
 }
 
 .grid-item { 
@@ -52,13 +66,21 @@
   padding: 5px;
   background-color: lighten($grey-1, 5);
   border: 2px solid $grey-9;
+  transition: border-color 100ms, border-width 100ms linear;
+
+  &:hover{
+    border-width: 4px;
+    border-color: $ci-3;
+  }
 
   &.width2 { 
-    width: 40%; 
+    // width: calc(40% - 5px); 
+    width: 32.66666666666%;
   }
 
   &.width3 {
-    width: 60%;
+    // width: calc(60% - 5px);
+    width: 32.66666666666%;
   }
 
   &.height1 {
@@ -70,11 +92,28 @@
   }
 }
 
+.grid-item, .grid-item.width2, .grid-item.width3 {
+  @media only screen and (max-width: 40em)  {
+    width: 100%;
+  }
+}
+
 // child container for each item's title & short description
 .item-meta {
   padding: 5px;
 }
 
-img.portfolio {
+img.portfolio, iframe.tiles {
   border: 2px solid $grey-8;
+}
+
+// when to display map tiles in portfolio detail pages
+iframe.tiles {
+  @media only screen and (min-width: 40.063em ) {
+    height: 850px;
+  }
+
+  @media only screen and (max-width: 40em) { 
+    height: 400px;   
+  }
 }

@@ -41,7 +41,6 @@
     {% endfor %}
       <li class="text-right"><a href="{{ site.url }}/blog/archive/"><strong>{{ site.data.language.more }}</strong></a></li>
 
-
   {% elsif tag %}
 
     {% for post in site.tags.[tag] limit:include.entries %}
