@@ -2,29 +2,49 @@
 Personal portfolio and blog of Chris Henrick using the [Feeling Resposive](http://phlow.github.io/feeling-responsive/) Jekyll theme. Forked from [Phlow](https://github.com/Phlow/feeling-responsive)
 
 ## Migrating Portfolio
-1. Edit `assets/data/work.json`
-2. Precompile Handlebars templates (see below)
-3. Add any necessary images
-4. Run Jekyll: `jekyll serve --config _config.yml,_config_dev.yml`
+To migrate work from an existing portfolio I created `JSON` data containing information for each project. This data lives in `_data/work.json` and is used to generate each page for a project as well as created the portfolio overview page.
 
-### Precompiling Handlebars
-Make sure [Node JS](https://nodejs.org) and [Handlebars](http://handlebarsjs.com/) are installed.
+Updating the portfolio works like this:
+1. Edit `assets/data/work.json` as needed.
+2. `cd scripts/ && npm install`
+3. from the `scripts/` dir do `node make-portfolio-posts.js`
 
-From the root of this repo do: `handlebars _data/item.hbs -f assets/js/work.js -k each`
+To run Jekyll in a dev environment do:  
+`jekyll serve --config _config.yml,_config_dev.yml`
 
 ## Updating
-Should be done by creating new posts tagged with `portfolio` in the `_posts/portfolio/` directory.
+Add a new object to `_data/work.json` containing the following:
+
+```json
+    {
+      "title" : "Prospect Park non euclidean map", // required: title of the project
+      "tags" : ["carto"], // required: any relevant tags
+      "description" : "A \"non-euclidean map\" of Prospect Park, Brooklyn", // short description shown in `/work/`
+      "description_long" : "A non-euclidean “map” of Prospect Park, Brooklyn. Created using a GoPro camera mounted to my head, iMovie for video editing and Open-Frameworks for combining the video shots into one screen space. Inspired by the theory of artist and cartographer Dennis Wood and work by Annette Kim, Associate Professor of Urban Studies and Planning at <a href=\"http://slab.scripts.mit.edu/wp/maps/narrative-maps/\">MIT's SLAB</a>", // long description shown in the corresponding project page
+      "thumb" : "ppnc-thumb.jpg", // required: thumb nail image
+      "tech" : ["Go-Pro","OpenFrameworks"], // whatever tech was used
+      "video" : {
+        "url" : "https://vimeo.com/81728484", // link to a video if the project has one
+        "embed" : "https://player.vimeo.com/video/81728484" // link to the embed url for the video
+        },
+      "imgs" : ["ppnc.jpg"], // required: any images associated with the project
+      "size" : "width2 ", // size to give to the project (depreciated / unnecessary)
+      "date" : "2013-12-16" // date the project was created
+    }
+```
+
+Then `cd` to the `scripts` dir and do `node make-portfolio-pages.js`
 
 ## TO DO List:
 - [x] Make thumbnails & resize images
 
-- [ ] Make portfolio mobile friendly
+- [x] Make portfolio mobile friendly
 
-- [ ] presentations
+- [ ] add presentations as a git sub-module
 
-- [ ] CV / Resume
+- [ ] add CV / Resume
 
-- [ ] Talks
+- [ ] add Talks
 
 - [x] Node JS script to generate posts in `_posts/portfolio/` from `assets/data/work.json`
 
@@ -53,7 +73,7 @@ Should be done by creating new posts tagged with `portfolio` in the `_posts/port
 
 - [ ] generate favicons & touch icons from logo using [real favicon generator](http://realfavicongenerator.net/)
 
-- [ ] index with Google’s SEO & custom search
+- [ ] index with Google’s SEO & custom search using sitemap.xml
 
 ## Deploying Jekyll With Git On A Remote VPS
 - https://www.digitalocean.com/community/tutorials/how-to-deploy-jekyll-blogs-with-git
