@@ -6,9 +6,9 @@
 #
 # Resource › http://blog.sorryapp.com/blogging-with-jekyll/2014/02/06/adding-authors-to-your-jekyll-site.html
 clhenrick: # replace this with your info
-  name: "clhenrick"
+  name: "chris l henrick"
   siterole: "webmaster, developer, cartographer"
-  uri: http://chrishenrick.com/
+  uri: http://clhenrick.io/
   email:
   twitter: "@chrislhenrick"
 # you can add more authors here

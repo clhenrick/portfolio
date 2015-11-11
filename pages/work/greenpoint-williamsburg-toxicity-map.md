@@ -18,6 +18,7 @@ The NAG Greenpoint-Williamsburg ToxiCity Map is an interactive map of toxic “h
 
 <strong>Technologies Used:</strong>  - CartoDB.JS  - Leaflet.JS  - MapBox Studio Classic  - CartoCSS  - Node JS  - Pelias Geocoder  - Handlebars.JS  - JQuery 
 
+<strong><a href="https://github.com/clhenrick/greenpoint_williamsburg_toxicity_map" target="_blank">View code on Github</a></strong>
 
   <a href="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map01.jpg" target="_blank">
     <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map01.jpg" alt="nag-toxicity-map01.jpg">
