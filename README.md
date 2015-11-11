@@ -23,12 +23,13 @@ Add a new object to the `work` array in `_data/work.json` containing the followi
 - "thumb" : required: thumb nail image
 - "tech" : an array containing the names of whatever tech was used
 - "video" : an object containing the following if the project has a video
-  - "url" : link to a video if the project has one 
+  - "url" : link to a video if the project has one  
     ( eg: "https://vimeo.com/81728484")
-  - "embed" : link to the embed url for the video
+  - "embed" : link to the embed url for the video  
     (eg: "https://player.vimeo.com/video/81728484")
-- "imgs" : ["ppnc.jpg"], // required: any images associated with the project
-- "size" : "width2 ", // size to give to the project (depreciated / unnecessary)
+- "imgs" : required: an array of any images associated with the project
+- "size" : size to give to the project that corresponds to a `CSS` class 
+  (depreciated / unnecessary)
 - "date" : date the project was created in the format of Year-Month-Day, eg: "2014-11-02"
 
 Then `cd` to the `scripts` dir and do `node make-portfolio-pages.js`
