@@ -4,7 +4,8 @@ Personal portfolio and blog of Chris Henrick using the [Feeling Resposive](http:
 ## Migrating Portfolio
 To migrate work from an existing portfolio I created `JSON` data containing information for each project. This data lives in `_data/work.json` and is used to generate each page for a project as well as created the portfolio overview page.
 
-Updating the portfolio works like this:
+Updating the portfolio works like this:  
+
 1. Edit `assets/data/work.json` as needed.
 2. `cd scripts/ && npm install`
 3. from the `scripts/` dir do `node make-portfolio-posts.js`
