@@ -14,7 +14,7 @@ header: no
 **Web Developer**  
 *May, 2015 - Present*    
 
-Currently assisting [Radish Lab](http://radishlab.com/), a web and graphic design studio, with creating interactive data-visualizations, web-mapping, and professionally designed web sites for non-profits and cultural instutitions such as MAS. Duties include agile front-end web-development using modern web technologies such as Node JS, D3 JS, Wordpress, CartoDB, and Git / Github.
+Currently assisting [Radish Lab](http://radishlab.com/), a web and graphic design studio, with creating interactive data-visualizations, web-mapping, and professionally designed web sites for non-profits and cultural instutitions such as MAS. Duties include agile front-end web-development using modern web technologies such as jQuery, Node.JS, D3.JS, Wordpress, CartoDB, and Github.
 
 ### Chris Henrick Cartography, Brooklyn, NY
 **Principal Cartographer**  
@@ -139,10 +139,12 @@ GPA 3.49
 - Programming proficiency in Javascript, Python, Bash, & SQL.
 - Database management with PostgreSQL.  
 - Server side web development with Node.JS & the Express Framework.
-- Front end web development with HTML5, CSS3, Javascript, jQuery.
-- Geospatial Information Systems using QGIS, PostGIS, GDAL, ESRI ArcGIS
-- CartoDB platform, javascript library, & API's
-- MapBox platform, javascript library, & API's
-- Adobe Software: Illustrator, Photoshop, and InDesign
-- MAPublisher (GIS & Cartography plug-in for Adobe Illustrator)
-- Natural Scene Designer Pro
+- Front end web development with HTML5, CSS3, Javascript, jQuery, Bootstrap.
+- Version control and collaboration using Git & Github.
+- Geospatial Information Systems using QGIS, PostGIS, GDAL, ESRI ArcGIS.
+- Web mapping using Leaflet.JS
+- Cartographic design using TileMill and CartoCSS.
+- CartoDB platform, javascript library, & API's.
+- MapBox platform, javascript library, & API's.
+- Adobe Software: Illustrator, Photoshop, and InDesign.
+- MAPublisher (GIS & Cartography plug-in for Adobe Illustrator).
