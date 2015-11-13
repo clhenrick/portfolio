@@ -41,7 +41,7 @@ Then `cd` to the `scripts` dir and do `node make-portfolio-pages.js`
 
 - [x] Make portfolio mobile friendly
 
-- [ ] add presentations as a git sub-module
+- [x] add presentations as a git sub-module
 
 - [ ] add CV / Resume
 
