@@ -221,6 +221,10 @@ body.video cite { color: #fff; }
 #page-meta .button {
     background: $grey-5;
     border: 0;
+    
+    &.small {
+        padding: 10px;
+    }
 }
 #page-meta .button {
     color: #fff;
