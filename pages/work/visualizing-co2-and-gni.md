@@ -16,6 +16,8 @@ permalink: "/work/visualizing-co2-and-gni.html"
 
 <strong>Technologies Used:</strong>  - Processing  - QGIS  - SQL 
 
+<strong><a href="https://github.com/clhenrick/data-viz-projects/tree/master/03_scatterplot" target="_blank">View code on Github</a></strong>
+
   <a href="{{site.url}}{{site.baseurl}}/images/co2-gni-viz.jpg" target="_blank">
     <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/co2-gni-viz.jpg" alt="co2-gni-viz.jpg">
   </a>

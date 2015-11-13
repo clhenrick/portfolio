@@ -17,6 +17,7 @@ Open data from Cal Atlas and CPAD were used to make this map.
 
 <strong>Technologies Used:</strong>  - Adobe Illustrator  - MAPublisher  - QGIS 
 
+
   <a href="{{site.url}}{{site.baseurl}}/images/north-coast.jpg" target="_blank">
     <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/north-coast.jpg" alt="north-coast.jpg">
   </a>

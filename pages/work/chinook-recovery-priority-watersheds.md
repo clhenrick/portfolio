@@ -17,6 +17,7 @@ This map was created at GreenInfo Network with Alexandra Barnish, and is a worki
 
 <strong>Technologies Used:</strong>  - ArcGIS  - Adobe Illustrator 
 
+
   <a href="{{site.url}}{{site.baseurl}}/images/chinook.jpg" target="_blank">
     <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/chinook.jpg" alt="chinook.jpg">
   </a>

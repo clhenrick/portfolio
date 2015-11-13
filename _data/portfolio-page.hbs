@@ -44,6 +44,10 @@ permalink: "/work/{{permalink}}"
 <strong>Technologies Used:</strong> {{#each tech }} - {{this}} {{/each}}
 {{/if}}
 
+{{#if code}}
+<strong><a href="{{code}}" target="_blank">View code on Github</a></strong>
+{{/if}}
+
 {{#unless video}}
 {{#if tiles}}
   <iframe class="tiles" width='100%' height='100%' frameBorder='0' src='{{tiles}}'></iframe>

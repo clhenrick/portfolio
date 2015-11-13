@@ -18,6 +18,7 @@ Created for the Woodrow Wilson Center, this interactive data-visualization allow
 
 <strong>Technologies Used:</strong>  - D3.JS  - JQuery  - Node.JS  - Gulp.JS  - SCSS 
 
+
   <a href="{{site.url}}{{site.baseurl}}/images/tracking-energy-titans01.jpg" target="_blank">
     <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/tracking-energy-titans01.jpg" alt="tracking-energy-titans01.jpg">
   </a>

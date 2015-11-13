@@ -16,6 +16,7 @@ permalink: "/work/downtown-toronto.html"
 
 <strong>Technologies Used:</strong>  - Adobe Illustrator 
 
+
   <a href="{{site.url}}{{site.baseurl}}/images/toronto-dt.jpg" target="_blank">
     <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/toronto-dt.jpg" alt="toronto-dt.jpg">
   </a>

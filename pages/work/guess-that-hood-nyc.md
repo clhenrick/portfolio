@@ -21,5 +21,7 @@ permalink: "/work/guess-that-hood-nyc.html"
 
 <strong>Technologies Used:</strong>  - MongoDB  - jQuery  - Leaflet.JS  - GeoJSON  - HTML5  - CSS3 
 
+<strong><a href="https://github.com/web3js/cloaked-octo-batman/tree/master/chris-henrick/mid-term" target="_blank">View code on Github</a></strong>
+
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)
