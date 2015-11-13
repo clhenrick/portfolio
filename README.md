@@ -104,6 +104,3 @@ Then `cd` to the `scripts` dir and do `node make-portfolio-pages.js`
 #### Flexible / Staggered Multiple Column Layouts:  
 - http://isotope.metafizzy.co/
 - http://masonry.desandro.com/
-
-
-test test
