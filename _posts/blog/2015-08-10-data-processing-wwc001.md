@@ -96,7 +96,6 @@ And another for the United State's per-capita data:
 |  |  |  |  |  |  |  |  |  |  |
 |  |  | *Million Metric Ton |  |  |  |  |  |  |  |
 
-
 As you can see, the total and per-capita data are structured in such a way that the values are grouped in sub-categories which are then grouped by category. For example for the category Exports there are sub-cateogries for coal, gas, crude oil, oil products, and electricity. This made it difficult to read the raw data into D3JS directly using the [d3.csv](https://github.com/mbostock/d3/wiki/CSV#csv) method. D3 also has a method for [parsing CSV data](https://github.com/mbostock/d3/wiki/CSV#parse), but it didn't make sense to do a ton of work parsing 8 CSV files in the browser each time the interactive loads or changes due to a button click.
 
 The output JSON data format I decided on would look something like the following schema:
