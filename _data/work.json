@@ -245,6 +245,18 @@
       "date" : "2013-01-01"
     },
     {
+      "title" : "Sikkim",
+      "tags" : ["carto"],
+      "description" : "Sikkim, northern India.",
+      "description_long" : "A custom hillshade was created from SRTM DEM data using QGIS and Terrain Sculptor.",
+      "tech" : ["Terrain Sculptor", "QGIS", "MAPublisher", "Adobe Illustrator"],
+      "thumb" : "sikkim-thumb.jpg",
+      "imgs" : ["sikkim.jpg"],
+      "size" : "",
+      "date" : "2013-01-01"
+
+    },
+    {
       "title" : "The North Coast",
       "tags" : ["carto", "print"],
       "description" : "A split frame map I created for Moon: Northern California.",

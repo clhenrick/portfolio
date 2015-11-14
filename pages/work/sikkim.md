@@ -1,0 +1,27 @@
+---
+layout: page-fullwidth
+show_meta: true
+title: "Sikkim"
+teaser: "Sikkim, northern India."
+date: "2013-01-01"
+tags:
+  - carto 
+category:
+  - work
+header: no
+permalink: "/work/sikkim.html"
+---
+
+
+A custom hillshade was created from SRTM DEM data using QGIS and Terrain Sculptor.
+
+<strong>Technologies Used:</strong>  - Terrain Sculptor  - QGIS  - MAPublisher  - Adobe Illustrator 
+
+
+  <a href="{{site.url}}{{site.baseurl}}/images/sikkim.jpg" target="_blank">
+    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/sikkim.jpg" alt="sikkim.jpg">
+  </a>
+
+
+
+[<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)
