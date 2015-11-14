@@ -15,7 +15,9 @@
 	{% else %}
 		<changefreq>{{ include.changefreq }}</changefreq>
 	{% endif %}
-	{% if link.sitemap.priority %}
+	{% if link.title == "About CLHenrick" or link.title == "Portfolio" %}
+		<priority>1.0</priority>
+	{% elsif link.sitemap.priority %}
 		<priority>{{ link.sitemap.priority }}</priority>
 	{% else %}
 		<priority>{{ include.priority }}</priority>
