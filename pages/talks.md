@@ -7,19 +7,19 @@ permalink: "/info/talks/"
 header: no
 ---
 
-### Mapping for Housing Justice in Bushwick, NYC
-- *NACIS, Minneapolis MN, October 15, 2015*   
-
-**The Bushwick Community Map** is an interactive web-mapping project that provides local residents and community organizers with access to data relating to housing and urban planning of the Bushwick neighborhood in Brooklyn, NY. It's goal is to help track gentrification and prevent the displacement of longterm residents from illegitimate practices by landlords. This talk will provide an overview of the project's history as well as how open government data and open source web-mapping technology can be used to strengthen the tenants rights movement and the work of anti-displacement activists. 
-
-- [Link to presentation slides]({{site.url}}{{site.baseurl}}/presentations/bcm-nacis-2015/)
-
 ### Am I Rent Stabilized?
 - *NACIS, Minneapolis MN, October 16, 2015*
 
 **Am I Rent Stabilized?** is a web application that encourages New York City tenants to find out if their landlord may be illegally overcharging them for a rent stabilized apartment and if so, motivates them to take action. It is an attempt at using open data acquired through a Freedom of Information Law request as a prompt for civic action, rather than solely for visualization and analysis. The app asks the user to input their address and checks it against a database of properties that are likely to have rent stabilized apartments. From here the app recommends a course of action and informs the user of their nearest tenants rights group so they may receive help. This presentation will discuss my development of the app and the geospatial technologies used to create it.
 
 - [Link to presentation slides]({{site.url}}{{site.baseurl}}/presentations/am-i-rent-stabilized/)
+
+### Mapping for Housing Justice in Bushwick, NYC
+- *NACIS, Minneapolis MN, October 15, 2015*   
+
+**The Bushwick Community Map** is an interactive web-mapping project that provides local residents and community organizers with access to data relating to housing and urban planning of the Bushwick neighborhood in Brooklyn, NY. It's goal is to help track gentrification and prevent the displacement of longterm residents from illegitimate practices by landlords. This talk will provide an overview of the project's history as well as how open government data and open source web-mapping technology can be used to strengthen the tenants rights movement and the work of anti-displacement activists. 
+
+- [Link to presentation slides]({{site.url}}{{site.baseurl}}/presentations/bcm-nacis-2015/)
 
 ### Mapping For Social Justice Workshop
 - *NACIS, Minneapolis MN, October 15, 2015*

@@ -117,24 +117,26 @@ Areas of focus included interactive web-mapping, data-visualization, web develop
 
 MFA Thesis: [Am I Rent Stabilized?](https:amirentstabilized.com), an interactive web-app about rent-stabilization in New York City.
 
-### U.C. Berkeley Extension, San Francisco, CA
+### U.C. Berkeley Extension 
 **Graphic Design Certificate Program**  
 *Fall, 2009 - Spring, 2010*  
-  
+San Francisco, CA
 
 Areas of concentration include 2-D design, publication design, and typography.
 
-### Temple University, Philadelphia, PA
+### Temple University
 **Bachelor of Arts in Geography and Urban Studies.**  
 *Graduated May, 2008*  
+Philadelphia, PA  
 GPA 3.77, graduated Magna Cum Laude.  
 
 Member of Gamma Theta Upsilon, National Honors Society for Geography.
 Recipient of the Henry N. Michael Prize in Geography and Urban Studies.
 
-### University of the Arts, Philadelphia, PA
+### University of the Arts
 **Fine Art: Print Making and Drawing**  
 *Fall, 2000 - Spring, 2002*  
+Philadelphia, PA  
 GPA 3.49  
 
 ## Computer Skills:
