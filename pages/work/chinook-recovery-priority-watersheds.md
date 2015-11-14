@@ -5,7 +5,7 @@ title: "Chinook Recovery Priority Watersheds"
 teaser: "Coastal recovery watersheds for Salmon and Steelhead in California"
 date: "2015-01-01"
 tags:
-  - carto print 
+  - cartography print 
 category:
   - work
 header: no

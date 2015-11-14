@@ -5,7 +5,7 @@ title: "Downtown Toronto"
 teaser: "A map of downtown Toronto, Canada."
 date: "2012-01-01"
 tags:
-  - carto print 
+  - cartography print 
 category:
   - work
 header: no

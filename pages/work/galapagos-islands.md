@@ -5,7 +5,7 @@ title: "Galapagos Islands"
 teaser: "A map showing the Galapagos Islands"
 date: "2013-01-01"
 tags:
-  - carto print 
+  - cartography print 
 category:
   - work
 header: no

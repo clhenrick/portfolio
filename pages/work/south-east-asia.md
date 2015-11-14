@@ -5,7 +5,7 @@ title: "South East Asia"
 teaser: "A map of Thailand, Laos, and Cambodia."
 date: "2013-01-01"
 tags:
-  - carto print 
+  - cartography print 
 category:
   - work
 header: no

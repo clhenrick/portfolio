@@ -5,7 +5,7 @@ title: "The North Coast"
 teaser: "A split frame map I created for Moon: Northern California."
 date: "2013-01-01"
 tags:
-  - carto print 
+  - cartography print 
 category:
   - work
 header: no

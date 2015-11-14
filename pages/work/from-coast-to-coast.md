@@ -4,7 +4,7 @@ show_meta: true
 title: "From Coast to Coast"
 teaser: "Visualizing my move from the SF Bay Area to NYC with D3JS."
 tags:
-    - web carto data-viz 
+    - web cartography data-viz 
 category:
     - work
 iframe: "<iframe width='970' height='546' src='https://player.vimeo.com/video/89143409' frameborder='0' allowfullscreen></iframe>"

@@ -5,7 +5,7 @@ title: "Bushwick Community Map"
 teaser: "A map to track issues around urban development in Bushwick, NY"
 date: "2014-12-20"
 tags:
-  - web data-viz carto 
+  - web data-viz cartography 
 category:
   - work
 header: no

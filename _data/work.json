@@ -16,7 +16,7 @@
     },
     {
       "title" : "Bushwick Community Map",
-      "tags" : ["web", "data-viz", "carto"],
+      "tags" : ["web", "data-viz", "cartography"],
       "description" : "A map to track issues around urban development in Bushwick, NY",
       "description_long" : "The Northwest Bushwick Community Map is meant to be a resource for local community organizations and tenants rights groups to easily access disparate information around land use, housing and urban development for the neighborhood of Bushwick in Brooklyn, NY. It is also intended to be a tool to inform NYC residents about what kinds of indicators may be used to predict new urban development and help prevent displacement of residents in their own neighborhoods. Recently I had the opportunity to work with the original author of the map and some fellow designers in the MFA DT program at Parsons to improve the map’s design and functionality.",
       "tech" : ["CartoDB.JS", "Odyssey.JS", "Leaflet.JS", "Mapbox.JS", "Underscore.JS", "JQuery"],
@@ -29,7 +29,7 @@
     },
     {
       "title" : "Greenpoint Williamsburg Toxicity Map",
-      "tags" : ["web", "data-viz", "carto"],
+      "tags" : ["web", "data-viz", "cartography"],
       "description" : "A map to inform residents of north Brooklyn about environmental hazards.",
       "description_long" : "The NAG Greenpoint-Williamsburg ToxiCity Map is an interactive map of toxic “hot spots” in Greenpoint and Williamsburg. Data used to compile this map came from city, state and federal sources, guided by on-the-ground knowledge from local activists. Click through the data layers on the map to understand some neighborhood trends such as population density and asthma hospital visits, and locate some specific sites such as former NuHart Plastics factory and the Exxon oil spill. Sites that have already been remediated and sites that require future remediation are included on this map.<br><br>This project was created with the help of Bowon Chung and Jessie Braden via Pratt's Spatial Analysis and Visualization Initiative.",
       "tech" : ["CartoDB.JS", "Leaflet.JS", "MapBox Studio Classic", "CartoCSS", "Node JS", "Pelias Geocoder", "Handlebars.JS", "JQuery"],
@@ -91,7 +91,7 @@
     },
     {
       "title" : "Guess That Hood NYC!",
-      "tags" : ["web", "carto"],
+      "tags" : ["web", "cartography"],
       "description" : "A game that allows users to guess neighborhood names in NYC.",
       "description_long" : "",
       "link" : "https://vimeo.com/97669886",
@@ -120,7 +120,7 @@
     },
     {
       "title" : "Prospect Park non euclidean map",
-      "tags" : ["carto"],
+      "tags" : ["cartography"],
       "description" : "A \"non-euclidean map\" of Prospect Park, Brooklyn",
       "description_long" : "A non-euclidean “map” of Prospect Park, Brooklyn. Created using a GoPro camera mounted to my head, iMovie for video editing and Open-Frameworks for combining the video shots into one screen space. Inspired by the theory of artist and cartographer Dennis Wood and work by Annette Kim, Associate Professor of Urban Studies and Planning at <a href=\"http://slab.scripts.mit.edu/wp/maps/narrative-maps/\">MIT's SLAB</a>",
       "thumb" : "ppnc-thumb.jpg",
@@ -135,7 +135,7 @@
     },
     {
       "title" : "Graffiti, Rat Sightings, and Wifi Hotspots",
-      "tags" : ["web", "carto"],
+      "tags" : ["web", "cartography"],
       "description" : "Graffiti, rat sightings, and wi-fi hotspots in NYC.",
       "description_long" : "Graffiti, rat sightings, and wi-fi hotspots, inspired by Stamen's <a target=\"_blank\" href=\"http://maps.stamen.com/trees-cabs-crime/#13/37.7629/-122.4400\">Trees-Cabs-Crime</a> created from NYC 311 data.",
       "thumb" : "graffiti-rats-wifi-thumb.jpg",
@@ -148,7 +148,7 @@
     },
     {
       "title" : "From Coast to Coast",
-      "tags" : ["web", "carto", "data-viz"],
+      "tags" : ["web", "cartography", "data-viz"],
       "description" : "Visualizing my move from the SF Bay Area to NYC with D3JS.",
       "description_long" : "",
       "thumb" : "coast-2-coast-thumb.jpg",
@@ -163,7 +163,7 @@
     },
     {
       "title" : "Oakland Then and Now: Coastal Grasslands",
-      "tags" : ["carto", "print"],
+      "tags" : ["cartography", "print"],
       "description" : "Historic coastal grassland, bay and shoreline over the current day built up land area of Oakland, CA.",
       "description_long" : "A prototype map design for the Oakland Museum of California. This map shows historic coastal grassland areas, and a historic bay and shoreline over the current day built up land area for an exhibit titled Oakland: Then and Now.",
       "thumb" : "oak-then-now-grass-thumb.jpg",
@@ -173,7 +173,7 @@
     },
     {
       "title" : "Oakland Then and Now: Oak Woodland",
-      "tags" : ["carto", "print"],
+      "tags" : ["cartography", "print"],
       "description" : "Historic oak woodland, bay and shoreline over the current day built up land area of Oakland, CA.",
       "description_long" : "A prototype map design for the Oakland Museum of California. This map shows historic oak woodland areas, and a historic bay and shoreline over the current day built up land area for an exhibit titled Oakland: Then and Now.",
       "thumb" : "oak-then-now-oak-thumb.jpg",
@@ -183,7 +183,7 @@
     },
     {
       "title" : "Chinook Recovery Priority Watersheds",
-      "tags" : ["carto", "print"],
+      "tags" : ["cartography", "print"],
       "description" : "Coastal recovery watersheds for Salmon and Steelhead in California",
       "description_long" : "This map was created at GreenInfo Network with Alexandra Barnish, and is a working draft showing only the coastal recovery watersheds for Salmon and Steelhead in California. Central valley recovery watersheds are not shown on this version of the map. For the most recent version please visit Sustainable Conservation's Partners in Restoration program.",
       "thumb" : "chinook-thumb.jpg",
@@ -194,7 +194,7 @@
     },
     {
       "title" : "CA Private Public Land",
-      "tags" : ["carto", "print"],
+      "tags" : ["cartography", "print"],
       "description" : "Private and publically owned land in California.",
       "description_long" : "This map was created at GreenInfo Network with Alexandra Barnish for Sustainable Conservation's Partners in Restoration program.",
       "thumb" : "public-private-thumb.jpg",
@@ -205,7 +205,7 @@
     },
     {
       "title" : "Ontario",
-      "tags" : ["carto", "print"],
+      "tags" : ["cartography", "print"],
       "description" : "The province of Ontario, Canada.",
       "description_long" : "A map of the province of Ontario, Canada created using Natural Earth 1:10m vector GIS data for the *Moon: Ontario* travel guide from Avalon Travel Publishing",
       "thumb" : "ontario-thumb.jpg",
@@ -215,7 +215,7 @@
     },
     {
       "title" : "Galapagos Islands",
-      "tags" : ["carto", "print"],
+      "tags" : ["cartography", "print"],
       "description" : "A map showing the Galapagos Islands",
       "description_long" : "",
       "thumb" : "galapagos-thumb.jpg",
@@ -225,7 +225,7 @@
     },
     {
       "title" : "Afghanistan and Pakistan",
-      "tags" : ["carto", "print"],
+      "tags" : ["cartography", "print"],
       "description" : "Map of Afghanistan and Pakistan for the book Dirty Wars.",
       "description_long" : "Map of Afghanistan and Pakistan for the book Dirty Wars: The World is a Battlefield, by Jeremy Scahill. Published by Nation Books.",
       "thumb" : "afg-pak-thumb.jpg",
@@ -236,7 +236,7 @@
     },
     {
       "title" : "South East Asia",
-      "tags" : ["carto", "print"],
+      "tags" : ["cartography", "print"],
       "description" : "A map of Thailand, Laos, and Cambodia.",
       "description_long" : "Another map for a 9 book series on the backpacking trips taken by globetrotter David Koester. Natural Earth vector and relief data were employed for sound cartographic design.",
       "thumb" : "se-asia-thumb.jpg",
@@ -246,7 +246,7 @@
     },
     {
       "title" : "Sikkim",
-      "tags" : ["carto"],
+      "tags" : ["cartography"],
       "description" : "Sikkim, northern India.",
       "description_long" : "A custom hillshade was created from SRTM DEM data using QGIS and Terrain Sculptor.",
       "tech" : ["Terrain Sculptor", "QGIS", "MAPublisher", "Adobe Illustrator"],
@@ -258,7 +258,7 @@
     },
     {
       "title" : "The North Coast",
-      "tags" : ["carto", "print"],
+      "tags" : ["cartography", "print"],
       "description" : "A split frame map I created for Moon: Northern California.",
       "description_long" : "Open data from Cal Atlas and CPAD were used to make this map.",
       "tech" : ["Adobe Illustrator", "MAPublisher", "QGIS"],
@@ -269,7 +269,7 @@
     },
     {
       "title" : "Downtown Toronto",
-      "tags" : ["carto", "print"],
+      "tags" : ["cartography", "print"],
       "description" : "A map of downtown Toronto, Canada.",
       "description_long" : "",
       "thumb" : "toronto-dt-thumb.jpg",
@@ -280,7 +280,7 @@
     },
     {
       "title" : "Downtown Guanajuato",
-      "tags" : ["carto", "print"],
+      "tags" : ["cartography", "print"],
       "description" : "A map of downtown Guanajuato, Mexico.",
       "description_long" : "",
       "thumb" : "guanajuato-dt-thumb.jpg",

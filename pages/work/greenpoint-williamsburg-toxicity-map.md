@@ -5,7 +5,7 @@ title: "Greenpoint Williamsburg Toxicity Map"
 teaser: "A map to inform residents of north Brooklyn about environmental hazards."
 date: "2015-11-01"
 tags:
-  - web data-viz carto 
+  - web data-viz cartography 
 category:
   - work
 header: no

@@ -12,7 +12,7 @@ header: no
   <button class="active all" data-filter="*">all</button>
   <button data-filter=".web">interactive</button>
   <button data-filter=".data-viz">data viz</button>  
-  <button data-filter=".carto">cartographic design</button>
+  <button data-filter=".cartography">cartographic design</button>
   <button class="shuffle">shuffle!</button>
 </div>
 
@@ -21,7 +21,7 @@ header: no
   <div class="gutter-sizer"></div>
   <div class="grid-sizer"></div>
   {% for item in site.data.work.work %}
-    <div class="grid-item {{ item.size }} {% for tag in item.tags %}} {{tag}} {% endfor %}">
+    <div class="grid-item {{ item.size }} {% for tag in item.tags %}{{tag}} {% endfor %}">
       <a href="{{ site.url }}{{ site.baseurl }}/work/{{item.title | slugify}}.html">
         {% if item.thumb.size != 0  %}      
           <img class="item-img" src="{{ site.url }}{{ site.baseurl }}/images/{{item.thumb}}">

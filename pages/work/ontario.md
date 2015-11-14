@@ -5,7 +5,7 @@ title: "Ontario"
 teaser: "The province of Ontario, Canada."
 date: "2012-01-01"
 tags:
-  - carto print 
+  - cartography print 
 category:
   - work
 header: no

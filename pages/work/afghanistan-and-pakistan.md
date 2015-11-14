@@ -5,7 +5,7 @@ title: "Afghanistan and Pakistan"
 teaser: "Map of Afghanistan and Pakistan for the book Dirty Wars."
 date: "2013-01-01"
 tags:
-  - carto print 
+  - cartography print 
 category:
   - work
 header: no

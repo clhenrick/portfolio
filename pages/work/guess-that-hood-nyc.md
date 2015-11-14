@@ -4,7 +4,7 @@ show_meta: true
 title: "Guess That Hood NYC!"
 teaser: "A game that allows users to guess neighborhood names in NYC."
 tags:
-    - web carto 
+    - web cartography 
 category:
     - work
 iframe: "<iframe width='970' height='546' src='https://player.vimeo.com/video/97669886' frameborder='0' allowfullscreen></iframe>"

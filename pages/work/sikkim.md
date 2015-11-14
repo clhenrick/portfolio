@@ -5,7 +5,7 @@ title: "Sikkim"
 teaser: "Sikkim, northern India."
 date: "2013-01-01"
 tags:
-  - carto 
+  - cartography 
 category:
   - work
 header: no

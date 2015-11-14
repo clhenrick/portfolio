@@ -5,7 +5,7 @@ title: "Graffiti, Rat Sightings, and Wifi Hotspots"
 teaser: "Graffiti, rat sightings, and wi-fi hotspots in NYC."
 date: "2013-11-01"
 tags:
-  - web carto 
+  - web cartography 
 category:
   - work
 header: no

@@ -5,7 +5,7 @@ title: "CA Private Public Land"
 teaser: "Private and publically owned land in California."
 date: "2010-06-01"
 tags:
-  - carto print 
+  - cartography print 
 category:
   - work
 header: no

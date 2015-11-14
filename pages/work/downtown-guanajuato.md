@@ -5,7 +5,7 @@ title: "Downtown Guanajuato"
 teaser: "A map of downtown Guanajuato, Mexico."
 date: "2012-01-01"
 tags:
-  - carto print 
+  - cartography print 
 category:
   - work
 header: no

@@ -4,7 +4,7 @@ show_meta: true
 title: "Prospect Park non euclidean map"
 teaser: "A &quot;non-euclidean map&quot; of Prospect Park, Brooklyn"
 tags:
-    - carto 
+    - cartography 
 category:
     - work
 iframe: "<iframe width='970' height='546' src='https://player.vimeo.com/video/81728484' frameborder='0' allowfullscreen></iframe>"
