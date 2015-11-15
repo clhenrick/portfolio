@@ -15,7 +15,12 @@
 #   class: "rss-link"
 #   title: "Images by Unsplash"
 
-- name: "Using Backstretch by Scott Robbin"
-  url: "http://srobbin.com/jquery-plugins/backstretch/"
-  class: "sitemap-link"
-  title: "Using Backstretch by Scott Robbin"
+# - name: "Using Backstretch by Scott Robbin"
+#   url: "http://srobbin.com/jquery-plugins/backstretch/"
+#   class: "sitemap-link"
+#   title: "Using Backstretch by Scott Robbin"
+
+- name: "Code on Github"
+  url: "https://github.com/clhenrick/portfolio"
+  class: "site-code"
+  title: "Code available on Github"
