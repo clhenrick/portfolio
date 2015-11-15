@@ -7,6 +7,23 @@ $('audio,video').mediaelementplayer();
 
 <script src="{{ site.url }}{{ site.baseurl }}/assets/js/javascript.min.js"></script>
 
+<script type="text/javascript">
+// make all external links open in a new browser tab
+// code credit: https://css-tricks.com/snippets/jquery/open-external-links-in-new-window/
+$(function(){
+  $('a').each(function() {
+     var a = new RegExp('/' + window.location.host + '/');
+     if(!a.test(this.href)) {
+         $(this).click(function(event) {
+             event.preventDefault();
+             event.stopPropagation();
+             window.open(this.href, '_blank');
+         });
+     }
+  });
+});
+</script>
+
 {% if page.url == '/work/' %}
 <script src="{{ site.url }}{{ site.baseurl }}/assets/js/isotope.pkgd.js"></script>
 <script src="{{ site.url }}{{ site.baseurl }}/assets/js/packery-mode.pkgd.js"></script>
