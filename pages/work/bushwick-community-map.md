@@ -14,7 +14,7 @@ permalink: "/work/bushwick-community-map.html"
 
 <strong>Project Link:</strong> <a href="http://www.bushwickcommunitymap.org" target="_blank">Bushwick Community Map</a>
 
-The Northwest Bushwick Community Map is meant to be a resource for local community organizations and tenants rights groups to easily access disparate information around land use, housing and urban development for the neighborhood of Bushwick in Brooklyn, NY. It is also intended to be a tool to inform NYC residents about what kinds of indicators may be used to predict new urban development and help prevent displacement of residents in their own neighborhoods. Recently I had the opportunity to work with the original author of the map and some fellow designers in the MFA DT program at Parsons to improve the map’s design and functionality.
+The Northwest Bushwick Community Map is meant to be a resource for local community organizations and tenants rights groups to easily access disparate information around land use, housing, and urban development for the neighborhood of Bushwick in Brooklyn, NY. It is also intended to be a tool to inform NYC residents about what kinds of indicators may be used to predict new urban development and help prevent displacement of longterm residents in their own neighborhoods.<br><br> This project was a collaboration between Michael "Ziggy" Mintz and Brigette Blood of the Northwest Bushwick Community Group and Gabriel Gianordoli, Daniel Mastretta, and Namreta Kumar of MFA DT.
 
 <strong>Technologies Used:</strong>  - CartoDB.JS  - Odyssey.JS  - Leaflet.JS  - Mapbox.JS  - Underscore.JS  - JQuery 
 
