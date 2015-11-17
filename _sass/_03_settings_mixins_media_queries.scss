@@ -18,6 +18,14 @@ $namespace: false !default;
 // set $rem-base to $base-font-size and make sure $base-font-size is a px value.
 $base-font-size: 100% !default;
 
+// http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 
 
 //
