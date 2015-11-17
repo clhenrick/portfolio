@@ -7,10 +7,6 @@
           box-sizing: border-box;
 }
 
-// buttons
-
-
-
 // side nav
 .side-nav li {
   a:not(.button) {
@@ -85,10 +81,12 @@ table {
   min-height: 200px;
   display: inline-block;
   margin: 0;
-  padding: 5px;
+  padding: 5px 5px 8px 5px;
   background-color: $grey-10; //lighten($grey-1, 5);
   border: 2px solid $grey-9;
   transition: border-color 100ms, border-width 100ms linear;
+
+  p { color: #DDD; }
 
   &:hover{
     border-width: 4px;
