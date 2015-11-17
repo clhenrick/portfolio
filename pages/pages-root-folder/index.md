@@ -11,18 +11,18 @@ header:
 widget1:
   title: "My Work"
   url: '/work/'
-  image: nag-toxicity-map01-thumb.jpg
+  <!-- image: nag-toxicity-map01-thumb.jpg -->
   text: '<strong>Encompasses:</strong> - Data Visualizaton  - Web Development - Cartographic Design - Open Source GIS - Data Wrangling'
 widget2:
   title: "Blog"
   url: '/blog/'
-  image: widget02.jpg
+  <!-- image: widget02.jpg -->
   text: 'My ramblings on previous projects and solving problems relating to the web, data, cartography, and design.' 
 widget3:
   title: "Talk to me"
   url: '/contact/'
-  image: widget03.jpg
-  text: 'Have a project idea you need to make a reality? Want advice on how to take your data and get creative with it? Need a custom mapping solution? Or just want to say hello?'
+  <!-- image: widget03.jpg -->
+  text: 'Want some advice on how to get creative with your data? Need a custom mapping solution? Or just want to say hello?'
 permalink: /index.html
 ---
 
