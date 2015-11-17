@@ -7,6 +7,22 @@
           box-sizing: border-box;
 }
 
+// buttons
+
+
+
+// side nav
+.side-nav li {
+  a:not(.button) {
+    color: $ci-4;
+
+    &:hover {
+      color: lighten($ci-7, 10%);
+      background-color: $body-bg !important;
+    }
+  }
+}
+
 // prevent tables in blog posts from flowing outside of the page area
 table {
   overflow: auto;
@@ -70,7 +86,7 @@ table {
   display: inline-block;
   margin: 0;
   padding: 5px;
-  background-color: lighten($grey-1, 5);
+  background-color: $grey-10; //lighten($grey-1, 5);
   border: 2px solid $grey-9;
   transition: border-color 100ms, border-width 100ms linear;
 

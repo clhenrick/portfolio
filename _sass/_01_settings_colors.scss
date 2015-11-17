@@ -15,9 +15,9 @@
 /* Basics
 ------------------------------------------------------------------- */
 
-$text-color:       	#111;
+$text-color:       	#DDD;
 $body-font-color: 	$text-color;
-$body-bg: 			#fdfdfd;
+$body-bg: 			#333; // 80K
 
 
 
@@ -31,6 +31,7 @@ $ci-3: #EFC94C;		// yellow
 $ci-4: #E27A3F;		// orange
 $ci-5: #DF4949;		// red
 $ci-6: #A1D044;   // green
+$ci-7: #f1c71a;   // test another yellow / orange
 
 
 
@@ -71,44 +72,44 @@ $grey-16: #0B0B0B;
 /* Topbar-Navigation
 ------------------------------------------------------------------- */
 
-$topbar-bg-color: $body-bg;
+$topbar-bg-color: $grey-12;
 $topbar-bg: $topbar-bg-color;
 
 
 $topbar-dropdown-toggle-color: $ci-1;
 
-$topbar-link-color: #000;
-$topbar-link-color-hover: #000;
-$topbar-link-color-active: #000;
-$topbar-link-color-active-hover: #000;
+$topbar-link-color: #fff;
+$topbar-link-color-hover: #fff;
+$topbar-link-color-active: #fff;
+$topbar-link-color-active-hover: #fff;
 
-$topbar-dropdown-label-color: $ci-2;
-$topbar-dropdown-link-bg-hover: $ci-6;
+$topbar-dropdown-label-color: $ci-4;
+$topbar-dropdown-link-bg-hover: $ci-3;
 
-$topbar-link-bg-active: $ci-6; // Active Navigation Link
-$topbar-link-bg-hover: $ci-6;
-$topbar-link-bg-active-hover: $ci-2;
+$topbar-link-bg-active: $ci-4; // Active Navigation Link
+$topbar-link-bg-hover: $ci-3;
+$topbar-link-bg-active-hover: $ci-4;
 
 
-$topbar-dropdown-bg: $ci-6; // Background Mobile Navigation
+$topbar-dropdown-bg: $ci-3; // Background Mobile Navigation
 $topbar-dropdown-link-color: #000;
-$topbar-dropdown-link-bg: $ci-2;
+$topbar-dropdown-link-bg: $ci-4;
 
 $topbar-menu-link-color-toggled: $ci-1;
 $topbar-menu-icon-color-toggled: $ci-1;
-$topbar-menu-link-color: #000;
-$topbar-menu-icon-color: #000;
-$topbar-menu-link-color-toggled: $ci-6;
-$topbar-menu-icon-color-toggled: $ci-6;
+$topbar-menu-link-color: #fff;
+$topbar-menu-icon-color: #fff;
+$topbar-menu-link-color-toggled: $ci-3;
+$topbar-menu-icon-color-toggled: $ci-3;
 
 
 
 /* Footer
 ------------------------------------------------------------------- */
 
-$footer-bg: $grey-8;
-$footer-color: #fff;
-$footer-link-color: $ci-6;
+$footer-bg: $grey-12;
+$footer-color: #333;
+$footer-link-color: $ci-4;
 
 
 $subfooter-bg: $grey-13;
