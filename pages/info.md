@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "About CLHenrick"
+title: "about CLHenrick"
 subheadline: ""
 teaser: "I like to solve problems using design, data, &amp; code."
 permalink: "/info/"
