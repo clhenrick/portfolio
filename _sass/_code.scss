@@ -10,7 +10,7 @@ code {
 }
 
 code {
-  color: #7a7a7a;
+  color: #999;
   background-color: $code-background-color;
 }
 
@@ -43,7 +43,7 @@ pre a::before {
   text-align: right;
   opacity: 0.7;
   display: inline-block;
-  color: $light-gray;
+  color: #ccc;
   margin-right: 16px;
   font-size: 13px;
   -webkit-touch-callout: none;

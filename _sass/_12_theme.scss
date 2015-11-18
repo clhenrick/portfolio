@@ -7,6 +7,48 @@
           box-sizing: border-box;
 }
 
+// buttons
+$button-color: $ci-2;
+$button-color-active: darken($button-color, 15%);
+
+button, .button {
+  background: $button-color;
+  // color: $grey-10;
+
+  &:hover,
+  &:focus,
+  &.active {
+    background: $button-color-active;
+  }
+}
+
+// portfolio filter buttons
+#filters {
+  > button {
+    text-transform: uppercase;
+
+    &.active {
+      background-color: $button-color-active;
+    }
+  }
+
+  @media only screen and (max-width: 40em)  {
+    display: none;
+  }
+}
+
+// side nav
+.side-nav li {
+  a:not(.button) {
+    color: $ci-4;
+
+    &:hover {
+      color: lighten($ci-7, 10%);
+      background-color: $body-bg !important;
+    }
+  }
+}
+
 // prevent tables in blog posts from flowing outside of the page area
 table {
   overflow: auto;
@@ -16,21 +58,6 @@ table {
 // portfolio back arrow
 .back-arrow {
   font-size: $font-size-h1;
-}
-
-// portfolio filter buttons
-#filters {
-  > button {
-    text-transform: uppercase;
-
-    &.active {
-      background-color: $ci-2;
-    }
-  }
-
-  @media only screen and (max-width: 40em)  {
-    display: none;
-  }
 }
 
 // isotope grid area
@@ -69,10 +96,12 @@ table {
   min-height: 200px;
   display: inline-block;
   margin: 0;
-  padding: 5px;
-  background-color: lighten($grey-1, 5);
+  padding: 5px 5px 8px 5px;
+  background-color: $grey-10; //lighten($grey-1, 5);
   border: 2px solid $grey-9;
   transition: border-color 100ms, border-width 100ms linear;
+
+  p { color: #DDD; }
 
   &:hover{
     border-width: 4px;

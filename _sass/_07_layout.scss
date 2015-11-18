@@ -23,7 +23,7 @@
 ------------------------------------------------------------------- */
 
 body.video,
-body.video #masthead-no-image-header { background: #000; }
+body.video #masthead-no-image-header { background: #grey-15; }
 body.video #masthead-no-image-header { margin-bottom: 60px; }
 body.video h1,
 body.video h2,
@@ -64,11 +64,11 @@ body.video cite { color: #fff; }
 ------------------------------------------------------------------- */
 
 #masthead {
-    background-color: $primary-color;
+    background-color: $grey-16;
 }
 
 #masthead-no-image-header {
-    background-color: $primary-color;
+    background-color: $grey-16;
 }
 #masthead-with-text {
     text-align: center;
@@ -79,7 +79,9 @@ body.video cite { color: #fff; }
     text-transform: uppercase;
     text-shadow: 2px 3px 3px rgba(0,0,0,1);
     letter-spacing: 0.5em;
+    background-color: $grey-16;
 
+    // center the text in the masthead
     .row {
         @include vertical-align();
     }
@@ -264,7 +266,8 @@ body.video cite { color: #fff; }
     border-radius: 3px;
 }
 #up-to-top a:hover {
-    background: $grey-2;
+    background: $grey-10;
+    color: lighten($ci-4, 10%);
 }
 
 

@@ -22,7 +22,7 @@ widget3:
   title: "Talk to me"
   url: '/contact/'
   <!-- image: widget03.jpg -->
-  text: 'Want some advice on how to get creative with your data? Need a custom mapping solution? Or just want to say hello?'
+  text: 'Want advice on how to get creative with your data? Need a custom mapping solution? Or just want to say hello?'
 permalink: /index.html
 ---
 

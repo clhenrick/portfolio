@@ -34,6 +34,19 @@
 /* Panel
 ------------------------------------------------------------------- */
 
+.panel {
+  background: $grey-10;
+  border: 1px solid $grey-15;
+}
+
+input[type="text"], 
+input[type="text"]:focus, 
+textarea, 
+textarea:focus {
+  background: $grey-2;
+  color: $grey-7;
+}
+
 .border-dotted {
   border: 1px dotted $grey-5;
   padding: rem-calc(20);
@@ -91,12 +104,14 @@
 /* Button
 ------------------------------------------------------------------- */
 
-button, .button         { letter-spacing: 1px; }
-  button.grey, .button.grey { background: $grey-10; }
-  button.grey:hover,
-  button.grey:focus,
-  .button.grey:hover,
-  .button.grey:focus      { background-color: $grey-16; }
+button, .button { letter-spacing: 1px; }
+
+button.grey, .button.grey { background: $grey-10; }
+
+button.grey:hover,
+button.grey:focus,
+.button.grey:hover,
+.button.grey:focus { background-color: $grey-4; }
 
 
 
@@ -115,8 +130,8 @@ button, .button         { letter-spacing: 1px; }
 /* Accordion
 ------------------------------------------------------------------- */
 
-dl.accordion  { border-top: 1px solid $grey-2;  }
-.accordion dd   { border-bottom: 1px solid $grey-2;  }
+dl.accordion  { border-top: 1px solid $body-bg;  }
+.accordion dd   { border-bottom: 2px solid $body-bg;  }
 dd.accordion-navigation span { padding-right: 12px; }
 dd.accordion-navigation span:before { content: "\F107" }
 dd.accordion-navigation.active span:before { content: "\F105" }

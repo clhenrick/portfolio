@@ -1,4 +1,4 @@
-// Foundation by ZURB
+  // Foundation by ZURB
 // foundation.zurb.com
 // Licensed under MIT Open Source
 
@@ -11,10 +11,10 @@
 $include-html-accordion-classes: $include-html-classes !default;
 
 $accordion-navigation-padding: rem-calc(16) !default;
-$accordion-navigation-bg-color: $silver !default;
-$accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -5%) !default;
-$accordion-navigation-active-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -3%) !default;
-$accordion-navigation-font-color: $jet !default;
+$accordion-navigation-bg-color: #555 !default;
+$accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -25%) !default;
+$accordion-navigation-active-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -20%) !default;
+$accordion-navigation-font-color: #DDD !default;
 $accordion-navigation-font-size: rem-calc(16) !default;
 $accordion-navigation-font-family: $body-font-family !default;
 
