@@ -36,6 +36,7 @@ $ci-7: #f1c71a;   // test another yellow / orange
 $dark-orange: #E27A3F;
 $light-orange: #EFC94C;
 $red: #DF4949;
+$magenta: #D66DE3;
 
 
 /* Foundation Color Variables
@@ -48,7 +49,9 @@ $success-color: $ci-6;
 $warning-color: $ci-4;
 $info-color: $ci-1;
 
-
+// link colors
+$anchor-font-color: $ci-4;
+$anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -14%);
 
 /* Grey Scale
 ------------------------------------------------------------------- */

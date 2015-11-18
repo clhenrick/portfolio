@@ -27,19 +27,19 @@ a,
 a:link {}
 
 a:visited {
-        border-bottom: $grey-2;
+    border-bottom: $grey-2;
 }
 
 a:hover {
-        color: lighten( $ci-7, 10% );
+    color: $anchor-font-color-hover;
 }
 
 a:focus {
-        color: lighten( $ci-1, 20% );
+    color: lighten( $anchor-font-color, 20% );
 }
 
 a:active {
-        color: darken( $ci-1, 20% );
+    color: darken( $anchor-font-color, 20% );
 }
 
 
