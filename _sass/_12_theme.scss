@@ -7,6 +7,36 @@
           box-sizing: border-box;
 }
 
+// buttons
+$button-color: $ci-2;
+$button-color-active: darken($button-color, 15%);
+
+button, .button {
+  background: $button-color;
+  // color: $grey-10;
+
+  &:hover,
+  &:focus,
+  &.active {
+    background: $button-color-active;
+  }
+}
+
+// portfolio filter buttons
+#filters {
+  > button {
+    text-transform: uppercase;
+
+    &.active {
+      background-color: $button-color-active;
+    }
+  }
+
+  @media only screen and (max-width: 40em)  {
+    display: none;
+  }
+}
+
 // side nav
 .side-nav li {
   a:not(.button) {
@@ -28,21 +58,6 @@ table {
 // portfolio back arrow
 .back-arrow {
   font-size: $font-size-h1;
-}
-
-// portfolio filter buttons
-#filters {
-  > button {
-    text-transform: uppercase;
-
-    &.active {
-      background-color: $ci-2;
-    }
-  }
-
-  @media only screen and (max-width: 40em)  {
-    display: none;
-  }
 }
 
 // isotope grid area
