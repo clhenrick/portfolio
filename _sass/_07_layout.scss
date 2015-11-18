@@ -64,11 +64,11 @@ body.video cite { color: #fff; }
 ------------------------------------------------------------------- */
 
 #masthead {
-    background-color: $primary-color;
+    background-color: $grey-16;
 }
 
 #masthead-no-image-header {
-    background-color: $primary-color;
+    background-color: $grey-16;
 }
 #masthead-with-text {
     text-align: center;
@@ -79,6 +79,7 @@ body.video cite { color: #fff; }
     text-transform: uppercase;
     text-shadow: 2px 3px 3px rgba(0,0,0,1);
     letter-spacing: 0.5em;
+    background-color: $grey-16;
 
     // center the text in the masthead
     .row {
@@ -265,7 +266,7 @@ body.video cite { color: #fff; }
     border-radius: 3px;
 }
 #up-to-top a:hover {
-    // background: $grey-2;
+    background: $grey-10;
     color: lighten($ci-4, 10%);
 }
 
