@@ -4,6 +4,7 @@ layout: page
 date: 2015-11-15
 teaser: "The benefits of using the Javascript module programming pattern to build client-side, interactive, web-mapping applications."
 header: no
+comments: true
 tags: 
     - javascript
     - web-mapping

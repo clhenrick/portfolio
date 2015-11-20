@@ -4,6 +4,7 @@ layout: page
 date: 2015-05-29
 teaser: "Scraping digital photo exif data using Node JS for web mapping."
 header: no
+comments: true
 tags: 
     - data 
     - web-scraping 

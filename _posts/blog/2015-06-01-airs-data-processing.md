@@ -4,6 +4,7 @@ layout: page
 date: 2015-06-01
 teaser: "Documenting how I processed NYC open data and not so open data for the backend database of Am I Rent Stabilized?"
 header: no
+comments: true
 tags: 
     - data 
     - web-scraping 

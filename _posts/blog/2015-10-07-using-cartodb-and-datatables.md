@@ -4,6 +4,7 @@ layout: page
 date: 2015-10-07
 teaser: "Using CartoDB.js, SQL API with the jQuery Data Tables API to create an interactive resource guide."
 header: no
+comments: true
 tags:
     - data 
     - cartodb 
