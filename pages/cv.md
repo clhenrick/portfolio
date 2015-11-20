@@ -91,14 +91,14 @@ Assisted [DVRPC](http://www.dvrpc.org/)'s Office of Transit, Bicycle, and Pedest
 *January, 2010 - current*  
 New York, NY  
 
-Currently assisting with organizing and hosting the Maptime New York City chapter. Maptime's goal is to create a safe space for non-experts to learn about GIS, cartography, and web-mapping.
+Currently assisting with organizing and hosting the [Maptime New York City chapter](http://www.meetup.com/Maptime-NYC/). Maptime's goal is to create a safe space for non-experts to learn about GIS, cartography, and web-mapping.
 
 ### ASIAN Inc.
 **GIS Specialist Volunteer**  
 *November, 2009 - July, 2010*  
 San Francisco, CA  
 
-Performed spatial data analysis and visualization to support ASIAN Inc's goals of improving economic and housing opportunities for low income Asian Americans in the San Francisco Bay Area.
+Performed spatial data analysis and visualization to support [ASIAN Inc](http://www.asianinc.org/)'s goals of improving economic and housing opportunities for low income Asian Americans in the San Francisco Bay Area.
 
 Consulted with GreenInfo Network on best practices for GIS analysis and data visualization of census and in-house demographic data.
 
@@ -111,7 +111,7 @@ Consulted with GreenInfo Network on best practices for GIS analysis and data vis
 New York, NY  
 GPA 3.91
 
-Areas of focus included interactive web-mapping, data-visualization, web development with Node JS, User Experience design, Game Design, Interactive Narrative, open-source GIS, and using design and technology to strengthen affordable housing advocacy.
+Areas of focus in [MFA DT](http://www.newschool.edu/parsons/mfa-design-technology/) included interactive web-mapping, data-visualization, web development with Node JS, User Experience design, Game Design, Interactive Narrative, open-source GIS, and using design and technology to strengthen affordable housing advocacy.
 
 MFA Thesis: [Am I Rent Stabilized?](https:amirentstabilized.com), an interactive web-app about rent-stabilization in New York City.
 
