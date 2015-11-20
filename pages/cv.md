@@ -15,14 +15,14 @@ header: no
 *May, 2015 - Present*  
 Brooklyn, NY  
 
-Currently assisting [Radish Lab](http://radishlab.com/), a web and graphic design studio, with creating interactive data-visualizations, web-mapping, and professionally designed web sites for non-profits and cultural instutitions such as MAS. Duties include agile front-end web-development using modern web technologies such as jQuery, Node.JS, D3.JS, Wordpress, CartoDB, and Github.
+Currently assisting [Radish Lab](http://radishlab.com/), a web and graphic design studio, with creating interactive data-visualizations and professionally designed web sites for non-profits and cultural instutitions such as [MAS](http://mas.org/). Duties include agile front-end web-development using modern web technologies such as jQuery, Node.JS, D3.JS, Wordpress, CartoDB, and Github.
 
 ### Chris Henrick Cartography
 **Principal Cartographer**  
 *June, 2010 - Present*  
 Brooklyn, NY
 
-Currently consulting on digital cartographic design projects for the web and print. I have previously performed consultant work for organizations such as the Oakland Museum of California as well as independent authors such as Rebecca Solnit. I performed consultant cartographic design for [Avalon Travel](http://avalontravelbooks.com/) Publishing for 1.5 years prior to being hired full-time.
+Currently consulting on digital cartographic design projects for the web and print. I have previously performed consultant work for organizations such as the [Oakland Museum of California](http://museumca.org/) as well as independent authors such as [Rebecca Solnit](http://rebeccasolnit.net/). I performed consultant cartographic design for [Avalon Travel Publishing](http://avalontravelbooks.com/) for 1.5 years prior to being hired full-time.
 
 ###CartoDB
 **Geospatial Developer Intern**  
@@ -42,15 +42,15 @@ Assisted [CartoDB](https://cartodb.com/) with improving their web-based geospati
 *February, 2012 - May, 2013*  
 Berkeley, CA  
 
-Assisted [Avalon](http://avalontravelbooks.com/)'s in-house Cartography Studio with creating new maps and updating existing maps for printed and ebook travel guide series including titles such as [Moon Handbooks](http://moon.com/), [Rick Steve's](https://www.ricksteves.com/), and [Let's Go](http://www.letsgo.com/).
+Assisted [Avalon](http://avalontravelbooks.com/)'s in-house Cartography Studio with creating new maps and updating existing maps for printed and ebook travel guide series including titles such as [Moon Handbooks](http://moon.com/), [Rick Steve's](https://www.ricksteves.com/), and [Let's Go](http://www.letsgo.com/). 
 
-- Duties included mining GIS data, processing data in QGIS, and cartographically rendering data in Adobe Illustrator with MAPublisher.
-- Designed and implemented a workflow for incorporating GIS data into map production through the use of MAPublisher, QGIS, and other open-source tools.
-- Assisted in designing and implementing a database schema to store geocoded Point of Interest data.
+-  Sourced, analyzed, & geoprocessed open geospatial data to create professional quality cartographic products.
+- Edited and created up to 60 maps per book that conformed to Avalon’s brand, cartographic style, and layout standards.
+- Converted legacy Macromedia Freehand files to a modern Adobe Illustrator file format standard.
+- Designed and implemented a practical workflow for incorporating GIS data into map production through the use of MAPublisher, QGIS, and other open-source tools.
+- Created a database schema to store geocoded Point of Interest data.
 - Wrote Javascript to automate tasks in Adobe Illustrator with the Scriptographer plug-in.
 - Designed and structured a spatial data file server.
-
-Other responsibilites included editing and drawing up to 30 new maps per book that conformed to Avalon’s brand, cartographic style, and layout standards; converting legacy Macromedia Freehand files to an updated Adobe Illustrator CS5 file format standard; and maintaining a detailed organization of up to 80 edited maps per book, depending on geographic scope.
 
 
 ### GreenInfo Network
@@ -58,12 +58,12 @@ Other responsibilites included editing and drawing up to 30 new maps per book th
 *Summer, 2010 and Spring, 2011*  
 San Francisco, CA
 
-Assisted [GreenInfo](http://www.greeninfo.org/) with its mission of providing quality and affordable GIS analysis and cartographic services to public interest groups and governmental organizations within California and the U.S.
+Assisted [GreenInfo Nework](http://www.greeninfo.org/) with its mission of providing quality and affordable GIS analysis and cartographic products to public interest groups and governmental organizations.
 
+- Executed a historic & current habitat suitability analysis of the Black-Backed Woodpecker for the John Muir Foundation utilizing model builder with USGS Landfire, Land Cover, and public lands data.
 - Utilized Arc Map 9.x / 10.x to assist in the production of confidential priority acquisition area series maps for Save the Redwoods League.
-- Created 3 offset CMYK print maps for Sustainable Conservation's Partners in Restoration Program.
+- Created 3 offset CMYK print maps for Sustainable Conservation's Partners in Restoration Program using ArcGIS and Adobe Illustrator.
 - Updated and edited an atlas for Protect Wild California's conservation easements and land acquisitions.
-- Executed a historical habitat suitability analysis of the Black-Backed Woodpecker for the John Muir Foundation utilizing model builder with USGS Landfire, Land Cover, and public lands data.
 - Contributed outreach to various California land trusts for the California Protected Areas Database (CPAD).
 
 ### Steve Spindler Cartography
@@ -81,9 +81,7 @@ Aided cartographer [Steve Spindler](http://www.bikemap.com/) in creating product
 *Spring, 2008*  
 Philadelphia, PA
 
-Assisted [DVRPC](http://www.dvrpc.org/)'s Office of Transit, Bicycle, and Pedestrian Planning in implementing projects related to transit, pedestrian, and bicycle planning in the greater metropolitan Philadelphia area.
-
-Participated in tasks such as survey field-work, road safety audits, data scrubbing and aggregation, bicycle route mapping, and power point presentations.
+Assisted [DVRPC](http://www.dvrpc.org/)'s Office of Transit, Bicycle, and Pedestrian Planning in implementing projects related to transit, pedestrian, and bicycle planning in the greater metropolitan Philadelphia area. Participated in tasks such as survey field-work, road safety audits, data scrubbing and aggregation, bicycle route mapping, and power point presentations.
 
 ## Volunteer Experience:
 -----
@@ -93,7 +91,7 @@ Participated in tasks such as survey field-work, road safety audits, data scrubb
 *January, 2010 - current*  
 New York, NY  
 
-Currently assisting with organizing and hosting the Maptime New York City chapter. Maptime's goal is to create a safe space for non-experts to learn about GIS, cartography and web-mapping.
+Currently assisting with organizing and hosting the Maptime New York City chapter. Maptime's goal is to create a safe space for non-experts to learn about GIS, cartography, and web-mapping.
 
 ### ASIAN Inc.
 **GIS Specialist Volunteer**  
@@ -145,12 +143,12 @@ GPA 3.49
 - Programming proficiency in Javascript, Python, Bash, & SQL.
 - Database management with PostgreSQL.  
 - Server side web development with Node.JS & the Express Framework.
-- Front end web development with HTML5, CSS3, Javascript, jQuery, Bootstrap.
+- Front end web development with HTML5, CSS3, Javascript, jQuery, Jekyll, Bootstrap.
 - Version control and collaboration using Git & Github.
 - Geospatial Information Systems using QGIS, PostGIS, GDAL, ESRI ArcGIS.
-- Web mapping using Leaflet.JS
-- Cartographic design using TileMill and CartoCSS.
 - CartoDB platform, javascript library, & API's.
 - MapBox platform, javascript library, & API's.
+- Web mapping using Leaflet.JS
+- Cartographic design using TileMill and CartoCSS.
 - Adobe Software: Illustrator, Photoshop, and InDesign.
 - MAPublisher (GIS & Cartography plug-in for Adobe Illustrator).
