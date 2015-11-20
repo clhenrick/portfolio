@@ -43,6 +43,10 @@ urlimg: '/images/'
 logo: "logo.png"
 
 
+# Plugins
+gems: ["jekyll-paginate"]
+
+
 # Paginates all X entries
 paginate: 3
 
