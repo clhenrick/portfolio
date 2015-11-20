@@ -8,7 +8,7 @@ header: no
 ---
 
 <!-- use isotope.js to create and organize content here -->
-<div id="filters" class="button-group filter-button-group">
+<div id="filters" class="button-group filter-button-group t30">
   <button class="active all" data-filter="*">all</button>
   <button data-filter=".web">interactive</button>
   <button data-filter=".data-viz">data viz</button>  
@@ -17,7 +17,7 @@ header: no
 </div>
 
 <!-- this pulls in projects from _data/work.json -->
-<div id="target" class="grid print carto">
+<div id="target" class="grid t30">
   <div class="gutter-sizer"></div>
   <div class="grid-sizer"></div>
   {% for item in site.data.work.work %}
