@@ -44,7 +44,7 @@ logo: "logo.png"
 
 
 # Plugins
-gems: ["jekyll-paginate"]
+gems: [jekyll-paginate]
 
 
 # Paginates all X entries
