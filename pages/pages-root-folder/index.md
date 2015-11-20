@@ -12,7 +12,7 @@ widget1:
   title: "My Work"
   url: '/work/'
   <!-- image: nag-toxicity-map01-thumb.jpg -->
-  text: '<strong>Encompasses:</strong> - Data Visualizaton  - Web Development - Cartographic Design - Open Source GIS - Data Wrangling'
+  text: '<strong>Encompasses:</strong> Data Visualizaton - Web Development - Cartographic Design - Open Source GIS - Data Wrangling'
 widget2:
   title: "Blog"
   url: '/blog/'
