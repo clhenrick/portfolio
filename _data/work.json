@@ -36,7 +36,7 @@
       "thumb" : "nag-toxicity-map01-thumb.jpg",
       "code" : "https://github.com/clhenrick/greenpoint_williamsburg_toxicity_map",
       "imgs" : ["nag-toxicity-map01.jpg", "nag-toxicity-map02.jpg","nag-toxicity-map03.jpg","nag-toxicity-map04.jpg","nag-toxicity-map05.jpg","nag-toxicity-map06.jpg","nag-toxicity-map07.jpg","nag-toxicity-map08.jpg"],
-      "link" : "https://clhenrick.github.io/greenpoint_williamsburg_toxicity_map/",
+      "link" : "http://clhenrick.github.io/greenpoint_williamsburg_toxicity_map/",
       "size" : "width3 ",
       "date" : "2015-11-01"
     },
@@ -46,7 +46,7 @@
       "description" : "An analysis of property transaction data to promote a 1% flip tax in NYC.",
       "description_long" : "Distribution of a proposed 1% \"flip tax\" on all real estate transactions in 2014 that occured within a two year period from 2003 - 2014, per New York City Council District. How much money would your district have for community spaces and affordable housing?<br><br>This project is a collaboration between Dan Taeyoung, Caroline Woolard, John Krauss, Chris Henrick, and Ingrid Burrington. Interactive version to come soon!",
       "link" : "http://www.landscapesofprofit.com/",
-      "code" : "https://github.com/NYC-REIC/landscapes-of-profit",
+      "code" : "https://github.com/NYC-REIC/landscapes-of-profit/interactive",
       "thumb" : "landscapes-profit-thumb.jpg",
       "imgs" : ["landscapes-profit.jpg"],
       "size" : "width2",
