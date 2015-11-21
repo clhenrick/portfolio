@@ -65,7 +65,7 @@
       "date" : "2015-09-01"
     },
     {
-      "title" : "A Thru Hike on the Pacific Crest Trail",
+      "title" : "A Thru Hike on the Pacific Crest Trail (interactive)",
       "tags" : ["web"],
       "description" : "An interactive web documentary about my brother's experience thru-hiking the PCT.",
       "description_long" : "An attempt at creating an NY Times style interactive. As the user scrolls down a map animates and reveals information relating to the story.",
@@ -76,6 +76,17 @@
       "tech" : ["Leaflet", "jQuery", "GeoJSON"],
       "size" : "width2",
       "date" : "2014-03-01"
+    },
+    {
+      "title" : "A Thru Hike on the Pacific Crest Trail (print map)",
+      "tags" : ["cartography"],
+      "description" : "A map commemorating my brother's thru-hike on the PCT.",
+      "description_long" : "",
+      "thumb" : "mike-pct-thumb.jpg",
+      "imgs" : ["mike-pct01.jpg", "mike-pct02.jpg", "mike-pct03.jpg"],
+      "tech" : ["MAPublisher", "Natural Scene Designer Pro", "QGIS"],
+      "size" : "width2",
+      "date" : "2013-03-01"
     },
     {
       "title" : "Tracking the Energy Titans",
