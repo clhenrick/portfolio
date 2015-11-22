@@ -14,7 +14,7 @@ permalink: "/work/a-thru-hike-on-the-pacific-crest-trail-interactive.html"
 
 <strong>Project Link:</strong> <a href="http://clhenrick.github.io/Major-Studio-Two/map-story/html/" target="_blank">A Thru Hike on the Pacific Crest Trail (interactive)</a>
 
-An attempt at creating an NY Times style interactive. As the user scrolls down a map animates and reveals information relating to the story.
+An attempt at creating an NY Times style interactive. As the user scrolls down a map animates and reveals information relating to the story. There is also a <a href="{{site.url}}{{site.baseurl}}/work/a-thru-hike-on-the-pacific-crest-trail-print-map.html">print version.</a>
 
 <strong>Technologies Used:</strong>  - Leaflet  - jQuery  - GeoJSON 
 

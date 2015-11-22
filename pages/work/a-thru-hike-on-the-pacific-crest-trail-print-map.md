@@ -13,8 +13,9 @@ permalink: "/work/a-thru-hike-on-the-pacific-crest-trail-print-map.html"
 ---
 
 
+I created this original map using my brother's GPS data, GPX tracks from <a href="https://www.pctmap.net/gps/">Halfmile's PCT Maps</a>, Natural Earth's 1:10m vector data, and SRTM DEM data. The hillshade was generated using Natural Scene Designer Pro and colored using Adobe Photoshop following a <a href="http://www.shadedrelief.com/web_relief/">method used by Tom Patterson</a> of the U.S. National Park Service maps team. The geospatial data was processed using QGIS and PostGIS and the final map was assembled in Adobe Illustrator using MAPublisher. The map measures 14" x 17" in print. There is also an <a href="{{site.url}}{{site.baseurl}}/work/a-thru-hike-on-the-pacific-crest-trail-interactive.html">interactive version.</a>
 
-<strong>Technologies Used:</strong>  - MAPublisher  - Natural Scene Designer Pro  - QGIS 
+<strong>Technologies Used:</strong>  - MAPublisher  - Natural Scene Designer Pro  - QGIS  - PostGIS  - Adobe Illustrator  - Adobe Photoshop 
 
 
   <a href="{{site.url}}{{site.baseurl}}/images/mike-pct01.jpg" target="_blank">
