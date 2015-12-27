@@ -43,9 +43,9 @@ Then `cd` to the `scripts` dir and do `node make-portfolio-pages.js`
 
 - [x] add presentations as a git sub-module
 
-- [ ] add CV / Resume
+- [x] add CV / Resume
 
-- [ ] add Talks
+- [x] add Talks
 
 - [x] Node JS script to generate posts in `_posts/portfolio/` from `assets/data/work.json`
 
@@ -74,7 +74,7 @@ Then `cd` to the `scripts` dir and do `node make-portfolio-pages.js`
 
 - [ ] generate favicons & touch icons from logo using [real favicon generator](http://realfavicongenerator.net/)
 
-- [ ] index with Google’s SEO & custom search using sitemap.xml
+- [x] index with Google’s SEO & custom search using sitemap.xml
 
 ## Deploying Jekyll With Git On A Remote VPS
 - https://www.digitalocean.com/community/tutorials/how-to-deploy-jekyll-blogs-with-git
