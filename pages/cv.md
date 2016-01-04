@@ -10,19 +10,23 @@ header: no
 ##Professional Experience
 -----
 
-### Radish Lab 
-**Web Developer**  
-*May, 2015 - Present*  
-Brooklyn, NY  
-
-Currently assisting [Radish Lab](http://radishlab.com/), a web and graphic design studio, with creating interactive data-visualizations and professionally designed web sites for non-profits and cultural instutitions such as [MAS](http://mas.org/). Duties include agile front-end web-development using modern web technologies such as jQuery, Node.JS, D3.JS, Wordpress, CartoDB, and Github.
-
 ### Chris Henrick Cartography
-**Principal Cartographer**  
+**Geo Web Developer, Cartographer**  
 *June, 2010 - Present*  
 Brooklyn, NY
 
-Currently consulting on digital cartographic design projects for the web and print. I have previously performed consultant work for organizations such as the [Oakland Museum of California](http://museumca.org/) as well as independent authors such as [Rebecca Solnit](http://rebeccasolnit.net/). I performed consultant cartographic design for [Avalon Travel Publishing](http://avalontravelbooks.com/) for 1.5 years prior to being hired full-time.
+- For 5+ years I have provided professional experience consulting for a diverse range of clients in print cartography, interactive maps for the web, and geospatial data analysis.
+ 
+- I provide expertise in wrangling geospatial data, performing spatial analysis with open-source GIS software, creating custom web mapping solutions, and utilizing professional graphics editing programs to create clean, legible, and stylistically appropriate map graphics. 
+
+- Current and former clients include Pratt's [Spatial Analysis and Visualization Initiative](https://www.pratt.edu/pratt-research-and-centers/spatial-analysis-visualization-initiative/), [Stamen Design](http://stamen.com/), [The Skyscraper Museum of NYC](http://skyscraper.org/), the critically acclaimed author [Rebecca Solnit](http://rebeccasolnit.net/), [The Oakland Museum of California](http://museumca.org/), and [Avalon Travel Publishing](http://avalontravelbooks.com/).
+
+### Radish Lab 
+**Web Developer**  
+*May, 2015 - December 2015*  
+Brooklyn, NY  
+
+Assisted [Radish Lab](http://radishlab.com/), a web and graphic design studio, with creating interactive data-visualizations and professionally designed web sites for non-profits and cultural instutitions such as [MAS](http://mas.org/). Duties include agile front-end web-development using modern web technologies such as jQuery, Node.JS, D3.JS, Wordpress, CartoDB, and Github.
 
 ###CartoDB
 **Geospatial Developer Intern**  
