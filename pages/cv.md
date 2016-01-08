@@ -111,7 +111,6 @@ Consulted with GreenInfo Network on best practices for GIS analysis and data vis
 
 ### Parsons, The New School For Design 
 **Master of Fine Art in Design and Technology.**  
-*Graduated May, 2015*  
 New York, NY  
 GPA 3.91
 
@@ -121,14 +120,12 @@ MFA Thesis: [Am I Rent Stabilized?](https:amirentstabilized.com), an interactive
 
 ### U.C. Berkeley Extension 
 **Graphic Design Certificate Program**  
-*Fall, 2009 - Spring, 2010*  
 San Francisco, CA
 
 Areas of concentration include 2-D design, publication design, and typography.
 
 ### Temple University
 **Bachelor of Arts in Geography and Urban Studies.**  
-*Graduated May, 2008*  
 Philadelphia, PA  
 GPA 3.77, graduated Magna Cum Laude.  
 
@@ -137,7 +134,6 @@ Recipient of the Henry N. Michael Prize in Geography and Urban Studies.
 
 ### University of the Arts
 **Fine Art: Print Making and Drawing**  
-*Fall, 2000 - Spring, 2002*  
 Philadelphia, PA  
 GPA 3.49  
 
