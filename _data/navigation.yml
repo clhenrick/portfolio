@@ -7,13 +7,13 @@
   side: left
 
 - title: About
-  url: "/info/"
+  url: "/about/"
   side: left
   dropdown: 
     - title: CV
-      url: "/info/cv/"
+      url: "/about/cv/"
     - title: Talks
-      url: "/info/talks/"
+      url: "/about/talks/"
 
 - title: Blog
   url: "/blog/"

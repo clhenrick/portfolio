@@ -3,7 +3,7 @@ layout: page-fullwidth
 show_meta: false
 title: "Curriculum Vitae"
 subheadline: ""
-permalink: "/info/cv/"
+permalink: "/about/cv/"
 header: no
 ---
 

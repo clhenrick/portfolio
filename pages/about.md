@@ -1,9 +1,9 @@
 ---
 layout: page
-title: "about CLHenrick"
+title: "about Chris L Henrick"
 subheadline: ""
 teaser: "I like to solve problems using design, data, &amp; code."
-permalink: "/info/"
+permalink: "/about/"
 header: no
 ---
 
