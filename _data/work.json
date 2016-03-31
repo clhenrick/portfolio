@@ -52,6 +52,30 @@
       "date" : "2015-01-01"
     },
     {
+      "title" : "FOSI GRID",
+      "tags" : ["web", "cartography"],
+      "description" : "Map navigation UI for the new Family Online Safety Institute website.",
+      "description_long" : "The redesign of the FOSI GRID website required that users should be able to navigate the site's content and data through the an interactive map. To acheive this I created custom geospatial data from Natural Earth's 1:50m data and used Leaflet.JS, a popular open-source web mapping library. Region polygons were made using MAPublisher, and admin0 & admin1 polygons were created using PostGIS. To make data loading fast I used TopoJSON to store 10 different layers: region polygons, countries grouped by region, and states / provinces grouped by country. When data is added to the map it is converted from TopoJSON to GeoJSON. This cut down drastically on AJAX requests and the website's initial load time.",
+      "thumb" : "fosi-grid-thumb.png",
+      "imgs" : ["fosi-grid-01.png", "fosi-grid-02.png", "fosi-grid-03.png", "fosi-grid-04.png", "fosi-grid-05.png", "fosi-grid-06.png", "fosi-grid-07.png"],
+      "tech" : ["Leaflet.JS", "Natural Earth Data", "TopoJSON", "GeoJSON", "MAPublisher", "PostGIS", "Mapshaper"],
+      "link" : "http://fosigrid.org/",
+      "size" : "width2",
+      "date" : "2016-03-28"
+    },
+    {
+      "title" : "Ten and Taller",
+      "tags" : ["web", "cartography"],
+      "description" : "An interactive web map showing architecturally significant historic buildings in NYC",
+      "description_long" : "*Ten and Taller* is part of an online and gallery exhibition for the [Skyscraper Museum of NYC]('http://skyscraper.org'). The Musuem's goal for the project was to honor the work of architect & historian Don Friedman, *Structure in Skyscrapers: History and Preservation*, in the form of an interactive map. The Museum staff digitized tabular data from Friedman's book and traced the corresponding building footprints for each of the 249 structures using a digitized Bromley Atlas map from 1909. My job was to show the footprints on both a historic and modern day map (the latter was designed by the Museum) and to create interactions such as popups that display data from the Friedman book as well as historic photos of the building. To accomplish this I had to create the map tiles for the basemap layers, as well as generate the GeoJSON overlay of the footprint data. Another requirement was for the UI to enable the user to filter which buildings are displayed by their year built via a slider. There is an animation on page load demonstrating this as well. The screenshots below are from a working prototype.",
+      "thumb" : "ten-taller-thumb.png",
+      "imgs" : ["ten-taller01.png", "ten-taller04.png", "ten-taller02.png", "ten-taller03.png"],
+      "tech" : ["Leaflet.JS", "D3.JS", "GeoJSON", "MAPublisher"],
+      "link" : "http://ten-and-taller.clhenrick.io",
+      "size" : "width2",
+      "date" : "2016-02-01"
+    },
+    {
       "title" : "WCC Resource Guide",
       "tags" : ["web", "data-viz"],
       "description" : "An interactive resource guide for NYC residents.",
