@@ -10,18 +10,27 @@ header: no
 ##Professional Experience
 -----
 
+### Stamen Design
+**Design Technologist**  
+*March, 2016 - present*  
+San Francisco, CA  
+
+- One part data wrangler, one part cartographer, and several parts web developer for [Stamen Design](http://stamen.com).
+
+- Building custom geo web applications with technologies such as AWS, Heroku, React, Redux, Leaflet.js, CartoDB, and D3.js.
+
 ### Chris Henrick Cartography
 **Geo Web Developer, Cartographer**  
 *June, 2010 - Present*  
 Brooklyn, NY
 
 - For 5+ years I have provided professional experience consulting for a diverse range of clients in print cartography, interactive maps for the web, and geospatial data analysis.
- 
-- I provide expertise in wrangling geospatial data, performing spatial analysis with open-source GIS software, creating custom web mapping solutions, and utilizing professional graphics editing programs to create clean, legible, and stylistically appropriate map graphics. 
 
-- Current and former clients include Pratt's [Spatial Analysis and Visualization Initiative](https://www.pratt.edu/pratt-research-and-centers/spatial-analysis-visualization-initiative/), [Stamen Design](http://stamen.com/), [The Skyscraper Museum of NYC](http://skyscraper.org/), the critically acclaimed author [Rebecca Solnit](http://rebeccasolnit.net/), [The Oakland Museum of California](http://museumca.org/), and [Avalon Travel Publishing](http://avalontravelbooks.com/).
+- I provide expertise in wrangling geospatial data, performing spatial analysis with open-source GIS software, creating custom web mapping solutions, and utilizing professional graphics editing programs to create clean, legible, and stylistically appropriate map graphics.
 
-### Radish Lab 
+- Current and former clients include Pratt's [Spatial Analysis and Visualization Initiative](https://www.pratt.edu/pratt-research-and-centers/spatial-analysis-visualization-initiative/), [Stamen Design](http://stamen.com/), [The Skyscraper Museum of NYC](http://skyscraper.org/), [Rebecca Solnit](http://rebeccasolnit.net/), [The Oakland Museum of California](http://museumca.org/), and [Avalon Travel Publishing](http://avalontravelbooks.com/).
+
+### Radish Lab
 **Web Developer**  
 *May, 2015 - December 2015*  
 Brooklyn, NY  
@@ -46,7 +55,7 @@ Assisted [CartoDB](https://cartodb.com/) with improving their web-based geospati
 *February, 2012 - May, 2013*  
 Berkeley, CA  
 
-Assisted [Avalon](http://avalontravelbooks.com/)'s in-house Cartography Studio with creating new maps and updating existing maps for printed and ebook travel guide series including titles such as [Moon Handbooks](http://moon.com/), [Rick Steve's](https://www.ricksteves.com/), and [Let's Go](http://www.letsgo.com/). 
+Assisted [Avalon](http://avalontravelbooks.com/)'s in-house Cartography Studio with creating new maps and updating existing maps for printed and ebook travel guide series including titles such as [Moon Handbooks](http://moon.com/), [Rick Steve's](https://www.ricksteves.com/), and [Let's Go](http://www.letsgo.com/).
 
 -  Sourced, analyzed, & geoprocessed open geospatial data to create professional quality cartographic products.
 - Edited and created up to 60 maps per book that conformed to Avalon’s brand, cartographic style, and layout standards.
@@ -90,7 +99,7 @@ Assisted [DVRPC](http://www.dvrpc.org/)'s Office of Transit, Bicycle, and Pedest
 ## Volunteer Experience:
 -----
 
-### Maptime NYC 
+### Maptime NYC
 **Co-Organizer**  
 *January, 2010 - current*  
 New York, NY  
@@ -109,7 +118,7 @@ Consulted with GreenInfo Network on best practices for GIS analysis and data vis
 ## Education:
 -----
 
-### Parsons, The New School For Design 
+### Parsons, The New School For Design
 **Master of Fine Art in Design and Technology.**  
 New York, NY  
 GPA 3.91
@@ -118,7 +127,7 @@ Areas of focus in [MFA DT](http://www.newschool.edu/parsons/mfa-design-technolog
 
 MFA Thesis: [Am I Rent Stabilized?](https:amirentstabilized.com), an interactive web-app about rent-stabilization in New York City.
 
-### U.C. Berkeley Extension 
+### U.C. Berkeley Extension
 **Graphic Design Certificate Program**  
 San Francisco, CA
 
