@@ -15,6 +15,17 @@
       "date" : "2015-05-01"
     },
     {
+      "title": "Love and Rage",
+      "tags": ["cartography"],
+      "description": "Map for Rebecca Solnit's Nonstop Metropolis, A New York City Atlas",
+      "description_long": "A print map I created for Rebecca Solnit's latest city atlas: Nonstop Metropolis, A New York City Atlas. I pitched the idea to Rebecca while meeting her and atlas co-author Joshua Jelly-Schapiro for coffee at Caffè Reggio near Washington Square one afternoon, and the rest was history. In order to to create this map open geospatial data was processed from sources such as 311, the NYPD, OpenStreetMap, and the NYC Open Data Portal. Cartography was done using Adobe Illustrator and MAPublisher.",
+      "tech": ["Adobe Illustrator", "MAPublisher", "PostgreSQL", "PostGIS", "GDAL"],
+      "thumb": "love-and-rage-thumb.png",
+      "imgs": ["love-and-rage.png", "love-and-rage-crop01.png", "love-and-rage-crop02.png"],
+      "size": "width3",
+      "date": "2016-10-01"
+    },
+    {
       "title" : "Bushwick Community Map",
       "tags" : ["web", "data-viz", "cartography"],
       "description" : "A map to track issues around urban development in Bushwick, NY",
