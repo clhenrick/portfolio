@@ -7,6 +7,14 @@ permalink: "/about/talks/"
 header: no
 ---
 
+### Maps, Open Data, & The Web
+*USF Urban Planning & Design, San Francisco CA, October 5, 2016*
+
+How can maps, open data, and the web be used to advance causes for social justice? In this presentation I reviewed personal projects that have helped advance causes relating to housing and social justice in New York City. Lessons I've learned are discussed as are recommendations for those interested in learning how create projects involving interactive maps for the web. This was a guest lecture for a Urban Planning and Design graduate class at the University of San Francisco, California.
+
+- [presentation slides]({{site.url}}{{site.baseurl}}/presentations/usf-urban-design/)
+
+
 ### Am I Rent Stabilized?
 *NACIS, Minneapolis MN, October 16, 2015*
 
@@ -17,7 +25,7 @@ header: no
 ### Mapping for Housing Justice in Bushwick, NYC
 *NACIS, Minneapolis MN, October 15, 2015*   
 
-**The Bushwick Community Map** is an interactive web-mapping project that provides local residents and community organizers with access to data relating to housing and urban planning of the Bushwick neighborhood in Brooklyn, NY. It's goal is to help track gentrification and prevent the displacement of longterm residents from illegitimate practices by landlords. This talk will provide an overview of the project's history as well as how open government data and open source web-mapping technology can be used to strengthen the tenants rights movement and the work of anti-displacement activists. 
+**The Bushwick Community Map** is an interactive web-mapping project that provides local residents and community organizers with access to data relating to housing and urban planning of the Bushwick neighborhood in Brooklyn, NY. It's goal is to help track gentrification and prevent the displacement of longterm residents from illegitimate practices by landlords. This talk will provide an overview of the project's history as well as how open government data and open source web-mapping technology can be used to strengthen the tenants rights movement and the work of anti-displacement activists.
 
 - [presentation slides]({{site.url}}{{site.baseurl}}/presentations/bcm-nacis-2015/)
 
@@ -41,5 +49,3 @@ Participants will share, pecha-kucha style, their work in grassroots mapping and
 
 ### Bias In Cartography And Geospatial Data
 *GeoNYC Student Showcase, NYPL NYC, February 10, 2014*
-
-
