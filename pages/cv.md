@@ -32,10 +32,10 @@ Brooklyn, NY
 
 ### Radish Lab
 **Web Developer**  
-*May, 2015 - December 2015*  
+*May, 2015 - April 2016*  
 Brooklyn, NY  
 
-Assisted [Radish Lab](http://radishlab.com/), a web and graphic design studio, with creating interactive data-visualizations and professionally designed web sites for non-profits and cultural instutitions such as [MAS](http://mas.org/). Duties include agile front-end web-development using modern web technologies such as jQuery, Node.JS, D3.JS, Wordpress, CartoDB, and Github.
+Assisted [Radish Lab](http://radishlab.com/), a web and graphic design studio, with creating interactive data-visualizations and professionally designed web sites for non-profits and cultural institutions such as [MAS](http://mas.org/). Duties include agile front-end web-development using modern web technologies such as jQuery, Node.JS, D3.JS, Wordpress, CartoDB, and Github.
 
 ###CartoDB
 **Geospatial Developer Intern**  
