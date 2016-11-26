@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/clhenrick
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://clhenrick.io
+  * I am clhenrick (https://keybase.io/clhenrick) on keybase.
+  * I have a public key with fingerprint 0161 C6A4 0F1F E313 F7C5  35FD CFD3 222A CC0C BD8E
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01018edfc0bc6521b917738b4e7abc98bf9821d6a979644de00a6a87c40a91fadc0f0a",
+            "fingerprint": "0161c6a40f1fe313f7c535fdcfd3222acc0cbd8e",
+            "host": "keybase.io",
+            "key_id": "cfd3222acc0cbd8e",
+            "kid": "01018edfc0bc6521b917738b4e7abc98bf9821d6a979644de00a6a87c40a91fadc0f0a",
+            "uid": "16bbb15c390b48311b783d0450df5319",
+            "username": "clhenrick"
+        },
+        "service": {
+            "hostname": "clhenrick.io",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1480125240,
+    "expire_in": 157680000,
+    "prev": "e1e00d4fbe0b54ba71ecdf2d8ad0628e15a8244ea5fd5a28bb93e3e886216cdf",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.58
+Comment: https://keybase.io/crypto
+
+yMIYAnicrVJZSBVRGL5uVzQsKxHvg0oTUaTVObOeuVApRGGUYYKtcDvb6OBt5jZ3
+rnqxQiTwoZX2RbDlTaQgJNs1yxakHsz3bJFoF4ogWmzmVi/RY+flcP7zfd/5vv/8
+d/IyArlpRyvIyUO7Bq6kDd86lgisR29Qq0BslhTCrUIjT208ynjcjTSaTAgLAAKI
+ODMoIFRVREh0qGkSIjLXMKE6IoaORMhUrGu6KsuMA4BVjDQqA6xDAzMKDICFcsEw
+rXruxBzTclOyKqQqloEBDS5BydCoIikGowaTRFHElAJKGOIescGO+wzPHMFxvtC0
+vZp3iKTs/QP/n30nUnJQJYRAhUo6IDKSICQakhiQFcAMRYK6D4xzx8Jbue8q2sAt
+x6SNwo5ywSs3mZT7nfWj/A35FSjm2K5N7ah30+C6sbBPdJMxH9nMSeS3RoSYFvP6
+6BGauBM3bUsIQw9JXdMXhTICUFREGZQLvCVmOjxi+ghFUxHwlv8Mb/IkOfTiMtkg
+HBBFJliDnDJDZAgzoIqIQwUjUZY59n5EwSIiRJe4xBFSRah6SMFPtc2yhbDi2cT1
+nmTcrLewm3C4sGNwYHNmIC03EMxK9+crkJuT/2fqVhZmfw+9W57RViDtP59zIHfd
+nv2dx/dO5He5ZcHO7YU/RpYx5XTi/nOjuj0tKzS0ODO5/FMpPtN7bsH1NYfl/p49
+O2dnb2xjR0LB4NHuslPF9acrhoLdyYJVlQUPeypHLtatfvug+/zT3lu9zrXhR2RK
+cftE1b6vo03Hx1pWrK1r2dDP1z8ZH9467yqu/Tar6+X8b0WR7SWXEzerNi0JifvC
+fXBpXklCn4aa52RNLko/MBKYMd4fqD0RKll9prv4ZMZoj1B0e+6y9M+vX+k0PAm2
+vBhe+9p6PNO4VJ09OvjxmJX59cvYwXY3/W5HVUvph5qCgQsdfdFn7+3m3fei09tr
+um6cnfr9J+UvPKo=
+=Eg0Z
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/clhenrick
+
+==================================================================
