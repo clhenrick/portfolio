@@ -236,10 +236,10 @@ blockquote {
     position: relative;
     border: none;
     margin: 0 30px 30px 30px;
-    color: #4b4b4d
+    // color: #4b4b4d
 }
 
-    blockquote p {font-style: italic; color: $grey-10; }
+    blockquote p {font-style: italic; color: $text-color; }
 
     blockquote:before {
         display:block;content:"\00BB";
