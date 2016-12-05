@@ -2,6 +2,7 @@
 layout: page-fullwidth
 show_meta: true
 title: "Galapagos Islands"
+meta_title: "Chris Henrick featured work: Galapagos Islands"
 teaser: "A map showing the Galapagos Islands"
 date: "2013-01-01"
 tags:

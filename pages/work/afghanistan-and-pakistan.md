@@ -2,6 +2,7 @@
 layout: page-fullwidth
 show_meta: true
 title: "Afghanistan and Pakistan"
+meta_title: "Chris Henrick featured work: Afghanistan and Pakistan"
 teaser: "Map of Afghanistan and Pakistan for the book Dirty Wars."
 date: "2013-01-01"
 tags:

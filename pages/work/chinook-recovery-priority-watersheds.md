@@ -2,6 +2,7 @@
 layout: page-fullwidth
 show_meta: true
 title: "Chinook Recovery Priority Watersheds"
+meta_title: "Chris Henrick featured work: Chinook Recovery Priority Watersheds"
 teaser: "Coastal recovery watersheds for Salmon and Steelhead in California"
 date: "2015-01-01"
 tags:

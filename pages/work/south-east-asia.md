@@ -2,6 +2,7 @@
 layout: page-fullwidth
 show_meta: true
 title: "South East Asia"
+meta_title: "Chris Henrick featured work: South East Asia"
 teaser: "A map of Thailand, Laos, and Cambodia."
 date: "2013-01-01"
 tags:

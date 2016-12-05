@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Contact"
-meta_title: "Contact and use our contact form"
+meta_title: "Contact form"
 subheadline: ""
 teaser: "Want to get in touch with me? Use the contact form below."
 permalink: "/contact/"
@@ -16,7 +16,7 @@ header: no
     <textarea type="text" name="content" class="input mobile-block" rows="5" placeholder="What would you like to say?"></textarea>
     <input type="submit" class="button button-blue button-big mobile-block" value="Say Hello">
   </form>
-</div> 
+</div>
 
 <sub>
     Pssst! If you need a fabulous contact form for your website, I suggest you use [Formspree][1].

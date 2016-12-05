@@ -2,6 +2,7 @@
 layout: page-fullwidth
 show_meta: true
 title: "Ontario"
+meta_title: "Chris Henrick featured work: Ontario"
 teaser: "The province of Ontario, Canada."
 date: "2012-01-01"
 tags:

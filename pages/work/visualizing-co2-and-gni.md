@@ -2,6 +2,7 @@
 layout: page-fullwidth
 show_meta: true
 title: "Visualizing CO2 and GNI"
+meta_title: "Chris Henrick featured work: Visualizing CO2 and GNI"
 teaser: "An interactive Processing sketch that visualizes data relating to climate change from the World Bank&#x27;s Indicators Data."
 date: "2014-04-04"
 tags:

@@ -2,6 +2,7 @@
 layout: page-fullwidth
 show_meta: true
 title: "WCC Resource Guide"
+meta_title: "Chris Henrick featured work: WCC Resource Guide"
 teaser: "An interactive resource guide for NYC residents."
 date: "2015-09-01"
 tags:

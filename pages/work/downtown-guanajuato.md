@@ -2,6 +2,7 @@
 layout: page-fullwidth
 show_meta: true
 title: "Downtown Guanajuato"
+meta_title: "Chris Henrick featured work: Downtown Guanajuato"
 teaser: "A map of downtown Guanajuato, Mexico."
 date: "2012-01-01"
 tags:

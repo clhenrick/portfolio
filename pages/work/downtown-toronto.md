@@ -2,6 +2,7 @@
 layout: page-fullwidth
 show_meta: true
 title: "Downtown Toronto"
+meta_title: "Chris Henrick featured work: Downtown Toronto"
 teaser: "A map of downtown Toronto, Canada."
 date: "2012-01-01"
 tags:

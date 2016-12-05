@@ -2,6 +2,7 @@
 layout: page-fullwidth
 show_meta: true
 title: "A Thru Hike on the Pacific Crest Trail (interactive)"
+meta_title: "Chris Henrick featured work: A Thru Hike on the Pacific Crest Trail (interactive)"
 teaser: "An interactive web documentary about my brother&#x27;s experience thru-hiking the PCT."
 date: "2014-03-01"
 tags:

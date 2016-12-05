@@ -2,6 +2,7 @@
 layout: page-fullwidth
 show_meta: true
 title: "FOSI GRID"
+meta_title: "Chris Henrick featured work: FOSI GRID"
 teaser: "Map navigation UI for the new Family Online Safety Institute website."
 date: "2016-03-28"
 tags:

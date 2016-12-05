@@ -2,6 +2,7 @@
 layout: page-fullwidth
 show_meta: true
 title: "Ten and Taller"
+meta_title: "Chris Henrick featured work: Ten and Taller"
 teaser: "An interactive web map showing architecturally significant historic buildings in NYC"
 date: "2016-02-01"
 tags:

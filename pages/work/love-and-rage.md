@@ -2,6 +2,7 @@
 layout: page-fullwidth
 show_meta: true
 title: "Love and Rage"
+meta_title: "Chris Henrick featured work: Love and Rage"
 teaser: "Map for Rebecca Solnit&#x27;s Nonstop Metropolis, A New York City Atlas"
 date: "2016-10-01"
 tags:

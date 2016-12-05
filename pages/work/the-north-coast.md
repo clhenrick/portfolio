@@ -2,6 +2,7 @@
 layout: page-fullwidth
 show_meta: true
 title: "The North Coast"
+meta_title: "Chris Henrick featured work: The North Coast"
 teaser: "A split frame map I created for Moon: Northern California."
 date: "2013-01-01"
 tags:

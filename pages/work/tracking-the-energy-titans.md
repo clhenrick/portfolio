@@ -2,6 +2,7 @@
 layout: page-fullwidth
 show_meta: true
 title: "Tracking the Energy Titans"
+meta_title: "Chris Henrick featured work: Tracking the Energy Titans"
 teaser: "A data-visualization comparing energy use between the U.S., Canada, and China."
 date: "2015-06-01"
 tags:

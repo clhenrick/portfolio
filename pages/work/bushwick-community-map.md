@@ -2,6 +2,7 @@
 layout: page-fullwidth
 show_meta: true
 title: "Bushwick Community Map"
+meta_title: "Chris Henrick featured work: Bushwick Community Map"
 teaser: "A map to track issues around urban development in Bushwick, NY"
 date: "2014-12-20"
 tags:

@@ -2,6 +2,7 @@
 layout: page-fullwidth
 show_meta: false
 title: "Talks"
+meta_title: "Public lectures and presentations given by Chris Henrick"
 subheadline: ""
 permalink: "/about/talks/"
 header: no

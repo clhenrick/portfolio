@@ -2,6 +2,7 @@
 layout: video
 show_meta: true
 title: "From Coast to Coast"
+meta_title: "Chris Henrick featured work: From Coast to Coast"
 teaser: "Visualizing my move from the SF Bay Area to NYC with D3JS."
 tags:
     - web cartography data-viz 

@@ -2,6 +2,7 @@
 layout: page-fullwidth
 show_meta: false
 title: "Portfolio"
+meta_title: "Featured work of Chris Henrick"
 subheadline: ""
 permalink: "/work/"
 header: no

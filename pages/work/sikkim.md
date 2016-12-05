@@ -2,6 +2,7 @@
 layout: page-fullwidth
 show_meta: true
 title: "Sikkim"
+meta_title: "Chris Henrick featured work: Sikkim"
 teaser: "Sikkim, northern India."
 date: "2013-01-01"
 tags:

@@ -2,6 +2,7 @@
 layout: page-fullwidth
 show_meta: true
 title: "Greenpoint Williamsburg Toxicity Map"
+meta_title: "Chris Henrick featured work: Greenpoint Williamsburg Toxicity Map"
 teaser: "A map to inform residents of north Brooklyn about environmental hazards."
 date: "2015-11-01"
 tags:

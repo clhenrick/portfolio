@@ -2,6 +2,7 @@
 layout: page-fullwidth
 show_meta: true
 title: "Oakland Then and Now: Coastal Grasslands"
+meta_title: "Chris Henrick featured work: Oakland Then and Now: Coastal Grasslands"
 teaser: "Historic coastal grassland, bay and shoreline over the current day built up land area of Oakland, CA."
 date: "2013-01-01"
 tags:

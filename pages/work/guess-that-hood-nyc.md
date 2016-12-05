@@ -2,6 +2,7 @@
 layout: video
 show_meta: true
 title: "Guess That Hood NYC!"
+meta_title: "Chris Henrick featured work: Guess That Hood NYC!"
 teaser: "A game that allows users to guess neighborhood names in NYC."
 tags:
     - web cartography 

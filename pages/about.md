@@ -2,7 +2,7 @@
 layout: page
 title: "about Chris Henrick"
 subheadline: ""
-teaser: "I solve problems using Design, Data, & Code."
+teaser: "Web Developer, GIS Specialist, and Cartographer"
 permalink: "/about/"
 header: no
 ---

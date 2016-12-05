@@ -2,6 +2,7 @@
 layout: page-fullwidth
 show_meta: true
 title: "A Thru Hike on the Pacific Crest Trail (print map)"
+meta_title: "Chris Henrick featured work: A Thru Hike on the Pacific Crest Trail (print map)"
 teaser: "A map commemorating my brother&#x27;s thru-hike on the PCT."
 date: "2013-03-01"
 tags:

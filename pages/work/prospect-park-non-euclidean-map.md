@@ -2,6 +2,7 @@
 layout: video
 show_meta: true
 title: "Prospect Park non euclidean map"
+meta_title: "Chris Henrick featured work: Prospect Park non euclidean map"
 teaser: "A &quot;non-euclidean map&quot; of Prospect Park, Brooklyn"
 tags:
     - cartography 
