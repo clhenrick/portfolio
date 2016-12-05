@@ -2,7 +2,7 @@
 layout: page-fullwidth
 show_meta: false
 title: "Curriculum Vitae"
-meta_title: "Curriculum Vitae or Résumé of Chris Henrick"
+meta_description: "Curriculum Vitae or Résumé of Chris Henrick"
 subheadline: ""
 permalink: "/about/cv/"
 header: no

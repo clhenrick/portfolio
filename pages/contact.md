@@ -1,9 +1,9 @@
 ---
 layout: page
 title: "Contact"
-meta_title: "Contact form"
+meta_description: "Contact Chris Henrick"
 subheadline: ""
-teaser: "Want to get in touch with me? Use the contact form below."
+teaser: "Want to get in touch with me? Please use the contact form below."
 permalink: "/contact/"
 header: no
 ---

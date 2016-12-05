@@ -3,6 +3,7 @@ layout: page
 title: "about Chris Henrick"
 subheadline: ""
 teaser: "Web Developer, GIS Specialist, and Cartographer"
+meta_description: "About Chris Henrick: Web Developer, GIS Specialist, and Cartographer"
 permalink: "/about/"
 header: no
 ---
