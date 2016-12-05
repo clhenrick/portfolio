@@ -3,9 +3,11 @@
 				<div id="disqus_thread"></div>
 				<script>
 				    var disqus_config = function () {
-				        this.page.url = '{{ page.url }}';
-				        this.page.identifier = '{{ site.disqus_shortname }}';
+				        this.page.url =  'http://clhenrick.io';
+				        this.page.identifier = '{{ page.url }}';
+								this.page.title = '{{ page.title }}';
 				    };
+						console.log(disqus_config);
 				    (function() {  // DON'T EDIT BELOW THIS LINE
 				        var d = document, s = d.createElement('script');
 
