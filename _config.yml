@@ -1,21 +1,20 @@
 # ASCII-Font › http://patorjk.com/software/taag/#p=display&f=Slant&t=Phlow
 #
-#      _____ _ __          _____      __  __  _                 
+#      _____ _ __          _____      __  __  _
 #     / ___/(_) /____     / ___/___  / /_/ /_(_)___  ____ ______
 #     \__ \/ / __/ _ \    \__ \/ _ \/ __/ __/ / __ \/ __ `/ ___/
-#    ___/ / / /_/  __/   ___/ /  __/ /_/ /_/ / / / / /_/ (__  ) 
-#   /____/_/\__/\___/   /____/\___/\__/\__/_/_/ /_/\__, /____/  
-#                                                 /____/        
+#    ___/ / / /_/  __/   ___/ /  __/ /_/ /_/ / / / / /_/ (__  )
+#   /____/_/\__/\___/   /____/\___/\__/\__/_/_/ /_/\__, /____/
+#                                                 /____/
 #
 # Title of your website
-title: "CLHenrick"
-
+title: "Chris L Henrick – Web Development, Data Visualization, GIS, Maps, and Cartography"
 
 # The slogan describes your website and is used on homepage in <title> and other important places
-slogan: "Geo Web Developer, Cartographic Designer"
+slogan: "Web Development, Data Visualization, GIS, Maps, & Cartography"
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
-description: "The portfolio and blog of Chris Henrick; geo web developer & cartographic designer."
+description: "The portfolio and technical blog of Chris L Henrick – provider of professional web development, data visualization, GIS, mapping, & cartography services."
 
 # Main author of the website
 # See > authors.yml
@@ -28,7 +27,7 @@ baseurl: ''
 # This is for the editing function in _/includes/improve_content
 # Leave it empty if your site is not on GitHub/GitHub Pages
 # improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
-improve_content: https://github.com/clhenrick/feeling-responsive/edit/gh-pages
+improve_content: https://github.com/clhenrick/portfolio/
 
 # This URL points directly to the images directory making
 # things easier to link to images in posts and templates. It needs a slash at the end.
@@ -104,7 +103,7 @@ defaults:
       path: "" 				# an empty string here means all files in the project
       type: "pages"
     values:
-      show_meta: false 	# Hide metadata for all pages
+      show_meta: true 	# Hide metadata for all pages
       # sidebar:    		# Possible values › left, right › by default there will be no sidebar
       comments: false
       author: clhenrick     # Default author for pages
@@ -115,7 +114,7 @@ defaults:
     values:
       show_meta: true   # Show metadata for all posts
       # sidebar:        # Possible values › left, right › by default there will be no sidebar
-      comments: false
+      comments: true
       author: clhenrick     # Default author for posts
 
 
