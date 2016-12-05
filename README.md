@@ -1,19 +1,40 @@
-# CLHENRICK
-Personal portfolio and blog of Chris Henrick using the [Feeling Resposive](http://phlow.github.io/feeling-responsive/) Jekyll theme. Forked from [Phlow](https://github.com/Phlow/feeling-responsive)
+# Portfolio
+Personal portfolio and blog of Chris Henrick using the [Feeling Resposive](http://phlow.github.io/feeling-responsive/) Jekyll theme with some added style tweaks (dark theme) and personal touches. Forked from [Phlow](https://github.com/Phlow/feeling-responsive).
 
-This site is live at [clhenrick.io](http://clhenrick.io)
+This site is live at [clhenrick.io](http://clhenrick.io).
 
-## Migrating Portfolio
-To migrate work from an existing portfolio I created `JSON` data containing information for each project. This data lives in `_data/work.json` and is used to generate each page for a project as well as created the portfolio overview page.
+## Develop
+Make sure you have Ruby and Jekyll installed.
+
+To run this site in a Jekyll dev environment, from the root of this repo do:
+
+```bash
+jekyll serve --config _config.yml,_config_dev.yml
+```
+
+## Deploy
+Note that this site is not being hosted on Github Pages but on a remote VPS via Digital Ocean.
+
+```bash
+# list remotes
+$ git remote -v
+droplet	user@myvps:projects/clhenrick.io.git (fetch)
+droplet	user@myvps:projects/clhenrick.io.git (push)
+origin	https://github.com/clhenrick/portfolio.git (fetch)
+origin	https://github.com/clhenrick/portfolio.git (push)
+
+# to push to the remote vps and trigger the rebuild do
+$ git push droplet master
+```
+
+## Creating the Portfolio
+To migrate work from an [existing portfolio](http://chrishenrick.com), I created `JSON` data containing information for each project. This data lives in `_data/work.json`. A [Node.JS script](./scripts/make-portfolio-posts.js) generates a markdown file for each project and creates the portfolio overview page in `./work/`.
 
 Updating the portfolio works like this:  
 
 1. Edit `_data/work.json` as needed.
 2. `cd scripts/ && npm install`
 3. from the `scripts/` dir do `node make-portfolio-posts.js`
-
-To run Jekyll in a dev environment do:  
-`jekyll serve --config _config.yml,_config_dev.yml`
 
 ## Adding a New Project
 To add a new project add a new object entry to the `work` array in `_data/work.json` containing the following attributes:
@@ -30,7 +51,7 @@ To add a new project add a new object entry to the `work` array in `_data/work.j
   - "embed" : link to the embed url for the video  
     (eg: "https://player.vimeo.com/video/81728484")
 - "imgs" : required: an array of any images associated with the project
-- "size" : size to give to the project that corresponds to a `CSS` class 
+- "size" : size to give to the project that corresponds to a `CSS` class
   (depreciated / unnecessary)
 - "date" : date the project was created in the format of Year-Month-Day, eg: "2014-11-02"
 
@@ -67,7 +88,7 @@ Then `cd` to the `scripts` dir and do `node make-portfolio-pages.js`
 - [x] add portfolio images for print work
     - [x] resize existing images to be smaller file size
     - [x] create thumbnails for them? Probably depends on masonry.js
-    
+
 - [x] add portfolio projects for web work (AIRS, Bushwick, Toxicity Map, etc)
 
 - [ ] create a logo!
@@ -76,11 +97,13 @@ Then `cd` to the `scripts` dir and do `node make-portfolio-pages.js`
 
 - [x] index with Google’s SEO & custom search using sitemap.xml
 
-## Deploying Jekyll With Git On A Remote VPS
+## Helpful Architecture Info:
+Some resources that helped me with developing this portfolio & blog site:
+
+### Deploying Jekyll With Git On A Remote VPS
 - https://www.digitalocean.com/community/tutorials/how-to-deploy-jekyll-blogs-with-git
 - https://www.digitalocean.com/community/tutorials/how-to-get-started-with-jekyll-on-an-ubuntu-vps
-
-## Helpful Architecture Info:
+-
 ### jekyll
 - http://jekyllrb.com/docs/variables/
 - http://pixelcog.com/blog/2013/jekyll-from-scratch-core-architecture/
