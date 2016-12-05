@@ -8,13 +8,13 @@
 #                                                 /____/
 #
 # Title of your website
-title: "Chris L Henrick – Web Development, Data Visualization, GIS, Maps, and Cartography"
+title: "Chris Henrick – Web Development, Data Visualization, GIS, Maps, and Cartography"
 
 # The slogan describes your website and is used on homepage in <title> and other important places
 slogan: "Web Development, Data Visualization, GIS, Maps, & Cartography"
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
-description: "The portfolio and technical blog of Chris L Henrick – provider of professional web development, data visualization, GIS, mapping, & cartography services."
+description: "The portfolio and technical blog of Chris Henrick – provider of professional web development, data visualization, GIS, mapping, & cartography services."
 
 # Main author of the website
 # See > authors.yml
@@ -26,7 +26,6 @@ baseurl: ''
 
 # This is for the editing function in _/includes/improve_content
 # Leave it empty if your site is not on GitHub/GitHub Pages
-# improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
 improve_content: https://github.com/clhenrick/portfolio/
 
 # This URL points directly to the images directory making
