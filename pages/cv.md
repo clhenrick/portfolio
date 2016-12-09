@@ -7,6 +7,7 @@ subheadline: ""
 permalink: "/about/cv/"
 header: no
 ---
+[Download as a PDF]({{site.urlimg}}chris-henrick-resume.pdf)
 
 ##Professional Experience
 -----
@@ -16,7 +17,7 @@ header: no
 *June, 2010 - Present*  
 San Francisco, CA
 
-For over five years I have professionally consulted for a diverse range of clients in web development, print cartography, and geospatial data analysis.
+Five years of consulting for a diverse range of clients in web development, print cartography, and geospatial data analysis.
 
 - [My work]({{site.url}}/work/) demonstrates expertise in creating custom web applications, data wrangling, spatial analysis with open-source GIS software, and producing clean, legible, and stylistically appropriate cartographic and map related products for both print and the web.
 
