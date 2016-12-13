@@ -6,7 +6,7 @@ meta_title: "Chris Henrick featured work: Am I Rent Stabilized?"
 teaser: "A civic web app to inform NYC renters about rent stabilization."
 date: "2015-05-01"
 tags:
-  - web data-viz 
+  - web 
 category:
   - work
 header: no
