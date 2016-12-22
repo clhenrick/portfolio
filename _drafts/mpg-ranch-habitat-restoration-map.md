@@ -13,15 +13,17 @@ tags:
   - AWS
 ---
 
-![screenshot of mpg-habitat map app](#)
+![the MPG Ranch Habitat Restoration Map app]({{site.urlimg}}mpg-habitat-01-overview.jpg)
 
-The MPG Ranch Habitat Restoration Map enables a team of biologists to effectively communicate
-ongoing management plans and actions, and provides a venue for discussion of restoration research
-and practices through an interactive web map application.
+The MPG Ranch Habitat Restoration Map enables a team of biologists to effectively communicate ongoing management plans and actions, and provides a venue for discussion of restoration research and practices through an interactive web map application.
 
-About [MPG Ranch](#):
+I created this web application entirely from scratch using React, Redux, Leaflet, CARTO, Heroku, and AWS to name a few tools. This was the most complex web mapping app I've worked on yet, and was a fun project to build out and iterate on. The app is not yet public, so I'm including some screen captures here alongside documenting the process of how it was built.
 
-![photo of mpg-ranch](#)
+### About [MPG Ranch](http://www.mpgranch.com):
+<br>
+
+![photo of mpg-ranch]({{site.urlimg}}mpg-ranch-elk-herd.jpeg)
+*An elk herd roaming over MPG Ranch in the winter, photo credit: Teagan Hayes*
 
 > Set in the heart of Montana’s Bitterroot Valley, MPG Ranch lies on over
 14,000 acres of rich undeveloped landscape. Established in 2009
@@ -61,16 +63,25 @@ then generating and serving tiles from that data
 
 Here are some screenshots of the Habitat Restoration Map web app:
 
-![habitat map app placeholder](#)
-![habitat map app placeholder](#)
-![habitat map app placeholder](#)
-![habitat map app placeholder](#)
+![mpg ranch habitat map landing]({{site.urlimg}}mpg-habitat02.jpg)
+*Default application state*
 
-In addition to the Habitat Restoration Map I built a fully separate web app,
-the "Slide Builder", that allows for MPG's habitat restoration team to
-generate slide show reports.
+![mpg ranch habitat map dropdown search]({{site.urlimg}}mpg-habitat03.jpg)
+*Search by management unit name & dropdown select*
 
-![slide builder app](#)
+![mpg ranch habitat map detail pane]({{site.urlimg}}mpg-habitat04.jpg)
+*Detail pane view*
+
+![placeholder](#)
+
+![placeholder](#)
+
+![placeholder](#)
+
+### Slide Builder App
+In addition to the Habitat Restoration Map I built a fully separate web app, the "Slide Builder", that allows for MPG's habitat restoration team to generate slide show reports without having to do manual layout in a program like Microsoft Powerpoint. This web app ended up being very useful to them as it saved them time and made the task of creating reports less tedious.
+
+![slide builder app]({{site.urlimg}}mpg-slide-builder-overview.jpg)
 
 The Slide Builder web app was built using:
 
