@@ -2,7 +2,7 @@
 title: "The MPG Ranch Habitat Restoration Map"
 layout: page
 date: 2016-12-22
-teaser: "Creating an interactive web map and slide deck generator for environmental scientists"
+teaser: "An interactive web map and report generator for environmental scientists"
 header: no
 comments: true
 tags:
@@ -159,10 +159,11 @@ or remove slides as desired. Previously created slide decks may be loaded, edite
 ![slide builder app - publishing success!]({{site.urlimg}}mpg-slide-builder06.jpg)
 *Notifying the user that the deck was successfully published*
 
-#### When saved, the reports are stored as JSON data in CARTO. From there the data can be loaded into the Habitat Restoration Map web app.
+#### When saved, the reports are stored as JSON data in CARTO, then loaded into the Habitat Restoration Map.
 
 As the Slide Builder app POSTs data to MPG's CARTO account, a Node JS Express
-proxy server keeps MPG's CARTO API Key secure. After a report has been created
+proxy server keeps MPG's CARTO API Key secure. The Slide Builder App runs on [Heroku](#)
+as a private web app through Heroku's [wwwhisper](#). After a report has been created
 and marked as "published", the report data will be fetched by the Habitat
 Restoration Map web app. When the user clicks a link for a report, the report data
 is rendered as a slide deck and displayed within a lightbox:
@@ -183,6 +184,12 @@ JSON data for a report and renders a slide show from that data. Using
 [NPM](https://www.npmjs.com/) and Github, the slides component can be
 installed as a private module in both applications, as well as developed locally
 separate from either application for debugging and developing purposes.
+
+![slides component placeholder](#)
+
+![slides component placeholder](#)
+
+![slides component placeholder](#)
 
 ## Conclusion
 
