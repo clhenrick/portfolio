@@ -1,8 +1,8 @@
 ---
 title: "The MPG Ranch Habitat Restoration Map"
 layout: page
-# date:
-teaser: ""
+date: 2016-12-22
+teaser: "Creating an interactive web map and slide deck generator for environmental scientists"
 header: no
 comments: true
 tags:
@@ -17,17 +17,18 @@ tags:
 
 ![the MPG Ranch Habitat Restoration Map app]({{site.urlimg}}mpg-habitat-01-overview.jpg)
 
-The MPG Ranch Habitat Restoration Map enables a team of environmental conservationists to effectively
+The MPG Ranch Habitat Restoration Map enables a team of environmental scientists to effectively
 communicate ongoing management plans and actions with their stakeholders and provides
 a venue for discussion of restoration research and practices through an interactive
 web map application.
 
-I created this web app using React, Redux, Leaflet, CARTO,
-Heroku, and AWS and other tools. The app is not yet public, so I'm including
-some screen captures here alongside the documentation of how it was built.
+I created this web app while working at [Stamen Design](http://stamen.com) using modern web technology
+including React, Redux, Leaflet, CARTO, Heroku, and AWS and other tools. The web map
+is not yet live, though I wanted to be sure to document my work on it in the meantime.
+As such I'm including some screen captures here alongside notes of how it was built.
 
-### About MPG Ranch:
-<br>
+## About MPG Ranch:
+
 
 ![photo of mpg-ranch]({{site.urlimg}}mpg-ranch-elk-herd.jpeg)
 *An elk herd roaming over MPG Ranch in the winter, photo credit: Teagan Hayes*
@@ -38,9 +39,7 @@ and privately owned, MPG strives to preserve the natural
 communities that make this area beautiful and focuses on research
 to restore and protect native diversity.
 
-This web app, which I developed for [MPG Ranch](http://www.mpgranch.com) while
-working for [Stamen Design](http://stamen.com), involved solving a multitude of
-technical problems including the integration of:
+This web app involved solving a multitude of technical problems, including integrating:
 
 - a Shapefile of 60+ management unit polygons with environmental attribute data
 - High resolution (10cm) aerial imagery of the ranch
@@ -48,10 +47,10 @@ technical problems including the integration of:
 and [solar insolation](https://en.wikipedia.org/wiki/Solar_irradiance)
 - Qualitative data on activities, management, plans, and research
 - Professional photography of the ranch and activities
-- Report slide shows that document research and restoration work
+- Report slide decks that document research and restoration work on the ranch
 
 To solve these development challenges a modern web stack was used that included
-the following front-end libraries:
+the following front-end libraries and tooling:
 
 - **React** for building out UI components
 - **Redux** for managing application state
@@ -60,29 +59,46 @@ the following front-end libraries:
 - **Gulp, Browserify,** and **Babel** as a front-end build system
 - **Marked** for handling the conversion and sanitization of markdown text into HTML
 
-...and the following "backend" services:
+and the following "backend" web services:
 
-- **Google Forms** for entering qualitative data by management unit
+- **Google Forms** for allowing the client to enter qualitative data by management unit
 - **[CARTO](https://carto.com)** for syncing tables generated from Google Forms
-and for hosting the Shapefile polygon data of the ranch's management units
+and for hosting vector geospatial data
 - **CARTO's [SQL API](https://carto.com/docs/carto-engine/sql-api)** for
 fetching data to load into the application
 - The **[AWS Lambda Tiler](https://hi.stamen.com/stamen-aws-lambda-tiler-blog-post-76fc1138a145#.n8xuphpze)**
 for serving tiles generated from aerial imagery and raster data
 
-Here are some screenshots of the Habitat Restoration Map web app:
+## Habitat Restoration Map Features
+
+The map allows a user to view various information about the ranch as a whole as
+well as individual "management units." Users may click on a management unit polygon
+to bring up a detail pane which displays that unit's photo carousel, environmental data,
+management activities, recent activities or "actions," and report slide decks.
 
 ![habitat map landing]({{site.urlimg}}mpg-habitat02.jpg)
 *Default application state*
 
-![habitat map dropdown search]({{site.urlimg}}mpg-habitat03.jpg)
-*Search by management unit name & dropdown select*
+![habitat map mouseover and click on a mu polygon]({{site.urlimg}}mpg-habitat13.jpg)
+*Mouseover and click on a management unit polygon*
 
-![habitat map detail pane]({{site.urlimg}}mpg-habitat04.jpg)
-*Detail pane view*
+![habitat map detail pane]({{site.urlimg}}mpg-habitat14.jpg)
+*Management Unit detail pane*
+
+#### Alternatively, a user may search for a management unit by typing in a text input field and browsing results in a list.
+
+![habitat map search by unit name]({{site.urlimg}}mpg-habitat15.jpg)
+*Searching by a management unit name via a text input and dropdown*
+
+![]({{site.urlimg}}mpg-habitat16.jpg)
+*Clicking a management unit list item brings up the detail pane*
+
+#### Photo carousels may be opened in a lightbox mode to be viewed at a larger size.
 
 ![habitat map lightbox]({{site.urlimg}}mpg-habitat05.jpg)
 *Photo carousel in lightbox mode*
+
+#### Various map layers may be toggled as well, including high resolution satellite imagery (for 2015 and 2016 so far), NDVI, solar radiation, and terrain.
 
 ![habitat map ndvi raster layer]({{site.urlimg}}mpg-habitat06.jpg)
 *Toggling the NDVI raster layer*
@@ -90,12 +106,20 @@ Here are some screenshots of the Habitat Restoration Map web app:
 ![habitat map solar insolation raster layer]({{site.urlimg}}mpg-habitat07.jpg)
 *Toggling the solar insolation raster layer*
 
-![placeholder]({{site.urlimg}}mpg-habitat08.jpg)
-*Zoomed view of the NDVI raster layer*
+![habitat map ndvi zoomed in]({{site.urlimg}}mpg-habitat08.jpg)
+*Zoomed in view of the NDVI raster layer*
 
-### Slide Builder App
+#### Clicking on a list item in the Recent Actions pane will zoom the map to the polygon and open the detail pane for that action item's corresponding management unit.
+
+![habitat map clicking a recent action item]({{site.urlimg}}mpg-habitat17.jpg)
+*Mousing over and clicking on a list item in the Recent Actions pane in the lower left corner*
+
+![habitat map detail pane opened to recent actions after clicking a recent action item]({{site.urlimg}}mpg-habitat18.jpg)
+*Map pans and zooms, opens the detail pane's Actions section after clicking a Recent Action item*
+
+## Slide Builder App
 In addition to the Habitat Restoration Map, I built a fully separate web app, the
-"Slide Builder." This web app allows for MPG's habitat restoration team to streamline
+"Slide Builder App." This web app allows for MPG's habitat restoration team to streamline
 the creation of research and progress reports, without using desktop software such as
 MS Powerpoint. The habitat restoration team found that this new approach saved them a
 great deal of time and frustration when creating reports, a task they previously had dreaded!
@@ -135,8 +159,7 @@ or remove slides as desired. Previously created slide decks may be loaded, edite
 ![slide builder app - publishing success!]({{site.urlimg}}mpg-slide-builder06.jpg)
 *Notifying the user that the deck was successfully published*
 
-When saved, the reports are stored as JSON data in CARTO. From there the data can be
-loaded into the Habitat Restoration Map web app.
+#### When saved, the reports are stored as JSON data in CARTO. From there the data can be loaded into the Habitat Restoration Map web app.
 
 As the Slide Builder app POSTs data to MPG's CARTO account, a Node JS Express
 proxy server keeps MPG's CARTO API Key secure. After a report has been created
@@ -152,8 +175,8 @@ is rendered as a slide deck and displayed within a lightbox:
 
 ![habitat map displaying a report slide deck 4]({{site.urlimg}}mpg-habitat12.jpg)
 
-### React Slides Component
-<br>
+## React Slides Component
+
 In order to integrate and maintain consistency with the slides for the two
 separate web applications, I created a slides component in React which consumes
 JSON data for a report and renders a slide show from that data. Using
@@ -161,11 +184,11 @@ JSON data for a report and renders a slide show from that data. Using
 installed as a private module in both applications, as well as developed locally
 separate from either application for debugging and developing purposes.
 
-### Conclusion
-<br>
+## Conclusion
+
 Overall, this was a challenging project due to its many requirements and moving parts.
 Working closely with [Nicolette Hayes](http://stamen.com/about/who/nicolette-hayes/),
-a talented UI/UX designer at [Stamen Design](http://stamen.com), made it possible to rapidly prototype
+a talented UI/UX designer at Stamen Design, made it possible to rapidly prototype
 various parts of and iterate on the applications. The client, the habitat restoration
 team at MPG Ranch, ended up being very pleased with both the Habitat Restoration Map and
 Slide Builder app. Both apps are still under development and continue to serve the
