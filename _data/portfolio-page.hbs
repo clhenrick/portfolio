@@ -56,9 +56,11 @@ permalink: "/work/{{permalink}}"
 {{else}}
 {{#each imgs}}
   <a href="\{{site.url}}\{{site.baseurl}}/images/{{this}}" target="_blank">
-    <img class="portfolio" src="\{{site.url}}\{{site.baseurl}}/images/{{this}}" alt="{{this}}">
+    <img class="portfolio lazy" data-original="\{{site.url}}\{{site.baseurl}}/images/{{this}}" width="100%" height="100%" alt="{{this}}">
+    <noscript>
+      <img src="\{{site.url}}\{{site.baseurl}}/images/{{this}}" width="100%" height="100%" alt="{{this}}">
+    </noscript>
   </a>
-
 {{/each}}
 {{/if}}
 

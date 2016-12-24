@@ -21,33 +21,47 @@ The redesign of the FOSI GRID website required that users should be able to navi
 
 
   <a href="{{site.url}}{{site.baseurl}}/images/fosi-grid-01.png" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/fosi-grid-01.png" alt="fosi-grid-01.png">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/fosi-grid-01.png" width="100%" height="100%" alt="fosi-grid-01.png">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/fosi-grid-01.png" width="100%" height="100%" alt="fosi-grid-01.png">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/fosi-grid-02.png" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/fosi-grid-02.png" alt="fosi-grid-02.png">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/fosi-grid-02.png" width="100%" height="100%" alt="fosi-grid-02.png">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/fosi-grid-02.png" width="100%" height="100%" alt="fosi-grid-02.png">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/fosi-grid-03.png" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/fosi-grid-03.png" alt="fosi-grid-03.png">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/fosi-grid-03.png" width="100%" height="100%" alt="fosi-grid-03.png">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/fosi-grid-03.png" width="100%" height="100%" alt="fosi-grid-03.png">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/fosi-grid-04.png" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/fosi-grid-04.png" alt="fosi-grid-04.png">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/fosi-grid-04.png" width="100%" height="100%" alt="fosi-grid-04.png">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/fosi-grid-04.png" width="100%" height="100%" alt="fosi-grid-04.png">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/fosi-grid-05.png" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/fosi-grid-05.png" alt="fosi-grid-05.png">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/fosi-grid-05.png" width="100%" height="100%" alt="fosi-grid-05.png">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/fosi-grid-05.png" width="100%" height="100%" alt="fosi-grid-05.png">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/fosi-grid-06.png" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/fosi-grid-06.png" alt="fosi-grid-06.png">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/fosi-grid-06.png" width="100%" height="100%" alt="fosi-grid-06.png">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/fosi-grid-06.png" width="100%" height="100%" alt="fosi-grid-06.png">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/fosi-grid-07.png" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/fosi-grid-07.png" alt="fosi-grid-07.png">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/fosi-grid-07.png" width="100%" height="100%" alt="fosi-grid-07.png">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/fosi-grid-07.png" width="100%" height="100%" alt="fosi-grid-07.png">
+    </noscript>
   </a>
-
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

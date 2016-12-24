@@ -19,9 +19,11 @@ A map of the province of Ontario, Canada created using Natural Earth 1:10m vecto
 
 
   <a href="{{site.url}}{{site.baseurl}}/images/ontario.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/ontario.jpg" alt="ontario.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/ontario.jpg" width="100%" height="100%" alt="ontario.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/ontario.jpg" width="100%" height="100%" alt="ontario.jpg">
+    </noscript>
   </a>
-
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

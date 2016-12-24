@@ -18,9 +18,11 @@ permalink: "/work/galapagos-islands.html"
 
 
   <a href="{{site.url}}{{site.baseurl}}/images/galapagos.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/galapagos.jpg" alt="galapagos.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/galapagos.jpg" width="100%" height="100%" alt="galapagos.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/galapagos.jpg" width="100%" height="100%" alt="galapagos.jpg">
+    </noscript>
   </a>
-
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

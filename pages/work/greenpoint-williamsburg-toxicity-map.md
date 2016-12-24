@@ -22,37 +22,53 @@ The NAG Greenpoint-Williamsburg ToxiCity Map is an interactive map of toxic “h
 <strong><a href="https://github.com/clhenrick/greenpoint_williamsburg_toxicity_map" target="_blank">View code on Github</a></strong>
 
   <a href="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map01.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map01.jpg" alt="nag-toxicity-map01.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map01.jpg" width="100%" height="100%" alt="nag-toxicity-map01.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map01.jpg" width="100%" height="100%" alt="nag-toxicity-map01.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map02.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map02.jpg" alt="nag-toxicity-map02.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map02.jpg" width="100%" height="100%" alt="nag-toxicity-map02.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map02.jpg" width="100%" height="100%" alt="nag-toxicity-map02.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map03.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map03.jpg" alt="nag-toxicity-map03.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map03.jpg" width="100%" height="100%" alt="nag-toxicity-map03.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map03.jpg" width="100%" height="100%" alt="nag-toxicity-map03.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map04.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map04.jpg" alt="nag-toxicity-map04.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map04.jpg" width="100%" height="100%" alt="nag-toxicity-map04.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map04.jpg" width="100%" height="100%" alt="nag-toxicity-map04.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map05.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map05.jpg" alt="nag-toxicity-map05.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map05.jpg" width="100%" height="100%" alt="nag-toxicity-map05.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map05.jpg" width="100%" height="100%" alt="nag-toxicity-map05.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map06.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map06.jpg" alt="nag-toxicity-map06.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map06.jpg" width="100%" height="100%" alt="nag-toxicity-map06.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map06.jpg" width="100%" height="100%" alt="nag-toxicity-map06.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map07.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map07.jpg" alt="nag-toxicity-map07.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map07.jpg" width="100%" height="100%" alt="nag-toxicity-map07.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map07.jpg" width="100%" height="100%" alt="nag-toxicity-map07.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map08.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map08.jpg" alt="nag-toxicity-map08.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map08.jpg" width="100%" height="100%" alt="nag-toxicity-map08.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/nag-toxicity-map08.jpg" width="100%" height="100%" alt="nag-toxicity-map08.jpg">
+    </noscript>
   </a>
-
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

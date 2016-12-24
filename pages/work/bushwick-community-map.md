@@ -22,37 +22,53 @@ The Northwest Bushwick Community Map is meant to be a resource for local communi
 <strong><a href="https://github.com/clhenrick/BushwickCommunityMap" target="_blank">View code on Github</a></strong>
 
   <a href="{{site.url}}{{site.baseurl}}/images/bcm01.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/bcm01.jpg" alt="bcm01.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/bcm01.jpg" width="100%" height="100%" alt="bcm01.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/bcm01.jpg" width="100%" height="100%" alt="bcm01.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/bcm02.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/bcm02.jpg" alt="bcm02.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/bcm02.jpg" width="100%" height="100%" alt="bcm02.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/bcm02.jpg" width="100%" height="100%" alt="bcm02.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/bcm03.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/bcm03.jpg" alt="bcm03.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/bcm03.jpg" width="100%" height="100%" alt="bcm03.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/bcm03.jpg" width="100%" height="100%" alt="bcm03.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/bcm04.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/bcm04.jpg" alt="bcm04.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/bcm04.jpg" width="100%" height="100%" alt="bcm04.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/bcm04.jpg" width="100%" height="100%" alt="bcm04.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/bcm05.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/bcm05.jpg" alt="bcm05.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/bcm05.jpg" width="100%" height="100%" alt="bcm05.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/bcm05.jpg" width="100%" height="100%" alt="bcm05.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/bcm06.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/bcm06.jpg" alt="bcm06.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/bcm06.jpg" width="100%" height="100%" alt="bcm06.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/bcm06.jpg" width="100%" height="100%" alt="bcm06.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/bcm07.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/bcm07.jpg" alt="bcm07.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/bcm07.jpg" width="100%" height="100%" alt="bcm07.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/bcm07.jpg" width="100%" height="100%" alt="bcm07.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/bcm08.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/bcm08.jpg" alt="bcm08.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/bcm08.jpg" width="100%" height="100%" alt="bcm08.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/bcm08.jpg" width="100%" height="100%" alt="bcm08.jpg">
+    </noscript>
   </a>
-
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

@@ -20,9 +20,11 @@ This map was created at GreenInfo Network with Alexandra Barnish for Sustainable
 
 
   <a href="{{site.url}}{{site.baseurl}}/images/public-private.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/public-private.jpg" alt="public-private.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/public-private.jpg" width="100%" height="100%" alt="public-private.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/public-private.jpg" width="100%" height="100%" alt="public-private.jpg">
+    </noscript>
   </a>
-
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

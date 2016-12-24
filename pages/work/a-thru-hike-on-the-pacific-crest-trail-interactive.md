@@ -22,25 +22,35 @@ An attempt at creating an NY Times style interactive. As the user scrolls down a
 <strong><a href="https://github.com/clhenrick/Major-Studio-Two/tree/master/map-story/html" target="_blank">View code on Github</a></strong>
 
   <a href="{{site.url}}{{site.baseurl}}/images/thru-hike-pct01.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/thru-hike-pct01.jpg" alt="thru-hike-pct01.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/thru-hike-pct01.jpg" width="100%" height="100%" alt="thru-hike-pct01.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/thru-hike-pct01.jpg" width="100%" height="100%" alt="thru-hike-pct01.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/thru-hike-pct02.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/thru-hike-pct02.jpg" alt="thru-hike-pct02.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/thru-hike-pct02.jpg" width="100%" height="100%" alt="thru-hike-pct02.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/thru-hike-pct02.jpg" width="100%" height="100%" alt="thru-hike-pct02.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/thru-hike-pct03.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/thru-hike-pct03.jpg" alt="thru-hike-pct03.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/thru-hike-pct03.jpg" width="100%" height="100%" alt="thru-hike-pct03.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/thru-hike-pct03.jpg" width="100%" height="100%" alt="thru-hike-pct03.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/thru-hike-pct04.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/thru-hike-pct04.jpg" alt="thru-hike-pct04.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/thru-hike-pct04.jpg" width="100%" height="100%" alt="thru-hike-pct04.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/thru-hike-pct04.jpg" width="100%" height="100%" alt="thru-hike-pct04.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/thru-hike-pct05.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/thru-hike-pct05.jpg" alt="thru-hike-pct05.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/thru-hike-pct05.jpg" width="100%" height="100%" alt="thru-hike-pct05.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/thru-hike-pct05.jpg" width="100%" height="100%" alt="thru-hike-pct05.jpg">
+    </noscript>
   </a>
-
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

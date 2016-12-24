@@ -20,9 +20,11 @@ Distribution of a proposed 1% "flip tax" on all real estate transactions in 2014
 <strong><a href="https://github.com/NYC-REIC/landscapes-of-profit/" target="_blank">View code on Github</a></strong>
 
   <a href="{{site.url}}{{site.baseurl}}/images/landscapes-profit.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/landscapes-profit.jpg" alt="landscapes-profit.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/landscapes-profit.jpg" width="100%" height="100%" alt="landscapes-profit.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/landscapes-profit.jpg" width="100%" height="100%" alt="landscapes-profit.jpg">
+    </noscript>
   </a>
-
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

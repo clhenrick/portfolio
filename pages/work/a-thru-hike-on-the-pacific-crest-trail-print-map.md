@@ -20,17 +20,23 @@ I created this original map using my brother's GPS data, GPX tracks from <a href
 
 
   <a href="{{site.url}}{{site.baseurl}}/images/mike-pct01.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/mike-pct01.jpg" alt="mike-pct01.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/mike-pct01.jpg" width="100%" height="100%" alt="mike-pct01.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/mike-pct01.jpg" width="100%" height="100%" alt="mike-pct01.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/mike-pct02.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/mike-pct02.jpg" alt="mike-pct02.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/mike-pct02.jpg" width="100%" height="100%" alt="mike-pct02.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/mike-pct02.jpg" width="100%" height="100%" alt="mike-pct02.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/mike-pct03.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/mike-pct03.jpg" alt="mike-pct03.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/mike-pct03.jpg" width="100%" height="100%" alt="mike-pct03.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/mike-pct03.jpg" width="100%" height="100%" alt="mike-pct03.jpg">
+    </noscript>
   </a>
-
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

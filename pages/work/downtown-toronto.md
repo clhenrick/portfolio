@@ -19,9 +19,11 @@ permalink: "/work/downtown-toronto.html"
 
 
   <a href="{{site.url}}{{site.baseurl}}/images/toronto-dt.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/toronto-dt.jpg" alt="toronto-dt.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/toronto-dt.jpg" width="100%" height="100%" alt="toronto-dt.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/toronto-dt.jpg" width="100%" height="100%" alt="toronto-dt.jpg">
+    </noscript>
   </a>
-
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

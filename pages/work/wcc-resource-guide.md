@@ -20,9 +20,11 @@ permalink: "/work/wcc-resource-guide.html"
 
 
   <a href="{{site.url}}{{site.baseurl}}/images/wcc-resource-guide.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/wcc-resource-guide.jpg" alt="wcc-resource-guide.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/wcc-resource-guide.jpg" width="100%" height="100%" alt="wcc-resource-guide.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/wcc-resource-guide.jpg" width="100%" height="100%" alt="wcc-resource-guide.jpg">
+    </noscript>
   </a>
-
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

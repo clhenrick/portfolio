@@ -21,21 +21,29 @@ permalink: "/work/ten-and-taller.html"
 
 
   <a href="{{site.url}}{{site.baseurl}}/images/ten-taller01.png" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/ten-taller01.png" alt="ten-taller01.png">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/ten-taller01.png" width="100%" height="100%" alt="ten-taller01.png">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/ten-taller01.png" width="100%" height="100%" alt="ten-taller01.png">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/ten-taller04.png" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/ten-taller04.png" alt="ten-taller04.png">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/ten-taller04.png" width="100%" height="100%" alt="ten-taller04.png">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/ten-taller04.png" width="100%" height="100%" alt="ten-taller04.png">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/ten-taller02.png" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/ten-taller02.png" alt="ten-taller02.png">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/ten-taller02.png" width="100%" height="100%" alt="ten-taller02.png">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/ten-taller02.png" width="100%" height="100%" alt="ten-taller02.png">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/ten-taller03.png" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/ten-taller03.png" alt="ten-taller03.png">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/ten-taller03.png" width="100%" height="100%" alt="ten-taller03.png">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/ten-taller03.png" width="100%" height="100%" alt="ten-taller03.png">
+    </noscript>
   </a>
-
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

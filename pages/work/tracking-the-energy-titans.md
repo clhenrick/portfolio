@@ -21,21 +21,29 @@ Created for the Woodrow Wilson Center, this interactive data-visualization allow
 
 
   <a href="{{site.url}}{{site.baseurl}}/images/tracking-energy-titans01.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/tracking-energy-titans01.jpg" alt="tracking-energy-titans01.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/tracking-energy-titans01.jpg" width="100%" height="100%" alt="tracking-energy-titans01.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/tracking-energy-titans01.jpg" width="100%" height="100%" alt="tracking-energy-titans01.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/tracking-energy-titans02.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/tracking-energy-titans02.jpg" alt="tracking-energy-titans02.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/tracking-energy-titans02.jpg" width="100%" height="100%" alt="tracking-energy-titans02.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/tracking-energy-titans02.jpg" width="100%" height="100%" alt="tracking-energy-titans02.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/tracking-energy-titans03.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/tracking-energy-titans03.jpg" alt="tracking-energy-titans03.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/tracking-energy-titans03.jpg" width="100%" height="100%" alt="tracking-energy-titans03.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/tracking-energy-titans03.jpg" width="100%" height="100%" alt="tracking-energy-titans03.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/tracking-energy-titans04.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/tracking-energy-titans04.jpg" alt="tracking-energy-titans04.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/tracking-energy-titans04.jpg" width="100%" height="100%" alt="tracking-energy-titans04.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/tracking-energy-titans04.jpg" width="100%" height="100%" alt="tracking-energy-titans04.jpg">
+    </noscript>
   </a>
-
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

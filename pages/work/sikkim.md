@@ -20,9 +20,11 @@ A custom hillshade was created from SRTM DEM data using QGIS and Terrain Sculpto
 
 
   <a href="{{site.url}}{{site.baseurl}}/images/sikkim.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/sikkim.jpg" alt="sikkim.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/sikkim.jpg" width="100%" height="100%" alt="sikkim.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/sikkim.jpg" width="100%" height="100%" alt="sikkim.jpg">
+    </noscript>
   </a>
-
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

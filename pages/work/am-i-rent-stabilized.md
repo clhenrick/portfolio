@@ -22,69 +22,101 @@ Am I Rent Stabilized is a web application that encourages New York City tenants 
 <strong><a href="https://github.com/clhenrick/am-i-rent-stabilized.git" target="_blank">View code on Github</a></strong>
 
   <a href="{{site.url}}{{site.baseurl}}/images/airs01.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs01.jpg" alt="airs01.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/airs01.jpg" width="100%" height="100%" alt="airs01.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/airs01.jpg" width="100%" height="100%" alt="airs01.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/airs02.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs02.jpg" alt="airs02.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/airs02.jpg" width="100%" height="100%" alt="airs02.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/airs02.jpg" width="100%" height="100%" alt="airs02.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/airs03.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs03.jpg" alt="airs03.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/airs03.jpg" width="100%" height="100%" alt="airs03.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/airs03.jpg" width="100%" height="100%" alt="airs03.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/airs04.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs04.jpg" alt="airs04.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/airs04.jpg" width="100%" height="100%" alt="airs04.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/airs04.jpg" width="100%" height="100%" alt="airs04.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/airs05.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs05.jpg" alt="airs05.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/airs05.jpg" width="100%" height="100%" alt="airs05.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/airs05.jpg" width="100%" height="100%" alt="airs05.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/airs06.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs06.jpg" alt="airs06.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/airs06.jpg" width="100%" height="100%" alt="airs06.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/airs06.jpg" width="100%" height="100%" alt="airs06.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/airs07.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs07.jpg" alt="airs07.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/airs07.jpg" width="100%" height="100%" alt="airs07.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/airs07.jpg" width="100%" height="100%" alt="airs07.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/airs08.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs08.jpg" alt="airs08.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/airs08.jpg" width="100%" height="100%" alt="airs08.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/airs08.jpg" width="100%" height="100%" alt="airs08.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/airs09.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs09.jpg" alt="airs09.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/airs09.jpg" width="100%" height="100%" alt="airs09.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/airs09.jpg" width="100%" height="100%" alt="airs09.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/airs10.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs10.jpg" alt="airs10.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/airs10.jpg" width="100%" height="100%" alt="airs10.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/airs10.jpg" width="100%" height="100%" alt="airs10.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/airs11.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs11.jpg" alt="airs11.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/airs11.jpg" width="100%" height="100%" alt="airs11.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/airs11.jpg" width="100%" height="100%" alt="airs11.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/airs12.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs12.jpg" alt="airs12.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/airs12.jpg" width="100%" height="100%" alt="airs12.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/airs12.jpg" width="100%" height="100%" alt="airs12.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/airs13.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs13.jpg" alt="airs13.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/airs13.jpg" width="100%" height="100%" alt="airs13.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/airs13.jpg" width="100%" height="100%" alt="airs13.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/airs14.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs14.jpg" alt="airs14.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/airs14.jpg" width="100%" height="100%" alt="airs14.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/airs14.jpg" width="100%" height="100%" alt="airs14.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/airs15.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs15.jpg" alt="airs15.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/airs15.jpg" width="100%" height="100%" alt="airs15.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/airs15.jpg" width="100%" height="100%" alt="airs15.jpg">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/airs16.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/airs16.jpg" alt="airs16.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/airs16.jpg" width="100%" height="100%" alt="airs16.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/airs16.jpg" width="100%" height="100%" alt="airs16.jpg">
+    </noscript>
   </a>
-
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

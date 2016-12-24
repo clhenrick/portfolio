@@ -20,9 +20,11 @@ This map was created at GreenInfo Network with Alexandra Barnish, and is a worki
 
 
   <a href="{{site.url}}{{site.baseurl}}/images/chinook.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/chinook.jpg" alt="chinook.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/chinook.jpg" width="100%" height="100%" alt="chinook.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/chinook.jpg" width="100%" height="100%" alt="chinook.jpg">
+    </noscript>
   </a>
-
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

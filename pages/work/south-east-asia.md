@@ -19,9 +19,11 @@ Another map for a 9 book series on the backpacking trips taken by globetrotter D
 
 
   <a href="{{site.url}}{{site.baseurl}}/images/se-asia.jpg" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/se-asia.jpg" alt="se-asia.jpg">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/se-asia.jpg" width="100%" height="100%" alt="se-asia.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/se-asia.jpg" width="100%" height="100%" alt="se-asia.jpg">
+    </noscript>
   </a>
-
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

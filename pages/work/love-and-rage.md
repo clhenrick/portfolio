@@ -20,17 +20,23 @@ A print map I created for Rebecca Solnit's latest city atlas: Nonstop Metropolis
 
 
   <a href="{{site.url}}{{site.baseurl}}/images/love-and-rage.png" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/love-and-rage.png" alt="love-and-rage.png">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/love-and-rage.png" width="100%" height="100%" alt="love-and-rage.png">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/love-and-rage.png" width="100%" height="100%" alt="love-and-rage.png">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/love-and-rage-crop01.png" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/love-and-rage-crop01.png" alt="love-and-rage-crop01.png">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/love-and-rage-crop01.png" width="100%" height="100%" alt="love-and-rage-crop01.png">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/love-and-rage-crop01.png" width="100%" height="100%" alt="love-and-rage-crop01.png">
+    </noscript>
   </a>
-
   <a href="{{site.url}}{{site.baseurl}}/images/love-and-rage-crop02.png" target="_blank">
-    <img class="portfolio" src="{{site.url}}{{site.baseurl}}/images/love-and-rage-crop02.png" alt="love-and-rage-crop02.png">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/love-and-rage-crop02.png" width="100%" height="100%" alt="love-and-rage-crop02.png">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/love-and-rage-crop02.png" width="100%" height="100%" alt="love-and-rage-crop02.png">
+    </noscript>
   </a>
-
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)
