@@ -39,9 +39,9 @@
   border: 1px solid $grey-15;
 }
 
-input[type="text"], 
-input[type="text"]:focus, 
-textarea, 
+input[type="text"],
+input[type="text"]:focus,
+textarea,
 textarea:focus {
   background: $grey-2;
   color: $grey-7;
@@ -70,10 +70,10 @@ textarea:focus {
 .alert-box {
   font-family: $font-family-sans-serif;
   text-shadow: 0px 1px 1px rgba(0,0,0,0.9);
-} 
+}
   .alert-box p {
     margin-bottom: 0;
-  } 
+  }
   .alert-box a {
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
     color: #fff;
@@ -83,8 +83,8 @@ textarea:focus {
     border-bottom: 1px solid #fff;
   }
   .alert-box.terminal {
-    background: $grey-12; 
-    color: #fff; 
+    background: $grey-12;
+    color: #fff;
     border-color: scale-color($grey-12, $lightness: -14%);
     font-family: $font-family-monospace;
   }
@@ -146,17 +146,17 @@ dd.accordion-navigation.active span:before { content: "\F105" }
  * http://ressio.github.io/lazy-load-xt
  * (C) 2014 RESS.io
  * Licensed under MIT */
-img.lazy {
-  display: none;
-}
-.lazy-hidden {
-    opacity: 0;
-}
-.lazy-loaded {
-    -webkit-transition: opacity 0.7s;
-    -moz-transition: opacity 0.7s;
-    -ms-transition: opacity 0.7s;
-    -o-transition: opacity 0.7s;
-    transition: opacity 0.7s;
-    opacity: 1;
-}
+// img.lazy {
+//   display: none;
+// }
+// .lazy-hidden {
+//     opacity: 0;
+// }
+// .lazy-loaded {
+//     -webkit-transition: opacity 0.7s;
+//     -moz-transition: opacity 0.7s;
+//     -ms-transition: opacity 0.7s;
+//     -o-transition: opacity 0.7s;
+//     transition: opacity 0.7s;
+//     opacity: 1;
+// }

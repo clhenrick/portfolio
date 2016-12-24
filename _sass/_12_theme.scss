@@ -61,7 +61,7 @@ table {
 }
 
 // isotope grid area
-.grid {  
+.grid {
   width: 100%;;
   // padding-left: 5px;
   // padding-top: 5px;
@@ -85,14 +85,14 @@ table {
 
 .gutter-sizer {
   width: 1%;
-  
+
   @media only screen and (max-width: 40em)  {
     width: 2%;
   }
 }
 
-.grid-item { 
-  float: left; 
+.grid-item {
+  float: left;
   min-height: 200px;
   display: inline-block;
   margin: 0;
@@ -108,8 +108,8 @@ table {
     border-color: $ci-3;
   }
 
-  &.width2 { 
-    // width: calc(40% - 5px); 
+  &.width2 {
+    // width: calc(40% - 5px);
     width: 32.66666666666%;
   }
 
@@ -140,6 +140,7 @@ table {
 
 img.portfolio, iframe.tiles {
   // border: 2px solid $grey-8;
+  margin-bottom: 25px;
 }
 
 // when to display map tiles in portfolio detail pages
@@ -148,8 +149,7 @@ iframe.tiles {
     height: 850px;
   }
 
-  @media only screen and (max-width: 40em) { 
-    height: 400px;   
+  @media only screen and (max-width: 40em) {
+    height: 400px;
   }
 }
-
