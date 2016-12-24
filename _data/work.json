@@ -2,6 +2,17 @@
   "author" : "Chris L Henrick",
   "work" : [
     {
+      "title": "MPG Ranch Habitat Restoration Map",
+      "tags": ["web", "cartography"],
+      "description": "An interactive web map and report builder to showcase the work of environmental scientists.",
+      "description_long": "The MPG Ranch Habitat Restoration Map enables a team of environmental scientists to effectively communicate ongoing management plans and actions with their stakeholders and provides a venue for discussion of restoration research and practices through an interactive web map application. \n\n Read more about the project in a [blog post I wrote about it]({{site.url}}/mpg-habitat-restoration-map/).",
+      "tech": ["React", "Redux", "Leaflet", "CARTO", "Node JS", "AWS", "Heroku"],
+      "thumb": "mpg-habitat-thumb.jpg",
+      "imgs": ["mpg-habitat02.jpg" ,  "mpg-habitat13.jpg" , "mpg-habitat14.jpg" , "mpg-habitat15.jpg" , "mpg-habitat16.jpg" , "mpg-habitat05.jpg" , "mpg-habitat06.jpg" , "mpg-habitat07.jpg" , "mpg-habitat08.jpg" , "mpg-habitat09.jpg" , "mpg-habitat10.jpg" , "mpg-habitat11.jpg" , "mpg-habitat12.jpg" , "mpg-habitat17.jpg" , "mpg-habitat18.jpg"],
+      "size": "width3",
+      "date": "2016-12-22"
+    },
+    {
       "title" : "Am I Rent Stabilized?",
       "tags" : ["web"],
       "description" : "A civic web app to inform NYC renters about rent stabilization.",
