@@ -1,8 +1,8 @@
 ---
-title: "The MPG Ranch Habitat Restoration Map"
+title: "Habitat Restoration Map for MPG Ranch"
 layout: page
 date: 2016-12-22
-teaser: "An interactive web map and report generator for environmental scientists"
+teaser: "An interactive web map and report builder to showcase the work of environmental scientists and conservationists"
 header: no
 comments: true
 tags:
@@ -74,16 +74,16 @@ for serving tiles generated from aerial imagery and raster data
 The map allows a user to view various information about the ranch as a whole as
 well as individual "management units." Users may click on a management unit polygon
 to bring up a detail pane which displays that unit's photo carousel, environmental data,
-management activities, recent activities or "actions," and report slide decks.
+management activities, activities or "actions," and report slide decks.
 
 ![habitat map landing]({{site.urlimg}}mpg-habitat02.jpg)
 *Default application state*
 
 ![habitat map mouseover and click on a mu polygon]({{site.urlimg}}mpg-habitat13.jpg)
-*Mouseover and click on a management unit polygon*
+*Mousing over a management unit polygon*
 
 ![habitat map detail pane]({{site.urlimg}}mpg-habitat14.jpg)
-*Management Unit detail pane*
+*Management Unit detail pane opens after clicking on a polygon*
 
 #### Alternatively, a user may search for a management unit by typing in a text input field and browsing results in a list.
 
@@ -98,7 +98,7 @@ management activities, recent activities or "actions," and report slide decks.
 ![habitat map lightbox]({{site.urlimg}}mpg-habitat05.jpg)
 *Photo carousel in lightbox mode*
 
-#### Various map layers may be toggled as well, including high resolution satellite imagery (for 2015 and 2016 so far), NDVI, solar radiation, and terrain.
+#### Various map layers may be toggled as well, including high resolution satellite imagery, NDVI, solar radiation, and terrain.
 
 ![habitat map ndvi raster layer]({{site.urlimg}}mpg-habitat06.jpg)
 *Toggling the NDVI raster layer*
@@ -112,7 +112,7 @@ management activities, recent activities or "actions," and report slide decks.
 #### Clicking on a list item in the Recent Actions pane will zoom the map to the polygon and open the detail pane for that action item's corresponding management unit.
 
 ![habitat map clicking a recent action item]({{site.urlimg}}mpg-habitat17.jpg)
-*Mousing over and clicking on a list item in the Recent Actions pane in the lower left corner*
+*Mousing over a list item in the Recent Actions pane in the lower left corner*
 
 ![habitat map detail pane opened to recent actions after clicking a recent action item]({{site.urlimg}}mpg-habitat18.jpg)
 *Map pans and zooms, opens the detail pane's Actions section after clicking a Recent Action item*
@@ -140,6 +140,8 @@ Reports are generated through a simple interface; a form on the left lets the us
 a slide layout type (title, portrait, landscape, or text only) while a preview of the slide is displayed
 on the right. The user may navigate through the slide deck as slides are created and edit
 or remove slides as desired. Previously created slide decks may be loaded, edited, or deleted.
+Using my imagination and the React Bootstrap library helped me develop the interface
+fairly quickly without having to consult a wireframe or design mock up.
 
 ![slide builder app - landing screen]({{site.urlimg}}mpg-slide-builder01.jpg)
 *Slide Builder app landing screen*
@@ -161,10 +163,10 @@ or remove slides as desired. Previously created slide decks may be loaded, edite
 
 #### When saved, the reports are stored as JSON data in CARTO, then loaded into the Habitat Restoration Map.
 
-As the Slide Builder app POSTs data to MPG's CARTO account, a Node JS Express
-proxy server keeps MPG's CARTO API Key secure. The Slide Builder App runs on [Heroku](#)
-as a private web app through Heroku's [wwwhisper](#). After a report has been created
-and marked as "published", the report data will be fetched by the Habitat
+Due to the Slide Builder App's requirement of POSTing data to MPG's CARTO account, a Node JS Express
+proxy server is used to keep MPG's CARTO API Key secure. The Slide Builder App runs on [Heroku](https://www.heroku.com/)
+as a private web app through Heroku's [wwwhisper](https://devcenter.heroku.com/articles/wwwhisper)
+add on. After a report has been created and marked as "published", the report data will be fetched by the Habitat
 Restoration Map web app. When the user clicks a link for a report, the report data
 is rendered as a slide deck and displayed within a lightbox:
 
@@ -178,25 +180,49 @@ is rendered as a slide deck and displayed within a lightbox:
 
 ## React Slides Component
 
-In order to integrate and maintain consistency with the slides for the two
-separate web applications, I created a slides component in React which consumes
+In order to integrate and maintain consistency with the slide deck code shared by
+the two separate web applications, I created a Slides Component in React which consumes
 JSON data for a report and renders a slide show from that data. Using
 [NPM](https://www.npmjs.com/) and Github, the slides component can be
 installed as a private module in both applications, as well as developed locally
-separate from either application for debugging and developing purposes.
+separate from either application for debugging and development purposes. I found the
+process of using Github with NPM far less painful then attempting to develop the
+Slides Component as a local NPM module.
 
-![slides component placeholder](#)
+![slides component placeholder]({{site.urlimg}}mpg-slides-component01.jpg)
 
-![slides component placeholder](#)
+#### A slide deck is represented by an array of objects, where each object represents a particular slide:
 
-![slides component placeholder](#)
+{% highlight json %}
+{
+	"id": "e0731c66-104a-4a0f-9e9f-c15e0bbdf1a5",
+	"saved": true,
+	"slideTitle": "TEST REPORT DECK",
+	"slideText": "Lorem ipsum dolor. Sit amet ornare...",
+	"imgToken": "Ae10uZmnq",
+	"slideType": "title",
+	"reportTitle": "Test Report",
+	"authors": "Chuck Norris"
+}
+{% endhighlight %}
+
+The source code for the Slides Component is compiled to a single file and made UMD friendly
+via Webpack and Babel, allowing for it to be loaded as its own
+module in both the Habitat Restoration Map and Slides Builder App. In order to
+enable Heroku to install the private git module for the Slides Builder App,
+`preinstall` and `postinstall` Bash scripts are used to create and then destroy
+an SSH environment, keeping credentials out of Git while not having to go the
+potentially painstaking route of using a custom Heroku Build Pack.
+[This answer on Stack Overflow](http://stackoverflow.com/questions/10869796/npm-private-git-module-on-heroku/29677091#29677091)
+describes the process, and it worked well each time I deployed the Slide Builder
+App on Heroku.
 
 ## Conclusion
 
 Overall, this was a challenging project due to its many requirements and moving parts.
 Working closely with [Nicolette Hayes](http://stamen.com/about/who/nicolette-hayes/),
 a talented UI/UX designer at Stamen Design, made it possible to rapidly prototype
-various parts of and iterate on the applications. The client, the habitat restoration
+various features of and iterate on building the applications. The client, the habitat restoration
 team at MPG Ranch, ended up being very pleased with both the Habitat Restoration Map and
 Slide Builder app. Both apps are still under development and continue to serve the
 restoration team, enabling them to share their work with the general public, colleagues, and ranch owner.
