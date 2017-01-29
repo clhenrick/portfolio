@@ -13,6 +13,17 @@
       "date": "2016-12-22"
     },
     {
+      "title": "Terrain Classic",
+      "tags": ["web", "cartography"],
+      "description": "Global terrain web map tiles",
+      "description_long": "Terrain Classic is a set of, free, open-source, global [web map tiles](https://en.wikipedia.org/wiki/Tiled_web_map) covering zoom levels 0 to 18 that depict [topography](https://en.wikipedia.org/wiki/Topography) using a cartography technique called \"[shaded relief](http://www.shadedrelief.com/).\" These map tiles were created from various open data sources such as [OpenStreetMap](http://openstreetmap.org), [Natural Earth Vector data](http://naturalearthdata.com), [MODIS landcover](https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/mcd12q1), and [Digital Elevation Models](https://en.wikipedia.org/wiki/Digital_elevation_model). This style was inspired by the original Stamen Terrain map tiles which previously only covered the United States. The style was ported from Cascadenik to CartoCSS, a CSS like markup language used for styling geographic data to create tiled web maps using a renderer such as Mapnik. I assisted Stamen Design members Alan McConchie and Seth Fitzsimmons with creating the map style, including line work, labeling, color, and the shaded relief.",
+      "tech": ["CartoCSS", "PostGIS", "Mapnik", "Node JS", "Python"],
+      "thumb": "terrain-classic-thumb.jpg",
+      "imgs": ["terrain-classic01.jpg", "terrain-classic02.jpg", "terrain-classic03.jpg", "terrain-classic04.jpg", "terrain-classic05.jpg", "terrain-classic07.jpg", "terrain-classic08.jpg", "terrain-classic09.jpg", "terrain-classic10.jpg", "terrain-classic11.jpg"],
+      "size": "width3",
+      "date": "2016-12-22"
+    },
+    {
       "title" : "Am I Rent Stabilized?",
       "tags" : ["web"],
       "description" : "A civic web app to inform NYC renters about rent stabilization.",
