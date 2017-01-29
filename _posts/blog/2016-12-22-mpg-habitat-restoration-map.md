@@ -2,7 +2,7 @@
 title: "Habitat Restoration Map for MPG Ranch"
 layout: page
 date: 2016-12-22
-teaser: "An interactive web map and report builder to showcase the work of environmental scientists and conservationists"
+teaser: "An interactive web map to promote the work of environmental scientists and conservationists"
 header: no
 comments: true
 tags:
@@ -17,19 +17,18 @@ tags:
 
 ![the MPG Ranch Habitat Restoration Map app]({{site.urlimg}}mpg-habitat-01-overview.jpg)
 
-The MPG Ranch Habitat Restoration Map enables a team of environmental scientists to effectively
+> The MPG Ranch Habitat Restoration Map enables a team of environmental scientists to effectively
 communicate ongoing management plans and actions with their stakeholders and provides
 a venue for discussion of restoration research and practices through an interactive
 web map application.
 
-I created this web app while working at [Stamen Design](http://stamen.com) using modern web technology
-including React, Redux, Leaflet, CARTO, Heroku, and AWS and other tools. The web map
-is not yet live, though I wanted to be sure to document my work on it in the meantime.
-As such I'm including some screen captures here alongside notes of how it was built.
+I created the [MPG Ranch Habitat Restoration Map](http://restorationmap.mpgranch.com/)
+while working for the world renowned data visualization, interactive mapping, and design firm
+[Stamen Design](http://stamen.com). The following post describes what the app
+was built with as well as how it's various pieces, companion web app (*The Slide Builder*),
+and shared React slides-component fit together.
 
 ## About MPG Ranch:
-
-
 ![photo of mpg-ranch]({{site.urlimg}}mpg-ranch-elk-herd.jpeg)
 *An elk herd roaming over MPG Ranch in the winter, photo credit: Teagan Hayes*
 
@@ -57,7 +56,6 @@ the following front-end libraries and tooling:
 - **Leaflet** for displaying geographic data and handling map interactions
 - **EMCAScript 2015 (ES6)** for leveraging the latest features in Javascript
 - **Gulp, Browserify,** and **Babel** as a front-end build system
-- **Marked** for handling the conversion and sanitization of markdown text into HTML
 
 and the following "backend" web services:
 
@@ -132,6 +130,7 @@ The Slide Builder web app was built using:
 - React Bootstrap
 - Marked
 - Heroku
+- Heroku's wwwhisper add on
 - Node JS
 - Express
 - CARTO SQL API
@@ -166,7 +165,8 @@ fairly quickly without having to consult a wireframe or design mock up.
 Due to the Slide Builder App's requirement of POSTing data to MPG's CARTO account, a Node JS Express
 proxy server is used to keep MPG's CARTO API Key secure. The Slide Builder App runs on [Heroku](https://www.heroku.com/)
 as a private web app through Heroku's [wwwhisper](https://devcenter.heroku.com/articles/wwwhisper)
-add on. After a report has been created and marked as "published", the report data will be fetched by the Habitat
+add on, there by only allowing MPG Ranch employees to access it. After a report has been created 
+and marked as "published", the report data will be fetched by the Habitat
 Restoration Map web app. When the user clicks a link for a report, the report data
 is rendered as a slide deck and displayed within a lightbox:
 
