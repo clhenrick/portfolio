@@ -95,7 +95,6 @@ $ shp2pgsql \
   -s 4326 \
   all_map_pluto_2014v2.shp \
   map_pluto2014v2 > map_pluto2014v2.sql
-
 $ psql -d nyc_airs -f map_pluto2014v2.sql
 {% endhighlight %}
 
@@ -295,6 +294,8 @@ CREATE TABLE map_pluto_exempt_rs AS
     ) AS exempt;
 {% endhighlight %}
 
+![properties likely to have rent stabilized units]({{site.urlimg}}likely_rs_map.png)
+*Map showing output of joined data: Blue indicates registered, red indicates not registered*
 
 ![properties likely to have rent stabilized units]({{site.urlimg}}likely_rs_map.png)
 *Map showing output of joined data: Blue indicates registered, red indicates not registered*
