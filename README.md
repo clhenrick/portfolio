@@ -103,7 +103,7 @@ Some resources that helped me with developing this portfolio & blog site:
 ### Deploying Jekyll With Git On A Remote VPS
 - https://www.digitalocean.com/community/tutorials/how-to-deploy-jekyll-blogs-with-git
 - https://www.digitalocean.com/community/tutorials/how-to-get-started-with-jekyll-on-an-ubuntu-vps
--
+
 ### jekyll
 - http://jekyllrb.com/docs/variables/
 - http://pixelcog.com/blog/2013/jekyll-from-scratch-core-architecture/

@@ -1,18 +1,38 @@
 {
-  "author" : "Chris L Henrick",
-  "work" : [
-    {
-      "title": "MPG Ranch Habitat Restoration Map",
-      "tags": ["web", "cartography"],
-      "description": "An interactive web map and report builder to showcase the work of environmental scientists.",
-      "description_long": "The MPG Ranch Habitat Restoration Map enables a team of environmental scientists to effectively communicate ongoing management plans and actions with their stakeholders and provides a venue for discussion of restoration research and practices through an interactive web map application. \n\n Read more about the project in a [blog post I wrote about it]({{site.url}}/mpg-habitat-restoration-map/).",
-      "tech": ["React", "Redux", "Leaflet", "CARTO", "Node JS", "AWS", "Heroku"],
-      "thumb": "mpg-habitat-thumb.jpg",
-      "imgs": ["mpg-habitat02.jpg" ,  "mpg-habitat13.jpg" , "mpg-habitat14.jpg" , "mpg-habitat15.jpg" , "mpg-habitat16.jpg" , "mpg-habitat05.jpg" , "mpg-habitat06.jpg" , "mpg-habitat07.jpg" , "mpg-habitat08.jpg" , "mpg-habitat09.jpg" , "mpg-habitat10.jpg" , "mpg-habitat11.jpg" , "mpg-habitat12.jpg" , "mpg-habitat17.jpg" , "mpg-habitat18.jpg"],
-      "size": "width3",
-      "date": "2016-12-22"
-    },
-    {
+  "author": "Chris L Henrick",
+  "work": [{
+    "title": "NYC Crash Mapper",
+    "tags": ["web", "cartography"],
+    "description": "Web application that dynamically maps, analyzes, and filters vehicle collision data reported by the NYPD.",
+    "description_long": "NYC Crash Mapper is a web application that dynamically maps, analyzes, and filters vehicle collision data reported by the NYPD in New York City from 2011 to present. The web app allows a user to select a date range for when crashes occurred, filter the data by crash type (injury or fatality; pedestrian, cyclist, or motorist), filter by administrative boundary, or filter by a custom area using a draw tool. Specific “views” of the data can be shared with other users via a stateful URL which contains any applied filters and map zoom and center. Data from the app may be downloaded in various formats such as CSV, Shapefile, and GeoJSON. New collision data is updated to the app’s database weekly using an ETL script running on a Heroku Scheduler. [Chekpeds](http://chekpeds.com), a non-profit that advocates for pedestrian safety in Hell’s Kitchen, funded the work on the app through a grant from New York City. In addition to developing the app, I mocked and designed the user interface using Adobe Illustrator.",
+    "tech": ["React", "Redux", "Leaflet", "Javascript ES6", "CARTO", "PostgreSQL", "PostGIS", "Webpack"],
+    "thumb": "nyc-crash-mapper-thumb.png",
+    "imgs": ["nyc-crash-mapper01.jpg", "nyc-crash-mapper02.jpg", "nyc-crash-mapper03.jpg", "nyc-crash-mapper04.jpg", "nyc-crash-mapper05.jpg", "nyc-crash-mapper06.jpg", "nyc-crash-mapper07.jpg", "nyc-crash-mapper08.jpg", "nyc-crash-mapper09.jpg", "nyc-crash-mapper10.jpg", "nyc-crash-mapper11.jpg", "nyc-crash-mapper12.jpg"],
+    "size": "width3",
+    "date": "2017-03-03"
+  }, {
+    "title": "MPG Ranch Habitat Restoration Map",
+    "tags": ["web", "cartography"],
+    "description": "An interactive web map and report builder to showcase the work of environmental scientists.",
+    "description_long": "The MPG Ranch Habitat Restoration Map enables a team of environmental scientists to effectively communicate ongoing management plans and actions with their stakeholders and provides a venue for discussion of restoration research and practices through an interactive web map application. \n\n Read more about the project in a [blog post I wrote about it]({{site.url}}/mpg-habitat-restoration-map/).",
+    "tech": ["React", "Redux", "Leaflet", "CARTO", "Node JS", "AWS", "Heroku"],
+    "thumb": "mpg-habitat-thumb.jpg",
+    "imgs": ["mpg-habitat02.jpg", "mpg-habitat13.jpg", "mpg-habitat14.jpg", "mpg-habitat15.jpg", "mpg-habitat16.jpg", "mpg-habitat05.jpg", "mpg-habitat06.jpg", "mpg-habitat07.jpg", "mpg-habitat08.jpg", "mpg-habitat09.jpg", "mpg-habitat10.jpg", "mpg-habitat11.jpg", "mpg-habitat12.jpg", "mpg-habitat17.jpg", "mpg-habitat18.jpg"],
+    "size": "width3",
+    "date": "2016-12-22"
+  }, {
+    "title": "Am I Rent Stabilized?",
+    "tags": ["web"],
+    "description": "A civic web app to inform NYC renters about rent stabilization.",
+    "description_long": "Am I Rent Stabilized is a web application that encourages New York City tenants to find out if their landlord may be illegally overcharging them for a rent stabilized apartment and if so, motivates them to take action. It is an attempt at using open data as a prompt for civic action, rather than solely for visualization and analysis. The app asks the user to input their address and checks it against a database of properties that are likely to have rent stabilized apartments. From here the app recommends a course of action and informs the user of their nearest tenants rights group so they can get help. The app features a responsive interface that is mobile friendly, and its content can be toggled to either Spanish or Chinese for non-english speakers.",
+    "tech": ["CartoDB.JS", "CartoDB SQL API", "NYC GeoClient API", "GSAP Animation JS", "SCSS", "Handlebars.JS", "Gulp.JS", "AWS S3", "AWS CloudFront"],
+    "thumb": "airs01-thumb.jpg",
+    "code": "https://github.com/clhenrick/am-i-rent-stabilized.git",
+    "imgs": ["airs01.jpg", "airs02.jpg", "airs03.jpg", "airs04.jpg", "airs05.jpg", "airs06.jpg", "airs07.jpg", "airs08.jpg", "airs09.jpg", "airs10.jpg", "airs11.jpg", "airs12.jpg", "airs13.jpg", "airs14.jpg", "airs15.jpg", "airs16.jpg"],
+    "link": "https://amirentstabilized.com",
+    "size": "width3",
+    "date": "2015-05-01"
+  }, {
       "title": "Terrain Classic",
       "tags": ["web", "cartography"],
       "description": "Global terrain web map tiles",
@@ -22,338 +42,297 @@
       "imgs": ["terrain-classic01.jpg", "terrain-classic02.jpg", "terrain-classic03.jpg", "terrain-classic04.jpg", "terrain-classic05.jpg", "terrain-classic07.jpg", "terrain-classic08.jpg", "terrain-classic09.jpg", "terrain-classic10.jpg", "terrain-classic11.jpg"],
       "size": "width3",
       "date": "2016-12-22"
+  }, {
+    "title": "Love and Rage",
+    "tags": ["cartography"],
+    "description": "Map for Rebecca Solnit's Nonstop Metropolis, A New York City Atlas",
+    "description_long": "A print map I created for Rebecca Solnit's latest city atlas: Nonstop Metropolis, A New York City Atlas. I pitched the idea to Rebecca while meeting her and atlas co-author Joshua Jelly-Schapiro for coffee at Caffè Reggio near Washington Square one afternoon, and the rest was history. In order to to create this map open geospatial data was processed from sources such as 311, the NYPD, OpenStreetMap, and the NYC Open Data Portal. Cartography was done using Adobe Illustrator and MAPublisher.",
+    "tech": ["Adobe Illustrator", "MAPublisher", "PostgreSQL", "PostGIS", "GDAL"],
+    "thumb": "love-and-rage-thumb.png",
+    "imgs": ["love-and-rage.png", "love-and-rage-crop01.png", "love-and-rage-crop02.png"],
+    "size": "width3",
+    "date": "2016-10-01"
+  }, {
+    "title": "Bushwick Community Map",
+    "tags": ["web", "data-viz", "cartography"],
+    "description": "A map to track issues around urban development in Bushwick, NY",
+    "description_long": "The Northwest Bushwick Community Map is meant to be a resource for local community organizations and tenants rights groups to easily access disparate information around land use, housing, and urban development for the neighborhood of Bushwick in Brooklyn, NY. It is also intended to be a tool to inform NYC residents about what kinds of indicators may be used to predict new urban development and help prevent displacement of longterm residents in their own neighborhoods.<br><br> This project was a collaboration between Michael \"Ziggy\" Mintz and Brigette Blood of the Northwest Bushwick Community Group and Gabriel Gianordoli, Daniel Mastretta, and Namreta Kumar of MFA DT.",
+    "tech": ["CartoDB.JS", "Odyssey.JS", "Leaflet.JS", "Mapbox.JS", "Underscore.JS", "JQuery"],
+    "thumb": "bcm01-thumb.jpg",
+    "code": "https://github.com/clhenrick/BushwickCommunityMap",
+    "imgs": ["bcm01.jpg", "bcm02.jpg", "bcm03.jpg", "bcm04.jpg", "bcm05.jpg", "bcm06.jpg", "bcm07.jpg", "bcm08.jpg"],
+    "link": "http://www.bushwickcommunitymap.org",
+    "size": "width3 ",
+    "date": "2014-12-20"
+  }, {
+    "title": "Greenpoint Williamsburg Toxicity Map",
+    "tags": ["web", "data-viz", "cartography"],
+    "description": "A map to inform residents of north Brooklyn about environmental hazards.",
+    "description_long": "The NAG Greenpoint-Williamsburg ToxiCity Map is an interactive map of toxic “hot spots” in Greenpoint and Williamsburg. Data used to compile this map came from city, state and federal sources, guided by on-the-ground knowledge from local activists. Click through the data layers on the map to understand some neighborhood trends such as population density and asthma hospital visits, and locate some specific sites such as former NuHart Plastics factory and the Exxon oil spill. Sites that have already been remediated and sites that require future remediation are included on this map.<br><br>This project was created with the help of Bowon Chung and Jessie Braden via Pratt's Spatial Analysis and Visualization Initiative.",
+    "tech": ["CartoDB.JS", "Leaflet.JS", "MapBox Studio Classic", "CartoCSS", "Node JS", "Pelias Geocoder", "Handlebars.JS", "JQuery"],
+    "thumb": "nag-toxicity-map01-thumb.jpg",
+    "code": "https://github.com/clhenrick/greenpoint_williamsburg_toxicity_map",
+    "imgs": ["nag-toxicity-map01.jpg", "nag-toxicity-map02.jpg", "nag-toxicity-map03.jpg", "nag-toxicity-map04.jpg", "nag-toxicity-map05.jpg", "nag-toxicity-map06.jpg", "nag-toxicity-map07.jpg", "nag-toxicity-map08.jpg"],
+    "link": "http://clhenrick.github.io/greenpoint_williamsburg_toxicity_map/",
+    "size": "width3 ",
+    "date": "2015-11-01"
+  }, {
+    "title": "Landscapes of Profit",
+    "tags": ["web", "data-viz"],
+    "description": "An analysis of property transaction data to promote a 1% flip tax in NYC.",
+    "description_long": "Distribution of a proposed 1% \"flip tax\" on all real estate transactions in 2014 that occured within a two year period from 2003 - 2014, per New York City Council District. How much money would your council district have had for community spaces and affordable housing?<br><br>[View the interactive prototype.](http://www.landscapesofprofit.com/interactive)<br><br>This project is a collaboration between myself, John Krauss, Dan Taeyoung, Caroline Woolard, Evander Batson, and Ingrid Burrington. <br> Dan Taeyoung created the print map below.",
+    "code": "https://github.com/NYC-REIC/landscapes-of-profit/",
+    "thumb": "landscapes-profit-thumb.jpg",
+    "imgs": ["landscapes-profit.jpg"],
+    "size": "width2",
+    "date": "2015-01-01"
+  }, {
+    "title": "FOSI GRID",
+    "tags": ["web", "cartography"],
+    "description": "Map navigation UI for the new Family Online Safety Institute website.",
+    "description_long": "The redesign of the FOSI GRID website required that users should be able to navigate the site's content and data through an interactive map, side navigation, and search bar. For the interactive map navigation I created custom geospatial data from Natural Earth's 1:50m data and used Leaflet.JS, a popular open-source web mapping library. Region polygon data was made using MAPublisher, and admin0 & admin1 polygons were created using PostGIS. To make data loading fast I used TopoJSON to store 10 different layers: region polygons, countries grouped by region, and states / provinces grouped by country. When data is added to the map it is converted from TopoJSON to GeoJSON. This cut down drastically on AJAX requests and the website's initial load time. Coordination between the project's two Ruby on Rails developers was necessary to link the CMS database with the map's UI interactions.",
+    "thumb": "fosi-grid-thumb.png",
+    "imgs": ["fosi-grid-01.png", "fosi-grid-02.png", "fosi-grid-03.png", "fosi-grid-04.png", "fosi-grid-05.png", "fosi-grid-06.png", "fosi-grid-07.png"],
+    "tech": ["Leaflet.JS", "Natural Earth Data", "TopoJSON", "GeoJSON", "MAPublisher", "PostGIS", "Mapshaper"],
+    "link": "http://fosigrid.org/",
+    "size": "width2",
+    "date": "2016-03-28"
+  }, {
+    "title": "Ten and Taller",
+    "tags": ["web", "cartography"],
+    "description": "An interactive web map showing architecturally significant historic buildings in NYC",
+    "description_long": "*Ten and Taller* is part of an online and gallery exhibition for the [Skyscraper Museum of NYC](http://skyscraper.org). The Musuem's goal for the project was to honor the work of architect & historian Don Friedman, *Structure in Skyscrapers: History and Preservation*, in the form of an interactive map. The Museum staff digitized tabular data from Friedman's book and traced the corresponding building footprints for each of the 249 structures using a digitized Bromley Atlas map from 1909. My job was to show the footprints on both a historic and modern day map (the latter was designed by the Museum) and to create interactions such as popups that display data from the Friedman book as well as historic photos of the building. To accomplish this I had to create the map tiles for the basemap layers, as well as generate the GeoJSON overlay of the footprint data. Another requirement was for the UI to enable the user to filter which buildings are displayed by their year built via a slider. There is an animation on page load demonstrating this as well. The screenshots below are from a working prototype.",
+    "thumb": "ten-taller-thumb.png",
+    "imgs": ["ten-taller01.png", "ten-taller04.png", "ten-taller02.png", "ten-taller03.png"],
+    "tech": ["Leaflet.JS", "D3.JS", "GeoJSON", "MAPublisher"],
+    "link": "http://skyscraper.org/tenandtaller/map/",
+    "size": "width2",
+    "date": "2016-02-01"
+  }, {
+    "title": "WCC Resource Guide",
+    "tags": ["web", "data-viz"],
+    "description": "An interactive resource guide for NYC residents.",
+    "description_long": "",
+    "thumb": "wcc-resource-guide-thumb.jpg",
+    "imgs": ["wcc-resource-guide.jpg"],
+    "tech": ["CartoDB.JS", "Node.JS", "DataTables API", "Twitter Bootstrap"],
+    "link": "http://resourceguide.wccny.org/",
+    "size": "width2",
+    "date": "2015-09-01"
+  }, {
+    "title": "A Thru Hike on the Pacific Crest Trail (interactive)",
+    "tags": ["web"],
+    "description": "An interactive web documentary about my brother's experience thru-hiking the PCT.",
+    "description_long": "An attempt at creating an NY Times style interactive. As the user scrolls down a map animates and reveals information relating to the story. There is also a [print version.]({{site.url}}{{site.baseurl}}/work/a-thru-hike-on-the-pacific-crest-trail-print-map.html)",
+    "link": "http://clhenrick.github.io/Major-Studio-Two/map-story/html/",
+    "thumb": "thru-hike-pct01-thumb.jpg",
+    "code": "https://github.com/clhenrick/Major-Studio-Two/tree/master/map-story/html",
+    "imgs": ["thru-hike-pct01.jpg", "thru-hike-pct02.jpg", "thru-hike-pct03.jpg", "thru-hike-pct04.jpg", "thru-hike-pct05.jpg"],
+    "tech": ["Leaflet", "jQuery", "GeoJSON"],
+    "size": "width2",
+    "date": "2014-03-01"
+  }, {
+    "title": "A Thru Hike on the Pacific Crest Trail (print map)",
+    "tags": ["cartography"],
+    "description": "A map commemorating my brother's thru-hike on the PCT.",
+    "description_long": "I created this original map using my brother's GPS data, GPX tracks from <a href=\"https://www.pctmap.net/gps/\">Halfmile's PCT Maps</a>, Natural Earth's 1:10m vector data, and SRTM DEM data. The hillshade was generated using Natural Scene Designer Pro and colored using Adobe Photoshop following a <a href=\"http://www.shadedrelief.com/web_relief/\">method used by Tom Patterson</a> of the U.S. National Park Service maps team. The geospatial data was processed using QGIS and PostGIS and the final map was assembled in Adobe Illustrator using MAPublisher. The map measures 14\" x 17\" in print. There is also an [interactive version.]({{site.url}}{{site.baseurl}}/work/a-thru-hike-on-the-pacific-crest-trail-interactive.html)",
+    "thumb": "mike-pct-thumb.jpg",
+    "imgs": ["mike-pct01.jpg", "mike-pct02.jpg", "mike-pct03.jpg"],
+    "tech": ["MAPublisher", "Natural Scene Designer Pro", "QGIS", "PostGIS", "Adobe Illustrator", "Adobe Photoshop"],
+    "size": "width2",
+    "date": "2013-03-01"
+  }, {
+    "title": "Tracking the Energy Titans",
+    "tags": ["web", "data-viz"],
+    "description": "A data-visualization comparing energy use between the U.S., Canada, and China.",
+    "description_long": "Created for the Woodrow Wilson Center, this interactive data-visualization allows users to compare and contrast various types of energy usage among the three countries.",
+    "thumb": "tracking-energy-titans-thumb.jpg",
+    "imgs": ["tracking-energy-titans01.jpg", "tracking-energy-titans02.jpg", "tracking-energy-titans03.jpg", "tracking-energy-titans04.jpg"],
+    "tech": ["D3.JS", "JQuery", "Node.JS", "Gulp.JS", "SCSS"],
+    "link": "http://www.newsecuritybeat.org/energytitans/",
+    "size": "width2",
+    "date": "2015-06-01"
+  }, {
+    "title": "Guess That Hood NYC!",
+    "tags": ["web", "cartography"],
+    "description": "A game that allows users to guess neighborhood names in NYC.",
+    "description_long": "",
+    "link": "https://vimeo.com/97669886",
+    "thumb": "guess-that-hood-thumb.jpg",
+    "imgs": ["guess-that-hood.jpg"],
+    "tech": ["MongoDB", "jQuery", "Leaflet.JS", "GeoJSON", "HTML5", "CSS3"],
+    "video": {
+      "url": "https://vimeo.com/97669886",
+      "embed": "https://player.vimeo.com/video/97669886"
     },
-    {
-      "title" : "Am I Rent Stabilized?",
-      "tags" : ["web"],
-      "description" : "A civic web app to inform NYC renters about rent stabilization.",
-      "description_long" : "Am I Rent Stabilized is a web application that encourages New York City tenants to find out if their landlord may be illegally overcharging them for a rent stabilized apartment and if so, motivates them to take action. It is an attempt at using open data as a prompt for civic action, rather than solely for visualization and analysis. The app asks the user to input their address and checks it against a database of properties that are likely to have rent stabilized apartments. From here the app recommends a course of action and informs the user of their nearest tenants rights group so they can get help. The app features a responsive interface that is mobile friendly, and its content can be toggled to either Spanish or Chinese for non-english speakers.",
-      "tech" : ["CartoDB.JS", "CartoDB SQL API", "NYC GeoClient API", "GSAP Animation JS", "SCSS", "Handlebars.JS", "Gulp.JS", "AWS S3", "AWS CloudFront"],
-      "thumb" : "airs01-thumb.jpg",
-      "code" : "https://github.com/clhenrick/am-i-rent-stabilized.git",
-      "imgs" : ["airs01.jpg", "airs02.jpg", "airs03.jpg", "airs04.jpg", "airs05.jpg", "airs06.jpg", "airs07.jpg", "airs08.jpg", "airs09.jpg", "airs10.jpg", "airs11.jpg", "airs12.jpg", "airs13.jpg", "airs14.jpg", "airs15.jpg", "airs16.jpg"],
-      "link" : "https://amirentstabilized.com",
-      "size" : "width3",
-      "date" : "2015-05-01"
+    "code": "https://github.com/web3js/cloaked-octo-batman/tree/master/chris-henrick/mid-term",
+    "size": "width2",
+    "date": "2014-04-01"
+  }, {
+    "title": "Visualizing CO2 and GNI",
+    "tags": ["data-viz"],
+    "description": "An interactive Processing sketch that visualizes data relating to climate change from the World Bank's Indicators Data.",
+    "description_long": "",
+    "code": "https://github.com/clhenrick/data-viz-projects/tree/master/03_scatterplot",
+    "thumb": "co2-gni-viz-thumb.jpg",
+    "imgs": ["co2-gni-viz.jpg"],
+    "tech": ["Processing", "QGIS", "SQL"],
+    "size": "width2 ",
+    "date": "2014-04-04"
+  }, {
+    "title": "Prospect Park non euclidean map",
+    "tags": ["cartography"],
+    "description": "A \"non-euclidean map\" of Prospect Park, Brooklyn",
+    "description_long": "A non-euclidean “map” of Prospect Park, Brooklyn. Created using a GoPro camera mounted to my head, iMovie for video editing and Open-Frameworks for combining the video shots into one screen space. Inspired by the theory of artist and cartographer Dennis Wood and work by Annette Kim, Associate Professor of Urban Studies and Planning at <a href=\"http://slab.scripts.mit.edu/wp/maps/narrative-maps/\">MIT's SLAB</a>",
+    "thumb": "ppnc-thumb.jpg",
+    "tech": ["Go-Pro", "OpenFrameworks"],
+    "video": {
+      "url": "https://vimeo.com/81728484",
+      "embed": "https://player.vimeo.com/video/81728484"
     },
-    {
-      "title": "Love and Rage",
-      "tags": ["cartography"],
-      "description": "Map for Rebecca Solnit's Nonstop Metropolis, A New York City Atlas",
-      "description_long": "A print map I created for Rebecca Solnit's latest city atlas: Nonstop Metropolis, A New York City Atlas. I pitched the idea to Rebecca while meeting her and atlas co-author Joshua Jelly-Schapiro for coffee at Caffè Reggio near Washington Square one afternoon, and the rest was history. In order to to create this map open geospatial data was processed from sources such as 311, the NYPD, OpenStreetMap, and the NYC Open Data Portal. Cartography was done using Adobe Illustrator and MAPublisher.",
-      "tech": ["Adobe Illustrator", "MAPublisher", "PostgreSQL", "PostGIS", "GDAL"],
-      "thumb": "love-and-rage-thumb.png",
-      "imgs": ["love-and-rage.png", "love-and-rage-crop01.png", "love-and-rage-crop02.png"],
-      "size": "width3",
-      "date": "2016-10-01"
+    "imgs": ["ppnc.jpg"],
+    "size": "width2 ",
+    "date": "2013-12-16"
+  }, {
+    "title": "Graffiti, Rat Sightings, and Wifi Hotspots",
+    "tags": ["web", "cartography"],
+    "description": "Graffiti, rat sightings, and wi-fi hotspots in NYC.",
+    "description_long": "Graffiti, rat sightings, and wi-fi hotspots, inspired by Stamen's <a target=\"_blank\" href=\"http://maps.stamen.com/trees-cabs-crime/#13/37.7629/-122.4400\">Trees-Cabs-Crime</a> created from NYC 311 data.",
+    "thumb": "graffiti-rats-wifi-thumb.jpg",
+    "imgs": ["graffiti-rats-wifi.jpg"],
+    "tech": ["TileMill", "CartoCSS", "QGIS", "MapBox"],
+    "link": "http://b.parsons.edu/~henrc131/MajorStudio1/seven/03_nyc-graffiti-rats-wifi/",
+    "tiles": "http://b.parsons.edu/~henrc131/MajorStudio1/seven/03_nyc-graffiti-rats-wifi/",
+    "size": "",
+    "date": "2013-11-01"
+  }, {
+    "title": "From Coast to Coast",
+    "tags": ["web", "cartography", "data-viz"],
+    "description": "Visualizing my move from the SF Bay Area to NYC with D3JS.",
+    "description_long": "",
+    "thumb": "coast-2-coast-thumb.jpg",
+    "imgs": ["coast-2-coast.jpg"],
+    "video": {
+      "url": "https://vimeo.com/89143409",
+      "embed": "https://player.vimeo.com/video/89143409"
     },
-    {
-      "title" : "Bushwick Community Map",
-      "tags" : ["web", "data-viz", "cartography"],
-      "description" : "A map to track issues around urban development in Bushwick, NY",
-      "description_long" : "The Northwest Bushwick Community Map is meant to be a resource for local community organizations and tenants rights groups to easily access disparate information around land use, housing, and urban development for the neighborhood of Bushwick in Brooklyn, NY. It is also intended to be a tool to inform NYC residents about what kinds of indicators may be used to predict new urban development and help prevent displacement of longterm residents in their own neighborhoods.<br><br> This project was a collaboration between Michael \"Ziggy\" Mintz and Brigette Blood of the Northwest Bushwick Community Group and Gabriel Gianordoli, Daniel Mastretta, and Namreta Kumar of MFA DT.",
-      "tech" : ["CartoDB.JS", "Odyssey.JS", "Leaflet.JS", "Mapbox.JS", "Underscore.JS", "JQuery"],
-      "thumb" : "bcm01-thumb.jpg",
-      "code" : "https://github.com/clhenrick/BushwickCommunityMap",
-      "imgs" : ["bcm01.jpg", "bcm02.jpg", "bcm03.jpg", "bcm04.jpg", "bcm05.jpg", "bcm06.jpg", "bcm07.jpg", "bcm08.jpg"],
-      "link" : "http://www.bushwickcommunitymap.org",
-      "size" : "width3 ",
-      "date" : "2014-12-20"
-    },
-    {
-      "title" : "Greenpoint Williamsburg Toxicity Map",
-      "tags" : ["web", "data-viz", "cartography"],
-      "description" : "A map to inform residents of north Brooklyn about environmental hazards.",
-      "description_long" : "The NAG Greenpoint-Williamsburg ToxiCity Map is an interactive map of toxic “hot spots” in Greenpoint and Williamsburg. Data used to compile this map came from city, state and federal sources, guided by on-the-ground knowledge from local activists. Click through the data layers on the map to understand some neighborhood trends such as population density and asthma hospital visits, and locate some specific sites such as former NuHart Plastics factory and the Exxon oil spill. Sites that have already been remediated and sites that require future remediation are included on this map.<br><br>This project was created with the help of Bowon Chung and Jessie Braden via Pratt's Spatial Analysis and Visualization Initiative.",
-      "tech" : ["CartoDB.JS", "Leaflet.JS", "MapBox Studio Classic", "CartoCSS", "Node JS", "Pelias Geocoder", "Handlebars.JS", "JQuery"],
-      "thumb" : "nag-toxicity-map01-thumb.jpg",
-      "code" : "https://github.com/clhenrick/greenpoint_williamsburg_toxicity_map",
-      "imgs" : ["nag-toxicity-map01.jpg", "nag-toxicity-map02.jpg","nag-toxicity-map03.jpg","nag-toxicity-map04.jpg","nag-toxicity-map05.jpg","nag-toxicity-map06.jpg","nag-toxicity-map07.jpg","nag-toxicity-map08.jpg"],
-      "link" : "http://clhenrick.github.io/greenpoint_williamsburg_toxicity_map/",
-      "size" : "width3 ",
-      "date" : "2015-11-01"
-    },
-    {
-      "title" : "Landscapes of Profit",
-      "tags" : ["web","data-viz"],
-      "description" : "An analysis of property transaction data to promote a 1% flip tax in NYC.",
-      "description_long" : "Distribution of a proposed 1% \"flip tax\" on all real estate transactions in 2014 that occured within a two year period from 2003 - 2014, per New York City Council District. How much money would your council district have had for community spaces and affordable housing?<br><br>[View the interactive prototype.](http://www.landscapesofprofit.com/interactive)<br><br>This project is a collaboration between myself, John Krauss, Dan Taeyoung, Caroline Woolard, Evander Batson, and Ingrid Burrington. <br> Dan Taeyoung created the print map below.",
-      "code" : "https://github.com/NYC-REIC/landscapes-of-profit/",
-      "thumb" : "landscapes-profit-thumb.jpg",
-      "imgs" : ["landscapes-profit.jpg"],
-      "size" : "width2",
-      "date" : "2015-01-01"
-    },
-    {
-      "title" : "FOSI GRID",
-      "tags" : ["web", "cartography"],
-      "description" : "Map navigation UI for the new Family Online Safety Institute website.",
-      "description_long" : "The redesign of the FOSI GRID website required that users should be able to navigate the site's content and data through an interactive map, side navigation, and search bar. For the interactive map navigation I created custom geospatial data from Natural Earth's 1:50m data and used Leaflet.JS, a popular open-source web mapping library. Region polygon data was made using MAPublisher, and admin0 & admin1 polygons were created using PostGIS. To make data loading fast I used TopoJSON to store 10 different layers: region polygons, countries grouped by region, and states / provinces grouped by country. When data is added to the map it is converted from TopoJSON to GeoJSON. This cut down drastically on AJAX requests and the website's initial load time. Coordination between the project's two Ruby on Rails developers was necessary to link the CMS database with the map's UI interactions.",
-      "thumb" : "fosi-grid-thumb.png",
-      "imgs" : ["fosi-grid-01.png", "fosi-grid-02.png", "fosi-grid-03.png", "fosi-grid-04.png", "fosi-grid-05.png", "fosi-grid-06.png", "fosi-grid-07.png"],
-      "tech" : ["Leaflet.JS", "Natural Earth Data", "TopoJSON", "GeoJSON", "MAPublisher", "PostGIS", "Mapshaper"],
-      "link" : "http://fosigrid.org/",
-      "size" : "width2",
-      "date" : "2016-03-28"
-    },
-    {
-      "title" : "Ten and Taller",
-      "tags" : ["web", "cartography"],
-      "description" : "An interactive web map showing architecturally significant historic buildings in NYC",
-      "description_long" : "*Ten and Taller* is part of an online and gallery exhibition for the [Skyscraper Museum of NYC](http://skyscraper.org). The Musuem's goal for the project was to honor the work of architect & historian Don Friedman, *Structure in Skyscrapers: History and Preservation*, in the form of an interactive map. The Museum staff digitized tabular data from Friedman's book and traced the corresponding building footprints for each of the 249 structures using a digitized Bromley Atlas map from 1909. My job was to show the footprints on both a historic and modern day map (the latter was designed by the Museum) and to create interactions such as popups that display data from the Friedman book as well as historic photos of the building. To accomplish this I had to create the map tiles for the basemap layers, as well as generate the GeoJSON overlay of the footprint data. Another requirement was for the UI to enable the user to filter which buildings are displayed by their year built via a slider. There is an animation on page load demonstrating this as well. The screenshots below are from a working prototype.",
-      "thumb" : "ten-taller-thumb.png",
-      "imgs" : ["ten-taller01.png", "ten-taller04.png", "ten-taller02.png", "ten-taller03.png"],
-      "tech" : ["Leaflet.JS", "D3.JS", "GeoJSON", "MAPublisher"],
-      "link" : "http://skyscraper.org/tenandtaller/map/",
-      "size" : "width2",
-      "date" : "2016-02-01"
-    },
-    {
-      "title" : "WCC Resource Guide",
-      "tags" : ["web", "data-viz"],
-      "description" : "An interactive resource guide for NYC residents.",
-      "description_long" : "",
-      "thumb" : "wcc-resource-guide-thumb.jpg",
-      "imgs" : ["wcc-resource-guide.jpg"],
-      "tech" : ["CartoDB.JS", "Node.JS", "DataTables API", "Twitter Bootstrap"],
-      "link" : "http://resourceguide.wccny.org/",
-      "size" : "width2",
-      "date" : "2015-09-01"
-    },
-    {
-      "title" : "A Thru Hike on the Pacific Crest Trail (interactive)",
-      "tags" : ["web"],
-      "description" : "An interactive web documentary about my brother's experience thru-hiking the PCT.",
-      "description_long" : "An attempt at creating an NY Times style interactive. As the user scrolls down a map animates and reveals information relating to the story. There is also a [print version.]({{site.url}}{{site.baseurl}}/work/a-thru-hike-on-the-pacific-crest-trail-print-map.html)",
-      "link" : "http://clhenrick.github.io/Major-Studio-Two/map-story/html/",
-      "thumb" : "thru-hike-pct01-thumb.jpg",
-      "code" : "https://github.com/clhenrick/Major-Studio-Two/tree/master/map-story/html",
-      "imgs" : ["thru-hike-pct01.jpg", "thru-hike-pct02.jpg", "thru-hike-pct03.jpg","thru-hike-pct04.jpg","thru-hike-pct05.jpg"],
-      "tech" : ["Leaflet", "jQuery", "GeoJSON"],
-      "size" : "width2",
-      "date" : "2014-03-01"
-    },
-    {
-      "title" : "A Thru Hike on the Pacific Crest Trail (print map)",
-      "tags" : ["cartography"],
-      "description" : "A map commemorating my brother's thru-hike on the PCT.",
-      "description_long" : "I created this original map using my brother's GPS data, GPX tracks from <a href=\"https://www.pctmap.net/gps/\">Halfmile's PCT Maps</a>, Natural Earth's 1:10m vector data, and SRTM DEM data. The hillshade was generated using Natural Scene Designer Pro and colored using Adobe Photoshop following a <a href=\"http://www.shadedrelief.com/web_relief/\">method used by Tom Patterson</a> of the U.S. National Park Service maps team. The geospatial data was processed using QGIS and PostGIS and the final map was assembled in Adobe Illustrator using MAPublisher. The map measures 14\" x 17\" in print. There is also an [interactive version.]({{site.url}}{{site.baseurl}}/work/a-thru-hike-on-the-pacific-crest-trail-interactive.html)",
-      "thumb" : "mike-pct-thumb.jpg",
-      "imgs" : ["mike-pct01.jpg", "mike-pct02.jpg", "mike-pct03.jpg"],
-      "tech" : ["MAPublisher", "Natural Scene Designer Pro", "QGIS", "PostGIS", "Adobe Illustrator", "Adobe Photoshop"],
-      "size" : "width2",
-      "date" : "2013-03-01"
-    },
-    {
-      "title" : "Tracking the Energy Titans",
-      "tags" : ["web", "data-viz"],
-      "description" : "A data-visualization comparing energy use between the U.S., Canada, and China.",
-      "description_long" : "Created for the Woodrow Wilson Center, this interactive data-visualization allows users to compare and contrast various types of energy usage among the three countries.",
-      "thumb" : "tracking-energy-titans-thumb.jpg",
-      "imgs" : ["tracking-energy-titans01.jpg", "tracking-energy-titans02.jpg", "tracking-energy-titans03.jpg", "tracking-energy-titans04.jpg"],
-      "tech" : ["D3.JS","JQuery","Node.JS","Gulp.JS","SCSS"],
-      "link" : "http://www.newsecuritybeat.org/energytitans/",
-      "size" : "width2",
-      "date" : "2015-06-01"
-    },
-    {
-      "title" : "Guess That Hood NYC!",
-      "tags" : ["web", "cartography"],
-      "description" : "A game that allows users to guess neighborhood names in NYC.",
-      "description_long" : "",
-      "link" : "https://vimeo.com/97669886",
-      "thumb" : "guess-that-hood-thumb.jpg",
-      "imgs" : ["guess-that-hood.jpg"],
-      "tech": ["MongoDB", "jQuery", "Leaflet.JS", "GeoJSON", "HTML5", "CSS3"],
-      "video" : {
-          "url" : "https://vimeo.com/97669886",
-          "embed" : "https://player.vimeo.com/video/97669886"
-        },
-      "code" : "https://github.com/web3js/cloaked-octo-batman/tree/master/chris-henrick/mid-term",
-      "size" : "width2",
-      "date" : "2014-04-01"
-    },
-    {
-      "title" : "Visualizing CO2 and GNI",
-      "tags" : ["data-viz"],
-      "description" : "An interactive Processing sketch that visualizes data relating to climate change from the World Bank's Indicators Data.",
-      "description_long" : "",
-      "code" : "https://github.com/clhenrick/data-viz-projects/tree/master/03_scatterplot",
-      "thumb" : "co2-gni-viz-thumb.jpg",
-      "imgs" : ["co2-gni-viz.jpg"],
-      "tech" : ["Processing","QGIS","SQL"],
-      "size" : "width2 ",
-      "date" : "2014-04-04"
-    },
-    {
-      "title" : "Prospect Park non euclidean map",
-      "tags" : ["cartography"],
-      "description" : "A \"non-euclidean map\" of Prospect Park, Brooklyn",
-      "description_long" : "A non-euclidean “map” of Prospect Park, Brooklyn. Created using a GoPro camera mounted to my head, iMovie for video editing and Open-Frameworks for combining the video shots into one screen space. Inspired by the theory of artist and cartographer Dennis Wood and work by Annette Kim, Associate Professor of Urban Studies and Planning at <a href=\"http://slab.scripts.mit.edu/wp/maps/narrative-maps/\">MIT's SLAB</a>",
-      "thumb" : "ppnc-thumb.jpg",
-      "tech" : ["Go-Pro","OpenFrameworks"],
-      "video" : {
-        "url" : "https://vimeo.com/81728484",
-        "embed" : "https://player.vimeo.com/video/81728484"
-        },
-      "imgs" : ["ppnc.jpg"],
-      "size" : "width2 ",
-      "date" : "2013-12-16"
-    },
-    {
-      "title" : "Graffiti, Rat Sightings, and Wifi Hotspots",
-      "tags" : ["web", "cartography"],
-      "description" : "Graffiti, rat sightings, and wi-fi hotspots in NYC.",
-      "description_long" : "Graffiti, rat sightings, and wi-fi hotspots, inspired by Stamen's <a target=\"_blank\" href=\"http://maps.stamen.com/trees-cabs-crime/#13/37.7629/-122.4400\">Trees-Cabs-Crime</a> created from NYC 311 data.",
-      "thumb" : "graffiti-rats-wifi-thumb.jpg",
-      "imgs" : ["graffiti-rats-wifi.jpg"],
-      "tech" : ["TileMill", "CartoCSS", "QGIS", "MapBox"],
-      "link" : "http://b.parsons.edu/~henrc131/MajorStudio1/seven/03_nyc-graffiti-rats-wifi/",
-      "tiles" : "http://b.parsons.edu/~henrc131/MajorStudio1/seven/03_nyc-graffiti-rats-wifi/",
-      "size" : "",
-      "date" : "2013-11-01"
-    },
-    {
-      "title" : "From Coast to Coast",
-      "tags" : ["web", "cartography", "data-viz"],
-      "description" : "Visualizing my move from the SF Bay Area to NYC with D3JS.",
-      "description_long" : "",
-      "thumb" : "coast-2-coast-thumb.jpg",
-      "imgs" : ["coast-2-coast.jpg"],
-      "video" : {
-        "url": "https://vimeo.com/89143409",
-        "embed" : "https://player.vimeo.com/video/89143409"
-        },
-      "tech" : ["D3.JS", "JQuery", "QGIS"],
-      "size" : "",
-      "date" : "2013-06-01"
-    },
-    {
-      "title" : "Oakland Then and Now: Coastal Grasslands",
-      "tags" : ["cartography", "print"],
-      "description" : "Historic coastal grassland, bay and shoreline over the current day built up land area of Oakland, CA.",
-      "description_long" : "A prototype map design for the Oakland Museum of California. This map shows historic coastal grassland areas, and a historic bay and shoreline over the current day built up land area for an exhibit titled Oakland: Then and Now.",
-      "thumb" : "oak-then-now-grass-thumb.jpg",
-      "imgs" : ["oak-then-now-grass.jpg"],
-      "size" : "width2",
-      "date" : "2013-01-01"
-    },
-    {
-      "title" : "Oakland Then and Now: Oak Woodland",
-      "tags" : ["cartography", "print"],
-      "description" : "Historic oak woodland, bay and shoreline over the current day built up land area of Oakland, CA.",
-      "description_long" : "A prototype map design for the Oakland Museum of California. This map shows historic oak woodland areas, and a historic bay and shoreline over the current day built up land area for an exhibit titled Oakland: Then and Now.",
-      "thumb" : "oak-then-now-oak-thumb.jpg",
-      "imgs" : ["oak-then-now-oak.jpg"],
-      "size" : "width2",
-      "date" : "2015-01-01"
-    },
-    {
-      "title" : "Chinook Recovery Priority Watersheds",
-      "tags" : ["cartography", "print"],
-      "description" : "Coastal recovery watersheds for Salmon and Steelhead in California",
-      "description_long" : "This map was created at GreenInfo Network with Alexandra Barnish, and is a working draft showing only the coastal recovery watersheds for Salmon and Steelhead in California. Central valley recovery watersheds are not shown on this version of the map. For the most recent version please visit Sustainable Conservation's Partners in Restoration program.",
-      "thumb" : "chinook-thumb.jpg",
-      "imgs" : ["chinook.jpg"],
-      "tech" : ["ArcGIS", "Adobe Illustrator"],
-      "size" : "",
-      "date" : "2015-01-01"
-    },
-    {
-      "title" : "CA Private Public Land",
-      "tags" : ["cartography", "print"],
-      "description" : "Private and publically owned land in California.",
-      "description_long" : "This map was created at GreenInfo Network with Alexandra Barnish for Sustainable Conservation's Partners in Restoration program.",
-      "thumb" : "public-private-thumb.jpg",
-      "imgs" : ["public-private.jpg"],
-      "tech" : ["ArcGIS", "Adobe Illustrator"],
-      "size" : "",
-      "date" : "2010-06-01"
-    },
-    {
-      "title" : "Ontario",
-      "tags" : ["cartography", "print"],
-      "description" : "The province of Ontario, Canada.",
-      "description_long" : "A map of the province of Ontario, Canada created using Natural Earth 1:10m vector GIS data for the *Moon: Ontario* travel guide from Avalon Travel Publishing",
-      "thumb" : "ontario-thumb.jpg",
-      "imgs" : ["ontario.jpg"],
-      "size" : "width2 height1",
-      "date" : "2012-01-01"
-    },
-    {
-      "title" : "Galapagos Islands",
-      "tags" : ["cartography", "print"],
-      "description" : "A map showing the Galapagos Islands",
-      "description_long" : "",
-      "thumb" : "galapagos-thumb.jpg",
-      "imgs" : ["galapagos.jpg"],
-      "size" : "width2 height1",
-      "date" : "2013-01-01"
-    },
-    {
-      "title" : "Afghanistan and Pakistan",
-      "tags" : ["cartography", "print"],
-      "description" : "Map of Afghanistan and Pakistan for the book Dirty Wars.",
-      "description_long" : "Map of Afghanistan and Pakistan for the book Dirty Wars: The World is a Battlefield, by Jeremy Scahill. Published by Nation Books.",
-      "thumb" : "afg-pak-thumb.jpg",
-      "imgs" : ["afg-pak.jpg"],
-      "tech" : ["Adobe Illustrator", "MAPublisher", "QGIS", "Natural Earth 1:10m Vector Data"],
-      "size" : "width2 ",
-      "date" : "2013-01-01"
-    },
-    {
-      "title" : "South East Asia",
-      "tags" : ["cartography", "print"],
-      "description" : "A map of Thailand, Laos, and Cambodia.",
-      "description_long" : "Another map for a 9 book series on the backpacking trips taken by globetrotter David Koester. Natural Earth vector and relief data were employed for sound cartographic design.",
-      "thumb" : "se-asia-thumb.jpg",
-      "imgs" : ["se-asia.jpg"],
-      "size" : "",
-      "date" : "2013-01-01"
-    },
-    {
-      "title" : "Sikkim",
-      "tags" : ["cartography"],
-      "description" : "Sikkim, northern India.",
-      "description_long" : "A custom hillshade was created from SRTM DEM data using QGIS and Terrain Sculptor.",
-      "tech" : ["Terrain Sculptor", "QGIS", "MAPublisher", "Adobe Illustrator"],
-      "thumb" : "sikkim-thumb.jpg",
-      "imgs" : ["sikkim.jpg"],
-      "size" : "",
-      "date" : "2013-01-01"
+    "tech": ["D3.JS", "JQuery", "QGIS"],
+    "size": "",
+    "date": "2013-06-01"
+  }, {
+    "title": "Oakland Then and Now: Coastal Grasslands",
+    "tags": ["cartography", "print"],
+    "description": "Historic coastal grassland, bay and shoreline over the current day built up land area of Oakland, CA.",
+    "description_long": "A prototype map design for the Oakland Museum of California. This map shows historic coastal grassland areas, and a historic bay and shoreline over the current day built up land area for an exhibit titled Oakland: Then and Now.",
+    "thumb": "oak-then-now-grass-thumb.jpg",
+    "imgs": ["oak-then-now-grass.jpg"],
+    "size": "width2",
+    "date": "2013-01-01"
+  }, {
+    "title": "Oakland Then and Now: Oak Woodland",
+    "tags": ["cartography", "print"],
+    "description": "Historic oak woodland, bay and shoreline over the current day built up land area of Oakland, CA.",
+    "description_long": "A prototype map design for the Oakland Museum of California. This map shows historic oak woodland areas, and a historic bay and shoreline over the current day built up land area for an exhibit titled Oakland: Then and Now.",
+    "thumb": "oak-then-now-oak-thumb.jpg",
+    "imgs": ["oak-then-now-oak.jpg"],
+    "size": "width2",
+    "date": "2015-01-01"
+  }, {
+    "title": "Chinook Recovery Priority Watersheds",
+    "tags": ["cartography", "print"],
+    "description": "Coastal recovery watersheds for Salmon and Steelhead in California",
+    "description_long": "This map was created at GreenInfo Network with Alexandra Barnish, and is a working draft showing only the coastal recovery watersheds for Salmon and Steelhead in California. Central valley recovery watersheds are not shown on this version of the map. For the most recent version please visit Sustainable Conservation's Partners in Restoration program.",
+    "thumb": "chinook-thumb.jpg",
+    "imgs": ["chinook.jpg"],
+    "tech": ["ArcGIS", "Adobe Illustrator"],
+    "size": "",
+    "date": "2015-01-01"
+  }, {
+    "title": "CA Private Public Land",
+    "tags": ["cartography", "print"],
+    "description": "Private and publically owned land in California.",
+    "description_long": "This map was created at GreenInfo Network with Alexandra Barnish for Sustainable Conservation's Partners in Restoration program.",
+    "thumb": "public-private-thumb.jpg",
+    "imgs": ["public-private.jpg"],
+    "tech": ["ArcGIS", "Adobe Illustrator"],
+    "size": "",
+    "date": "2010-06-01"
+  }, {
+    "title": "Ontario",
+    "tags": ["cartography", "print"],
+    "description": "The province of Ontario, Canada.",
+    "description_long": "A map of the province of Ontario, Canada created using Natural Earth 1:10m vector GIS data for the *Moon: Ontario* travel guide from Avalon Travel Publishing",
+    "thumb": "ontario-thumb.jpg",
+    "imgs": ["ontario.jpg"],
+    "size": "width2 height1",
+    "date": "2012-01-01"
+  }, {
+    "title": "Galapagos Islands",
+    "tags": ["cartography", "print"],
+    "description": "A map showing the Galapagos Islands",
+    "description_long": "",
+    "thumb": "galapagos-thumb.jpg",
+    "imgs": ["galapagos.jpg"],
+    "size": "width2 height1",
+    "date": "2013-01-01"
+  }, {
+    "title": "Afghanistan and Pakistan",
+    "tags": ["cartography", "print"],
+    "description": "Map of Afghanistan and Pakistan for the book Dirty Wars.",
+    "description_long": "Map of Afghanistan and Pakistan for the book Dirty Wars: The World is a Battlefield, by Jeremy Scahill. Published by Nation Books.",
+    "thumb": "afg-pak-thumb.jpg",
+    "imgs": ["afg-pak.jpg"],
+    "tech": ["Adobe Illustrator", "MAPublisher", "QGIS", "Natural Earth 1:10m Vector Data"],
+    "size": "width2 ",
+    "date": "2013-01-01"
+  }, {
+    "title": "South East Asia",
+    "tags": ["cartography", "print"],
+    "description": "A map of Thailand, Laos, and Cambodia.",
+    "description_long": "Another map for a 9 book series on the backpacking trips taken by globetrotter David Koester. Natural Earth vector and relief data were employed for sound cartographic design.",
+    "thumb": "se-asia-thumb.jpg",
+    "imgs": ["se-asia.jpg"],
+    "size": "",
+    "date": "2013-01-01"
+  }, {
+    "title": "Sikkim",
+    "tags": ["cartography"],
+    "description": "Sikkim, northern India.",
+    "description_long": "A custom hillshade was created from SRTM DEM data using QGIS and Terrain Sculptor.",
+    "tech": ["Terrain Sculptor", "QGIS", "MAPublisher", "Adobe Illustrator"],
+    "thumb": "sikkim-thumb.jpg",
+    "imgs": ["sikkim.jpg"],
+    "size": "",
+    "date": "2013-01-01"
 
-    },
-    {
-      "title" : "The North Coast",
-      "tags" : ["cartography", "print"],
-      "description" : "A split frame map I created for Moon: Northern California.",
-      "description_long" : "Open data from Cal Atlas and CPAD were used to make this map.",
-      "tech" : ["Adobe Illustrator", "MAPublisher", "QGIS"],
-      "thumb" : "north-coast-thumb.jpg",
-      "imgs" : ["north-coast.jpg"],
-      "size" : "",
-      "date" : "2013-01-01"
-    },
-    {
-      "title" : "Downtown Toronto",
-      "tags" : ["cartography", "print"],
-      "description" : "A map of downtown Toronto, Canada.",
-      "description_long" : "",
-      "thumb" : "toronto-dt-thumb.jpg",
-      "imgs" : ["toronto-dt.jpg"],
-      "tech" : ["Adobe Illustrator"],
-      "size" : "width2 height1",
-      "date" : "2012-01-01"
-    },
-    {
-      "title" : "Downtown Guanajuato",
-      "tags" : ["cartography", "print"],
-      "description" : "A map of downtown Guanajuato, Mexico.",
-      "description_long" : "",
-      "thumb" : "guanajuato-dt-thumb.jpg",
-      "imgs" : ["guanajuato-dt.jpg"],
-      "size" : "width2 height1",
-      "date" : "2012-01-01"
-    }
-  ]
+  }, {
+    "title": "The North Coast",
+    "tags": ["cartography", "print"],
+    "description": "A split frame map I created for Moon: Northern California.",
+    "description_long": "Open data from Cal Atlas and CPAD were used to make this map.",
+    "tech": ["Adobe Illustrator", "MAPublisher", "QGIS"],
+    "thumb": "north-coast-thumb.jpg",
+    "imgs": ["north-coast.jpg"],
+    "size": "",
+    "date": "2013-01-01"
+  }, {
+    "title": "Downtown Toronto",
+    "tags": ["cartography", "print"],
+    "description": "A map of downtown Toronto, Canada.",
+    "description_long": "",
+    "thumb": "toronto-dt-thumb.jpg",
+    "imgs": ["toronto-dt.jpg"],
+    "tech": ["Adobe Illustrator"],
+    "size": "width2 height1",
+    "date": "2012-01-01"
+  }, {
+    "title": "Downtown Guanajuato",
+    "tags": ["cartography", "print"],
+    "description": "A map of downtown Guanajuato, Mexico.",
+    "description_long": "",
+    "thumb": "guanajuato-dt-thumb.jpg",
+    "imgs": ["guanajuato-dt.jpg"],
+    "size": "width2 height1",
+    "date": "2012-01-01"
+  }]
 }
