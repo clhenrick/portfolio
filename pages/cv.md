@@ -12,6 +12,18 @@ header: no
 ##Professional Experience
 -----
 
+### GreenInfo Network
+**Web Developer**  
+*February, 2017 - Present*  
+Oakland, CA  
+
+- Full stack web developer with [GreenInfo Network](http://greeninfo.org) specializing in building web applications that utilize geo-visualization with open source GIS and web-mapping software, Javascript, Python, SQL, and PHP.
+
+- Coordinate with a team of GIS specialists, cartographers, designers, and project managers to produce responsive web applications for clients primarily working in the non-profit, NGO, and government sectors.
+
+- Assisting Google with creating curated "Voyager" content for their 2017 relaunch of Google Earth.
+
+
 ### Chris Henrick Cartography
 **Web Developer, Cartographer**  
 *June, 2010 - Present*  
