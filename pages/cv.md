@@ -9,7 +9,7 @@ header: no
 ---
 [Download as a PDF]({{site.urlimg}}chris-henrick-resume.pdf)
 
-##Professional Experience
+## Professional Experience
 -----
 
 ### GreenInfo Network
