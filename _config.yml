@@ -208,6 +208,8 @@ msapplication_tilecolor:                "#fabb00"
 #  Open _data/socialmedia.yml to adjust the left and right topbar navigation
 #
 
+socialmedia:
+    twitter: '@chrislhenrick'
 
 #        ____  _
 #       / __ \(_)________ ___  _______

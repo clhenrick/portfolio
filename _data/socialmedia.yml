@@ -1,5 +1,5 @@
 - name: GitHub
-  url: http://github.com/clhenrick
+  url: https://github.com/clhenrick
   class: icon-github
   title: "Code"
 
@@ -9,7 +9,7 @@
 #   title: "Videos, Video-Anleitungen und Filme von Phlow auf YouTube"
 
 - name: Twitter
-  url: http://twitter.com/chrislhenrick
+  url: https://twitter.com/chrislhenrick
   class: icon-twitter
   title: "Twitter"
 
