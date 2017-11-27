@@ -8,6 +8,13 @@ subheadline: ""
 permalink: "/about/talks/"
 header: no
 ---
+### NYC Crash Mapper
+*NACIS Annual Meeting / Montreal, Québec, Canada / October 12, 2017*
+
+Open Data is open, but does that make it actionable? Does the "one size fits all" model of Open Data Portals truly serve the civic interests of citizens who stand to benefit from them? In this talk I discuss the short comings of Open Data Portals, often a result of city agencies neglecting to "eat their own dog food" and how the web application I developed, [NYC Crash Mapper]({{site.url}}{{site.baseurl}}/work/nyc-crash-mapper.html), seeks to make Open Data on vehicle collisions actionable for transportation safety advocates within New York City.
+
+- [presentation slides](https://speakerdeck.com/clhenrick/nacis-2017)
+- [video](https://www.youtube.com/watch?v=FbvoYQc19V8&index=16&list=PLcBEhOBZvhcZ2AYb-wHsOcpte7Zd_t4zL)
 
 ### GeoVisualization Workshop at the I School
 *UC Berkeley School of Information / Berkeley, CA / April 10, 2017*
