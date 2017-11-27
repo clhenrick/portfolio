@@ -12,16 +12,23 @@ header: no
 ## Professional Experience
 -----
 
+### University of California, Berkeley
+**Lecturer**  
+*August 2017 – Present*  
+Berkeley, CA  
+
+Taught _Interactive Data Visualization with D3_, for the [School of Information](https://www.ischool.berkeley.edu/) during the Fall semester of 2017. Through 13 lectures and 15 hands on coding assignments, students learned how to create interactive charts, graphs, and geographic maps for display on the web using the popular D3.JS Javascript library.
+
 ### GreenInfo Network
 **Web Developer**  
-*February, 2017 - Present*  
+*February, 2017 - November, 2017*  
 Oakland, CA  
 
 - Full stack web developer with [GreenInfo Network](http://greeninfo.org) specializing in building web applications that utilize geo-visualization with open source GIS and web-mapping software, Javascript, Python, SQL, and PHP.
 
-- Coordinate with a team of GIS specialists, cartographers, designers, and project managers to produce responsive web applications for clients primarily working in the non-profit, NGO, and government sectors.
+- Coordinated with a team of GIS specialists, cartographers, designers, and project managers to produce responsive web applications for clients primarily working in the non-profit, NGO, and government sectors.
 
-- Assisting Google with creating curated "Voyager" content for their 2017 relaunch of Google Earth.
+- Assisted Google Earth Outreach with creating curated "Voyager" content for their 2017 relaunch of Google Earth.
 
 
 ### Chris Henrick Cartography
