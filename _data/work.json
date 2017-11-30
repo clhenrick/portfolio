@@ -1,7 +1,7 @@
 {
   "author": "Chris L Henrick",
   "work": [{
-		"title": "NYC Crash Mapper Chart View",
+    "title": "NYC Crash Mapper 2",
     "tags": ["web", "data-viz"],
     "description": "Data exploration tool that allows users to filter, compare, rank, and view trends in vehicle collision data reported by the NYPD.",
     "description_long": "The NYC Crash Mapper Chart View is a data exploration tool that allows users to filter, compare, rank, and view trends in vehicle collision data reported by the NYPD. Trend allows you to compare two selected areas’ performance against each other and to a citywide or borough-wide reference, while filtering by date range or type of crash. Compare lets you compare two time periods for a given area. Rank shows where one area ranks in terms of safety in the context of all similar areas over the most recent three-year period. Map will show the geo location of the crashes using the first area selected, date range of period A, and crash type filters. This was phase two of the original NYC Crash Mapper project. NYC Crash Mapper began as a personal project of mine, then was further developed to include interactive chart components during my tenure at [GreenInfo Network](http://greeninfo.org). NYC Crash Mapper was featured on the infamous [NYC Streets Blog](https://nyc.streetsblog.org/2017/03/08/map-the-dangerous-streets-in-your-neighborhood-with-this-new-tool/). I gave a talk about the app and the challenges of using open data at the [NACIS 2017 annual conference](http://localhost:4000/about/talks/).",
@@ -9,7 +9,8 @@
     "thumb": "crashmapper-chart-view-thumb.png",
     "imgs": ["crashmapper-chart-view01.png", "crashmapper-chart-view02.png", "crashmapper-chart-view03.png", "crashmapper-chart-view04.png", "crashmapper-chart-view05.png", "crashmapper-chart-view06.png", "crashmapper-chart-view07.png", "crashmapper-chart-view08.png", "crashmapper-chart-view09.png", "crashmapper-chart-view10.png", "crashmapper-chart-view11.png", "crashmapper-chart-view12.png", "crashmapper-chart-view13.png", "crashmapper-chart-view14.png", "crashmapper-chart-view15.png", "crashmapper-chart-view16.png"],
     "size": "width3",
-    "date": "2017-11-23"
+    "date": "2017-11-23",
+    "link": "http://vis.crashmapper.org"
   },{
     "title": "NYC Crash Mapper",
     "tags": ["web", "cartography"],
@@ -19,7 +20,8 @@
     "thumb": "nyc-crash-mapper-thumb.png",
     "imgs": ["nyc-crash-mapper01.jpg", "nyc-crash-mapper02.jpg", "nyc-crash-mapper03.jpg", "nyc-crash-mapper04.jpg", "nyc-crash-mapper05.jpg", "nyc-crash-mapper06.jpg", "nyc-crash-mapper07.jpg", "nyc-crash-mapper08.jpg", "nyc-crash-mapper09.jpg", "nyc-crash-mapper10.jpg", "nyc-crash-mapper11.jpg", "nyc-crash-mapper12.jpg"],
     "size": "width3",
-    "date": "2017-03-03"
+    "date": "2017-03-03",
+    "link": "http://crashmapper.org"
   }, {
     "title": "MPG Ranch Habitat Restoration Map",
     "tags": ["web", "cartography"],
