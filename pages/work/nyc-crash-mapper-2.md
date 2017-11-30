@@ -1,8 +1,8 @@
 ---
 layout: page-fullwidth
 show_meta: true
-title: "NYC Crash Mapper Chart View"
-meta_title: "Chris Henrick featured work: NYC Crash Mapper Chart View"
+title: "NYC Crash Mapper 2"
+meta_title: "Chris Henrick featured work: NYC Crash Mapper 2"
 teaser: "Data exploration tool that allows users to filter, compare, rank, and view trends in vehicle collision data reported by the NYPD."
 date: "2017-11-23"
 tags:
@@ -10,10 +10,10 @@ tags:
 category:
   - work
 header: no
-permalink: "/work/nyc-crash-mapper-chart-view.html"
+permalink: "/work/nyc-crash-mapper-2.html"
 ---
 
-<strong>Project Link:</strong> <a href="http://vis.crashmapper.org" target="_blank">NYC Crash Mapper Chart View</a>
+<strong>Project Link:</strong> <a href="http://vis.crashmapper.org" target="_blank">NYC Crash Mapper 2</a>
 
 The NYC Crash Mapper Chart View is a data exploration tool that allows users to filter, compare, rank, and view trends in vehicle collision data reported by the NYPD. Trend allows you to compare two selected areas’ performance against each other and to a citywide or borough-wide reference, while filtering by date range or type of crash. Compare lets you compare two time periods for a given area. Rank shows where one area ranks in terms of safety in the context of all similar areas over the most recent three-year period. Map will show the geo location of the crashes using the first area selected, date range of period A, and crash type filters. This was phase two of the original NYC Crash Mapper project. NYC Crash Mapper began as a personal project of mine, then was further developed to include interactive chart components during my tenure at [GreenInfo Network](http://greeninfo.org). NYC Crash Mapper was featured on the infamous [NYC Streets Blog](https://nyc.streetsblog.org/2017/03/08/map-the-dangerous-streets-in-your-neighborhood-with-this-new-tool/). I gave a talk about the app and the challenges of using open data at the [NACIS 2017 annual conference](http://localhost:4000/about/talks/).
 
