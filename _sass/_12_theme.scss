@@ -99,13 +99,13 @@ table {
   padding: 5px 5px 8px 5px;
   background-color: $grey-10; //lighten($grey-1, 5);
   border: 2px solid $grey-9;
-  transition: border-color 100ms, border-width 100ms linear;
+  // box-shadow: 0px 0px 0px 0px $ci-3;
+  transition: box-shadow 100ms linear;
 
   p { color: #DDD; }
 
   &:hover{
-    border-width: 4px;
-    border-color: $ci-3;
+    box-shadow: 0px 0px 0px 4px $ci-3;
   }
 
   &.width2 {
