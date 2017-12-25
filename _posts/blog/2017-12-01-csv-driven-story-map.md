@@ -14,7 +14,7 @@ tags:
 ---
 ![canopy story map splashscreen]({{site.urlimg}}canopy-story-map01.jpg)
 
-In this post I’ll describe the workflow and framework I developed for creating an interactive “story map” for [Canopy](http://http://canopyplanet.org/) while I worked as a web developer for [GreenInfo Network](http://greeninfo.org). I'll describe how it was built in a way that allowed for changes to the story's **content** (copy, photos, and other media assets) as well as **map data layers** to happen in an iterative and timely manner.
+In this post I’ll describe the workflow and framework I developed for creating an interactive “story map” for [Canopy](http://canopyplanet.org/) while I worked as a web developer for [GreenInfo Network](http://greeninfo.org). I'll describe how it was built in a way that allowed for changes to the story's **content** (copy, photos, and other media assets) as well as **map data layers** to happen in an iterative and timely manner.
 
 ## Context
 A little about **Canopy:**
@@ -34,7 +34,7 @@ Here’s the workflow I used for going from spreadsheet to web app:
 
 2. A sheet containing only the columns needed by the app is exported as a CSV file. There were other columns in the spreadsheet that helped copy editors keep the content organized.
 
-3. The CSV is converted to a JSON document. (I prefer to use [`csvkit`](https://csvkit.readthedocs.io/en/1.0.2/) for this, but there are many types of CSV to JSON converters out there, such as [Mr. Data Converter](https://shancarter.github.io/mr-data-converter/))
+3. The CSV is converted to a JSON document. (I prefer to use [csvkit](https://csvkit.readthedocs.io/en/1.0.2/) for this, but there are many types of CSV to JSON converters out there, such as [Mr. Data Converter](https://shancarter.github.io/mr-data-converter/))
 
 4. JSON is loaded into the app via Webpack’s json-loader via a NodeJS style `require` or ES6 `import`. This bundles the JSON with the rest of the source code so that it is available at runtime. No async required!
 
