@@ -12,9 +12,16 @@ header: no
 ## Professional Experience
 -----
 
+### MapD
+**Data Visualization Engineer**
+*December, 2017 – Present*
+San Francisco, CA
+
+Currently a Data Visualization Engineer at [MapD](https://www.mapd.com/), a big data analytics company, working on [MapD Immerse](https://www.mapd.com/demos/), a visualization and analytics platform, as well as its related open-source libraries: [mapd-connector](https://github.com/mapd/mapd-connector), [mapd-charting](https://github.com/mapd/mapd-charting), [mapd-crossfilter](https://github.com/mapd/mapd-crossfilter), and [mapd3](https://github.com/mapd/mapd3).
+
 ### University of California, Berkeley
 **Lecturer**  
-*August 2017 – Present*  
+*August, 2017 – December, 2017*  
 Berkeley, CA  
 
 Taught _Interactive Data Visualization with D3_, for the [School of Information](https://www.ischool.berkeley.edu/) during the Fall semester of 2017. Through 13 lectures and 15 hands on coding assignments, students learned how to create interactive charts, graphs, and geographic maps for display on the web using the popular D3.JS Javascript library.
