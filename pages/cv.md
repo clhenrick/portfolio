@@ -13,8 +13,8 @@ header: no
 -----
 
 ### MapD
-**Data Visualization Engineer**
-*December, 2017 – Present*
+**Data Visualization Engineer**  
+*December, 2017 – Present*  
 San Francisco, CA
 
 Currently a Data Visualization Engineer at [MapD](https://www.mapd.com/), a big data analytics company, working on [MapD Immerse](https://www.mapd.com/demos/), a visualization and analytics platform, as well as its related open-source libraries: [mapd-connector](https://github.com/mapd/mapd-connector), [mapd-charting](https://github.com/mapd/mapd-charting), [mapd-crossfilter](https://github.com/mapd/mapd-crossfilter), and [mapd3](https://github.com/mapd/mapd3).
