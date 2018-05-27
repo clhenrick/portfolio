@@ -8,6 +8,20 @@ subheadline: ""
 permalink: "/about/talks/"
 header: no
 ---
+
+### Using GPUs to Interactively Visualize Billions of Points with MapD
+*OpenVis Conf / Paris, France / May 16, 2018*
+
+MapD’s GPU-powered, in-memory SQL engine and analytics platform are the logical successor to CPU in-memory databases. Modern GPUs have many advantages over CPUs, including much greater compute and memory bandwidth, as well as a native graphics pipeline optimized for rapid visualization. In this workshop, Christophe Viau and Chris Henrick will show how to interactively query and visualize billions of points with MapD. Participants will learn how to use MapD’s open-source GPU datastore to scale their own interactive visualizations. To facilitate hands-on learning, each participant will be provided with a cloud GPU instance to use throughout the workshop.
+
+Agenda for this half-day workshop:
+
+- Overview of the MapD ecosystem
+- Rapid dashboard prototyping with MapD Immerse
+- A tour of MapD’s suite of open-source Javascript libraries for creating custom visualizations
+- How to build a custom visualization with data from the GPU using said libraries
+- How MapD uses the Vega specification standard for declarative server-side rendering
+
 ### NYC Crash Mapper
 *NACIS Annual Meeting / Montreal, Québec, Canada / October 12, 2017*
 
