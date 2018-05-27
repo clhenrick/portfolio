@@ -23,7 +23,7 @@ description: "The portfolio and technical blog of Chris Henrick – provider of 
 author: clhenrick
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
-url: 'http://clhenrick.io'
+url: 'https://clhenrick.io'
 baseurl: ''
 
 # This is for the editing function in _/includes/improve_content
