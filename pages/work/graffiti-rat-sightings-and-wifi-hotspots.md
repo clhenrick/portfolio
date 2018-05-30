@@ -13,14 +13,19 @@ header: no
 permalink: "/work/graffiti-rat-sightings-and-wifi-hotspots.html"
 ---
 
-<strong>Project Link:</strong> <a href="http://b.parsons.edu/~henrc131/MajorStudio1/seven/03_nyc-graffiti-rats-wifi/" target="_blank">Graffiti, Rat Sightings, and Wifi Hotspots</a>
+<strong>Project Link:</strong> <a href="https://bl.ocks.org/clhenrick/raw/f9176fab19e79ff72ec7e6c627080fda/" target="_blank">Graffiti, Rat Sightings, and Wifi Hotspots</a>
 
 Graffiti, rat sightings, and wi-fi hotspots, inspired by Stamen's <a target="_blank" href="http://maps.stamen.com/trees-cabs-crime/#13/37.7629/-122.4400">Trees-Cabs-Crime</a> created from NYC 311 data.
 
 <strong>Technologies Used:</strong>  - TileMill  - CartoCSS  - QGIS  - MapBox 
 
 
-  <iframe class="tiles" width='100%' height='100%' frameBorder='0' src='http://b.parsons.edu/~henrc131/MajorStudio1/seven/03_nyc-graffiti-rats-wifi/'></iframe>
+  <a href="{{site.url}}{{site.baseurl}}/images/nyc-rats-graffiti-wifi.jpg" target="_blank">
+    <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/nyc-rats-graffiti-wifi.jpg" width="100%" height="100%" alt="nyc-rats-graffiti-wifi.jpg">
+    <noscript>
+      <img src="{{site.url}}{{site.baseurl}}/images/nyc-rats-graffiti-wifi.jpg" width="100%" height="100%" alt="nyc-rats-graffiti-wifi.jpg">
+    </noscript>
+  </a>
 
 
 [<span class="back-arrow">&#8619;</span> Back to the Portfolio](/work/)

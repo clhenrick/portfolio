@@ -211,10 +211,9 @@
     "description": "Graffiti, rat sightings, and wi-fi hotspots in NYC.",
     "description_long": "Graffiti, rat sightings, and wi-fi hotspots, inspired by Stamen's <a target=\"_blank\" href=\"http://maps.stamen.com/trees-cabs-crime/#13/37.7629/-122.4400\">Trees-Cabs-Crime</a> created from NYC 311 data.",
     "thumb": "graffiti-rats-wifi-thumb.jpg",
-    "imgs": ["graffiti-rats-wifi.jpg"],
+    "imgs": ["nyc-rats-graffiti-wifi.jpg"],
     "tech": ["TileMill", "CartoCSS", "QGIS", "MapBox"],
-    "link": "http://b.parsons.edu/~henrc131/MajorStudio1/seven/03_nyc-graffiti-rats-wifi/",
-    "tiles": "http://b.parsons.edu/~henrc131/MajorStudio1/seven/03_nyc-graffiti-rats-wifi/",
+    "link": "https://bl.ocks.org/clhenrick/raw/f9176fab19e79ff72ec7e6c627080fda/",
     "size": "",
     "date": "2013-11-01"
   }, {
