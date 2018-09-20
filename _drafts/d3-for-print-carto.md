@@ -13,7 +13,7 @@ tags:
 ---
 
 ## Intro
-Recently I've been working on a project that attempts to visualize how various job sectors have changed in the San Francisco Bay Area over time. I've chosen to do this through creating a series of maps and charts made with D3JS, the popular data visualization library for the web. These visualizations will eventually be included in the [Anti Eviction Mapping Project](https://www.antievictionmap.com/)'s forthcoming Atlas, to be published by [AK Press](https://www.akpress.org/). The Atlas project seeks to compile many of AEMP's interactive web maps and writings, plus some brand new work, which is where I fit in.
+Recently I've been working on a project that attempts to visualize how various job sectors have changed in the San Francisco Bay Area over time. I've chosen to do this through creating a series of maps and charts made with D3JS, the popular data visualization library for the web. These visualizations will eventually be included in the [Anti Eviction Mapping Project](https://www.antievictionmap.com/)'s forthcoming Atlas, to be published by [AK Press](https://www.akpress.org/). The Atlas project seeks to compile many of AEMP's interactive web maps and writings, plus some brand new work. The latter is where I fit in.
 
 Knowing from the outset of the project that the deliverables would be for print, and not the web, forced me to think about the design and development process in a slightly different way. This was partly due to the fact that I no longer had access to one of the necessary pieces of software I've used in the past for creating print maps. Previously I've used a combination of [QGIS](https://www.qgis.org/en/site/), the free and open source desktop GIS software; and [MAPublisher](https://www.avenza.com/mapublisher/), a plugin for Adobe Illustrator that allows for working with geospatial vector data in Illustrator. Unfortunately MAPublisher is not free nor is it open source, and the computer I happen to have a license on has just about bit the dust. Even if I did decide to shell out the [$1,399 for a new license](https://www.avenza.com/mapublisher/pricing/), at the time of this writing I didn't have a computer that I could install it on that fit the system requirements.
 
@@ -42,31 +42,34 @@ Here are the notes on how I worked with SVG and D3 in order to prepare my map fo
 ### Exporting the SVG
 The question that is probably the most important: how to get maps rendered with D3JS out of the web and into vector editing software? I'm glad you asked! Perhaps the most straight forward and easiest method is to use the [SVG Crowbar](https://nytimes.github.io/svg-crowbar/) bookmarklet created by folks at NY Times. Using it is very simple, when you visit a web page that has SVG elements on it and run it, all SVG elements will be downloaded auto-magically as `.svg` files. The caveats to this tool are that it only works in the Chrome web browser, and that you need to be semi-cautious in how you apply CSS to your SVG. For example the authors recommend to not use a descendant selector, `>`, watch out for using fonts that Adobe Illustrator may not recognize, and that some styles that cascade downward to SVG elements won't show up after downloading the SVG.
 
-I ended up using a combination of SVG Crowbar and [Observable's "Saving SVG" technique](https://beta.observablehq.com/@mbostock/saving-svg) for exporting my graphics. This was the result of moving my prototype map to an [Observable Notebook](https://beta.observablehq.com/), which is a new Javascript based notebook that runs in the browser. Similar to Jupyter notebooks that are often used for data exploration, Observable let's you work with data analysis and visualization but in a reactive and asynchronous programming environment.
+I ended up using a combination of SVG Crowbar and [Observable's "Saving SVG" technique](https://beta.observablehq.com/@mbostock/saving-svg) for exporting my graphics. This was the result of moving my prototype map to an [Observable Notebook](https://beta.observablehq.com/), which is a new Javascript based notebook that runs in the browser. Similar to Jupyter notebooks that are typically used for data exploration and analysis, Observable let's you work with data analysis and visualization but in a reactive and asynchronous programming environment with Javascript.
 
 Caution! Once you have your map exported as SVG, it's effectively static, meaning that you lose all attributes of your geospatial data. If you decide to make changes to that data at a later point in time, you'll have to go through the export process again. There are some tricks to making this less painful and time consuming however, which I'll mention below.
 
 ### Structuring SVG for Illustrator
-There are some things you can do with your D3 code to keep your SVG neat and tidy when opening it in Illustrator, and to make the export import process go smoother.
+Here are some techniques to keep your SVG neat and tidy when opening it in Illustrator, and to make the export/import process go smoother.
 
-First, you will want to group each of your various map layers and apply HTML "id" attributes to them. For example here is code that creates a SVG group for a "land" map layer, gives it an "id" attribute of `"land"`, and applies a SVG path element of the land polygons as its child:
+First, you will want to group each of your various map layers and apply HTML "id" attributes to them. For example here is code that creates a SVG group for a "places labels" map layer, gives it an "id" attribute of `"place-labels"`, and applies SVG text elements as its children:
 
 {% highlight javascript %}
-// group containing land polygons
-svg.append("g")
-    .attr("id", "land")
-  .append("path")
-  .datum(landArea)
-    .attr("fill", "#fff")
-    .attr("stroke-width", 0.3)
-    .attr("stroke", "lightgrey")
-    .attr("stroke-line-join", "round")
-    .attr("d", path)
+// places labels
+svg.append("g").attr("id", "place-labels")
+  .selectAll(".place-label")
+  .data(places.features)
+  .enter().append("text")
+  .classed("place-label", true)
+  .attr("x", d => path.centroid(d)[0])
+  .attr("y", d => path.centroid(d)[1] - textOffset.y)
+  .attr("text-anchor", "end")
+  .attr("fill", greys[7])
+  .style("font", "7px sans-serif")
+  .style("text-shadow", textShadow)
+  .text(d => d.properties.name)
 {% endhighlight %}
 
-This way when you open your exported SVG file in Illustrator all of your layers will be neatly contained inside groups, which you can then move into layers to make any post-export editing easier (More on this in the next section).
+Using SVG groups and id attributes will ensure that when you open your exported SVG file in Illustrator all of your layers will be neatly contained and identifiable. This is important as it simplifies the process of moving grouped features into Illustrator layers to make any post-export editing easier (more on this in the next section).
 
-I made sure that all styling was applied inline instead of using a CSS style tag or external style sheet. This is accomplished using d3-selections `selection.attr` and `selection.style` methods, which you can see in the above code example. The rationale for this is that if you don't use inline styling, when opening your SVG file in your favorite vector editing software the styles may be missing.
+I made sure that all styling was applied inline instead of using a CSS style tag or external style sheet. This is accomplished using `d3-selection`s `selection.attr` and `selection.style` methods, which you can see in the above code example. The rationale for this is that if you don't use inline styling, when opening your SVG file in your favorite vector editing software the styles may be missing.
 
 If exporting multiple maps of the same geographic area but with different data overlays, I found that creating a simple UI to select different views of your data can be helpful. This could be as simple as a dropdown menu, radio buttons, or checkboxes; and [here's a good example](https://bl.ocks.org/mbostock/5872848) of how to use the `d3-dispatch` module to accomplish this. Doing this can be a little more programming intensive, so if you're new to programming and/or D3 expect to have to put a little more work in.
 
@@ -77,17 +80,17 @@ One of the trickiest parts I've found in this workflow is the process of sizing 
 
 It can be painstaking to have to resize each of your exported maps from the size they were rendered at in the browser to the size they'll be printed at, e.g. 8.5" x 11", so getting the map extent and SVG dimensions correct on the web _before exporting the SVG_ can be a huge time saver.
 
-Solving the problem of getting the exported SVG to be the same size as your desired print document size is relatively simple. In Illustrator pixels will map to points (points are an old school measurement system used by graphic designers and typographers that's still around), so if you figure out the dimensions of your document size in points then you can simply set your SVG dimensions to be the same in pixels. For an 8.5" x 11" document this ends up being 612 x 792 pixels or points, so in my code I simply set the SVG width to be 612 pixels and the height to be 792 pixels.
+Solving the problem of getting the exported SVG to be the same size as your desired print document size is relatively simple. In Illustrator pixels will map to points (points are an old school measurement system used by graphic designers and typographers), so if you figure out the dimensions of your document size in points then you can simply set your SVG dimensions to be the same in pixels. For an 8.5" x 11" document this ends up being 612 x 792 pixels or points, so in my code I simply set the SVG width to be 612 pixels and the height to be 792 pixels.
 
 In my project, I was working with data at the census tract level for all nine counties of the San Francisco Bay Area but knew I would be cropping the map area to only include cities that were adjacent to the San Francisco Bay. But how would I get the cropping correct?
 
-I accomplished this by first exporting an SVG with the map area to include all nine counties, which was much larger than I needed. After opening the SVG file in Illustrator I drew a rectangle proportional to 8.5" x 11", and then positioned and sized it to include the area I wanted to crop my map area to. You could theoretically do this in D3 without Illustrator, but being comfortable with Illustrator this approach made sense to me.
+I accomplished this by first exporting an SVG with the map area to include all nine counties, which was much larger than I needed. After opening the SVG file in Illustrator I drew a rectangle proportional to 8.5" x 11", and then positioned and sized it to include the area I wanted to crop my map to. You could theoretically do this in D3 without Illustrator, but as I'm comfortable working with Illustrator this approach made sense to me.
 
 To get this "map frame" rectangle back into my D3 code, I did the following: first I selected the rectangle and using Illustrator's _transform_ window menu, changed the origin to the "upper left" to match how browsers determine the origin (e.g. `0,0`) of SVG (meaning `y` increases from top to bottom and `x` increases from left to right). Then I noted the x, y, width, and height values of my rectangle. I could now use these values to draw the same rectangle with D3!
 
 You don't actually need the rectangle to be drawn in D3 in order to crop the map area, but it helps to draw it to verify that it looks correct. Once you crop the map area this rectangle will no longer look correct because the coordinates will have changed. However if you'd still like to have the "map frame" rectangle you can simply draw a rectangle from `0,0` to `width, height`.
 
-Here's the secret to cropping your map area once you have your map frame rectangle, basically it involves some temporary math and code that we can throw away later. First using `d3-geo`'s `projection` function, we can _invert_ our pixel coordinates to get longitude and latitude coordinates. You only need two pairs of coordinates, the _upper left_ which comes straight from the values we got from Illustrator's _transform_ window, and the _bottom right_, which can be computed by adding the width and height to our upper left coordinates. Here's an example of how that works:
+Here's the secret to cropping your map area once you have your map frame rectangle, basically it involves some temporary math and code that we can throw away later. First using `d3-geo`'s `projection` function, we can _invert_ our pixel coordinates to get longitude and latitude coordinates. You only need two pairs of coordinates, the _upper left_ which comes straight from the `x` and `y` values we got from Illustrator's _transform_ window, and the _bottom right_, which can be computed by adding the `width` and `height` to our upper left coordinates. Here's an example of how that works:
 
 {% highlight javascript %}
 var mapFrameCoords = [
@@ -102,7 +105,7 @@ var mapFrameCoords = [
 ]
 {% endhighlight %}
 
-Next, we can use those longitude latitude coordinates to create a GeoJSON linestring feature that we can then pass to D3's `projection.fitSize()` method. The tricky part is that we can't _both_ invert our pixel coordinates _and_ fit our map extent to the resulting lon lat coordinates at the same time! To get around this, I "hard coded" the GeoJSON:
+Next, we can use those longitude latitude coordinates to create a GeoJSON linestring feature that we can pass to D3's `projection.fitSize()` method. The tricky part is that we can't _both_ invert our pixel coordinates _and_ fit our map extent to the resulting lon lat coordinates at the same time! To get around this, I "hard coded" the GeoJSON:
 
 {% highlight javascript %}
 var mapExtent = {
@@ -117,21 +120,19 @@ var mapExtent = {
 }
 {% endhighlight %}
 
-#### TO DO: FIX COORDS ABOVE
-
-Now that we have this GeoJSON feature, we can pass it to `projection.fitSize` to crop our map area as follows:
+Now that we have a GeoJSON feature that represents the desired extent of our map area, we can pass it to `projection.fitSize()` to crop our map area as follows:
 
 {% highlight javascript %}
-// california state plane 3 | https://github.com/veltman/d3-stateplane
+// california state plane 3 https://github.com/veltman/d3-stateplane
 projection = d3.geoConicConformal()
   .parallels([37 + 4 / 60, 38 + 26 / 60])
   .rotate([120 + 30 / 60], 0)
-  .fitSize([width, height], mapExtent) // <--- here!!!
+  .fitSize([width, height], mapExtent) // <--- add geojson here
 {% endhighlight %}
 
-And there we have it!
+Now when the D3 renders our map, it will be cropped to our desired extent.
 
-Overall the goal here is getting things "good enough" on the web knowing that any fine tuning can be done in Illustrator, for example adjusting label placement. The next section will cover this part.
+Overall the goal in prepping our map SVG is getting things "good enough" knowing that any fine tuning can be done in Illustrator, for example adjusting the placement of labels for cities and counties. The next section will cover what happens in Illustrator.
 
 ## Editing in Adobe Illustrator
 
