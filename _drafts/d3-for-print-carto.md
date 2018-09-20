@@ -86,9 +86,13 @@ In my project, I was working with data at the census tract level for all nine co
 
 I accomplished this by first exporting an SVG with the map area to include all nine counties, which was much larger than I needed. After opening the SVG file in Illustrator I drew a rectangle proportional to 8.5" x 11", and then positioned and sized it to include the area I wanted to crop my map to. You could theoretically do this in D3 without Illustrator, but as I'm comfortable working with Illustrator this approach made sense to me.
 
+![drawing and selecting a map frame in illustrator]({{site.urlimg}}illustrator-rect-crop.png)
+
 To get this "map frame" rectangle back into my D3 code, I did the following: first I selected the rectangle and using Illustrator's _transform_ window menu, changed the origin to the "upper left" to match how browsers determine the origin (e.g. `0,0`) of SVG (meaning `y` increases from top to bottom and `x` increases from left to right). Then I noted the x, y, width, and height values of my rectangle. I could now use these values to draw the same rectangle with D3!
 
-You don't actually need the rectangle to be drawn in D3 in order to crop the map area, but it helps to draw it to verify that it looks correct. Once you crop the map area this rectangle will no longer look correct because the coordinates will have changed. However if you'd still like to have the "map frame" rectangle you can simply draw a rectangle from `0,0` to `width, height`.
+![transform window example]({{site.urlimg}}illustrator-transform-panel.png)
+
+You don't actually need the rectangle to be drawn in D3 in order to crop the map area, but it helps to draw it to verify that it looks correct. Once you crop the map area this rectangle will no longer look correct because the coordinates will have changed. However if you'd still like to have the map frame rectangle in your SVG you can simply draw a rectangle with D3 from `0,0` to `width, height`.
 
 Here's the secret to cropping your map area once you have your map frame rectangle, basically it involves some temporary math and code that we can throw away later. First using `d3-geo`'s `projection` function, we can _invert_ our pixel coordinates to get longitude and latitude coordinates. You only need two pairs of coordinates, the _upper left_ which comes straight from the `x` and `y` values we got from Illustrator's _transform_ window, and the _bottom right_, which can be computed by adding the `width` and `height` to our upper left coordinates. Here's an example of how that works:
 
