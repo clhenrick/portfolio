@@ -139,10 +139,29 @@ Now when the D3 renders our map, it will be cropped to our desired extent.
 Overall the goal in prepping our map SVG is getting things "good enough" knowing that any fine tuning can be done in Illustrator, for example adjusting the placement of labels for cities and counties. The next section will cover what happens in Illustrator.
 
 ## Editing in Adobe Illustrator
+This section will cover the workflow I developed in Illustrator.
+
+Now that we've prepped our SVG for importing into Illustrator and exported our SVG from the browser to a local file using SVG Crowbar, it's time to open it in Illustrator.
+
+- what exported svg looks like when opening in AI
+
+- creating a template .ait file with layer names, graphic styles, character styles, swatches, symbols, etc.
+
+- touching up: roads, layer order, label placement, anything else (e.g. county boundaries)
+
+- creating a new `.ai` file from the template for each of our maps, and copying and pasting the layer(s) we need from the corresponding SVG into the new file. Checking "Paste Remember Layers" in the Layers window (or not?) Remember to save often!
+
+- adding the title and legend
+
+- more adjusting of labels so that they avoid areas with dark fill colors
+
+- CMYK vs RGB color spaces
+
+- creating an action to save to PDF
 
 ## Caveats
 
-- SVG Crowbar saves your file with an RGB colorspace, if you'll be sending your file for offset printing, then you'll have to manually convert the document and colors to CMYK.
+- SVG Crowbar saves your file with an RGB colorspace, if you'll be sending your file for offset printing, then you'll have to manually convert the document and colors to the CMYK colorspace.
 
 - limitations of using D3JS for creating print maps
 
