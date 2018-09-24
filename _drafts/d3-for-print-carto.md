@@ -139,25 +139,37 @@ Now when the D3 renders our map, it will be cropped to our desired extent.
 Overall the goal in prepping our map SVG is getting things "good enough" knowing that any fine tuning can be done in Illustrator, for example adjusting the placement of labels for cities and counties. The next section will cover what happens in Illustrator.
 
 ## Editing in Adobe Illustrator
-This section will cover the workflow I developed in Illustrator.
+Now that we've prepped our SVG with D3 for importing into Illustrator and exported our SVG from the browser to a local file using `SVG Crowbar`, it's time to open it in Illustrator. Here's what a sample exported SVG looks like when opening it:
 
-Now that we've prepped our SVG for importing into Illustrator and exported our SVG from the browser to a local file using SVG Crowbar, it's time to open it in Illustrator.
+![sample svg map opened in illustrator]()
 
-- what exported svg looks like when opening in AI
+Looks fairly similar to our map in the browser right? Notice that if you click on it it's one giant group of nested elements. Here's what the Layers panel looks like:
 
-- creating a template .ait file with layer names, graphic styles, character styles, swatches, symbols, etc.
+![screenshot of layers panel]()
 
-- touching up: roads, layer order, label placement, anything else (e.g. county boundaries)
+You can see that our entire SVG is nested under "Layer 1", and that each of our map layers are nested in named groups, thanks to the `id` attributes we created with D3. This means we can select each of these groups and drag them into individual named layers, and then un-group them to make any post SVG export editing easier. You might be asking, "why not just leave the SVG groups in place and edit them there?" Well if you've ever tried to edit a "grouped anything" in Illustrator you'll know that you need to use the direct selection tool and that it can become tedious work fairly quickly. I find that it's much easier to edit my map features when they've been separated into different layers as shown below:
 
-- creating a new `.ai` file from the template for each of our maps, and copying and pasting the layer(s) we need from the corresponding SVG into the new file. Checking "Paste Remember Layers" in the Layers window (or not?) Remember to save often!
+![screenshot of layers panel with map layers]()
 
-- adding the title and legend
+Now it might make sense to do this un-grouping and moving to separate layers for one or two maps, but if you're rendering a bunch of maps you probably don't want to do this each time. For my project I was rendering the same geographic area, but with a different data overlay (choropleth visualization at the census tract level), so I decided to create a _template_ (`.ait`) file that I could reuse for each of my maps. This is a technique used frequently by cartographers when working in Illustrator when they want to keep a common look and feel for a set of maps. In a template we can define layer names, graphic styles, character styles, swatches, symbols, etc., so that there is consistency among all our maps. In this case I created a template that had all of my base map layers and labels in place, here's what it looks like below:  
 
-- more adjusting of labels so that they avoid areas with dark fill colors
+![screenshot of map template]()
 
-- CMYK vs RGB color spaces
+I used this template for each of the maps I created in Illustrator. This is done by first creating a new file from the template file (opening a `template.ait` file will default to an `untitled.ai` file). Then I grab just the tracts / choropleth group from the SVG file, and place that group in the appropriate layer in my new map file. This makes the process of creating lots of maps go much faster as you don't have to mess with all the other layers, styling, labeling, etc.
 
-- creating an action to save to PDF
+Another benefit of using a template to create your maps is that if you need to do any touch up work that is shared between all maps you can do it in one place. For my template I touched up roads, my layer ordering, label placement, and a couple county boundaries that I forgot to render in D3. The only downside to this workflow is that when you change something in your template, you'll need to recreate each of your maps again, but this typically goes much smoother after you already have everything neatly separated into layers. An important tip is to remember to check "Paste Remember Layers" in the Layers panel options. That way when you copy and paste a set of map features from one file into another, it will be pasted into the correct layer.
+
+Other adjustments I made with my maps in Illustrator were as follows:
+
+  - Adding a title and legend
+
+  - Adjusting of place name labels as needed for each map so that they avoid overlap with areas that have dark fill colors
+
+  - Converting the file to a CMYK color space
+
+  - Creating an action to automate exporting to PDF
+
+The last part was important as I wanted to deliver the maps as PDF files, not Illustrator files. In the PDF settings I typically choose "Press Quality" for the quality setting. After I have this "save to pdf" action defined I then open all my `.ai` map files and run the action, which will save the file in a directory of my choosing (I typically keep `.pdf` and `.ai` files separate from one another to avoid accidentally editing the `.pdf` files), and then close the file for me so that I'm not tempted to mess with it after it's been saved to a PDF.
 
 ## Caveats
 
