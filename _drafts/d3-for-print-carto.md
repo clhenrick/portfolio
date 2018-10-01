@@ -2,7 +2,7 @@
 title: D3JS for Print Cartography
 layout: page
 date: 2018-09-17
-teaser: "Towards a D3 Web to Print Cartography Workflow"
+teaser: "Towards a D3JS Web to Print Cartography Workflow"
 header: no
 comments: true
 tags:
@@ -178,10 +178,12 @@ There are some drawbacks to this approach, of course, and I wouldn't recommend i
 
 - Most obviously, you'll need to be somewhat familiar with or comfortable learning D3JS, which initially comes with a steep learning curve, especially if you're not familiar with Javascript, CSS, and web standards such as SVG and asynchronous operations.
 
-- That being said, there are plenty of resources to learn from, many of them free. D3's blocks, are the way most examples are shared and Blockbuilder.org makes searching and "forking" (e.g. modifying) them more convenient. There's the D3JS Slack community where you can ask people questions when you run into trouble. If you're someone who likes to learn from tutorials or books, there are lots of online tutorials such as those by Curran Keller and d3Noobe. The two books I recommend are Scott Murray's if you're a total beginner, and Elijah Meek's if you are looking to go beyond the basics.
+- That being said, there are plenty of resources to learn from, many of them free. [D3's blocks](https://bl.ocks.org), are the way most examples are shared and [Blockbuilder](http://blockbuilder.org) makes searching and "forking" (e.g. modifying) examples more convenient. There's the [D3JS Slack community](https://d3-slackin.herokuapp.com/) where you can ask people questions when you run into trouble. If you're someone who likes to learn from tutorials or books, there is also plenty of free online material. [Curran Keller](https://curran.github.io/dataviz-course-2018/) and [Malcom Maclean](https://leanpub.com/D3-Tips-and-Tricks) both have terrific and helpful resources. The two books I recommend are Scott Murray's [Interactive Data Visualization for the Web](http://alignedleft.com/work/d3-book-2e) if you're a total beginner, and Elijah Meeks' [D3JS In Action](https://www.manning.com/books/d3js-in-action-second-edition) if you are looking to go beyond the basics.
 
 - Once you have your map exported as SVG, it's effectively static, meaning that you lose all geospatial attributes. Creating maps with desktop GIS software definitely has an advantage here, as you can update your data at any point and apply the same styles.
 
 - SVG Crowbar saves your file with an RGB colorspace, if you'll be sending your file for offset printing, then you'll have to manually convert the document and colors to the CMYK colorspace.
 
-- If you are planning on creating many, many graphics for print you probably don't want to use a manual process like SVG Crowbar. In this case you may want to look at using Headless Chrome, a tool that lets you use the Chrome web browser programmatically from the command line or via Javascript.
+- If you are planning on creating many, many graphics for print you probably don't want to use a manual process like SVG Crowbar. In this case you may want to look at using [Headless Chrome](https://developers.google.com/web/updates/2017/04/headless-chrome), a tool that lets you use the Chrome web browser programmatically from the command line or via NodeJS.
+
+Happy map making with D3JS! If you found any of this useful or have any suggestions, clarifications, or questions please feel free to reach out to me via [the contact form]({{ site.url }}{{ site.baseurl }}/contact) on this site.
