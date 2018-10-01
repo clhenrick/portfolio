@@ -139,25 +139,27 @@ Now when the D3 renders our map, it will be cropped to our desired extent.
 Overall the goal in prepping our map SVG is getting things "good enough" knowing that any fine tuning can be done in Illustrator, for example adjusting the placement of labels for cities and counties. The next section will cover what happens in Illustrator.
 
 ## Editing in Adobe Illustrator
-Now that we've prepped our SVG with D3 for importing into Illustrator and exported our SVG from the browser to a local file using `SVG Crowbar`, it's time to open it in Illustrator. Here's what a sample exported SVG looks like when opening it:
+Now that we've prepped our SVG with D3 for importing into Illustrator and exported our SVG from the browser to a local file using SVG Crowbar, it's time to open it in Illustrator. Here's what a sample exported SVG looks like when opening it:
 
-![sample svg map opened in illustrator]()
+![sample svg map opened in illustrator]({{site.urlimg}}d3-print-ai-svg-in-ai.png)
 
 Looks fairly similar to our map in the browser right? Notice that if you click on it it's one giant group of nested elements. Here's what the Layers panel looks like:
 
-![screenshot of layers panel]()
+![screenshot of layers panel]({{site.urlimg}}d3-print-ai-layers-panel.png)
 
 You can see that our entire SVG is nested under "Layer 1", and that each of our map layers are nested in named groups, thanks to the `id` attributes we created with D3. This means we can select each of these groups and drag them into individual named layers, and then un-group them to make any post SVG export editing easier. You might be asking, "why not just leave the SVG groups in place and edit them there?" Well if you've ever tried to edit a "grouped anything" in Illustrator you'll know that you need to use the direct selection tool and that it can become tedious work fairly quickly. I find that it's much easier to edit my map features when they've been separated into different layers as shown below:
 
-![screenshot of layers panel with map layers]()
+![screenshot of layers panel with map layers]({{site.urlimg}}d3-print-ai-layers-panels-map-layers.png)
 
-Now it might make sense to do this un-grouping and moving to separate layers for one or two maps, but if you're rendering a bunch of maps you probably don't want to do this each time. For my project I was rendering the same geographic area, but with a different data overlay (choropleth visualization at the census tract level), so I decided to create a _template_ (`.ait`) file that I could reuse for each of my maps. This is a technique used frequently by cartographers when working in Illustrator when they want to keep a common look and feel for a set of maps. In a template we can define layer names, graphic styles, character styles, swatches, symbols, etc., so that there is consistency among all our maps. In this case I created a template that had all of my base map layers and labels in place, here's what it looks like below:  
+Now it might make sense to do this whole un-grouping and moving to separate layers process for one or two maps, but if you're rendering a bunch of maps you probably don't want to do this each time. For my project I was rendering the same geographic area, but with a different data overlay (choropleth visualization at the census tract level), so I decided to create a _template_ (`.ait`) file that I could reuse for each of my maps. This is a technique used frequently by cartographers when working in Illustrator when they want to keep a common look and feel for a set of maps. In a template we can define layer names, graphic styles, character styles, swatches, symbols, etc., so that there is consistency among all our maps. In this case I created a template that had all of my base map layers and labels in place, here's what it looks like below:  
 
-![screenshot of map template]()
+![screenshot of map template]({{site.urlimg}}d3-print-ai-map-template.png)
 
-I used this template for each of the maps I created in Illustrator. This is done by first creating a new file from the template file (opening a `template.ait` file will default to an `untitled.ai` file). Then I grab just the tracts / choropleth group from the SVG file, and place that group in the appropriate layer in my new map file. This makes the process of creating lots of maps go much faster as you don't have to mess with all the other layers, styling, labeling, etc.
+I used this template for each of the maps I created in Illustrator. This is done by first creating a new file from the template file (opening a `template.ait` file will default to an `untitled.ai` file). Then I grab just the tracts / choropleth group from the SVG file, and place that group in the appropriate layer in my new map file. This makes the process of creating lots of maps go much faster as you don't have to mess with all the other layers, styling, labeling, etc. Here is what a final map looks like, after creating a new file from a template and copying over just the tracts layer from an SVG file:
 
-Another benefit of using a template to create your maps is that if you need to do any touch up work that is shared between all maps you can do it in one place. For my template I touched up roads, my layer ordering, label placement, and a couple county boundaries that I forgot to render in D3. The only downside to this workflow is that when you change something in your template, you'll need to recreate each of your maps again, but this typically goes much smoother after you already have everything neatly separated into layers. An important tip is to remember to check "Paste Remember Layers" in the Layers panel options. That way when you copy and paste a set of map features from one file into another, it will be pasted into the correct layer.
+![screenshot of finished map]({{site.urlimg}}d3-print-ai-final-map.png)
+
+Another benefit of using a template to create your maps is that if you need to do any touch up work that is shared between all maps you can do it in one place, as it really wouldn't make sense to try to copy edits from one file to a dozen others. For my template I touched up roads, my layer ordering, label placement, and a couple county boundaries that I forgot to render in D3. The only downside to this workflow is that when you change something in your template, you'll need to recreate each of your maps again, but this typically goes much smoother and fairly quickly after you already have everything neatly separated into layers. An important tip is to remember to check "Paste Remember Layers" in the Layers panel options. That way when you copy and paste a set of map features from one file into another, it will be pasted into the correct layer.
 
 Other adjustments I made with my maps in Illustrator were as follows:
 
@@ -172,13 +174,14 @@ Other adjustments I made with my maps in Illustrator were as follows:
 The last part was important as I wanted to deliver the maps as PDF files, not Illustrator files. In the PDF settings I typically choose "Press Quality" for the quality setting. After I have this "save to pdf" action defined I then open all my `.ai` map files and run the action, which will save the file in a directory of my choosing (I typically keep `.pdf` and `.ai` files separate from one another to avoid accidentally editing the `.pdf` files), and then close the file for me so that I'm not tempted to mess with it after it's been saved to a PDF.
 
 ## Caveats
+There are some drawbacks to this approach, of course, and I wouldn't recommend it for every project. Here's a short list of things to keep in mind when using this approach.
+
+- Most obviously, you'll need to be somewhat familiar with or comfortable learning D3JS, which initially comes with a steep learning curve, especially if you're not familiar with Javascript, CSS, and web standards such as SVG and asynchronous operations.
+
+- That being said, there are plenty of resources to learn from, many of them free. D3's blocks, are the way most examples are shared and Blockbuilder.org makes searching and "forking" (e.g. modifying) them more convenient. There's the D3JS Slack community where you can ask people questions when you run into trouble. If you're someone who likes to learn from tutorials or books, there are lots of online tutorials such as those by Curran Keller and d3Noobe. The two books I recommend are Scott Murray's if you're a total beginner, and Elijah Meek's if you are looking to go beyond the basics.
+
+- Once you have your map exported as SVG, it's effectively static, meaning that you lose all geospatial attributes. Creating maps with desktop GIS software definitely has an advantage here, as you can update your data at any point and apply the same styles.
 
 - SVG Crowbar saves your file with an RGB colorspace, if you'll be sending your file for offset printing, then you'll have to manually convert the document and colors to the CMYK colorspace.
 
-- limitations of using D3JS for creating print maps
-
-- most obviously, you'll need to know or learn how to use D3JS, which initially comes with a steep learning curve, especially if you're not familiar with vanilla Javascript, CSS, and web standards such as SVG and asynchronous operations.
-
-- once you have your map exported as SVG, it's effectively static, meaning that you lose all geospatial attributes. Creating maps with desktop GIS software definitely has an advantage here, as you can update your data at any point and apply the same styles.
-
-- that being said, there are plenty of resources to learn from, many of them free. D3's blocks, are the way most examples are shared and Blockbuilder.org makes searching and "forking" (e.g. modifying) them more convenient. There's the D3JS Slack community where you can ask people questions when you run into trouble. If you're someone who likes to learn from tutorials or books, there are lots of online tutorials such as those by Curran Keller and d3Noobe. The two books I recommend are Scott Murray's if you're a total beginner, and Elijah Meek's if you are looking to go beyond the basics.
+- If you are planning on creating many, many graphics for print you probably don't want to use a manual process like SVG Crowbar. In this case you may want to look at using Headless Chrome, a tool that lets you use the Chrome web browser programmatically from the command line or via Javascript.
