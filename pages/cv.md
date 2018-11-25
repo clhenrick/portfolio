@@ -12,12 +12,23 @@ header: no
 ## Professional Experience
 -----
 
-### MapD
-**Data Visualization Engineer**  
-*December, 2017 – Present*  
+### Google
+**UX Engineer: Data Visualization**
+*September, 2018 – Present*
 San Francisco, CA
 
-Currently a Data Visualization Engineer at [MapD](https://www.mapd.com/), a big data analytics company, working on [MapD Immerse](https://www.mapd.com/demos/), a visualization and analytics platform, as well as its related open-source libraries: [mapd-connector](https://github.com/mapd/mapd-connector), [mapd-charting](https://github.com/mapd/mapd-charting), [mapd-crossfilter](https://github.com/mapd/mapd-crossfilter), and [mapd3](https://github.com/mapd/mapd3).
+User Experience Engineer focusing on data visualization for [Google Cloud Platform](https://cloud.google.com/) and other product areas at Google. Collaborating with UX and Visual Designers, UX Researchers, Software Engineers, and others to develop internal and external data visualization software for creating highly functional and complex visualizations.
+
+### OmniSci
+**Data Visualization Engineer**  
+*December, 2017 – September, 2018*
+San Francisco, CA
+
+Data Visualization Engineer at [OmniSci](https://www.omnisci.com/) (formerly MapD), a big data analytics software company. Contributed software development to [OmniSci Immerse](https://www.omnisci.com/platform/immerse/), a data visualization and analytics platform, as well as related open-source libraries:
+- [mapd-connector](https://github.com/omnisci/mapd-connector)
+- [mapd-charting](https://github.com/omnisci/mapd-charting)
+- [mapd-crossfilter](https://github.com/omnisci/mapd-crossfilter)
+- [mapd3](https://github.com/omnisci/mapd3)
 
 ### University of California, Berkeley
 **Lecturer**  
