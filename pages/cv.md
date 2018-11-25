@@ -13,15 +13,15 @@ header: no
 -----
 
 ### Google
-**UX Engineer: Data Visualization**
-*September, 2018 – Present*
+**UX Engineer: Data Visualization**  
+*September, 2018 – Present*  
 San Francisco, CA
 
 User Experience Engineer focusing on data visualization for [Google Cloud Platform](https://cloud.google.com/) and other product areas at Google. Collaborating with UX and Visual Designers, UX Researchers, Software Engineers, and others to develop internal and external data visualization software for creating highly functional and complex visualizations.
 
 ### OmniSci
 **Data Visualization Engineer**  
-*December, 2017 – September, 2018*
+*December, 2017 – September, 2018*  
 San Francisco, CA
 
 Data Visualization Engineer at [OmniSci](https://www.omnisci.com/) (formerly MapD), a big data analytics software company. Contributed software development to [OmniSci Immerse](https://www.omnisci.com/platform/immerse/), a data visualization and analytics platform, as well as related open-source libraries:
