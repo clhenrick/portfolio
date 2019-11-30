@@ -37,6 +37,8 @@ I ended up deciding to use a combination of the [requestAnimationFrame API](#), 
 
 **_Pssst!_** _If you'd like to skip to the final code, check out [the demo on codesandbox.io](https://codesandbox.io/s/react-d3-animation-with-hooks-wz8cl)._
 
+### SVG Zoom Transforms and Interpolation
+
 I want to start off by saying that `d3-interpolate` is such a handy module. It allows for you to interpolate not just numbers, but colors, strings, arrays, objects, and dates! Take a look at the [d3-interpolate documentation on ObservableHQ](https://observablehq.com/collection/@d3/d3-interpolate) for plenty of examples and explanations of how the various interpolators work.
 
 While I'm using `d3.interpolateZoom` for this tutorial, there are also interpolators for both SVG and CSS transform strings. The benefit of using `d3.interpolateZoom` over these other interpolators is that it uses an algorithm for smooth zooming and panning developed by [Jarke van Wijk and Wim Nuij](http://www.win.tue.nl/~vanwijk/zoompan.pdf).
@@ -52,7 +54,7 @@ Say we have the following SVG graphic:
 Image credit: [ObservableHQ](https://observablehq.com/@d3/d3-interpolatezoom?collection=@d3/d3-interpolate) under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)
 </small>
 
-We could represent the center position and size of the circle as `[30, 30, 40]` and the star as `[135, 85, 60]`. The `size` is defined either by the object's width or height, which ever is greater. We'll refer to the first array for the circle as the "start" position and the second array for the star as the "end" position.
+We can represent the center position and size of the circle as `[30, 30, 40]` and the star as `[135, 85, 60]`. The `size` is defined either by the object's width or height, which ever is greater. We'll refer to the first array for the circle as the "start" position and the second array for the star as the "end" position.
 
 In order to apply the SVG transformation we need to do a little math. First we need to figure out how much to scale the SVG. The dimensions of our SVG are `260` pixels wide by `190` pixels high. To get the scale value `k`, we simply use the following calcuation:
 
@@ -92,16 +94,34 @@ Of course we don't apply this transformation to the SVG element itself, we apply
 
 _Note: we actually won't apply the transform string manually like above, we'll be letting React do this for us._
 
-We use the same math for our star shape to get it's `k` and `translate` values. Now that we have both our starting and ending arrays, we can construct our zoom interpolator!
+And here is what our SVG ends up looking like after applying the `transform`:
+
+![svg zoomed in on circle shape]({{site.urlimg}}d3-interpolatezoom-circle.png)
+<small>
+Image credit: [ObservableHQ](https://observablehq.com/@d3/d3-interpolatezoom?collection=@d3/d3-interpolate) under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)
+</small>
+
+We use the same math for our star shape to get its `k` and `translate` values. When applied to the SVG it will end up looking like this:
+
+![svg zoomed in on star shape]({{site.urlimg}}d3-interpolatezoom-star.png)
+<small>
+Image credit: [ObservableHQ](https://observablehq.com/@d3/d3-interpolatezoom?collection=@d3/d3-interpolate) under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)
+</small>
+
+Cool, so we now know how to use some math to apply a "zoom" transform to either of the two objects in our SVG element! That's great, but what about the inbetween states where we are zooming from one element to the other?
+
+Because we have the center and size values for both our starting and ending zoom positions, we can construct our zoom interpolator as follows:
 
 {% highlight js %}
+const start = [30, 30, 40]; // cx, cy, size
+const end = [135, 85, 60]; // cx, cy, size
 const zoomInterpolator = d3.interpolateZoom(start, end)
 {% endhighlight %}
 
-Now, using this zoom interpolator from D3JS and our math from above, we may create a function that given a value `t` between 0 – 1, will return our SVG transform string:
+Using this zoom interpolator from D3JS with the math from above, we may create a function that given a value `t` (between `0` and `1`), will return an SVG transform string for the transition zooms between our start and end points, inclusive:
 
 {% highlight js %}
-function transform(t) {
+function getTransformStr(t) {
 const view = interpolator(t);
 const k = Math.min(width, height) / view[2]; // scale
 const translate = [width / 2 - view[0] _ k, height / 2 - view[1] _ k]; // translate
@@ -110,7 +130,11 @@ return `translate(${translate}) scale(${k})`;
 }
 {% endhighlight %}
 
-This powerful `transform` function will come in handy later when when using React's `useEffect()` hook.
+In other words, when the `getTransformStr` function above recieves a value of zero, it will return the same SVG `transform` string for our circle as we calculated by hand above, and ditto for the star. Anything inbetween zero and one will return a transitional `transform` string that has been computed by `d3.interpolateZoom`'s algorithm.
+
+This `getTransformStr` function will come in handy later when when using React's `useEffect()` hook to animate our SVG. Let's move on to how to apply this function in conjunction with the browser's `requestAnimationFrame API`.
+
+### Applying requestAnimationFrame
 
 ---
 
@@ -119,5 +143,7 @@ This powerful `transform` function will come in handy later when when using Reac
 {% endhighlight %}
 
 [demo here](https://codesandbox.io/s/react-d3-animation-with-hooks-wz8cl)
+
+[smooth zooming demo by bostock](https://observablehq.com/@d3/smooth-zooming?collection=@d3/d3-interpolate)
 
 One important part of this animation is that it had to be triggered programatically, I wanted the vis to wait to animate until the user scrolled to a certain part of the page.
