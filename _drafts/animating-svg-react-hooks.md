@@ -13,6 +13,12 @@ tags:
   - Animation
 ---
 
+<style>
+    small {
+        font-size: 14px;
+    }
+</style>
+
 ## Intro
 
 Recently I've been trying out [React Hooks](https://reactjs.org/docs/hooks-overview.html), and had an opportunity to use them in a project to animate a data visualization rendered using SVG. The project I worked on called for a zoom in and out animation on one of the SVG's child elements, triggered by the browser's y scroll position.
