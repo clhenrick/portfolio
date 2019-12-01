@@ -61,8 +61,7 @@ In order to apply the SVG transformation we need to do a little math. First we n
 {% highlight js %}
 const width = 260;
 const height = 190;
-const start = [30, 30, 40]
-
+const start = [30, 30, 40];
 const k = Math.min(width, height) / start[2];
 // 4.75
 {% endhighlight %}
@@ -70,14 +69,14 @@ const k = Math.min(width, height) / start[2];
 So the value `4.75` is what we'll use for our `transform`'s `size` value. Now what about repositioning the SVG origin to re-center things? To do this we use some more math, which ends up looking like:
 
 {% highlight js %}
-const translate = [width / 2 - start[0] _ k, height / 2 - start[1] _ k]
+const translate = [width / 2 - start[0] * k, height / 2 - start[1] * k];
 // [-12.5, -47.5]
 {% endhighlight %}
 
 We may now use those values to creat our SVG transform string, which ends up being:
 
 {% highlight js %}
-const transformStart = `translate(${translate}) scale(${k})`
+const transformStart = `translate(${translate}) scale(${k})`;
 // "translate(-12.5, -47.5) scale(4.75)"
 {% endhighlight %}
 
@@ -85,14 +84,13 @@ Of course we don't apply this transformation to the SVG element itself, we apply
 
 {% highlight html %}
 <svg viewBox="-2 -2 264 194" style="max-width: 600px">
-<g id=view transform="translate(-12.5,-47.5) scale(4.75)">
-
-  <!-- more svg markup here -->
+  <g id=view transform="translate(-12.5,-47.5) scale(4.75)">
+    <!-- more svg markup here -->
   </g>
 </svg>
 {% endhighlight %}
 
-_Note: we actually won't apply the transform string manually like above, we'll be letting React do this for us._
+_Note: we actually won't apply the transform string manually like above, we'll let React do this for us._
 
 And here is what our SVG ends up looking like after applying the `transform`:
 
@@ -115,18 +113,17 @@ Because we have the center and size values for both our starting and ending zoom
 {% highlight js %}
 const start = [30, 30, 40]; // cx, cy, size
 const end = [135, 85, 60]; // cx, cy, size
-const zoomInterpolator = d3.interpolateZoom(start, end)
+const zoomInterpolator = d3.interpolateZoom(start, end);
 {% endhighlight %}
 
 Using this zoom interpolator from D3JS with the math from above, we may create a function that given a value `t` (between `0` and `1`), will return an SVG transform string for the transition zooms between our start and end points, inclusive:
 
 {% highlight js %}
 function getTransformStr(t) {
-const view = interpolator(t);
-const k = Math.min(width, height) / view[2]; // scale
-const translate = [width / 2 - view[0] _ k, height / 2 - view[1] _ k]; // translate
-
-return `translate(${translate}) scale(${k})`;
+  const view = interpolator(t);
+  const k = Math.min(width, height) / view[2]; // scale
+  const translate = [width / 2 - view[0] _ k, height / 2 - view[1] _ k]; // translate
+  return `translate(${translate}) scale(${k})`;
 }
 {% endhighlight %}
 
