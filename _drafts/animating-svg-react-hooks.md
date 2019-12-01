@@ -133,6 +133,59 @@ This `getTransformStr` function will come in handy later when when using React's
 
 ### Applying requestAnimationFrame
 
+Now that we have a function that handles the zoom interpolation for us, we need to apply it to create our animation. To accomplish this we'll be using the browser's [requestAnimationFrameAPI](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame). From the Mozilla documentation:
+
+> The `window.requestAnimationFrame()` method tells the browser that you wish to perform an animation and requests that the browser calls a specified function to update an animation before the next repaint. The method takes a callback as an argument to be invoked before the repaint.  
+Note: Your callback routine must itself call requestAnimationFrame() if you want to animate another frame at the next repaint.
+
+The general idea is that we'll pass a callback function to `requestAnimationFrame` that invokes our `getTransformStr` on each "tick" of the animation. We'll call this function `ticked` and it will accept a single argument, the current timestamp of the animation which is passed to it by `requestAnimationFrame`. We'll also want some mutable variables outside of the function that store the start time and current frame of the animation, and a constant variable that sets how long the animation should run for.
+
+{% highlight js %}
+
+let startTime;
+let frame;
+const duration = 1000;
+
+function ticked(timestamp) {
+  if (!startTime) startTime = timestamp;
+
+  const elapsed = timestamp - startTime;
+  const t = elapsed / duration;
+
+  if (elapsed < duration) {
+    // if the elapsed time is less than the duration, start or continue the animation
+    const transformStr = getTransformStr(t);
+    frame = requestAnimationFrame(ticked);
+  }
+};
+
+{% endhighlight %}
+
+Notice that within the `ticked()` function if the elapsed time is less than the total duration of the animation we calculate the value for `t` which is passed to `getTransformStr()`. We also update the value of the external variable `frame` which is returned by invoking `requestAnimationFrame()` with our `ticked()` function. We'll need the value of `frame` later in order to cancel the animation, say for instance if we no longer want to run it based on some user action.
+
+In order to start the animation we must invoke `requestAnimationFrame` with our `ticked` callback:
+
+{% highlight js %}
+
+// when the animation is ready to begin do:
+requestAnimationFrame(ticked);
+
+{% endhighlight %}
+
+If we want to stop the animation before it finishes running we call `cancelAnimationFrame` with the current value of `frame` like so:
+
+{% highlight js %}
+// cancel the animation by passing it the most recent value of `frame`
+cancelAnimationFrame(frame);
+{% endhighlight %}
+
+We'll add more to the `ticked` function later when we set up our `useEffect` hook in the next section, but this is the basic premise. On to applying the React hooks!
+
+### Enter React Hooks
+
+By now you hopefully have a decent understanding of how we are interpolating the zooming and panning between our two SVG shapes, and how this will be controlled by `requestAnimationFrame`. This next section will describe how these two concepts fit together with React's `useState` and `useEffect` hooks to "play" the animation.
+
+
 ---
 
 {% highlight js %}
