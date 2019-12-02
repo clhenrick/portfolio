@@ -306,15 +306,3 @@ That about sums up how React hooks are integrated to "play" the animation. You m
 You will most likely not want to create an endless animation such as this in real life, but I hope this walk through and demo code gives you enough to go on so that you can modify things to your liking or situation at hand. 
 
 Happy coding!
-
----
-
-{% highlight js %}
-
-{% endhighlight %}
-
-[demo here](https://codesandbox.io/s/react-d3-animation-with-hooks-wz8cl)
-
-[smooth zooming demo by bostock](https://observablehq.com/@d3/smooth-zooming?collection=@d3/d3-interpolate)
-
-One important part of this animation is that it had to be triggered programatically, I wanted the vis to wait to animate until the user scrolled to a certain part of the page.
