@@ -10,7 +10,7 @@ header: no
 ---
 
 ### Using D3JS for Print Cartography
-*NACIS Annual Meeting / Tacoma, WA / October 17, 2019
+*NACIS Annual Meeting / Tacoma, WA / October 17, 2019*
 
 D3JS, the popular data visualization Javascript library, is most frequently used for creating highly customized and even bespoke interactive and dynamic data visualizations for the web. However, D3JS may also be used to create well crafted, static graphics for print publication. In this talk, I'll share some tips and tricks I learned for integrating D3JS into a print cartography workflow with the vector editing software Adobe Illustrator. 
 
