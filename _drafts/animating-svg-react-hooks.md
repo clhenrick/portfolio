@@ -183,8 +183,129 @@ We'll add more to the `ticked` function later when we set up our `useEffect` hoo
 
 ### Enter React Hooks
 
-By now you hopefully have a decent understanding of how we are interpolating the zooming and panning between our two SVG shapes, and how this will be controlled by `requestAnimationFrame`. This next section will describe how these two concepts fit together with React's `useState` and `useEffect` hooks to "play" the animation.
+By now you hopefully have a decent understanding of how we are interpolating the zooming and panning between our two SVG shapes, and how this will be controlled by `requestAnimationFrame`. This next section will describe how these two concepts fit together with React's `useState` and `useEffect` hooks to "play" the animation. I won't go into the code for the entire demo, but will focus on the part that handles playing the animation.
 
+Because we're applying an SVG `transform` to the outer most / parent "g" element, we'll create a component called `ZoomContainer.jsx` that only renders this element and its children. It will receive props for the SVG's `width` and `height`, the `start` and `end` transform tuples, and any `children`.
+
+{% highlight jsx %}
+import * as React from "react";
+import * as d3 from "d3";
+
+const ZoomContainer = (props) => {
+  const {width, height, start, end, children} = props;
+
+  // we'll fix this next
+  let transformStr;
+
+  return (
+    <g id="zoom-container" transform={transformStr}>
+      {children}
+    </g>
+  );
+}
+
+export default ZoomContainer;
+
+{% endhighlight %}
+
+So far we are:
+
+1. passing our SVG transform string to the "g" element's `transform` attribute, and
+2. passing down any React child components as children of the "g" element.
+
+Simple enough!
+
+Time for some hooks. First we'll create a `useState` hook for setting and getting the transform string. We'll provide it a default value of the "identity transform" which is equivalent to no transform at all.
+
+{% highlight js %}
+
+// within the body of ZoomContainer
+
+// state that handles setting the svg transform attribute string
+// initially set to an "identity transform", or no transform.
+const [transformStr, setTransformStr] = React.useState(
+  "translate(0, 0) scale(1)"
+);
+
+{% endhighlight %}
+
+We'll create a second `useState` hook to get and set a variable for reversing the animation. We'll be mimicing the original `interpolateZoom` demo from the D3JS docs on ObservableHQ which zooms to one shape, then back the other shape, then back to the first shape, in an endless loop. Thus we'll want a boolean value we can flip to tell the animation to run in reverse once it has finished zooming into a shape.
+
+{% highlight js %}
+// state that will replay the animation in reverse
+const [forward, setForward] = React.useState(true);
+{% endhighlight %}
+
+The last variable we'll need is one that stores a reference to our zoom interpolator. We'll add this by passing `d3.interpolateZoom` the `start` and `end` props of our `ZoomContainer` component.
+
+{% highlight js %}
+// interpolator that will interpolate between the start and end zooms
+const interpolator = d3.interpolateZoom(start, end);
+{% endhighlight %}
+
+Now we'll write the `useEffect` hook. This will be a longer block of code, but much of it we have already covered in the previous sections.
+
+{% highlight jsx %}
+
+React.useEffect(() => {
+  let startTime;
+  let frame;
+  const duration = 3000;
+
+  // returns a proper SVG transform attribute string
+  const getTransformStr = t => {
+    const view = interpolator(t);
+    const k = Math.min(width, height) / view[2];
+    const translate = [
+      width / 2 - view[0] * k,
+      height / 2 - view[1] * k
+    ];
+    return `translate(${translate}) scale(${k})`;
+  };
+
+  // the callback function used with requestAnimationFrame
+  const ticked = timestamp => {
+    if (!startTime) startTime = timestamp;
+    const elapsed = timestamp - startTime;
+    const t = elapsed / duration;
+
+    if (elapsed < duration) {
+      // if the elapsed time is less than the duration,
+      // start or continue the animation
+      const transformStr = forward
+        ? getTransformStr(t)
+        : getTransformStr(1 - t);
+      setTransformStr(transformStr);
+      frame = window.requestAnimationFrame(ticked);
+    } else {
+      // otherwise restart the animation in reverse,
+      // but wait a second so we don't have a seizure!
+      setTimeout(() => {
+        setForward(!forward);
+      }, 1000);
+    }
+  };
+
+  window.requestAnimationFrame(ticked);
+
+  // if the component unmounts, stop the animation
+  return () => window.cancelAnimationFrame(frame);
+}, [forward]);
+// ☝️ only fire the effect again when the value of `forward` changes
+
+{% endhighlight %}
+
+Notice that within the `useEffect` hook that we are utilizing our `getTransformStr` function which handles the SVG `transfrom` interpolation and also are using our `ticked` function with `requestAnimationFrame` from earlier. 
+
+We've modified the `ticked` function so that it updates the value of our SVG transform string (`transformStr`) on each "tick" of the animation by calling the `getTransformStr()` function from our `useState` hook. This is important as each time this state is updated, the component will re-render. If the `forward` boolean is set to `false`, then the animation will run in reverse by passing `1 - t` to `getTransformStr` instead of `t`. This process will continue at about sixty frames per second until the elapsed amount of time exceeds the allotted duration. When that happens we'll flip the `forward` boolean via `setForward` from the other `useState` hook, which will also cause a re-render. 
+
+If the component should ever un-mount, we will invoke `cancelAnimationFrame()` with the value of the current `frame` to clean things up. Finally, we pass in `forward` in the arguments array to `useEffect` which tells React to only fire the effect when the value of `forward` changes. Phew!
+
+That about sums up how React hooks are integrated to "play" the animation. You may find the [complete demo on Codesandbox.io](https://codesandbox.io/s/react-d3-animation-with-hooks-wz8cl). 
+
+You will most likely not want to create an endless animation such as this in real life, but I hope this walk through and demo code gives you enough to go on so that you can modify things to your liking or situation at hand. 
+
+Happy coding!
 
 ---
 
