@@ -25,25 +25,25 @@ Recently I've been trying out [React Hooks](https://reactjs.org/docs/hooks-overv
 
 In this project I used a combination of [D3JS](https://d3js.org/) and React for creating the data visualizations. I decided on taking the approach of only using D3 for non-DOM mutation tasks such as generating complex [SVG path commands](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d) from GeoJSON, then handing those off to a React component for rendering the SVG Path to the DOM.
 
-An alternative approach to combining D3 and React is to use a combination of [d3-selection](#) and React's [ref](https://reactjs.org/docs/refs-and-the-dom.html) utility to allow D3 to render the part of the DOM which contains the visualization (aside: this is the approach I typically take when using [LeafletJS](https://leafletjs.com/) with React). The benefit of this approach is that if you already know D3JS, you can continue developing similar to how you normally would without React. However, some in the data visualization developer community believe that this approach should generally be avoided as it 1. means having two different libraries handle DOM updates and therefore introduces more code complexity, and 2. this forgoes React's diffing algorithm which helps make DOM updates fast (Amelia Wattenberger ran [some benchmarking tests](https://twitter.com/Wattenberger/status/1123413424678027265) that seem to show React is faster at updating the DOM than D3).
+An alternative approach to combining D3 and React is to use a combination of [d3-selection](https://github.com/d3/d3-selection) and React's [ref](https://reactjs.org/docs/refs-and-the-dom.html) utility to allow D3 to render the part of the DOM which contains the visualization (aside: this is the approach I typically take when using [LeafletJS](https://leafletjs.com/) with React). The benefit of this approach is that if you already know D3JS, you can continue developing similar to how you normally would without React. However, some in the data visualization developer community believe that this approach should generally be avoided as it 1. means having two different libraries handle DOM updates and therefore introduces more code complexity, and 2. this forgoes React's diffing algorithm which helps make DOM updates fast (Amelia Wattenberger ran [some benchmarking tests](https://twitter.com/Wattenberger/status/1123413424678027265) that seem to show React is faster at updating the DOM than D3).
 
 There has been a lot written on the subject of various methods of combining React and D3, which I won't go into in this post any further. If you're interested in learning more I encourage you to take a look at the writings and presentations of data vis folks such as [Shirley Wu](http://slides.com/shirleywu/deck#/4), [Amelia Wattenberger](https://wattenberger.com/blog/react-and-d3), and [Thibaut Tiberghien](https://medium.com/@tibotiber/react-d3-js-balancing-performance-developer-experience-4da35f912484).
 
-Anyway, the trade off I ran into with using the first approach is that I lost D3's magical animation capabilities (referred to as "transitions") that belong to the [d3-transition](#) module. In order to animate (or transition) part of the DOM with D3, you need to `select` it, which you can't do without using `d3-selection`. So the question then became, how would I create this animation?
+One trade off, which became the subject of this blog post, that I ran into with using the first approach is that I lost D3's magical animation capabilities (referred to as "transitions" in D3JS) that belong to the [d3-transition](https://github.com/d3/d3-transition) module. In order to animate (or transition) part of the DOM with D3, you need to `select` it, which you can't do without using `d3-selection`. So the question then became, how would I create this animation?
 
 ## The Solution
 
-I ended up deciding to use a combination of the [requestAnimationFrame API](#), React's `useState` and `useEffect` hooks, and D3's `interpolateZoom` method. This ended up working quite nicely, and I was pleased with the results. Unfortunately due to the confidentiality of the project, I can't show the actual source code here, so instead I've ported the demo from the [d3.interpolateZoom documentation on Observable.com](https://observablehq.com/@d3/d3-interpolatezoom?collection=@d3/d3-interpolate) written by [Philippe Rivière](https://twitter.com/recifs) (thank you Philippe!) to React in order to demonstrate the technique.
+I ended up deciding to use a combination of the [requestAnimationFrame API](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame), React's `useState` and `useEffect` hooks, and D3's [interpolateZoom](https://github.com/d3/d3-interpolate/blob/master/README.md#interpolateZoom) method. This ended up working quite nicely, and I was pleased with the results. Unfortunately due to the confidentiality of the project, I can't show the source code here, so instead I've ported the demo from the [d3.interpolateZoom documentation on Observable.com](https://observablehq.com/@d3/d3-interpolatezoom?collection=@d3/d3-interpolate) written by [Philippe Rivière](https://twitter.com/recifs) (thank you Philippe!) to React in order to demonstrate the technique.
 
 **_Pssst!_** _If you'd like to skip to the final code, check out [the demo on codesandbox.io](https://codesandbox.io/s/react-d3-animation-with-hooks-wz8cl)._
 
 ### SVG Zoom Transforms and Interpolation
 
-I want to start off by saying that `d3-interpolate` is such a handy module. It allows for you to interpolate not just numbers, but colors, strings, arrays, objects, and dates! Take a look at the [d3-interpolate documentation on ObservableHQ](https://observablehq.com/collection/@d3/d3-interpolate) for plenty of examples and explanations of how the various interpolators work.
+I want to start off with an aside and say that `d3-interpolate` is such a handy module. It enables you to interpolate not just numbers, but colors, strings, arrays, objects, and dates! Take a look at the [d3-interpolate documentation on ObservableHQ](https://observablehq.com/collection/@d3/d3-interpolate) for plenty of examples and explanations of how the various interpolators work. And if the word "interpolator" or "interpolation" is just foreign tech jargon to you, then I would recommend reading the [d3-interpolate notebook on Observable](https://observablehq.com/@d3/d3-interpolate?collection=@d3/d3-interpolate) for a good introduction to the concept in the context of D3JS.
 
 While I'm using `d3.interpolateZoom` for this tutorial, D3JS also has interpolators for both SVG and CSS transform strings. The benefit of using `d3.interpolateZoom` over these other interpolators is that it uses an algorithm for smooth zooming and panning developed by [Jarke van Wijk and Wim Nuij](http://www.win.tue.nl/~vanwijk/zoompan.pdf). Check out the [smooth zooming demo by Mike Bostock](https://observablehq.com/@d3/smooth-zooming?collection=@d3/d3-interpolate) for a good stand alone example of using `d3.interpolateZoom`.
 
-Okay so the first thing to know about `d3.interpolateZoom` is that similar to other `d3-interpolate` methods in that given two arguments, starting and ending transform values, it will return an interpolator function. Both the start and end values are expected to be tuples consisting of three numbers. The first two numbers represent the center of the transform's `x` and `y` coordinates, while the third number represents the `size` or scale of the transform. The interpolator function that is returned will accept a single value, `t`, which is expected to be a value between zero to one, inclusive. Zero will return the start transform, and one will return the end transform. Any value between these will be an interpolated transform between the start and end, with `0.5` being the middle point.
+The first thing to know about `d3.interpolateZoom` is that similar to other `d3-interpolate` methods, when given two arguments, in this case starting and ending transform values, it will return an interpolator function. Both the start and end values are expected to be tuples consisting of three numbers. The first two numbers represent the center of the transform's `x` and `y` coordinates, while the third number represents the `size` or scale of the transform. The interpolator function that is returned will accept a single value, `t`, which is expected to be a value between zero to one, inclusive. Passing a value of zero to the interpolator function will return the start transform, and passing a value of one will return the end transform. Any value between these will be an interpolated transform between the start and end transforms. Passing the interpolator function a value of `0.5` for example would return a transform representing the middle point between the start and end transforms.
 
 Phew! If that was a lot to take in don't sweat it, things should become more clear after we dig into it some more.
 
@@ -54,9 +54,9 @@ Say we have the following SVG graphic:
 Image credit: [ObservableHQ](https://observablehq.com/@d3/d3-interpolatezoom?collection=@d3/d3-interpolate) under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)
 </small>
 
-We can represent the center position and size of the circle as `[30, 30, 40]` and the star as `[135, 85, 60]`. The `size` is defined either by the object's width or height, whichever is greater. We'll refer to the first array for the circle as the "start" position and the second array for the star as the "end" position.
+We can represent the center position and size of the circle as `[30, 30, 40]` and the star as `[135, 85, 60]`. Remember the first two values, `x` and `y`, represent the center of the transform. The third value, `size`, is defined either by the object's width or height, whichever is greater. We'll refer to the first array for the circle as the "start" position and the second array for the star as the "end" position.
 
-In order to apply the SVG transformation we need to do a little math. First we need to figure out how much to scale the SVG. The dimensions of our SVG are `260` pixels wide by `190` pixels high. To get the scale value `k`, we simply use the following calculation:
+In order to apply the SVG transformation we need to do a little math. First we need to figure out how much to scale the SVG. The dimensions of our SVG are `260` pixels wide by `190` pixels high. To get the scale value `k`, we use the following calculation:
 
 {% highlight js %}
 const width = 260;
@@ -90,7 +90,7 @@ Of course we don't apply this transformation to the SVG element itself, we apply
 </svg>
 {% endhighlight %}
 
-_Note: we actually won't apply the transform string manually like above, we'll let React do this for us._
+_Note: we actually won't apply the transform string manually like above, we'll eventually let React do this for us._
 
 And here is what our SVG ends up looking like after applying the `transform`:
 
@@ -144,7 +144,7 @@ The general idea is that we'll pass a callback function to `requestAnimationFram
 
 let startTime;
 let frame;
-const duration = 1000;
+const duration = 1000; // milliseconds
 
 function ticked(timestamp) {
   if (!startTime) startTime = timestamp;
@@ -153,7 +153,7 @@ function ticked(timestamp) {
   const t = elapsed / duration;
 
   if (elapsed < duration) {
-    // if the elapsed time is less than the duration, start or continue the animation
+    // if the elapsed time is less than the duration, continue the animation
     const transformStr = getTransformStr(t);
     frame = requestAnimationFrame(ticked);
   }
@@ -161,7 +161,7 @@ function ticked(timestamp) {
 
 {% endhighlight %}
 
-Notice that within the `ticked()` function if the elapsed time is less than the total duration of the animation we calculate the value for `t` which is passed to `getTransformStr()`. We also update the value of the external variable `frame` which is returned by invoking `requestAnimationFrame()` with our `ticked()` function. We'll need the value of `frame` later in order to cancel the animation, say for instance if we no longer want to run it based on some user action.
+Notice that within the `ticked()` function if the elapsed time is less than the total duration of the animation we pass the value `t` to `getTransformStr()`. We also update the value of the external variable `frame` which is returned by invoking `requestAnimationFrame()` with our `ticked()` function. We'll need the value of `frame` later in order to cancel the animation, say for instance if we no longer want to run it based on some user action.
 
 In order to start the animation we must invoke `requestAnimationFrame` with our `ticked` callback:
 
@@ -194,7 +194,7 @@ import * as d3 from "d3";
 const ZoomContainer = (props) => {
   const {width, height, start, end, children} = props;
 
-  // we'll fix this next
+  // we'll update this next line soon
   let transformStr;
 
   return (
@@ -215,7 +215,7 @@ So far we are:
 
 Simple enough!
 
-Time for some hooks. First we'll create a `useState` hook for setting and getting the transform string. We'll provide it a default value of the "identity transform" which is equivalent to no transform at all.
+Time for some hooks. First we'll set up a `useState` hook for setting and getting the transform string. This will replace the line with `let transformStr;` in the previous JSX code above. We'll provide `useState` a default value of an "identity transform" which is equivalent to no transform at all.
 
 {% highlight js %}
 
@@ -297,12 +297,12 @@ React.useEffect(() => {
 
 Notice that within the `useEffect` hook that we are utilizing our `getTransformStr` function which handles the SVG `transform` interpolation and also are using our `ticked` function with `requestAnimationFrame` from earlier. 
 
-We've modified the `ticked` function so that it updates the value of our SVG transform string (`transformStr`) on each "tick" of the animation by calling the `getTransformStr()` function from our `useState` hook. This is important as each time this state is updated, the component will re-render. If the `forward` boolean is set to `false`, then the animation will run in reverse by passing `1 - t` to `getTransformStr` instead of `t`. This process will continue at about sixty frames per second until the elapsed amount of time exceeds the allotted duration. When that happens we'll flip the `forward` boolean via `setForward` from the other `useState` hook, which will also cause a re-render. 
+We've modified the `ticked` function so that it updates the value of our SVG transform string (`transformStr`) on each "tick" of the animation by calling the `getTransformStr()` function from our `useState` hook. This is important as each time this state is updated, the component will re-render. If the `forward` boolean is set to `false`, then the animation will run in reverse by passing `1 - t` to `getTransformStr` instead of `t`. This process will continue at about sixty frames per second until the elapsed amount of time exceeds the allotted duration. When that happens we'll flip the `forward` boolean via `setForward` from the other `useState` hook, which will also cause a re-render and re-start the animation. 
 
-If the component should ever unmount, we will invoke `cancelAnimationFrame()` with the value of the current `frame` to clean things up. Finally, we pass in `forward` in the arguments array to `useEffect` which tells React to only fire the effect when the value of `forward` changes. Phew!
+If the component should ever unmount, we will invoke `cancelAnimationFrame()` with the value of the current `frame` to clean things up. Finally, we pass `forward` in the arguments array to `useEffect` which tells React to only re-fire the effect when the value of `forward` changes. Phew!
 
 That about sums up how React hooks are integrated to "play" the animation. You may find the [complete demo on Codesandbox.io](https://codesandbox.io/s/react-d3-animation-with-hooks-wz8cl). 
 
-You will most likely not want to create an endless animation such as this in real life, but I hope this walk through and demo code gives you enough to go on so that you can modify things to your liking or situation at hand. 
+You will most likely not want to create an endless animation such as this in real life, but I hope this walk through and demo code gives you enough to get started with so that you can modify it to your liking or situation at hand. 
 
-Happy coding!
+Happy animating!
