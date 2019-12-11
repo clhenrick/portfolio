@@ -49,7 +49,7 @@ Phew! If that was a lot to take in don't sweat it, things should become more cle
 
 Say we have the following SVG graphic:
 
-![circle and star svg]({{site.urlimg}}d3-interpolatezoom.png)
+<img alt="circle and star svg" src="{{site.urlimg}}d3-interpolatezoom.svg">
 <small>
 Image credit: [ObservableHQ](https://observablehq.com/@d3/d3-interpolatezoom?collection=@d3/d3-interpolate) under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)
 </small>
@@ -94,14 +94,14 @@ _Note: we actually won't apply the transform string manually like above, we'll e
 
 And here is what our SVG ends up looking like after applying the `transform`:
 
-![svg zoomed in on circle shape]({{site.urlimg}}d3-interpolatezoom-circle.png)
+<img alt="svg zoomed in on circle shape" src="{{site.urlimg}}d3-interpolatezoom-circle.svg">
 <small>
 Image credit: [ObservableHQ](https://observablehq.com/@d3/d3-interpolatezoom?collection=@d3/d3-interpolate) under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)
 </small>
 
 We use the same math for our star shape to get its `k` and `translate` values. When applied to the SVG it will end up looking like this:
 
-![svg zoomed in on star shape]({{site.urlimg}}d3-interpolatezoom-star.png)
+<img alt="svg zoomed in on star shape" src="{{site.urlimg}}d3-interpolatezoom-star.svg">
 <small>
 Image credit: [ObservableHQ](https://observablehq.com/@d3/d3-interpolatezoom?collection=@d3/d3-interpolate) under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)
 </small>
