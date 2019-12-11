@@ -33,7 +33,7 @@ Anyway, the trade off I ran into with using the first approach is that I lost D3
 
 ## The Solution
 
-I ended up deciding to use a combination of the [requestAnimationFrame API](#), React's `useState` and `useEffect` hooks, and D3's `interpolateZoom` method. This ended up working quite nicely, and I was pleased with the results. Unfortunately due to the confidentiality of the project, I can't show the actual source code here, so instead I've ported the demo from the [d3.interpolateZoom documentation on Observable.com](https://observablehq.com/@d3/d3-interpolatezoom?collection=@d3/d3-interpolate) written by [Philippe Rivière](https://twitter.com/recifs) (thank you Phillipe!) to React in order to demonstrate the technique.
+I ended up deciding to use a combination of the [requestAnimationFrame API](#), React's `useState` and `useEffect` hooks, and D3's `interpolateZoom` method. This ended up working quite nicely, and I was pleased with the results. Unfortunately due to the confidentiality of the project, I can't show the actual source code here, so instead I've ported the demo from the [d3.interpolateZoom documentation on Observable.com](https://observablehq.com/@d3/d3-interpolatezoom?collection=@d3/d3-interpolate) written by [Philippe Rivière](https://twitter.com/recifs) (thank you Philippe!) to React in order to demonstrate the technique.
 
 **_Pssst!_** _If you'd like to skip to the final code, check out [the demo on codesandbox.io](https://codesandbox.io/s/react-d3-animation-with-hooks-wz8cl)._
 
@@ -54,9 +54,9 @@ Say we have the following SVG graphic:
 Image credit: [ObservableHQ](https://observablehq.com/@d3/d3-interpolatezoom?collection=@d3/d3-interpolate) under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)
 </small>
 
-We can represent the center position and size of the circle as `[30, 30, 40]` and the star as `[135, 85, 60]`. The `size` is defined either by the object's width or height, which ever is greater. We'll refer to the first array for the circle as the "start" position and the second array for the star as the "end" position.
+We can represent the center position and size of the circle as `[30, 30, 40]` and the star as `[135, 85, 60]`. The `size` is defined either by the object's width or height, whichever is greater. We'll refer to the first array for the circle as the "start" position and the second array for the star as the "end" position.
 
-In order to apply the SVG transformation we need to do a little math. First we need to figure out how much to scale the SVG. The dimensions of our SVG are `260` pixels wide by `190` pixels high. To get the scale value `k`, we simply use the following calcuation:
+In order to apply the SVG transformation we need to do a little math. First we need to figure out how much to scale the SVG. The dimensions of our SVG are `260` pixels wide by `190` pixels high. To get the scale value `k`, we simply use the following calculation:
 
 {% highlight js %}
 const width = 260;
@@ -73,7 +73,7 @@ const translate = [width / 2 - start[0] * k, height / 2 - start[1] * k];
 // [-12.5, -47.5]
 {% endhighlight %}
 
-We may now use those values to creat our SVG transform string, which ends up being:
+We may now use those values to create our SVG transform string, which ends up being:
 
 {% highlight js %}
 const transformStart = `translate(${translate}) scale(${k})`;
@@ -106,7 +106,7 @@ We use the same math for our star shape to get its `k` and `translate` values. W
 Image credit: [ObservableHQ](https://observablehq.com/@d3/d3-interpolatezoom?collection=@d3/d3-interpolate) under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)
 </small>
 
-Cool, so we now know how to use some math to apply a "zoom" transform to either of the two objects in our SVG element! That's great, but what about the inbetween states where we are zooming from one element to the other?
+Cool, so we now know how to use some math to apply a "zoom" transform to either of the two objects in our SVG element! That's great, but what about the in between states where we are zooming from one element to the other?
 
 Because we have the center and size values for both our starting and ending zoom positions, we can construct our zoom interpolator as follows:
 
@@ -127,9 +127,9 @@ function getTransformStr(t) {
 }
 {% endhighlight %}
 
-In other words, when the `getTransformStr` function above recieves a value of zero, it will return the same SVG `transform` string for our circle as we calculated by hand above, and ditto for the star. Anything inbetween zero and one will return a transitional `transform` string that has been computed by `d3.interpolateZoom`'s algorithm.
+In other words, when the `getTransformStr` function above receives a value of zero, it will return the same SVG `transform` string for our circle as we calculated by hand above, and ditto for the star. Anything in between zero and one will return a transitional `transform` string that has been computed by `d3.interpolateZoom`'s algorithm.
 
-This `getTransformStr` function will come in handy later when when using React's `useEffect()` hook to animate our SVG. Let's move on to how to apply this function in conjunction with the browser's `requestAnimationFrame API`.
+This `getTransformStr` function will come in handy later when using React's `useEffect()` hook to animate our SVG. Let's move on to how to apply this function in conjunction with the browser's `requestAnimationFrame API`.
 
 ### Applying requestAnimationFrame
 
@@ -185,7 +185,7 @@ We'll add more to the `ticked` function later when we set up our `useEffect` hoo
 
 By now you hopefully have a decent understanding of how we are interpolating the zooming and panning between our two SVG shapes, and how this will be controlled by `requestAnimationFrame`. This next section will describe how these two concepts fit together with React's `useState` and `useEffect` hooks to "play" the animation. I won't go into the code for the entire demo, but will focus on the part that handles playing the animation.
 
-Because we're applying an SVG `transform` to the outer most / parent "g" element, we'll create a component called `ZoomContainer.jsx` that only renders this element and its children. It will receive props for the SVG's `width` and `height`, the `start` and `end` transform tuples, and any `children`.
+Because we're applying an SVG `transform` to the outermost / parent "g" element, we'll create a component called `ZoomContainer.jsx` that only renders this element and its children. It will receive props for the SVG's `width` and `height`, the `start` and `end` transform tuples, and any `children`.
 
 {% highlight jsx %}
 import * as React from "react";
@@ -229,7 +229,7 @@ const [transformStr, setTransformStr] = React.useState(
 
 {% endhighlight %}
 
-We'll create a second `useState` hook to get and set a variable for reversing the animation. We'll be mimicing the original `interpolateZoom` demo from the D3JS docs on ObservableHQ which zooms to one shape, then back the other shape, then back to the first shape, in an endless loop. Thus we'll want a boolean value we can flip to tell the animation to run in reverse once it has finished zooming into a shape.
+We'll create a second `useState` hook to get and set a variable for reversing the animation. We'll be mimicking the original `interpolateZoom` demo from the D3JS docs on ObservableHQ which zooms into one shape, then back the other shape, then back to the first shape, in an endless loop. Thus we'll want a boolean value we can flip to tell the animation to run in reverse once it has finished zooming into a shape.
 
 {% highlight js %}
 // state that will replay the animation in reverse
@@ -295,11 +295,11 @@ React.useEffect(() => {
 
 {% endhighlight %}
 
-Notice that within the `useEffect` hook that we are utilizing our `getTransformStr` function which handles the SVG `transfrom` interpolation and also are using our `ticked` function with `requestAnimationFrame` from earlier. 
+Notice that within the `useEffect` hook that we are utilizing our `getTransformStr` function which handles the SVG `transform` interpolation and also are using our `ticked` function with `requestAnimationFrame` from earlier. 
 
 We've modified the `ticked` function so that it updates the value of our SVG transform string (`transformStr`) on each "tick" of the animation by calling the `getTransformStr()` function from our `useState` hook. This is important as each time this state is updated, the component will re-render. If the `forward` boolean is set to `false`, then the animation will run in reverse by passing `1 - t` to `getTransformStr` instead of `t`. This process will continue at about sixty frames per second until the elapsed amount of time exceeds the allotted duration. When that happens we'll flip the `forward` boolean via `setForward` from the other `useState` hook, which will also cause a re-render. 
 
-If the component should ever un-mount, we will invoke `cancelAnimationFrame()` with the value of the current `frame` to clean things up. Finally, we pass in `forward` in the arguments array to `useEffect` which tells React to only fire the effect when the value of `forward` changes. Phew!
+If the component should ever unmount, we will invoke `cancelAnimationFrame()` with the value of the current `frame` to clean things up. Finally, we pass in `forward` in the arguments array to `useEffect` which tells React to only fire the effect when the value of `forward` changes. Phew!
 
 That about sums up how React hooks are integrated to "play" the animation. You may find the [complete demo on Codesandbox.io](https://codesandbox.io/s/react-d3-animation-with-hooks-wz8cl). 
 
