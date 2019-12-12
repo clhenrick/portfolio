@@ -33,7 +33,7 @@ One trade off, which became the subject of this blog post, that I ran into with 
 
 ## The Solution
 
-I ended up deciding to use a combination of the [requestAnimationFrame API](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame), React's `useState` and `useEffect` hooks, and D3's [interpolateZoom](https://github.com/d3/d3-interpolate/blob/master/README.md#interpolateZoom) method. This ended up working quite nicely, and I was pleased with the results. Unfortunately due to the confidentiality of the project, I can't show the source code here, so instead I've ported the demo from the [d3.interpolateZoom documentation on Observable.com](https://observablehq.com/@d3/d3-interpolatezoom?collection=@d3/d3-interpolate) written by [Philippe Rivière](https://twitter.com/recifs) (thank you Philippe!) to React in order to demonstrate the technique.
+I ended up deciding to use a combination of the [requestAnimationFrame API](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame), React's [useState](https://reactjs.org/docs/hooks-overview.html#state-hook) and [useEffect](https://reactjs.org/docs/hooks-overview.html#effect-hook) hooks, and D3's [interpolateZoom](https://github.com/d3/d3-interpolate/blob/master/README.md#interpolateZoom) method. This ended up working quite nicely, and I was pleased with the results. Unfortunately due to the confidentiality of the project, I can't show the source code here, so instead I've ported the demo from the [d3.interpolateZoom documentation on ObservableHQ.com](https://observablehq.com/@d3/d3-interpolatezoom?collection=@d3/d3-interpolate) written by [Philippe Rivière](https://twitter.com/recifs) (thank you Philippe!) to React in order to demonstrate the technique.
 
 **_Pssst!_** _If you'd like to skip to the final code, check out [the demo on codesandbox.io](https://codesandbox.io/s/react-d3-animation-with-hooks-wz8cl)._
 
@@ -129,14 +129,14 @@ function getTransformStr(t) {
 
 In other words, when the `getTransformStr` function above receives a value of zero, it will return the same SVG `transform` string for our circle as we calculated by hand above, and ditto for the star. Anything in between zero and one will return a transitional `transform` string that has been computed by `d3.interpolateZoom`'s algorithm.
 
-Below I've embedded a few of the cells from the [d3.interpolateZoom Observable notebook](https://observablehq.com/d/2c821e192783b1d3) so you may get a feel for how the `zoomInterpolator` and `getTransformStr` functions affect our SVG. Try adjusting the range input (slider) beneath the rendered SVG to see how the zoom interpolation works. Pretty cool if you ask me! 😀
+Below I've embedded a few of the cells from the [d3.interpolateZoom Observable notebook](https://observablehq.com/d/2c821e192783b1d3) so you may get a feel for how the `zoomInterpolator` and `getTransformStr` functions affect our SVG. The range input (slider) beneath the rendered SVG will reactively update the value of `t`, and will be passed to the `getTransformStr` function, which will then update the SVG `g`'s `transform` attribute. Try adjusting the slider to see how the zoom interpolation works. Pretty cool if you ask me! 😀
 
 <div id="observable"></div>
 <small>
 Credit: [ObservableHQ](https://observablehq.com/@d3/d3-interpolatezoom?collection=@d3/d3-interpolate) under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)
 </small>
 
-Both the `zoomInterpolator` and `getTransformStr` functions will come in handy later when using React's `useEffect()` hook to animate our SVG. Let's now move on to how to apply this function in conjunction with the browser's `requestAnimationFrame API`.
+Both the `zoomInterpolator` and `getTransformStr` functions will come in handy later when using React's `useEffect()` hook to animate our SVG. Let's now move on to how to apply these functions in conjunction with the browser's `requestAnimationFrame API`.
 
 ### Applying requestAnimationFrame
 
