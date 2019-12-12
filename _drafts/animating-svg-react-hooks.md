@@ -131,6 +131,13 @@ In other words, when the `getTransformStr` function above receives a value of ze
 
 This `getTransformStr` function will come in handy later when using React's `useEffect()` hook to animate our SVG. Let's move on to how to apply this function in conjunction with the browser's `requestAnimationFrame API`.
 
+Below I've embedded a few of the cells from the [d3.interpolateZoom Observable notebook](https://observablehq.com/d/2c821e192783b1d3). Try adjusting the range input (slider) beneath the rendered SVG to see how the zoom interpolation works. Pretty cool if you ask me! 😀
+
+<div id="observable"></div>
+<small>
+Credit: [ObservableHQ](https://observablehq.com/@d3/d3-interpolatezoom?collection=@d3/d3-interpolate) under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)
+</small>
+
 ### Applying requestAnimationFrame
 
 Now that we have a function that handles the zoom interpolation for us, we need to apply it to create our animation. To accomplish this we'll be using the browser's [requestAnimationFrameAPI](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame). From the Mozilla documentation:
@@ -306,3 +313,47 @@ That about sums up how React hooks are integrated to "play" the animation. You m
 You will most likely not want to create an endless animation such as this in real life, but I hope this walk through and demo code gives you enough to get started with so that you can modify it to your liking or situation at hand. 
 
 Happy animating!
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import notebook from "https://api.observablehq.com/d/2c821e192783b1d3.js?v=3";
+
+const cells = ["demo", "viewof t", "transform", "interpolator"];
+const container = document.querySelector("#observable");
+
+cells.forEach(cell => {
+  const id = `observable-${cell}`;
+  const el = document.createElement("div")
+  el.setAttribute("id", id)
+  container.appendChild(el)
+})
+
+new Runtime().module(notebook, name => {
+  if (cells.indexOf(name) !== -1) {
+    return new Inspector(document.getElementById(`observable-${name}`));
+  }
+});
+</script>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@3/dist/inspector.css">
+
+<style>
+#observable {
+  padding: 12px;
+  background: #fff;
+  color: #333;
+}
+
+#observable-demo > svg {
+  border: 2px solid #333;
+}
+
+#observable-transform,
+#observable-interpolator {
+  display: none;
+}
+
+.observablehq {
+  margin-top: 12px;
+}
+</style>
