@@ -129,14 +129,14 @@ function getTransformStr(t) {
 
 In other words, when the `getTransformStr` function above receives a value of zero, it will return the same SVG `transform` string for our circle as we calculated by hand above, and ditto for the star. Anything in between zero and one will return a transitional `transform` string that has been computed by `d3.interpolateZoom`'s algorithm.
 
-This `getTransformStr` function will come in handy later when using React's `useEffect()` hook to animate our SVG. Let's move on to how to apply this function in conjunction with the browser's `requestAnimationFrame API`.
-
-Below I've embedded a few of the cells from the [d3.interpolateZoom Observable notebook](https://observablehq.com/d/2c821e192783b1d3). Try adjusting the range input (slider) beneath the rendered SVG to see how the zoom interpolation works. Pretty cool if you ask me! 😀
+Below I've embedded a few of the cells from the [d3.interpolateZoom Observable notebook](https://observablehq.com/d/2c821e192783b1d3) so you may get a feel for how the `zoomInterpolator` and `getTransformStr` functions affect our SVG. Try adjusting the range input (slider) beneath the rendered SVG to see how the zoom interpolation works. Pretty cool if you ask me! 😀
 
 <div id="observable"></div>
 <small>
 Credit: [ObservableHQ](https://observablehq.com/@d3/d3-interpolatezoom?collection=@d3/d3-interpolate) under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)
 </small>
+
+Both the `zoomInterpolator` and `getTransformStr` functions will come in handy later when using React's `useEffect()` hook to animate our SVG. Let's now move on to how to apply this function in conjunction with the browser's `requestAnimationFrame API`.
 
 ### Applying requestAnimationFrame
 
