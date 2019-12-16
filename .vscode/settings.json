@@ -1,0 +1,7 @@
+{
+    "window.zoomLevel": 1,
+    "editor.formatOnSave": false,
+    "[markdown]": {
+        "editor.tabSize": 2,
+    }
+}
