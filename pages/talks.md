@@ -9,6 +9,15 @@ permalink: "/about/talks/"
 header: no
 ---
 
+### Arts, Politics, and the City: Webmapping Workshop
+*UC Berkeley / Berkeley, CA / April 1, 2020*
+
+Gave a remote guest lecture and workshop on making interactive maps for the web for a core methods course in the [Global Urban Humanities certificate program](http://globalurbanhumanities.berkeley.edu/graduate-certificate) titled *The Demos: Politics, Art and the City (Spring 2020)*. Following a lecture on cartography and making on the web, students gained hands on experience working with geospatial data on the web and creating their own interactive web map using open data on San Francisco 311 cases, [geojson.io](http://geojson.io), and [Glitch](https://glitch.com).
+
+- [slides](https://docs.google.com/presentation/d/15LDhtoHi3jxT4K5cQKv3yyyOT16xxrlcx-GF3iFhf5Y/edit?usp=sharing)
+- [Glitch project](https://glitch.com/~sf-311-data)
+
+
 ### Using D3JS for Print Cartography
 *NACIS Annual Meeting / Tacoma, WA / October 17, 2019*
 
