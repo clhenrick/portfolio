@@ -9,22 +9,29 @@ permalink: "/about/talks/"
 header: no
 ---
 
+### GeoVisualization Workshop at the I School
+*UC Berkeley School of Information / Berkeley, CA / April 20, 2020*
+
+What separates geo-visualization from other types of data visualization? What are the some of the choices you must make when visualizing data in the context of maps and the web? How might we go about visualizing geospatial data that allows for a rich user experience, or at least one similar to what users might expect from their familiarity with popular mapping platforms such as Google Maps? This workshop intends to at least partly answer these questions through a 20 minute lecture followed by an hour long hands on workshop. Participants will write javascript code and utilize MapboxGL.JS, GeoJSON, and Turf.JS to visualize vehicle collision data in New York City. The end goal of the workshop will be creating an interactive hexbin map from the point GeoJSON data. Participants will walk away with a better understanding of the landscape of geo-visualization; including its tools, data types, and how to avoid common pitfalls. Due to COVID-19 this talk and workshop was given remotely.
+
+- [Presentation Slides](https://docs.google.com/presentation/d/1F-VDg0ZO3L_g-fd4Apc0PQmEiKNWNyzDVesUuD3dwV0/edit?usp=sharing)
+- [Observable Notebook](https://observablehq.com/@clhenrick/mapboxgl-hexbin-map)
+
 ### Arts, Politics, and the City: Webmapping Workshop
 *UC Berkeley / Berkeley, CA / April 1, 2020*
 
-Gave a remote guest lecture and workshop on making interactive maps for the web for a core methods course in the [Global Urban Humanities certificate program](http://globalurbanhumanities.berkeley.edu/graduate-certificate) titled *The Demos: Politics, Art and the City (Spring 2020)*. Following a lecture on cartography and making on the web, students gained hands on experience working with geospatial data on the web and creating their own interactive web map using open data on San Francisco 311 cases, [geojson.io](http://geojson.io), and [Glitch](https://glitch.com).
+Guest lecture and workshop on making interactive maps for the web for a core methods course in the [Global Urban Humanities certificate program](http://globalurbanhumanities.berkeley.edu/graduate-certificate) titled *The Demos: Politics, Art and the City (Spring 2020)*. Following a lecture on cartography and making on the web, students gained hands on experience working with geospatial data on the web and creating their own interactive web map using open data on San Francisco 311 cases, [geojson.io](http://geojson.io), and [Glitch](https://glitch.com). Due to COVID-19 this talk and workshop was given remotely.
 
-- [slides](https://docs.google.com/presentation/d/15LDhtoHi3jxT4K5cQKv3yyyOT16xxrlcx-GF3iFhf5Y/edit?usp=sharing)
+- [Presentation Slides](https://docs.google.com/presentation/d/15LDhtoHi3jxT4K5cQKv3yyyOT16xxrlcx-GF3iFhf5Y/edit?usp=sharing)
 - [Glitch project](https://glitch.com/~sf-311-data)
-
 
 ### Using D3JS for Print Cartography
 *NACIS Annual Meeting / Tacoma, WA / October 17, 2019*
 
 D3JS, the popular data visualization Javascript library, is most frequently used for creating highly customized and even bespoke interactive and dynamic data visualizations for the web. However, D3JS may also be used to create well crafted, static graphics for print publication. In this talk, I'll share some tips and tricks I learned for integrating D3JS into a print cartography workflow with the vector editing software Adobe Illustrator. 
 
-- [slides](https://docs.google.com/presentation/d/1ScwgVbhcNJsY9mzjOY3k-lsq_2ESafnxrTh_nnFg7yU/edit?usp=sharing)
-- [video](https://www.youtube.com/watch?v=U5I16zw_K10)
+- [Presentation Slides](https://docs.google.com/presentation/d/1ScwgVbhcNJsY9mzjOY3k-lsq_2ESafnxrTh_nnFg7yU/edit?usp=sharing)
+- [Video Recording](https://www.youtube.com/watch?v=U5I16zw_K10)
 
 ### Using GPUs to Interactively Visualize Billions of Points with MapD
 *OpenVis Conf / Paris, France / May 16, 2018*
