@@ -2,7 +2,7 @@
 title: "Refactoring Am I Rent Stabilized"
 layout: page
 date: 2020-12-01
-teaser: "Notes on improving the code of a five to six year old project."
+teaser: "Notes on improving the code of a five year old project."
 header: no
 comments: true
 tags:
@@ -12,13 +12,14 @@ tags:
   - Testing
 ---
 
+<img class="lazy" data-original="{{site.url}}{{site.baseurl}}/images/airs01.jpg" width="100%" alt="Am I Rent Stabilized home page">
+<noscript>
+  <img src="{{site.url}}{{site.baseurl}}/images/airs01.jpg" width="100%" alt="Am I Rent Stabilized home page">
+</noscript>
+
 ## Motivation
 
-(TODO: hero image!)
-
-(TODO: TOC?)
-
-[_Am I Rent Stabilized?_](#) continues to be a successful project; according to Google Analytics it still gets around 1,200 views and (double that for "impressions") a month! However the last time I significantly touched the code for _AIRS_ was over five years ago, back when I was still a fledging programer and web developer. Not surprisingly, I more recently found the code difficult to reason about, making it hard to add new features, fix bugs, or make necessary improvements such as those relating to web accessibility. I realized then, that if this project were to have a chance of living on, it would need a significant refactor. In this post I outline how I refactored _AIRS_; the goals and non-goals I set for myself, decisions I made along the way, and what I learned from it. This post will read more like a design document, so apologies in advance for the lack of polish in my writing.
+[_Am I Rent Stabilized?_](1) continues to be a successful project; according to Google Analytics it still gets around 1,200 views and (double that for "impressions") a month! However the last time I significantly touched the code for _AIRS_ was over five years ago, back when I was still a fledging programer and web developer. Not surprisingly, I more recently found the code difficult to reason about, making it hard to add new features, fix bugs, or make necessary improvements such as those relating to web accessibility. I realized then, that if this project were to have a chance of living on, it would need a significant refactor. In this post I outline how I refactored _AIRS_; the goals and non-goals I set for myself, decisions I made along the way, and what I learned from it. This post will read more like a design document, so apologies in advance for the lack of polish in my writing.
 
 Part of what motivated me to do this refactor was reading [Martin Fowler](#)'s infamous book, [Refactoring](#). MF's book not only provides a wide range of strategies for refactoring code, but also does a good job at justifying why refactoring is (or for many teams should be) a central part of software development. Refactoring the source code for _AIRS_ offered a different set of challenges than my current day job as a [UX Engineer](#) where I tend to focus on prototyping UIs and data visualizations for the web. Though my prototyping work often acheives a high level of complexity, it is generally considered to be "throw away code", meaning that it never sees the light of day in the actual product. The goal of prototyping is typically to validate or invalidate a hypothesis made by UX designers, UX researchers, and project managers. Thus the implementation of a prototype is not what is important; the learnings from it or the stakeholder buy in it helps generate is.
 
@@ -301,3 +302,6 @@ Some possible next steps:
 - Integrating a backend service to remove the need for a CARTO account
 
 Phew, that was a lot! Thanks for reading, hopefully this post will motivate you to try to do some refactoring of your own if it's something you have yet to try out. And don't forget to read Martin Fowler's book [Refactoring](#) either, if you haven't yet done so. Happy refactoring!
+
+
+[1]: https://amirentstabilized.com/ "Am I Rent Stabilized?"
