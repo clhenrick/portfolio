@@ -119,12 +119,12 @@ I then focused on refactoring the translation & Handlebars template loading logi
 
 The process is roughly:
 
-1. Check for a language code in the browser's [Local Storage](#).
-2. Check for the HTML page's base name.
-3. Load the correct Handlebars template file based on the page name
-4. Load the correct locale JSON file based on the language (default to English).
-5. Use a dynamic `import` to grab the correct initialization script (for `main` or `info`)
-6. Render the page using the Handlebars template and JSON locale
+1. Check for a language code in the browser's [`localStorage`](#) that I may have previously stashed (default to English).
+2. Check for the HTML page's base name (e.g. "index", "why", "how", "resources").
+3. Load the correct Handlebars template file based on the page name.
+4. Load the correct locale JSON file based on the page name and language.
+5. Use a dynamic `import` to grab the correct initialization script (for the `index` or `info` pages).
+6. Render the page using the Handlebars template and locale JSON.
 7. Invoke the initialization script to set up interactivity.
 
 As mentioned earlier, components were created for all interactive elements on the main page that required JavaScript. An example of this are the buttons such as "Begin" and "Next" that trigger smooth scrolling to a slide further down the page.
@@ -266,13 +266,44 @@ When appropriate, I extracted a Component's corresponding HTML from the app's Ha
 
 Additionally for each component class, I wrote a series of tests. Martin Fowler advocates for tests to make your code more resilient when refactoring it. One recommendation MF advocates for when writing tests that I found to be fun is to deliberately break the tests to make sure they work as expected. Or to see what happens when you deliberately use your code in unexpected ways, and to test for that. Writing tests can be a bit like solving puzzles; it's not always apparent what to test for and how to test it. Getting to know Jest and friends (e.g. JS DOM) was also a bit of a learning curve. In the end I'm glad I put in the effort, as I know when I write more tests in the future that it won't feel so foreign or difficult.
 
-Adding Redux actions and reducers as needed, e.g.
-slides: for tracking the index of the current slide
-address search: for tracking the data returned by the NYC Planning Labs' geocoding API's autosuggest and search endpoints
-likely RS: is the address searched by the user likely to be rent stabilized?
-local tenants rights groups: list of tenants rights groups that are near the searched address
+Here's an example test for the above `AdvanceSlides` component that checks that the component's click handler is called when the "button" UI element (I know, this should be a real `<button>` not an `<h3>`, a pertinent example of why more folks should be taught about accessibility when they are learning web development!) is clicked on:
+
+{% highlight js %}
+test("The component's button handles a click event", () => {
+  document.querySelector(".go-next.bottom-arrow > h3").click();
+  expect(spyButton).toHaveBeenCalled();
+});
+{% endhighlight %}
+
+I mentioned earlier that I chose to use ReduxJS for managing the app's state. To be honest, I have not used Redux outside of a ReactJS project before, and this proved to be interesting! Typically when using Redux with React you would use the `react-redux` library's `Provider` context and `connect` function. Well sense I'm not using React, I utilized an [`observeStore` function](2.), which is how components I wrote respond to changes in state:
+
+{% highlight js %}
+// code credit: https://github.com/reduxjs/redux/issues/303#issuecomment-125184409
+export function observeStore(store, select = (state) => state, onChange) {
+  let currentState;
+
+  function handleChange() {
+    let nextState = select(store.getState());
+    if (nextState !== currentState) {
+      currentState = nextState;
+      onChange(currentState);
+    }
+  }
+
+  let unsubscribe = store.subscribe(handleChange);
+  handleChange();
+  return unsubscribe;
+}
+{% endhighlight %}
+
+It takes three arguments: the Redux store singleton, a function that returns the piece of state that should be watched for changes, and a callback function (`onChange`). It returns an `unsubscribe` function, and recall that the base component class I created has an `unsubscribe` method. When a component uses this `observeStore` function, that method is overridden with the function returned by `observeStore`. This is important, because when the app re-renders from a language / locale toggle the entire DOM is essentially blown away and any previous component instances need to be cleaned up. That clean up work involves unsubscribing from the Redux store!
+
+I then went ahead and added Redux boilerplate as needed, e.g. the action types, action creators, reducers, etc. Redux accomplished somewhat simple tasks such tracking the active slide index, as well as more complex and asynchronous tasks such as fetching data from an address geocoding API (Thank you [NYC Planning Labs](#)!). Other "slices" of state include whether or not someone's address is likely to have rent stabilized apartments, and whether or not the searched address is within a catchment area of a local tenants rights group. This data is shared between components and thus benefits from being stored with Redux. I particularly like using the [Redux Dev Tools](#) for debugging the Redux state, which I find to be a much better UX then `console.log`'ing things. The Redux Dev Tools are something you would also have to create yourself if using a custom made [pub/sub routine](#), another solution I considered for managing application state but ultimately decided against using. Lastly, Redux is fairly simple to write tests for, with the exception of asynchronous action creators which can be a little more difficult to test.
+
+That sums up the majority of the refactoring work. Other bits included writing utility helper functions and constants (other than the Redux action types) that get shared between multiple modules. Please feel free to take a look at [the app's source code](3) to learn more or tell me what you think!
 
 ## Outcomes
+
 The refactor of _AIRS_ ended up being over four hundred commits over a period of three or four months. Doing this in my free time was not easy, but I found that I could chip away at it here and there to slowly make progress. There were definitely some big pushes at times and at some point I had to decide when to call it "good enough" and merge the changes. I didn't get around to everything in the refactor, notably the tenants rights groups spatial search, but I plan to add that back soon. Finally, I decided on adding a Changelog file to track significant changes to the code and site. I should probably add a Code of Conduct as well for contributors, as well as a License file.
 
 Oh the things you learn as time goes on! Looking back at my original code helped me reflect on how much I've grown as a programmer and web developer, how much the world of browsers and web development has changed, and what I consider to be important when building websites and UIs these days. The entire concept of "componentizing" your UI was just beginning to take off around 2013-15, and now in 2020 it's so entrenched in how us developers build UIs it almost seems inconceivable to do otherwise. Browsers have of course changed in the past five years as well; new APIs are being unveiled while more features become standardized across browsers. Webpack was still fairly new in 2015 and not widely used as a frontend build tool. While I've always valued User Experience, I've come to learn a lot more about it from my current job as a UX Engineer. This makes me feel more motivated to fix the accessibility issues with _AIRS_; for example very naughty things like `<div>` elements disguised as buttons.
@@ -305,3 +336,5 @@ Phew, that was a lot! Thanks for reading, hopefully this post will motivate you 
 
 
 [1]: https://amirentstabilized.com/ "Am I Rent Stabilized?"
+[2]: https://github.com/reduxjs/redux/issues/303#issuecomment-125184409 "observe store implementation"
+[3]: https://github.com/clhenrick/am-i-rent-stabilized/tree/master/app "AIRS source code"
