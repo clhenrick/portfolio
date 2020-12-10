@@ -1,8 +1,8 @@
----
-title: Using the Module Pattern in Javascript Programming
+JavaScript---
+title: Using the Module Pattern in JavaScript Programming
 layout: page
 date: 2015-11-15
-teaser: "The benefits of using the revealing module pattern in Javascript."
+teaser: "The benefits of using the revealing module pattern in JavaScript."
 header: no
 comments: true
 tags:
@@ -13,23 +13,24 @@ tags:
 
 *Updated on December 10, 2020*
 
-**Note:** this post discusses the ["revealing module pattern"][1] that was commonly used in JavaScript prior to widespread adoption of ["ES modules"][2]. If you are using a modern build tool such as Webpack, Rollup, or Create React App, or perhaps developing without a build tool for modern browsers, then you're most likely writing your code using "ES modules." If that is the case you may wish to disregard this post, but please feel free to read on!
+**Note:** this post discusses the ["revealing module pattern"][1] that was commonly used in JavaScript prior to widespread adoption of ["ES modules"][2] (see also this [in-depth post on ES modules][3]). If you are using a modern build tool such as Webpack, Rollup, or Create React App, or perhaps developing without a build tool for modern browsers, then you're most likely writing your code using "ES modules." If that is the case you may wish to disregard this post, but please feel free to read on!
 
 [1]: https://gist.github.com/zcaceres/bb0eec99c02dda6aac0e041d0d4d7bf2
 [2]: https://javascript.info/modules-intro
+[3]: https://v8.dev/features/modules
 
 ---
 
-In the past handful of interactive web projects I've created I've been using the **revealing module pattern** in Javascript to help keep my code organized and to avoid polluting the **global name space** (more on that later). Fairly recently a friend of mine asked about how I used the module pattern as he was looking to implement it for an interactive web-map he's currently building. He forwarded me the [Adequately Good article on the subject](http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html) written by [Ben Cherry](https://twitter.com/bcherry) which inspired me to revisit it and write this blog post.
+In the past handful of interactive web projects I've created I've used the **revealing module pattern** in JavaScript to help keep my code organized and to avoid polluting the **global name space** (more on that later). Fairly recently a friend of mine asked about how I used the module pattern as he was looking to implement it for an interactive web-map he's currently building. He forwarded me the [Adequately Good article on the subject](http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html) written by [Ben Cherry](https://twitter.com/bcherry) which inspired me to revisit it and write this blog post.
 
-I was first exposed to the **revealing module pattern** through my now colleague and then teacher at Parsons, [Mani Nilchiani](http://maniartstudio.com/), while I was taking the "Web Advanced" class during the second semester of my MFA program in the spring of 2014. In the class we did a deep-dive into Javascript; we learned about [**closures**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures) and how they can be exploited for the module pattern. In his class we used the module pattern to build a simple, database driven, "to-do" list / web app with [NodeJS](https://nodejs.org/). This app was also used to learn the concept of [**models** and **views**](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller), or the concept of mapping data from the backend to user interface elements in the frontend. Through exploring these programming concepts I found that I enjoyed using the revealing module pattern for developing web-projects that use interactive maps.
+I was first exposed to the **revealing module pattern** through my now colleague and then teacher at Parsons, [Mani Nilchiani](http://maniartstudio.com/), while I was taking the "Web Advanced" class during the second semester of my MFA program in the spring of 2014. In the class we did a deep-dive into JavaScript; we learned about [**closures**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures) and how they can be exploited for the module pattern. In his class we used the module pattern to build a simple, database driven, "to-do" list / web app with [NodeJS](https://nodejs.org/). This app was also used to learn the concept of [**models** and **views**](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller), or the concept of mapping data from the backend to user interface elements in the frontend. Through exploring these programming concepts I found that I enjoyed using the revealing module pattern for developing web-projects that use interactive maps.
 
 After reading the Adequately Good article that my colleague sent me I was eager to try out **loose augmentation** with the module pattern. Prior to this I had used **sub-modules** which worked fairly well, though felt like at times it made my code overly complex. Perhaps **loose augmentation** would be a simpler or easier to implement.
 
 As an example I'll show how using **loose augmentation** has been working well for a data-viz / web-mapping project that I'm current working on with some other folks, [Landscapes of Profit](https://github.com/NYC-REIC/interactive). (*side note: You can learn more about the project's motivation and methodology at [landscapesofprofit.com](http://www.landscapesofprofit.com)*). I'll also show how I used **sub-modules** for a project I created previously, [The Bushwick Community Map](http://www.bushwickcommunitymap.org).
 
 ## The Module Pattern
-I'll start by showing an example of an **Immediately Invoked Function Expression** (IIFE). This creates a **closure** and informs Javascript to call the function as soon as the script has been loaded. Right now this may seem a little abstract, but the benefit of doing this becomes more apparent as we move to the module pattern in this next example.
+I'll start by showing an example of an **Immediately Invoked Function Expression** (IIFE). This creates a **closure** and informs JavaScript to call the function as soon as the script has been loaded. Right now this may seem a little abstract, but the benefit of doing this becomes more apparent as we move to the module pattern in this next example.
 
 {% highlight javascript %}
 
@@ -52,7 +53,7 @@ I'll start by showing an example of an **Immediately Invoked Function Expression
 
 {% endhighlight %}
 
-The next step involves assigning the IIFE to a variable, what you might decide to call `app` (a naming convention that others reading your code will likely understand). This example, like the previous, uses another IIFE which tells Javascript to call the function as soon as the script has been loaded. Again, all variables and functions declared inside the `app` are **private** or *not accessible* outside of `the function`, that is unless they are **returned** by the anonymous function within the IIFE.
+The next step involves assigning the IIFE to a variable, what you might decide to call `app` (a naming convention that others reading your code will likely understand). This example, like the previous, uses another IIFE which tells JavaScript to call the function as soon as the script has been loaded. Again, all variables and functions declared inside the `app` are **private** or *not accessible* outside of `the function`, that is unless they are **returned** by the anonymous function within the IIFE.
 
 {% highlight javascript %}
 
@@ -89,7 +90,7 @@ console.log(myPrivateVariable);
 
 {% endhighlight %}
 
-If we load our code in a browser, bust open our javascript console, and type in `app.` we see that we have access to `publicVariable` but not `myPrivateVariable`. This is because we exposed the variable `publicVariable` by attaching it to the object `my` and then returning `my` at the end of the code inside our function. The variable `myPrivateVariable` stays hidden within our `app` and cannot be referenced outside of the `app`.
+If we load our code in a browser, bust open our JavaScript console, and type in `app.` we see that we have access to `publicVariable` but not `myPrivateVariable`. This is because we exposed the variable `publicVariable` by attaching it to the object `my` and then returning `my` at the end of the code inside our function. The variable `myPrivateVariable` stays hidden within our `app` and cannot be referenced outside of the `app`.
 
 This helps accomplish one of the "best practices" of programming in JavaScript for the web, avoiding having lots of **global variables** or worse yet **implied globals**. (An implied global is what you get when you first declare a variable without the `var` in front, something to pretty much always avoid doing.)
 
@@ -118,7 +119,7 @@ app.$body.html('<h1>Hello World!</h1>');
 
 {% endhighlight %}
 
-In the code above, we are importing three **global** objects, **aliasing them**, and using them in our module. This method of organizing code is less prone to bugs than using lots of global variables. It helps with isolating and reusing our code in new contexts. It lets us shorten (or **alias**) names for imported globals if we need to, eg: `window` can be aliased as `w` for short. Another reason I like this pattern is that it lets me keep track of what globals I'm using in each of my modules, kind of like the `require()` method in NodeJS. Not to mention you don't need a third party library to implement it. Though if you are used to using NodeJS then [Browserify](http://browserify.org/) is super helpful for importing Node modules in your client side Javascript.
+In the code above, we are importing three **global** objects, **aliasing them**, and using them in our module. This method of organizing code is less prone to bugs than using lots of global variables. It helps with isolating and reusing our code in new contexts. It lets us shorten (or **alias**) names for imported globals if we need to, eg: `window` can be aliased as `w` for short. Another reason I like this pattern is that it lets me keep track of what globals I'm using in each of my modules, kind of like the `require()` method in NodeJS. Not to mention you don't need a third party library to implement it. Though if you are used to using NodeJS then [Browserify](http://browserify.org/) is super helpful for importing Node modules in your client side JavaScript.
 
 ## Loose Augmentation vs. Sub Modules
 Now back to the original point of writing this post! Previously I used the **sub-module** method with the module pattern. In the following example assume each time  `var app = app || {};` is stated that it is referring to a global variable that may or may not already exist.
@@ -141,7 +142,7 @@ app.gui = (function(w,d,$) {
 
 {% endhighlight %}
 
-In the above example `app.map` and `app.gui` live in two separate JavaScript files and contain the code for the map and user interface respectively. This is helpful when we are creating a more complex app and don't want to end up with a single, insanely long Javascript file. Instead we split our code into separate **modules**, with each module living in a separate file. The sub-module method works fairly well but I found that I wanted to try **loose augmentation** for my most recent project, [Landscapes of Profit](https://github.com/nyc-reic/interactive/). Here's an example of using loose augmentation:
+In the above example `app.map` and `app.gui` live in two separate JavaScript files and contain the code for the map and user interface respectively. This is helpful when we are creating a more complex app and don't want to end up with a single, insanely long JavaScript file. Instead we split our code into separate **modules**, with each module living in a separate file. The sub-module method works fairly well but I found that I wanted to try **loose augmentation** for my most recent project, [Landscapes of Profit](https://github.com/nyc-reic/interactive/). Here's an example of using loose augmentation:
 
 {% highlight javascript %}
 
@@ -157,9 +158,9 @@ var app = (function(parent, $){
 
 {% endhighlight %}
 
-**Loose augmentation** works by declaring the variable `app` when we define our module function, rather than declaring it beforehand with `var app = app || {};`. We also import our app via `app || {}` into our module and alias it as `parent`. Like the earlier examples this allows us to "augment" or add things to our `app`, similar how we did with declaring `var my = {};` and returning it at the end. I've found that the benefit of this approach is that it seems to work a little better with Javascript's asynchronous nature. I ran into a problem with the sub-module pattern in coding [Am I Rent Stabilized?](https://github.com/clhenrick/am-i-rent-stabilized) where all my modules had to load in a very specific order. The approach demonstrated above seems to be a little more flexible.
+**Loose augmentation** works by declaring the variable `app` when we define our module function, rather than declaring it beforehand with `var app = app || {};`. We also import our app via `app || {}` into our module and alias it as `parent`. Like the earlier examples this allows us to "augment" or add things to our `app`, similar how we did with declaring `var my = {};` and returning it at the end. I've found that the benefit of this approach is that it seems to work a little better with JavaScript's asynchronous nature. I ran into a problem with the sub-module pattern in coding [Am I Rent Stabilized?](https://github.com/clhenrick/am-i-rent-stabilized) where all my modules had to load in a very specific order. The approach demonstrated above seems to be a little more flexible.
 
-In both approaches (loose augmentation and sub-modules) I've found it useful to first create one module that contains all variables that will likely need to be referenced from all other modules. As some of the variables will be created at a later point in time they are initially set to `null`. This helps with debugging as well, as if I get an error saying that a variable is `null` I know I haven't assigned it properly as javascript's default behavior is to set a variable to `undefined` if it hasn't been declared.
+In both approaches (loose augmentation and sub-modules) I've found it useful to first create one module that contains all variables that will likely need to be referenced from all other modules. As some of the variables will be created at a later point in time they are initially set to `null`. This helps with debugging as well, as if I get an error saying that a variable is `null` I know I haven't assigned it properly as JavaScript's default behavior is to set a variable to `undefined` if it hasn't been declared.
 
 {% highlight javascript %}
 // app.el.js
@@ -305,7 +306,7 @@ In the bottom of the `<body>` tag in the `.html` file where I am using the code 
 </script>
 {% endhighlight %}
 
-If you'd like to browse the source code of apps I've written that use either the **loose augmentation** or **sub-module** approach with the revealing module pattern in Javascript, see the following Github links:
+If you'd like to browse the source code of apps I've written that use either the **loose augmentation** or **sub-module** approach with the revealing module pattern in JavaScript, see the following Github links:
 
 - [Landscapes of Profit](https://github.com/nyc-reic/interactive/) :: uses loose augmentation
 - [Bushwick Community Map](https://github.com/clhenrick/BushwickCommunityMap) :: uses sub-modules
