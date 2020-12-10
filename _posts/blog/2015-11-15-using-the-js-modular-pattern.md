@@ -1,4 +1,4 @@
-JavaScript---
+---
 title: Using the Module Pattern in JavaScript Programming
 layout: page
 date: 2015-11-15
