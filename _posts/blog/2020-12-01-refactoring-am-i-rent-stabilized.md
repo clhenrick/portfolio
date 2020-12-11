@@ -310,27 +310,40 @@ Oh the things you learn as time goes on! Looking back at my original code helped
 
 Here are some other bits of info following the refactor:
 
-Metrics:  
-- Page load time before and after the refactor: (TODO)
-- Amount (in KB) of JS before and after
-  - 3rd Dependencies: (TODO)
-  - Source Code: (TODO)
-- Amount of CSS before and after: (TODO)
-- Lighthouse score: (TODO)
+**Metrics:**  
+
+- Amount of JS before and after the refactor:
+  - before: 539 kB total JS, 48.7 kB bundle,
+  - after: 360 kB total JS, 72.2 KB vendors bundle,
+  - In both cases as to be expected much of the JS comes from 3rd party dependencies. Following the refactor almost all 3rd party dependencies used in the source code were moved to a `vendors.js` bundle that can be cached by the browser. A few remaining scripts are still loaded via CDNs: the Add To Calendar widget, Google Analytics, Add This (a social media widget).
+  - Following the refactor about 180 kB of JS was eliminated.
+
+- Source Code: (TODO)
+  - number of lines before
+  - number of lines after (including & not including tests)
+
+- Chrome Lighthouse score:
+  - Before: 77 overall for performance, 0.8s FCP, 2.7s TTI, 1.9s LCP
+  - After: 89 overall for performance, 0.7s FCP, 2.3s TTI, 1.4s LCP
+
+| Before/After Refactor | Overall for Performance | FCP | TTI | LCP |
+| --- | --- | --- | --- | --- |
+| Before Refactor | 77 | 0.8s | 2.7s | 1.9s |
+| After Refactor | 89 | 0.7s | 2.3s | 1.4s |
 
 
-Improved developer productivity:  
-- Modern frontend build system
-- Automated deploys and preview deploys
-- CI builds
-- Automatic code linting and formatting
-- Unit tests
+**Improved developer productivity:**  
+- Improved frontend build system
+- Automated deploys and preview deploys with Github & Netlify
+- CI builds with Github Actions
+- Automatic code linting and formatting with ESLint and Prettier
+- Unit tests with Jest
 
-Some possible next steps:  
-- Integration or end to end tests?
-- Improving accessibility
-- Refactoring the CSS
-- Integrating a backend service to remove the need for a CARTO account
+**Some possible next steps:**  
+- Add integration or end to end tests
+- Fix accessibility issues
+- Refactor the CSS
+- Integrate a backend service to remove the need for a CARTO account
 
 Phew, that was a lot! Thanks for reading, hopefully this post will motivate you to try to do some refactoring of your own if it's something you have yet to try out. And don't forget to read Martin Fowler's book [Refactoring][4] either, if you haven't yet done so. Happy refactoring!
 
