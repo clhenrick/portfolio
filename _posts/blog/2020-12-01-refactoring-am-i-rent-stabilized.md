@@ -304,48 +304,73 @@ That sums up the majority of the refactoring work. Other bits included writing u
 
 ## Outcomes
 
-The refactor of _AIRS_ ended up being over four hundred commits over a period of three or four months. Doing this in my free time was not easy, but I found that I could chip away at it here and there to slowly make progress. There were definitely some big pushes at times and at some point I had to decide when to call it "good enough" and merge the changes. I didn't get around to everything in the refactor, notably the tenants rights groups spatial search, but I plan to add that back soon. Finally, I decided on adding a Changelog file to track significant changes to the code and site. I should probably add a Code of Conduct as well for contributors, as well as a License file.
+The refactor of _AIRS_ ended up being _**over four hundred commits**_ over a period of three months! Doing this in my free time was not easy, but I found that I could chip away at it here and there to slowly make progress. There were definitely some big pushes at times and at some point I had to decide when to call it "good enough" and merge the changes. I didn't get around to everything that I had wanted to do in the refactor, however I am now able to tackle work more incrementally a bit easier than I was able to before. Finally, I decided on adding a [Changelog file][26] to track significant changes to the code and design of the website. I should probably add a [Code of Conduct][27] as well for contributors, as well as a License file.
 
-Oh the things you learn as time goes on! Looking back at my original code helped me reflect on how much I've grown as a programmer and web developer, how much the world of browsers and web development has changed, and what I consider to be important when building websites and UIs these days. The entire concept of "componentizing" your UI was just beginning to take off around 2013-15, and now in 2020 it's so entrenched in how us developers build UIs it almost seems inconceivable to do otherwise. Browsers have of course changed in the past five years as well; new APIs are being unveiled while more features become standardized across browsers. Webpack was still fairly new in 2015 and not widely used as a frontend build tool. While I've always valued User Experience, I've come to learn a lot more about it from my current job as a UX Engineer. This makes me feel more motivated to fix the accessibility issues with _AIRS_; for example very naughty things like `<div>` elements disguised as buttons.
+Oh the things you learn as time goes on! Looking back at my original code helped me reflect on how much I've grown as a programmer and web developer, how much the world of browsers and web development has changed, and how my outlook on building websites and UIs has evolved. One example of this is that concept of "componentizing" the UI was just beginning to take off around 2013 to 2015, and now in 2020 it's so entrenched in how us developers build UIs it almost seems inconceivable to do otherwise. Browsers have of course changed in the past five years as well; new APIs are being unveiled while more features become standardized across browsers (well, sort of). Webpack was still fairly new in 2015 and not widely used as a frontend build tool; Grunt and Gulp were still the popular choices back then. While I've always valued User Experience above all, I've come to appreciate it even more from my current job as a UX Engineer at Google. This has motivated me to fix the accessibility issues with _AIRS_; for example very naughty things like `<div>` elements that function like as buttons but without the proper `ARIA` attributes and keyboard event handling.
 
-Here are some other bits of info following the refactor:
+## Metrics:
+Here are some bits of quantitative information related to the code before and after the refactor.
 
-**Metrics:**  
+### Total Amount of JavaScript
+- Before: 1MB total JS, including 48 kB for the `bundle.min.js` which contained both source and some vendors JS (In the original code some 3rd party dependencies were included in the bundle while others, such as jQuery, were loaded over CDNs).
 
-- Amount of JS before and after the refactor:
-  - before: 539 kB total JS, 48.7 kB bundle,
-  - after: 360 kB total JS, 72.2 KB vendors bundle,
-  - In both cases as to be expected much of the JS comes from 3rd party dependencies. Following the refactor almost all 3rd party dependencies used in the source code were moved to a `vendors.js` bundle that can be cached by the browser. A few remaining scripts are still loaded via CDNs: the Add To Calendar widget, Google Analytics, Add This (a social media widget).
-  - Following the refactor about 180 kB of JS was eliminated.
+- After: 416 kB total JS, including 206 kB for the `vendors.js` bundle, and ~50 kB total for source bundles.
 
-- Source Code: (TODO)
-  - number of lines before
-  - number of lines after (including & not including tests)
+Following the refactor about 584 kB (over half a megabyte) of JavaScript was eliminated!
 
-- Chrome Lighthouse score:
-  - Before: 77 overall for performance, 0.8s FCP, 2.7s TTI, 1.9s LCP
-  - After: 89 overall for performance, 0.7s FCP, 2.3s TTI, 1.4s LCP
+In both cases much of the JS comes from 3rd party dependencies, which is to be expected for a relatively small project such as _AIRS_. Following the refactor almost all 3rd party dependencies used in the source code moved to a `vendors.js` bundle that can be cached by the browser. This is beneficial, for typically the source code changes more frequently than 3rd party dependencies. A few remaining scripts are still loaded via CDNs; there are for the "Add To Calendar" widget, Google Analytics, and the "Add This" social media widget.
 
-| Before/After Refactor | Overall for Performance | FCP | TTI | LCP |
-| --- | --- | --- | --- | --- |
-| Before Refactor | 77 | 0.8s | 2.7s | 1.9s |
-| After Refactor | 89 | 0.7s | 2.3s | 1.4s |
+### Amount of Source Code
+Amounts listed are total lines of code:
 
+- Before:
+  - JS: 1,880
+  - SCSS / Sass: 3,240
+  - Handlebars templates: 848
 
-**Improved developer productivity:**  
-- Improved frontend build system
-- Automated deploys and preview deploys with Github & Netlify
-- CI builds with Github Actions
-- Automatic code linting and formatting with ESLint and Prettier
-- Unit tests with Jest
+- After:
+  - JS, total: 5,839
+  - JS, excluding unit tests: 2,122
+  - SCSS / Sass: 3,115
+  - Handlebars templates: 867
 
-**Some possible next steps:**  
+Although the amount of JavaScript increased by close to 4k lines of code, the majority of that code consists of unit tests. When excluding the unit tests, the increase was only 242 lines. This is a point MF brings up in his book Refactoring; a refactor may result in more code than existed previously. However this is not necessarily a bad thing! If making the code less terse and more human readable results in more lines of code, that is a boon for humans. Of course this does not concern optimization, but MF argues that a priority of writing software should be first to make the code understandable, then to find the bottlenecks and solve to optimize them, only after they have been determined to negatively impact performance. To me this is a more reasonable approach then trying to optimize code prematurely. I'd much rather work on code that is well structured and easy to reason with then work on code that is terse, compact, and difficult to reason with.
+
+### Lighthouse Score
+Using the [Lighthouse audit tool][28] in the Google Chrome browser.
+
+- Before:
+  - 77 overall score for performance
+  - 0.8s FCP
+  - 2.7s TTI
+  - 1.9s LCP
+
+- After:
+  - 89 overall score for performance
+  - 0.7s FCP
+  - 2.3s TTI
+  - 1.4s LCP
+
+_(FCP: First Contentful Paint, TTI: Time to Interactive, Largest Contentful Paint)_
+
+It's worth noting that:  
+  1. the Lighthouse scores are estimates, so re-running the tool may give slightly different results each time, and
+  2. the goal of the refactor was not to optimize the site; it was to make the code easier to reason about and to update, so I did not aim to improve performance other than reducing the amount of JS sent over the wire.
+
+That being said it is very cool to see that the overall Lighthouse score went up, presumably from eliminating a considerable amount of JavaScript!
+
+## Some possible next steps
+Some things I'd like to tackle next, now that the refactor is complete:
+
 - Add integration or end to end tests
 - Fix accessibility issues
 - Refactor the CSS
 - Integrate a backend service to remove the need for a CARTO account
+- Instead of Handlebars, use regular old HTML and a locale JS library such as `i18next`
 
-Phew, that was a lot! Thanks for reading, hopefully this post will motivate you to try to do some refactoring of your own if it's something you have yet to try out. And don't forget to read Martin Fowler's book [Refactoring][4] either, if you haven't yet done so. Happy refactoring!
+Phew, that was a lot! If you made it this far, then thanks for reading. Hopefully this post will motivate you to try to do some refactoring of your own if it's something you haven't done yet. And lastly, don't forget to read Martin Fowler's book [Refactoring][4] either.
+
+Happy refactoring!
 
 
 [comment]: # (reference links)
@@ -374,3 +399,6 @@ Phew, that was a lot! Thanks for reading, hopefully this post will motivate you 
 [23]: https://labs.planning.nyc.gov/projects/nyc-geosearch-api/
 [24]: https://github.com/reduxjs/redux-devtools
 [25]: https://davidwalsh.name/pubsub-javascript
+[26]: https://keepachangelog.com/en/1.0.0/
+[27]: https://docs.github.com/en/free-pro-team@latest/github/building-a-strong-community/adding-a-code-of-conduct-to-your-project
+[28]: https://developers.google.com/web/tools/lighthouse/
