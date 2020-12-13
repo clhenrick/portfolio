@@ -345,7 +345,7 @@ The amounts listed below are total lines of code:
 Although the amount of JavaScript increased by close to 4k lines of code, the majority of that consists of unit tests. When excluding the unit tests, the increase was only 242 lines. This is a point MF brings up in his book Refactoring; a refactor may result in more code than existed previously. However this is not necessarily a bad thing! If a refactoring effort results in code that is better structured and more understandable, that is a boon for humans who work on the code, despite having more lines of code to read over. On the surface this philosophy ignores optimization, however MF argues that the priority of writing software should first be to make the code well structured and understandable. After this goal has been achieved performance bottlenecks should then be identified and fixed. To me this is a more reasonable approach than trying to optimize code prematurely. I'd much rather work on code that is well structured and easy to reason with then work on code that is terse, inconsistently organized, and/or difficult to understand.
 
 ### Lighthouse Score
-Results from the [Lighthouse audit tool][28] in the Google Chrome browser.
+Results from the [Lighthouse audit tool][28] in the Google Chrome browser. To be honest, using this tool felt a bit like rolling dice; each time I ran it the overall score would range anywhere from 65 – 93, with the refactored version typically scoring the highest on any given run, although it scored lower than the previous version at times as well. It makes me wonder how meaningful these results are, and perhaps there are better tools for evaluating metrics like FCP, TTI, and LCP.
 
 - Before:
   - 77 overall score for performance
@@ -362,10 +362,10 @@ Results from the [Lighthouse audit tool][28] in the Google Chrome browser.
 _(FCP: First Contentful Paint, TTI: Time to Interactive, LCP: Largest Contentful Paint)_
 
 It's worth noting that:  
-  1. the Lighthouse scores are estimates, so re-running the tool may give slightly different results each time. I did run the Lighthouse tool in Chrome's devtools multiple times and overall the results were similar to the above.
+  1. the Lighthouse scores are estimates, so re-running the tool may give slightly different results each time.
   2. the goal of the refactor was not to optimize the site; it was to make the code easier to reason about and to update, so I did not aim to improve performance other than reducing the amount of JS sent over the wire.
 
-That being said it is very cool to see that the overall Lighthouse score went up, presumably from eliminating a considerable amount of JavaScript!
+That being said it is very cool to see that the overall Lighthouse score went up, presumably from eliminating a considerable amount of JavaScript!  
 
 ## Possible Next Steps
 Here is a short list of tasks that I would like to tackle next, now that the refactor is complete:
