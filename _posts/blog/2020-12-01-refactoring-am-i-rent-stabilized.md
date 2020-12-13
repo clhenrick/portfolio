@@ -345,27 +345,32 @@ The amounts listed below are total lines of code:
 Although the amount of JavaScript increased by close to 4k lines of code, the majority of that consists of unit tests. When excluding the unit tests, the increase was only 242 lines. This is a point MF brings up in his book Refactoring; a refactor may result in more code than existed previously. However this is not necessarily a bad thing! If a refactoring effort results in code that is better structured and more understandable, that is a boon for humans who work on the code, despite having more lines of code to read over. On the surface this philosophy ignores optimization, however MF argues that the priority of writing software should first be to make the code well structured and understandable. After this goal has been achieved performance bottlenecks should then be identified and fixed. To me this is a more reasonable approach than trying to optimize code prematurely. I'd much rather work on code that is well structured and easy to reason with then work on code that is terse, inconsistently organized, and/or difficult to understand.
 
 ### Lighthouse Score
-Results from the [Lighthouse audit tool][28] in the Google Chrome browser. To be honest, using this tool felt a bit like rolling dice; each time I ran it the overall score would range anywhere from 65 – 93, with the refactored version typically scoring the highest on any given run, although it scored lower than the previous version at times as well. It makes me wonder how meaningful these results are, and perhaps there are better tools for evaluating metrics like FCP, TTI, and LCP.
+Results from the [Lighthouse auditing tool][28] in the Google Chrome browser. 
 
 - Before:
-  - 77 overall score for performance
-  - 0.8s FCP
-  - 2.7s TTI
-  - 1.9s LCP
+  - 96 Performance
+  - 72 Accessibility
+  - 71 Best Practices
+  - 80 SEO
+  - 0.7s FCP
+  - 0.9s TTI
+  - 0s TBT
+  - 1.3s LCP
 
 - After:
-  - 89 overall score for performance
+  - 96 Performance
+  - 81 Accessibility
+  - 79 Best Practices
+  - 80 SEO
   - 0.7s FCP
-  - 2.3s TTI
-  - 1.4s LCP
+  - 0.9s TTI
+  - 0s TBT
+  - 1.3s LCP
 
-_(FCP: First Contentful Paint, TTI: Time to Interactive, LCP: Largest Contentful Paint)_
+_(FCP: First Contentful Paint, TTI: Time to Interactive, TBT: Total Blocking Time, LCP: Largest Contentful Paint)_
 
-It's worth noting that:  
-  1. the Lighthouse scores are estimates, so re-running the tool may give slightly different results each time.
-  2. the goal of the refactor was not to optimize the site; it was to make the code easier to reason about and to update, so I did not aim to improve performance other than reducing the amount of JS sent over the wire.
+It shouldn't be surprising that the results from before and after the refactor do not differ by that much, as I did not focus on making changes that would drastically affect things such as SEO, accessibility, Time to Interative, etc. I did not aim to improve performance other than reducing the amount of JS sent over the wire, which seems to have not affected the performance score. It's worth noting that the Lighthouse scores are estimates, so re-running the tool may give slightly different results each time. The Lighthouse audits were run on my Mac Mini, circa 2018 with 32 GB of RAM. The scores tended to differ drastically from one run to the next when I ran them on an older laptop.
 
-That being said it is very cool to see that the overall Lighthouse score went up, presumably from eliminating a considerable amount of JavaScript!  
 
 ## Possible Next Steps
 Here is a short list of tasks that I would like to tackle next, now that the refactor is complete:
