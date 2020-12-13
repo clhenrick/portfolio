@@ -312,11 +312,18 @@ Oh the things you learn as time goes on! Looking back at my original code helped
 Here are some bits of quantitative information related to the code before and after the refactor.
 
 ### Total Amount of JavaScript
-- Before: 1MB total JS, including 48 kB for the `bundle.min.js` which contained both source and some vendors JS (In the original code some 3rd party dependencies were included in the bundle while others, such as jQuery, were loaded over CDNs).
+- Before:
+  - 1MB total JS,
+  - including 48 kB for the `bundle.min.js` which contained both source and some vendors JS\*
 
-- After: 416 kB total JS, including 206 kB for the `vendors.js` bundle, and ~50 kB total for source bundles.
+- After:
+  - 416 kB total JS,
+  - 206 kB for the `vendors.js` bundle
+  - ~50 kB total for source bundles
 
-Following the refactor about 584 kB (over half a megabyte) of JavaScript was eliminated!
+_\*In the original code some 3rd party dependencies were included in the bundle while others, such as jQuery, were loaded over CDNs._
+
+Following the refactor **584 kB (over half a megabyte) of JavaScript was eliminated!**
 
 In both cases much of the JS comes from 3rd party dependencies, which is to be expected for a relatively small project such as _AIRS_. Following the refactor almost all 3rd party dependencies used in the source code moved to a `vendors.js` bundle that can be cached by the browser. This is beneficial, for typically the source code changes more frequently than 3rd party dependencies. A few remaining scripts are still loaded via CDNs; there are for the "Add To Calendar" widget, Google Analytics, and the "Add This" social media widget.
 
