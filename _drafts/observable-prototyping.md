@@ -2,11 +2,12 @@
 title: "Observable Notebooks for Data Viz Prototyping"
 layout: page
 date: 2021-02-06
-teaser: "Elaborating on my prototyping process for a fellowship with Google.org"
+teaser: "Elaborating on a prototyping process for a fellowship with Google.org"
 header: no
 comments: true
 tags:
   - Observable Notebooks
+  - Data Visualization
   - Prototyping
   - Google.org Fellowship
 ---
@@ -35,9 +36,9 @@ I'll cover:
 
 ## Observable Notebooks
 
-<img class="lazy" data-original="{{site.url}}{{site.baseurl}}/images/observable_demo.gif" width="100%" alt="">
+<img class="lazy" data-original="{{site.url}}{{site.baseurl}}/images/observable_demo_lowfr.gif" width="100%" alt="">
 <noscript>
-  <img src="{{site.url}}{{site.baseurl}}/images/observable_demo.gif" width="100%" alt="">
+  <img src="{{site.url}}{{site.baseurl}}/images/observable_demo_lowfr.gif" width="100%" alt="">
 </noscript>
 <small>A short demonstration of live coding in a Observable Notebook</small>
 
@@ -47,9 +48,9 @@ If you are curious about trying Observable Notebooks I strongly encourage you to
 
 ## Data Intake Notebooks
 
-<img class="lazy" data-original="{{site.url}}{{site.baseurl}}/images/observable_data_intake.jpg" width="100%" alt="A data intake notebook in Observable">
+<img class="lazy" data-original="{{site.url}}{{site.baseurl}}/images/observable_data_intake.png" width="100%" alt="A data intake notebook in Observable">
 <noscript>
-  <img src="{{site.url}}{{site.baseurl}}/images/observable_data_intake.jpg" width="100%" alt="A data intake notebook in Observable">
+  <img src="{{site.url}}{{site.baseurl}}/images/observable_data_intake.png" width="100%" alt="A data intake notebook in Observable">
 </noscript>
 <small>An example [“Data Intake” notebook](https://observablehq.com/@clhenrick/het-data-intake-u-s-chronic-disease-indicators-cdi-brfss?collection=@clhenrick/msm-fellowship-data-intake)</small>
 
@@ -59,9 +60,9 @@ To facilitate and document exploring a dozen or more potential datasets, I decid
 
 ## Data Visualization Prototyping Notebooks
 
-<img class="lazy" data-original="{{site.url}}{{site.baseurl}}/images/beeswarm_plot.jpg" width="100%" alt="A data intake notebook in Observable">
+<img class="lazy" data-original="{{site.url}}{{site.baseurl}}/images/beeswarm_plot.jpg" width="100%" alt="An example Beeswarm Plot / Chart">
 <noscript>
-  <img src="{{site.url}}{{site.baseurl}}/images/beeswarm_plot.jpg" width="100%" alt="A data intake notebook in Observable">
+  <img src="{{site.url}}{{site.baseurl}}/images/beeswarm_plot.jpg" width="100%" alt="An example Beeswarm Plot / Chart">
 </noscript>
 <small>A [“Beeswarm Plot”](https://observablehq.com/@clhenrick/visualizing-racial-ethnic-disparities-in-covid-19-deaths?collection=@clhenrick/msm-fellowship#beeswarm) showing disparities in COVID-19 deaths by race/ethnicity in U.S. counties</small>
 
@@ -79,16 +80,16 @@ viewof myinput = inputType({ /* config options */ });
 
 For example, here’s an example of a view that is a text input with autosuggest:
 
-<img class="lazy" data-original="{{site.url}}{{site.baseurl}}/images/observable_autosuggest.jpg" width="100%" alt="An example Observable notebooks cell that outputs an html input">
+<img class="lazy" data-original="{{site.url}}{{site.baseurl}}/images/observable_cell.png" width="100%" alt="An example Observable notebooks cell that outputs an html input">
 <noscript>
-  <img src="{{site.url}}{{site.baseurl}}/images/observable_autosuggest.jpg" width="100%" alt="An example Observable notebooks cell that outputs an html input">
+  <img src="{{site.url}}{{site.baseurl}}/images/observable_cell.png" width="100%" alt="An example Observable notebooks cell that outputs an html input">
 </noscript>
 
 Now when I have a chart that uses data for that selected state, e.g. `stateData = data.get(selectedState);`, it will react to any change in the selectedState input and re-render:
 
-<img class="lazy" data-original="{{site.url}}{{site.baseurl}}/images/observable_barchart.jpg" width="100%" alt="A bar chart rendered by a Observable cell">
+<img class="lazy" data-original="{{site.url}}{{site.baseurl}}/images/observable_bar_chart_with_input.gif" width="100%" alt="A bar chart rendered by a Observable cell">
 <noscript>
-  <img src="{{site.url}}{{site.baseurl}}/images/observable_barchart.jpg" width="100%" alt="A bar chart rendered by a Observable cell">
+  <img src="{{site.url}}{{site.baseurl}}/images/observable_bar_chart_with_input.gif" width="100%" alt="A bar chart rendered by a Observable cell">
 </noscript>
 
 Views can get a lot more complex, for example you can inline multiple views within Markdown or use an HTML `<form>` element that contains multiple inputs. Because [views are mutable](https://observablehq.com/@mbostock/views-are-mutable-values?collection=@observablehq/techniques), you may also [synchronize them with other views](https://observablehq.com/@mbostock/synchronized-views). In addition to views, Observable also has its own [HTML templating library](https://observablehq.com/@observablehq/htl) which borrows from [Lit HTML](https://lit-html.polymer-project.org/) and is globally available in all notebooks.
@@ -97,18 +98,18 @@ In the context of my [Data Visualization Notebooks](https://observablehq.com/col
 
 ## Embedding Notebook Cells For User Testing
 
-<img class="lazy" data-original="{{site.url}}{{site.baseurl}}/images/observable_mad_lib.jpg" width="100%" alt="">
+<img class="lazy" data-original="{{site.url}}{{site.baseurl}}/images/observable_mad_lib_embed.gif" width="100%" alt="An example of embedding an Observable Notebook for a user research study">
 <noscript>
-  <img src="{{site.url}}{{site.baseurl}}/images/observable_mad_lib.jpg" width="100%" alt="">
+  <img src="{{site.url}}{{site.baseurl}}/images/observable_mad_lib_embed.gif" width="100%" alt="An example of embedding an Observable Notebook for a user research study">
 </noscript>
 
 <small>[An example](https://satcherinstitute.github.io/data-visualization/03_madlibs_compare/madlib-disease-states.html) of how I [embedded cells](https://observablehq.com/@observablehq/downloading-and-embedding-notebooks) from an Observable Notebook into an external web page. ([Source Notebook](https://observablehq.com/@clhenrick/compare-chronic-diseases-in-us-states?collection=@clhenrick/msm-fellowship))</small>
 
 When it came to user-testing my prototypes with our team’s UX Researcher, it was clear to me that Observable’s UI would be an unhelpful distraction for our testers. Thankfully you can embed cells from your notebook into just about any arbitrary webpage. This allowed me to create a [Github repository](https://github.com/SatcherInstitute/data-visualization) that contained minimal web pages with only the cells for visualizations that we were going to test. It also meant I could utilize CSS to create layouts that were not restricted to a vertical column layout.
 
-<img class="lazy" data-original="{{site.url}}{{site.baseurl}}/images/observable_embed.jpg" width="100%" alt="">
+<img class="lazy" data-original="{{site.url}}{{site.baseurl}}/images/observable_embed_example.jpg" width="100%" alt="An example of embedding an Observable Notebook for a user research study">
 <noscript>
-  <img src="{{site.url}}{{site.baseurl}}/images/observable_embed.jpg" width="100%" alt="">
+  <img src="{{site.url}}{{site.baseurl}}/images/observable_embed_example.jpg" width="100%" alt="An example of embedding an Observable Notebook for a user research study">
 </noscript>
 <small>Another example of a non-vertical layout when embedding Observable cells</small>
 
@@ -140,9 +141,9 @@ import {chart as chart3} with {my_data3 as data} from "@d3/bar-chart"
 
 To solve this, I ended up making some reusable chart notebooks (such as a [reusable Choropleth Map](https://observablehq.com/@clhenrick/reusable-choropleth-map?collection=@clhenrick/custom-inputs)) that allow for importing a function that renders the chart. This makes using an approach such as *small multiples*, where you render many small charts of the same chart type showing different aspects of the same data, more feasible (be sure to take a look at Zan Armstrong ‘s work on the advantageous use of small multiples in data viz).
 
-<img class="lazy" data-original="{{site.url}}{{site.baseurl}}/images/covid-19-mortality-small-multiples-charts.jpg" width="100%" alt="">
+<img class="lazy" data-original="{{site.url}}{{site.baseurl}}/images/marshall-project-small-multiples.png" width="100%" alt="">
 <noscript>
-  <img src="{{site.url}}{{site.baseurl}}/images/covid-19-mortality-small-multiples-charts.jpg" width="100%" alt="">
+  <img src="{{site.url}}{{site.baseurl}}/images/marshall-project-small-multiples.png" width="100%" alt="">
 </noscript>
 <small>Small multiples example showing COVID-19 mortality by race from [The Marshall Project](https://www.themarshallproject.org/2020/08/21/covid-19-s-toll-on-people-of-color-is-worse-than-we-knew)</small>
 
