@@ -25,7 +25,7 @@ tags:
 </noscript>
 
 ## Intro
-The work discussed in this article stems from a [Google.org](https://www.google.org/) Fellowship that I was recently a part of with [Morehouse School of Medicine](https://www.msm.edu/)’s [Satcher Health Leadership Institute](https://satcherinstitute.org/). The goal of the fellowship was to help SHLI develop a "Health Equity Tracker" website that empowers Health Equity advocates with up to date public health data and data visualization dashboards. In this post I'll discuss the more technical nature of the data visualization prototyping work I did for the project that helped inform what the team built. 
+The work discussed in this article stems from a [Google.org](https://www.google.org/) Fellowship that I was recently a part of with [Morehouse School of Medicine](https://www.msm.edu/)’s [Satcher Health Leadership Institute](https://satcherinstitute.org/). The goal of the fellowship was to help SHLI develop a "Health Equity Tracker" website that empowers Health Equity advocates with up to date public health data and data visualization dashboards. In this post I'll discuss the more technical nature of the data visualization prototyping work I did for the project that helped inform what the team built.
 
 I'll cover:
 
@@ -44,7 +44,7 @@ I'll cover:
 
 I chose to use [Observable Notebooks](https://observablehq.com/) for my data exploration and visualization prototyping work, primarily for the useful features they provide when doing exploratory, data-driven work. Observable notebooks are akin to spreadsheets; they provide a non-linear, reactive JavaScript environment that allows for rapid feedback and abstracts some pesky aspects of the web, such as handling async processes. Notebook cells are similar to variables and may contain any number of things such as Markdown, structured data, functions, generators, blocks of arbitrary code, loops that evaluate at a solid 65 frames per second (ideal for animation), or “views” that reference the value of HTML inputs such as a slider or color picker. Cells are implicitly Promises that resolve/reject on their own, may depend on other cells, and will wait on a dependent cell to resolve before evaluating – hence the reactive environment.
 
-If you are curious about trying Observable Notebooks I strongly encourage you to [check them out](https://observablehq.com/explore), they have loads of documentation plus examples you can read, interact with, and “fork” to get started. It’s also worth noting that we have a Google team account you may join, with the caveat that we obviously cannot put anything sensitive in it, e.g. internal data. I’m hoping that at some point in the future Observable releases an enterprise solution that we could host internally, as I feel it is such an incredibly useful tool for prototyping and visualization.
+If you are curious about trying Observable Notebooks I strongly encourage you to [check them out](https://observablehq.com/explore)! They have loads of documentation plus examples you can read, interact with, and “fork” to get started.
 
 ## Data Intake Notebooks
 
@@ -139,7 +139,7 @@ import {chart as chart2} with {my_data2 as data} from "@d3/bar-chart"
 import {chart as chart3} with {my_data3 as data} from "@d3/bar-chart"
 {% endhighlight %}
 
-To solve this, I ended up making some reusable chart notebooks (such as a [reusable Choropleth Map](https://observablehq.com/@clhenrick/reusable-choropleth-map?collection=@clhenrick/custom-inputs)) that allow for importing a function that renders the chart. This makes using an approach such as *small multiples*, where you render many small charts of the same chart type showing different aspects of the same data, more feasible (be sure to take a look at Zan Armstrong ‘s work on the advantageous use of small multiples in data viz).
+To solve this, I ended up making some reusable chart notebooks (such as a [reusable Choropleth Map](https://observablehq.com/@clhenrick/reusable-choropleth-map?collection=@clhenrick/custom-inputs)) that allow for importing a function that renders the chart. This makes using an approach such as *small multiples*, where you render many small charts of the same chart type showing different aspects of the same data, more feasible (be sure to take a look at [Zan Armstrong](https://www.zanarmstrong.com/)'s work on the [advantageous use of small multiples in data viz](https://www.youtube.com/watch?v=rdZZrrU62sc)).
 
 <img class="lazy" data-original="{{site.url}}{{site.baseurl}}/images/marshall-project-small-multiples.png" width="100%" alt="">
 <noscript>
