@@ -1,6 +1,18 @@
 {
   "author": "Chris L Henrick",
   "work": [{
+    "title": "Health Equity Tracker",
+    "tags": ["web", "data-vis", "prototyping"],
+    "description": "Data Visualization prototyping for the Satcher Health Leadership Institute",
+    "description_long": "",
+    "tech": [""],
+    "thumb": "",
+    "imgs": [""],
+    "size": "width3",
+    "date": "2020-12-01",
+    "link": ""
+  },
+  {
     "title": "AEMP COVID-19 Tenant Protections Map",
     "tags": ["web", "cartography"],
     "description": "Mapping tenants rights legislation and housing justice actions in response to the Coronavirus pandemic.",
