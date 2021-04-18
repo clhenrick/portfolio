@@ -18,7 +18,7 @@ San Francisco, CA
 
 User Experience Engineer focusing on data visualization for the [Google Cloud Platform](https://cloud.google.com/) and other product areas at Google. 
 
-- Collaborate with UX Designers, UX Researchers, Data Scientists, Program Managers, and Software Engineers in the design process of product development.
+- Collaborate with UX Designers, UX Researchers, Data Scientists, Program Managers, and Software Engineers in product development.
 - Create prototypes at varying levels of fidelity for interactive design concepts using modern web standards and technologies such as React, Angular, D3JS, TypeScript, LitElement, (S)CSS, HTML, etc.
 - Make design recommendations pertaining to areas such as accessibility, visual design, and interaction design.
 - Anaylze data and document data transformation pipelines using CoLab/Jupyter Notebooks, SQL, Pandas, Altair.
@@ -40,7 +40,7 @@ Data Visualization Engineer at [OmniSci](https://www.omnisci.com/) (formerly Map
 Berkeley, CA  
 
 Taught _Interactive Data Visualization with D3_, for the [School of Information](https://www.ischool.berkeley.edu/) during the Fall semester of 2017. 
-- Through 13 lectures and 15 hands on coding assignments, students learned how to create interactive charts, graphs, and geographic maps for display on the web using the popular D3JS Javascript library.
+- Through thirteen lectures and fifteen hands on coding assignments, students learned how to create interactive charts, graphs, and geographic maps for display on the web using the popular D3JS Javascript library.
 
 ### GreenInfo Network
 **Full Stack Web Developer**  
@@ -56,17 +56,17 @@ Full stack web developer with [GreenInfo Network](http://greeninfo.org) speciali
 *March, 2016 - December, 2016*  
 San Francisco, CA  
 
-One part data wrangler, one part cartographer, and several parts web developer for [Stamen Design](http://stamen.com).
+One part data wrangler, one part cartographer, and several parts web developer for [Stamen Design](http://stamen.com), a renowned data visualization and design studio.
 - Prototyped and built highly customized web applications with a focus on interactive mapping and data visualization.
 - Utiziled web development technologies such as React, Redux, Leaflet, CARTO, D3JS, Git, AWS, Heroku.
-- Designed and created tiled basemaps using data from OpenStreetMap and Natural Earth with technologies such as Make, PostGIS, CartoCSS, and Mapnik.
+- Designed and created original tiled basemaps using data from OpenStreetMap and Natural Earth, with technologies such as Make, PostGIS, CartoCSS, and Mapnik.
 
 ### Radish Lab
 **Web Developer**  
 *May, 2015 - April 2016*  
 Brooklyn, NY  
 
-Consulted with [Radish Lab](http://radishlab.com/), a certified B Corporation web and graphic design studio, with creating interactive data-visualizations and professionally designed web sites for non-profits and cultural institutions such as [MAS](http://mas.org/). 
+Consulted with [Radish Lab](http://radishlab.com/), a certified B Corporation, web and graphic design studio, with creating interactive data-visualizations and professionally designed web sites for non-profits and cultural institutions such as [MAS](http://mas.org/). 
 - Duties include agile front-end web-development using modern web technologies such as jQuery, Node.JS, D3.JS, Wordpress, CARTO, and Github.
 
 ### Chris Henrick Cartography
@@ -84,9 +84,8 @@ Consulted for a diverse range of clients in web development, print cartography, 
 New York, NY
 
 Assisted [CARTO](https://carto.com/) with improving their web-based geospatial visualization platform:
-- Documented and resolved software related issues on GitHub.
-- Assisted in improving CARTO's internal geocoder using PostgreSQL, PgSQL, PostGIS and open administrative geospatial data.
-- Tested and documented Odyssey JS, an open-source javascript library for telling stories with maps.
+- Contributed code to CARTO's internal geocoder using PostgreSQL, PgSQL, PostGIS and open administrative geospatial data.
+- Created demos for and documented Odyssey, an open-source JavaScript library for telling stories with maps.
 - Crafted video tutorials for and held in person workshops on educating users about the CARTO platform.
 - Contributed to technical documentation of the CARTO platform.
 
@@ -143,7 +142,7 @@ Assisted [DVRPC](http://www.dvrpc.org/)'s Office of Transit, Bicycle, and Pedest
 *February, 2020 – July, 2020  
 Remote
 
-Contributed front end web development and cartographic design to the [COVID-19 Emergency Tenants Protections Map](https://covid19.antievictionmap.com/). Worked with a collective of AEMP volunteers to design and develop the project during the start of the COVID-19 pandemic through the summer to map legislation at varying levels of government (and the lack thereof) aimed at protecting tenants from eviction due to pandemic related issues such as loss of employment and illness.
+Contributed front end web development and cartographic design to the [COVID-19 Emergency Tenants Protections Map]({{site.url}}{{site.baseurl}}/work/aemp-covid-19-tenant-protections-map.html). Worked with a collective of AEMP volunteers to design and develop the project during the start of the COVID-19 pandemic through the summer to map legislation at varying levels of government (and the lack thereof) aimed at protecting tenants from eviction due to pandemic related issues such as loss of employment and illness.
 
 ### Maptime NYC
 **Co-Organizer**  
@@ -168,7 +167,7 @@ Consulted with GreenInfo Network on best practices for GIS analysis and data vis
 New York, NY  
 GPA 3.91
 
-MFA Thesis: [Am I Rent Stabilized?](https:amirentstabilized.com), an interactive web-app about rent-stabilization in New York City.
+MFA Thesis: [Am I Rent Stabilized?]({{site.url}}{{site.baseurl}}/work/am-i-rent-stabilized.html), an interactive web-app about rent-stabilization in New York City.
 
 Areas of focus in [MFA DT](http://www.newschool.edu/parsons/mfa-design-technology/) included interactive web-mapping, data-visualization, web development, User Experience Design, game design, interactive narrative, open-source GIS, and creative coding.
 
