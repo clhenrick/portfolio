@@ -10,14 +10,13 @@ header: no
 [Download as a PDF]({{site.urlimg}}chris-henrick-resume.pdf)
 
 ## Professional Experience
------
 
 ### Google
 **UX Engineer: Data Visualization**  
 *September, 2018 – Present*  
 San Francisco, CA
 
-User Experience Engineer focusing on data visualization for [Google Cloud Platform](https://cloud.google.com/) and other product areas at Google. Collaborating with UX and Visual Designers, UX Researchers, Software Engineers, and others to develop internal and external data visualization software for creating highly functional and complex visualizations.
+User Experience Engineer focusing on data visualization for the [Google Cloud Platform](https://cloud.google.com/) and other product areas at Google. Collaborating with UX and Visual Designers, UX Researchers, Software Engineers, and others to develop internal and external data visualization software for creating highly functional and complex visualizations.
 
 ### OmniSci
 **Data Visualization Engineer**  
@@ -42,23 +41,11 @@ Taught _Interactive Data Visualization with D3_, for the [School of Information]
 *February, 2017 - November, 2017*  
 Oakland, CA  
 
-- Full stack web developer with [GreenInfo Network](http://greeninfo.org) specializing in building web applications that utilize geo-visualization with open source GIS and web-mapping software, Javascript, Python, SQL, and PHP.
+Full stack web developer with [GreenInfo Network](http://greeninfo.org) specializing in building web applications that utilize geo-visualization with open source GIS and web-mapping software, Javascript, Python, SQL, and PHP.
 
 - Coordinated with a team of GIS specialists, cartographers, designers, and project managers to produce responsive web applications for clients primarily working in the non-profit, NGO, and government sectors.
 
 - Assisted Google Earth Outreach with creating curated "Voyager" content for their 2017 relaunch of Google Earth.
-
-
-### Chris Henrick Cartography
-**Web Developer, Cartographer**  
-*June, 2010 - Present*  
-San Francisco, CA
-
-Five years of consulting for a diverse range of clients in web development, print cartography, and geospatial data analysis.
-
-- [My work]({{site.url}}/work/) demonstrates expertise in creating custom web applications, data wrangling, spatial analysis with open-source GIS software, and producing clean, legible, and stylistically appropriate cartographic and map related products for both print and the web.
-
-- Current and former clients include [Rebecca Solnit](http://rebeccasolnit.net/), [Stamen Design](http://stamen.com/), [Radish Lab](http://radishlab.com/), Pratt's [Spatial Analysis and Visualization Initiative](https://www.pratt.edu/pratt-research-and-centers/spatial-analysis-visualization-initiative/), [The Skyscraper Museum](http://skyscraper.org/), [The Oakland Museum of California](http://museumca.org/), and [Avalon Travel Publishing](http://avalontravelbooks.com/).
 
 ### Stamen Design
 **Design Technologist**  
@@ -67,9 +54,9 @@ San Francisco, CA
 
 One part data wrangler, one part cartographer, and several parts web developer for [Stamen Design](http://stamen.com).
 
-- Prototyped and built highly customized web applications with technologies such as AWS, Heroku, React, Redux, Leaflet, CARTO, and D3.
+- Prototyped and built highly customized web applications with technologies such as AWS, Heroku, React, Redux, Leaflet, CARTO, and D3JS.
 
-- Assisted with designing web map tiles / basemaps using data from OpenStreetMap and technologies such as PostGIS, CartoCSS, and Mapnik.
+- Designed and created tiled basemaps using data from OpenStreetMap and Natural Earth with technologies such as Make, PostGIS, CartoCSS, and Mapnik.
 
 ### Radish Lab
 **Web Developer**  
@@ -77,6 +64,17 @@ One part data wrangler, one part cartographer, and several parts web developer f
 Brooklyn, NY  
 
 Assisted [Radish Lab](http://radishlab.com/), a web and graphic design studio, with creating interactive data-visualizations and professionally designed web sites for non-profits and cultural institutions such as [MAS](http://mas.org/). Duties include agile front-end web-development using modern web technologies such as jQuery, Node.JS, D3.JS, Wordpress, CARTO, and Github.
+
+### Chris Henrick Cartography
+**Web Developer, Cartographer**  
+*June, 2010 - March 2016*  
+San Francisco, CA
+
+Consulted for a diverse range of clients in web development, print cartography, and geospatial data analysis.
+
+- [My work]({{site.url}}/work/) demonstrates expertise in creating custom web applications, data wrangling, spatial analysis with open-source GIS software, and producing clean, legible, and stylistically appropriate cartographic and map related products for both print and the web.
+
+- Former clients include [Rebecca Solnit](http://rebeccasolnit.net/), [Stamen Design](http://stamen.com/), [Radish Lab](http://radishlab.com/), Pratt's [Spatial Analysis and Visualization Initiative](https://www.pratt.edu/pratt-research-and-centers/spatial-analysis-visualization-initiative/), [The Skyscraper Museum](http://skyscraper.org/), [The Oakland Museum of California](http://museumca.org/), and [Avalon Travel Publishing](http://avalontravelbooks.com/).
 
 ### CARTO
 **Geospatial Developer Intern**  
@@ -136,8 +134,15 @@ Philadelphia, PA
 
 Assisted [DVRPC](http://www.dvrpc.org/)'s Office of Transit, Bicycle, and Pedestrian Planning in implementing projects related to transit, pedestrian, and bicycle planning in the greater metropolitan Philadelphia area. Participated in tasks such as survey field-work, road safety audits, data scrubbing and aggregation, bicycle route mapping, and power point presentations.
 
-## Volunteer Experience:
 -----
+## Volunteer Experience:
+
+### Anti-Eviction Mapping Project
+**Web Developer**  
+*February, 2020 – July, 2020  
+Remote
+
+Contributed front end web development and cartographic design to the [COVID-19 Emergency Tenants Protections Map](https://covid19.antievictionmap.com/). Worked with a collective of AEMP volunteers to design and develop the project during the start of the COVID-19 pandemic through the summer to map legislation at varying levels of government (and the lack thereof) aimed at protecting tenants from eviction due to pandemic related issues such as loss of employment and illness.
 
 ### Maptime NYC
 **Co-Organizer**  
@@ -155,8 +160,8 @@ Performed spatial data analysis and visualization to support [ASIAN Inc](http://
 
 Consulted with GreenInfo Network on best practices for GIS analysis and data visualization of census and in-house demographic data.
 
-## Education:
 -----
+## Education:
 
 ### Parsons, The New School For Design
 **Master of Fine Art in Design and Technology.**  
@@ -167,9 +172,9 @@ MFA Thesis: [Am I Rent Stabilized?](https:amirentstabilized.com), an interactive
 
 Areas of focus in [MFA DT](http://www.newschool.edu/parsons/mfa-design-technology/) included interactive web-mapping, data-visualization, web development, user experience design, game design, interactive narrative, open-source GIS, and creative coding.
 
-Taught front end web development as part of a 3 week intensive "bootcamp" to the incoming 2014 MFA DT class.
+- Taught front end web development as part of a 3 week intensive "bootcamp" to the incoming 2014 MFA DT class.
 
-Taught a two day workshop on Node.JS and Bash to the incoming class of Parsons MS in Data Visualization class of 2015.
+- Taught a two day workshop on Node.JS and Bash to the incoming class of Parsons MS in Data Visualization class of 2015.
 
 ### U.C. Berkeley Extension
 **Graphic Design Certificate Program**  
@@ -190,20 +195,23 @@ Recipient of the Henry N. Michael Prize in Geography and Urban Studies.
 Philadelphia, PA  
 GPA 3.49  
 
-## Computer Skills:
 -----
-
-- Programming proficiency in Javascript, Python, Bash, & SQL  
-- Version control via Git and Github  
-- Front end web development with React, Redux, Sass, and Webpack  
-- Data visualization via D3  
-- Interactive maps and cartography with Leaflet  
-- Cloud Computing via Heroku, Digital Ocean, AWS  
-- Backend web development via Node.JS and Express
-- Database management with PostgreSQL  
-- Geospatial Information Systems using QGIS, PostGIS, GDAL, ESRI ArcGIS  
-- CARTO platform, javascript library, & API's  
-- MapBox platform, javascript library, & API's  
-- Cartographic design using TileMill and CartoCSS  
+## Computer Skills:
+- JavaScript (ES5/6+)
+- JavaScript Frameworks: ReactJS, Angular, Vue, LitElement
+- Data Visualization: D3JS, MapBoxGLJS, LeafletJS, Vega / VegaLite
+- NodeJS and NPM
+- TypeScript
+- CSS and CSS PreProcessors (SCSS, PostCSS)
+- Web Standards (HTML, SVG, ARIA, Browser APIs)
+- Module Bundlers (Webpack, Rollup)
+- Git & Github
+- SQL (PostgreSQL, MySQL, SQLite)
+- Geographic Information Systems (QGIS, PostGIS, GDAL)
+- Python (2.x, 3.x)
+- Jupyter Notebooks, Pandas, Geo Pandas
+- Cloud Computing (AWS, GCP, Digital Ocean)
+- CARTO platform, JavaScript SDK, & API's  
+- MapBox platform, JavaScript library, & API's  
 - Adobe Software: Illustrator, Photoshop, and InDesign  
 - MAPublisher (GIS & Cartography plug-in for Adobe Illustrator)
