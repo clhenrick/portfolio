@@ -1,8 +1,8 @@
 ---
 layout: page-fullwidth
 show_meta: true
-title: "Health Equity Tracker"
-meta_title: "Chris Henrick featured work: Health Equity Tracker"
+title: "HET Data Vis"
+meta_title: "Chris Henrick featured work: HET Data Vis"
 teaser: "Data Visualization prototyping for the Satcher Health Leadership Institute"
 date: "2020-12-01"
 tags:
@@ -10,7 +10,7 @@ tags:
 category:
   - work
 header: no
-permalink: "/work/health-equity-tracker.html"
+permalink: "/work/het-data-vis.html"
 ---
 
 
