@@ -3,11 +3,11 @@
   "work": [{
     "title": "HET Data Vis",
     "tags": ["web", "data-vis", "prototyping"],
-    "description": "Data Visualization prototyping for the Satcher Health Leadership Institute",
+    "description": "Data Visualization prototyping for the Satcher Health Leadership Institute's Health Equity Tracker",
     "description_long": "",
-    "tech": [""],
+    "tech": ["Observable Notebooks", "D3JS", "VegaLite", "Github Pages"],
     "thumb": "msm-fellowship-thumb.jpg",
-    "imgs": ["msm-fellowship-01.jpg", "msm-fellowship-02.jpg"],
+    "imgs": ["msm-fellowship-01.jpg", "msm-fellowship-02.jpg", "msm-fellowship-03.jpg", "msm-fellowship-04.jpg"],
     "size": "width3",
     "date": "2020-12-01",
     "link": ""
