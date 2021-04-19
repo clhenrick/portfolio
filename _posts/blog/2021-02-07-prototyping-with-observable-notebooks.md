@@ -23,6 +23,7 @@ tags:
 <noscript>
   <img src="{{site.url}}{{site.baseurl}}/images/observable_prototyping_hero.jpg" width="100%" alt="Abstract hero image showing various data visualizations">
 </noscript>
+<small>Shout out to [Ian Johnson (@enjalot)](https://twitter.com/enjalot) for making me the swell hero image above!</small>
 
 ## Intro
 The work discussed in this article stems from a [Google.org](https://www.google.org/) Fellowship that I was recently a part of with [Morehouse School of Medicine](https://www.msm.edu/)’s [Satcher Health Leadership Institute](https://satcherinstitute.org/). The goal of the fellowship was to help SHLI develop a "Health Equity Tracker" website that empowers Health Equity advocates with up to date public health data and data visualization dashboards. In this post I'll discuss the more technical nature of the data visualization prototyping work I did for the project that helped inform what the team built.
