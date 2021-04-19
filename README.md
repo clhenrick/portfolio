@@ -13,19 +13,7 @@ jekyll serve --config _config.yml,_config_dev.yml
 ```
 
 ## Deploy
-Note that this site is not being hosted on Github Pages but on a remote VPS via Digital Ocean.
-
-```bash
-# list remotes
-$ git remote -v
-droplet	user@myvps:projects/clhenrick.io.git (fetch)
-droplet	user@myvps:projects/clhenrick.io.git (push)
-origin	https://github.com/clhenrick/portfolio.git (fetch)
-origin	https://github.com/clhenrick/portfolio.git (push)
-
-# to push to the remote vps and trigger the rebuild do
-$ git push droplet master
-```
+Deployments on Netlify happen when a pull request is merged into the master branch.
 
 ## Creating the Portfolio
 To migrate work from an [existing portfolio](http://chrishenrick.com), I created `JSON` data containing information for each project. This data lives in `_data/work.json`. A [Node.JS script](./scripts/make-portfolio-posts.js) generates a markdown file for each project and creates the portfolio overview page in `./work/`.
