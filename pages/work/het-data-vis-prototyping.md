@@ -6,7 +6,7 @@ meta_title: "Chris Henrick featured work: HET Data Vis Prototyping"
 teaser: "Data Visualization prototyping for the Satcher Health Leadership Institute&#x27;s Health Equity Tracker"
 date: "2020-12-01"
 tags:
-  - web data-vis prototyping 
+  - web data-viz cartography 
 category:
   - work
 header: no
