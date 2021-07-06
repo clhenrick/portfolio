@@ -11,17 +11,26 @@ header: no
 
 ## Professional Experience
 
+### University of California, Berkeley
+**Web Application Developer**  
+*July, 2021 – Present*  
+Berkeley, CA
+
+Contributing Web Development, Data Visualization, and UX Design to [Cal-Adapt](https://cal-adapt.org) and related projects that address the adaptation and mitigation of climate change in California. Team member of the [Geospatial Innovation Facility](http://gif.berkeley.edu/) within the [Rausser College of Natural Resources](https://nature.berkeley.edu/) at UC Berkeley.
+
 ### Google
 **UX Engineer II: Data Visualization**  
-*September, 2018 – Present*  
+*September, 2018 – June, 2021*  
 San Francisco, CA
 
-User Experience Engineer focusing on data visualization for the [Google Cloud Platform](https://cloud.google.com/) and other product areas at Google. 
+User Experience Engineer focusing on data visualization for the [Google Cloud Platform](https://cloud.google.com/). From August – December, 2020 I took part in a [Google.org](https://www.google.org/) fellowship with [Morehouse School of Medicine](https://msm.edu/)'s [Satcher Health Leadership Institute](https://satcherinstitute.org/) to help develop the [Health Equity Tracker](https://healthequitytracker.org/), a web application that uses health related data and data visualization to empower health equity advocates within the U.S.
 
-- Collaborate with UX Designers, UX Researchers, Data Scientists, Program Managers, and Software Engineers in product development.
-- Create prototypes at varying levels of fidelity for interactive design concepts using modern web standards and technologies such as React, Angular, D3JS, TypeScript, LitElement, (S)CSS, HTML, etc.
-- Make design recommendations pertaining to areas such as accessibility, visual design, and interaction design.
-- Anaylze data and document data transformation pipelines using CoLab/Jupyter Notebooks, SQL, Pandas, Altair.
+Primary day to day responsibilities include:
+
+- Collaborating with UX Designers, UX Researchers, Data Scientists, Program Managers, and Software Engineers in the product development lifecycle.
+- Creating prototypes at varying levels of fidelity for interactive design concepts using modern web standards and technologies such as React, Angular, D3JS, TypeScript, LitElement, (S)CSS, HTML, etc.
+- Advocating UX Design recommendations to areas such as UI component design, web accessibility, visual design, and interaction design.
+- Anaylzing data and documenting data transformation pipelines using CoLab/Jupyter Notebooks, SQL, Pandas, Altair.
 
 ### OmniSci
 **Data Visualization Engineer**  
