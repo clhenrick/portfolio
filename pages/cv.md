@@ -16,7 +16,7 @@ header: no
 *July, 2021 – Present*  
 Berkeley, CA
 
-Contributing Web Development, Data Visualization, and UX Design to [Cal-Adapt](https://cal-adapt.org) and related projects that address the adaptation and mitigation of climate change in California. Team member of the [Geospatial Innovation Facility](http://gif.berkeley.edu/) within the College of Natural Sciences at UC Berkeley.
+Contributing Web Development, Data Visualization, and UX Design to [Cal-Adapt](https://cal-adapt.org) and related projects that address the adaptation and mitigation of climate change in California. Team member of the [Geospatial Innovation Facility](http://gif.berkeley.edu/) within the [Rausser College of Natural Resources](https://nature.berkeley.edu/) at UC Berkeley.
 
 ### Google
 **UX Engineer II: Data Visualization**  
