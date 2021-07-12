@@ -12,6 +12,11 @@ header: no
 form label {
   color: #fff;
 }
+textarea, 
+textarea:focus {
+  color: rgba(0, 0, 0, 0.75);
+  background-color: #fafafa;
+}
 </style>
 
 <div class="panel">
