@@ -57,6 +57,41 @@ At a very high level I'd say that the primary focus of the course was how to be 
 
 Learning and putting into practice various strategies for communicating _effectively_ is an important concept that I took away from the course and one that I anticipate to be working on for the rest of my career. *It's crucial to not assume that after you graphed some data and that because it makes sense to you that it will make sense to your viewers* (hence the importance of asking for feedback). I believe that it's probably difficult for many data vis practitioners to come to terms with understanding that in order to communicate effectively, you must first identify your target audience so that you can custom tailor your visualization to them and decide on how to share it with them. Then, you need to get feedback from people representative of this audience to determine whether or not you are communicating effectively. This is just as important as the "what" you're communicating with your visualization.
 
+## Course Project
+
+For my final project I chose to do a presentation on the [Digital Divide](https://en.wikipedia.org/wiki/Digital_divide), or how access to the internet varies across the United States and potential policies that can help address it. [Here's a link to the slide deck](https://docs.google.com/presentation/d/1IFXkuGSwGduACZhJ_qy3FRrSBz9bN9GdoMKnDC1mRFM/edit?usp=sharing), in case you're interested, or view it below:
+
+<style>
+  /* Thank you CSS Tricks! https://css-tricks.com/responsive-iframes/ */
+  [style*="--aspect-ratio"] > :first-child {
+    width: 100%;
+  }
+  [style*="--aspect-ratio"] > img {  
+    height: auto;
+  } 
+  @supports (--custom:property) {
+    [style*="--aspect-ratio"] {
+      position: relative;
+      margin-bottom: 3rem;
+    }
+    [style*="--aspect-ratio"]::before {
+      content: "";
+      display: block;
+      padding-bottom: calc(100% / (var(--aspect-ratio)));
+    }  
+    [style*="--aspect-ratio"] > :first-child {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }  
+  }
+</style>
+
+<div style="--aspect-ratio: 16/9;">
+  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ6b2powCE5aPCwjVFszCFnINCVs_vb1DIU57sR6OBhC_VybXSXHvkcvEiTbrTMOkxs4Q_c8i-Cg6Mi/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
 ## What more could have been offered
 
 The SWD ten week course was a wealth of information and guided by experts in the data visualization and business analytics fields. Most, if not all, of the example visualizations and real world scenarios were from a business setting. This is clearly important if you are working as a data analyst or data scientist in a for-profit business and the success of your job is determined by how well you can recommend your business to increase revenue or cut costs by analyzing internal data. However, I'm sure that not everyone taking the class was working or aspiring to work in this type of role, and so I felt a little disappointed that there weren't scenarios or examples covered in class that had to do with other types of settings such as data journalism, public interest work, or various types of public policy advocacy. Clearly the lessons from class may be applied to other types of settings, but it would have helped to have seen other examples and not have been so focused on business applications. 
