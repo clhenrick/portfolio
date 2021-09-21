@@ -23,9 +23,47 @@ We met over Zoom on Mondays for an hour each week for a lecture and discussion o
 
 Having come into the class with considerable experience as a data visualization developer and while working as a UX Engineer at Google at the time, I felt that my experience largely resided more on the technical aspects of creating interactive data visualizations for the web for _exploratory_ purposes, and that I had gaps in my knowledge for creating data visualizations for _explanatory_ purposes. If you're not familiar with these two most common ways of utilizing visualization (exploratory and explanatory), one way of thinking about them could be a continuum where exploratory is on the left and explanatory the right:
 
-{% highlight txt %}
-exploratory <--------------------------------------> explanatory
-{% endhighlight %}
+<style>
+  .continuum-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    color: #EFC94C;
+    margin-bottom: 1.25rem;
+  }
+  .continuum-arrow {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  .continuum-arrow p {
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+  }
+  .continuum-arrow span {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+  }
+  .continuum-rule {
+    border-bottom: 2px dashed #EFC94C;
+    flex-grow: 1;
+  }
+</style>
+
+<div class="continuum-container" aria-hidden="true">
+  <div class="continuum-arrow">
+    <span>&larr;</span>
+    <p>Exploratory</p>
+  </div>
+  <div class="continuum-rule">
+  </div>
+  <div class="continuum-arrow">
+    <p>Explanatory</p>
+    <span>&rarr;</span>
+  </div>
+</div>
 
 **Exploratory** visualizations are those that don't attempt to tell a story or message but rather invite the user to explore the data, typically through a user interface of some kind, and draw their own conclusions. These types of visualizations tend to take the form of dashboards and/or interactive geographic maps paired with features such as categorical filters, date time sliders, and/or layer toggles that enable a viewer to "drill down" and discover insights about the data being visualized.
 
@@ -55,11 +93,11 @@ The course covered a lot of ground over the ten week period, including topics su
 
 At a very high level I'd say that the primary focus of the course was how to be a better communicator with data, as well as a better planner and critical thinker. This makes sense, as _explanatory_ data visualization really is about communicating, particularly communicating the "so what" about a dataset. If your audience is not clear on what the key take away(s) about the dataset is, then you're not communicating effectively.
 
-Learning and putting into practice various strategies for communicating _effectively_ is an important concept that I took away from the course and one that I anticipate to be working on for the rest of my career. *It's crucial to not assume that after you graphed some data and that because it makes sense to you that it will make sense to your viewers* (hence the importance of asking for feedback). I believe that it's probably difficult for many data vis practitioners to come to terms with understanding that in order to communicate effectively, you must first identify your target audience so that you can custom tailor your visualization to them and decide on how to share it with them. Then, you need to get feedback from people representative of this audience to determine whether or not you are communicating effectively. This is just as important as the "what" you're communicating with your visualization.
+Learning and putting into practice various strategies for communicating _effectively_ is an important concept that I took away from the course and one that I anticipate to be working on for the rest of my career. *It's crucial to not assume that after you graphed some data and that because it makes sense to you that it will make sense to your viewers* (hence the importance of asking for feedback). I believe that it's probably difficult for many fledging data vis practitioners to come to terms with understanding that in order to communicate effectively, you must first identify your target audience so that you can custom tailor your visualization to them and decide on how to share it with them (e.g. a presentation, website, newsletter, handout, etc). Then, you need to get feedback from people representative of this audience to determine whether or not you are communicating effectively. How and where you communicate with data is just as important as the insights (what) you are so eager to communicate.
 
 ## Course Project
 
-For my final project I chose to do a presentation on the [Digital Divide](https://en.wikipedia.org/wiki/Digital_divide), or how access to the internet varies across the United States and potential policies that can help address it. [Here's a link to the slide deck](https://docs.google.com/presentation/d/1IFXkuGSwGduACZhJ_qy3FRrSBz9bN9GdoMKnDC1mRFM/edit?usp=sharing), in case you're interested, or view it below:
+For my final project I chose to do a presentation on the [Digital Divide](https://en.wikipedia.org/wiki/Digital_divide), or how access to the internet varies across the United States and potential policies that can help address it (_**disclaimer:** I'm not a policy expert on this subject, this project was more or less an exercise on crafting a data story and not focused on the accuracy of depth of tangentally related aspects such as policy_). [Here's a link to the slide deck](https://docs.google.com/presentation/d/1IFXkuGSwGduACZhJ_qy3FRrSBz9bN9GdoMKnDC1mRFM/edit?usp=sharing), in case you're interested, or you may view it in the embed below:
 
 <style>
   /* Thank you CSS Tricks! https://css-tricks.com/responsive-iframes/ */
@@ -94,11 +132,11 @@ For my final project I chose to do a presentation on the [Digital Divide](https:
 
 ## Light Criticism
 
-The SWD ten week course was a wealth of information and guided by experts in the data visualization and business analytics fields. Most, if not all, of the example visualizations and real world scenarios were from a business setting. This is clearly important if you are working as a data analyst or data scientist in a for-profit business and the success of your job is determined by how well you can recommend your business to increase revenue or cut costs by analyzing internal data. However, I'm sure that not everyone taking the class was working or aspiring to work in this type of role, and so I felt a little disappointed that there weren't scenarios or examples covered in class that had to do with other types of settings such as data journalism, public interest work, or various types of public policy advocacy. Clearly the lessons from class may be applied to other types of settings, but it would have helped to have seen other examples and not have been so focused on business applications. 
+The SWD ten week course was a wealth of information and guided by experts in the data visualization and business analytics fields. Most, if not all, of the example visualizations and real world scenarios were in the context of a business setting. This is clearly important if you are working as a data analyst or data scientist in a for-profit business and the success of your job is determined by how well you can influence your business to increase revenue or cut costs by analyzing various internal data. However, I'm sure that not everyone taking the class was working or aspiring to work in this type of role, and so I felt a little disappointed that there weren't scenarios or examples covered in class that had to do with other types of settings such as data journalism, public interest work, or various types of public policy advocacy. Clearly the lessons from class may be applied to other types of settings, but it would have helped to have seen other examples and not have been solely focused on the business applications of communicating with data visualization. 
 
 ## Final Thoughts
 
-Taking and completing the Storytelling With Data ten week course was a worthwhile endeavor. I wish I had taken a class like this when I began venturing into the world of data visualization, rather than focusing primarily on learning the more technical aspects of interactive visualization such as D3JS. Even understanding the difference between exploratory and explanatory visualization would have helped me earlier on in my career. But it's often too easy to be hard on oneself with data viz, as it encompasses aspects of so many disciplines such as statistics, graphic design, communication, computer science, journalism, etc. and that's excluding areas of specialization such as climate science or phylogenetics. I'm happy to know now that I'm more confident in my story telling with data capabilities and look forward to applying and improving them through practice.
+Taking and completing the Storytelling With Data ten week course was a worthwhile endeavor. I wish I had taken a class like this when I began venturing into the world of data visualization, rather than focusing primarily on learning the more technical aspects of interactive visualization such as [D3JS](https://d3js.org/). Even understanding the difference between exploratory and explanatory visualization would have helped me earlier on in my career. But it's often too easy to be hard on oneself when practicing data visualization as it encompasses aspects of a variety of disciplines such as statistics, graphic design, communication, computer science, journalism, etc. And that's excluding any potential areas of specialization such as climate science or phylogenetics, for example. Having completed the class for the certificate I'm satisified to know now that I'm more confident in my storytelling with data capabilities and I look forward to applying and improving the concepts we learned in class through more real world practice.
 
 _I'd like to thank [Zan Armstrong](https://www.zanarmstrong.com/) for recommending the SWD ten week class to me and introducing me to the SWD website, its community and resources. Thank you Zan!_
 
