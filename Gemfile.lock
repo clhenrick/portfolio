@@ -56,7 +56,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll
+  jekyll (~> 3.8.6)
   jekyll-paginate
 
 BUNDLED WITH

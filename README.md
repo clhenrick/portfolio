@@ -9,7 +9,7 @@ Make sure you have Ruby and Jekyll installed.
 To run this site in a Jekyll dev environment, from the root of this repo do:
 
 ```bash
-jekyll serve --config _config.yml,_config_dev.yml
+bundle exec jekyll serve --config _config.yml,_config_dev.yml
 ```
 
 ## Deploy
