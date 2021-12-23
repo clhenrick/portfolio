@@ -41,7 +41,7 @@ textarea:focus {
     Your message:
     <textarea name="message"></textarea>
   </label>
-  <div class="g-recaptcha" data-sitekey="6Lek_L4dAAAAALA6uze38_vvRU95iWDDHbOfcyP4"></div>
+  <div class="g-recaptcha" data-sitekey="6LfG2b8dAAAAANoEy4J7PvQTlZZd0PzncvA7nljw"></div>
   <br/>
   <button type="submit">Send</button>
 </form>
