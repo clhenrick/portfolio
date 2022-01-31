@@ -12,21 +12,39 @@ tags:
   - TypeScript
 ---
 
-![screenshot of color-legend-element](#)
+<style>
+  color-legend {
+    display: block;
+    color: #222;
+    margin-bottom: 1rem;
+    --cle-border: 1px solid gray;
+    --cle-padding: 1rem;
+  }
+</style>
+
+<color-legend
+  titletext="Temperature (°C)"
+  scaletype="continuous"
+  tickFormat=".0f"
+  domain="[0, 100]"
+></color-legend>
 <!-- OR embed tweet? -->
+<!-- Or animated GIF -->
 
 I recently [open sourced and launched](https://twitter.com/chrislhenrick/status/1484987005020766208?s=20) version 1.0 of [Color Legend Element](https://github.com/clhenrick/color-legend-element), a [Custom Element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) that's intended to be used as a legend with data visualizations. I'm fairly satisified with its current functionality which covers common use cases when visualizing continuous, discrete, or categorical data. It's API (attributes and properties) makes it fairly straight forward to use (IMHO) and it is well documented in the [CLE website](#), [Observable Notebook](#), and [Github repository](#).
 
-An important part of creating the CLE for me was writing good documentation to help make it easy to use. You can read more in the links above, but the gist of it is just declare the HTML:
+An important part of creating the CLE for me was making it simple to use. You can read more in the links above, but the gist of it is just include the script tag and declare the HTML:
 
 {% highlight html %}
-  <color-legend
-    titletext="Temperature (°C)"
-    scaletype="continuous"
-    tickFormat=".0f"
-    domain="[0, 100]"
-  >
-  </color-legend>
+<script src="https://unpkg.com/color-legend-element@1.0.3/build/color-legend-element.umd.js"></script>
+
+<color-legend
+  titletext="Temperature (°C)"
+  scaletype="continuous"
+  tickFormat=".0f"
+  domain="[0, 100]"
+>
+</color-legend>
 {% endhighlight %}
 
 ## Background
@@ -39,7 +57,7 @@ One option would be to port the [Observable Color Legend](#) to vanilla JavaScri
 
 I do want to mention that CLE shouldn't discount previous legend components or libraries out there. One of which is [Susie Lu](#)'s [D3 SVG Legend](https://d3-legend.susielu.com/) library, which follows D3's style of method chaining and reusing scales. The D3 SVG Legend implementation also covers more use cases than CLE currently does, such as [graduated circles](https://d3-legend.susielu.com/#size-examples). My intention with CLE is to limit its functionality to using color as the primary form of visual encoding and to decouple it a bit more from D3 (even though it still requires a handful of D3 modules as dependencies). 
 
-Rather than using JavaScript method chaining, the CLE can be generated using HTML:
+Rather than using JavaScript functions, classes, or method chaining, the CLE is most often generated using HTML:
 
 {% highlight html %}
   <color-legend
@@ -51,7 +69,15 @@ Rather than using JavaScript method chaining, the CLE can be generated using HTM
   </color-legend>
 {% endhighlight %}
 
-This means you don't necessarily need to be rendering your chart or visualization using D3JS, or even with clientside JavaScript for that matter.
+<color-legend
+  titletext="Temperature (°C)"
+  scaletype="continuous"
+  tickFormat=".0f"
+  domain="[0, 100]"
+>
+</color-legend>
+
+This means you don't necessarily need to be rendering your chart or visualization using D3JS, or even with client side JavaScript for that matter.
 
 ## Design Decisions
 
@@ -84,8 +110,25 @@ If you're new to Web Components I'd recommend giving Lit a try. There's a [tutor
 
 ### Styling with CSS Variables
 
-...
+An interesting aspect of Web Components that I learned while creating CLE was providing a structured mechanism for CSS style overrides. While the legend items are set using CLE's attributes/properties, changing the style of its other internals like fonts, border, and background color resided in the realm of CSS. A result of Shadow DOM encapsulation is that applying styles to the CLE like you would with normal HTML elements doesn't work. 
 
+For example, the following style rule would have no effect on the CLE's text:
+
+{% highlight css %}
+color-legend {
+  font-family: comic-sans;
+}
+{% endhighlight %}
+
+One simple solution to this problem is to use CSS variables ("officially" reffered to as [Custom Properties](#)). Just about every style property of the CLE may be overriden using a CSS variable. For example, here's how the same style rules above could be applied using CSS variables:
+
+{% highlight css %}
+color-legend {
+  --cle-font-family: comic-sans;
+}
+{% endhighlight %}
+
+A big thanks to [Nolan Lawson](#) for his write up on [styling Custom Elements](#), which was influential for how I decided to expose styling the CLE. You can see the full list of CSS Variables for the CLE in the [Readme file](#).
 
 ## Roadmap:
 
@@ -105,3 +148,5 @@ I didn't get around to everything I would have liked to for the v1 release, so h
 If you end up trying CLE out please let me know what you think.
 
 [lit]: https://lit.dev/
+
+<script async defer src="{{ site.url }}{{ site.baseurl }}/assets/js/color-legend-element.umd.js"></script>
