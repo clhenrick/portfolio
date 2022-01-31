@@ -53,7 +53,7 @@ Which then gives you:
 >
 </color-legend>
 
-The above CLE example is rendered in the DOM of this webpage. Try opening your browser's developer tools and poking around at it!
+The most important attributes are `scaletype`, `domain`, and `range` which determine how the CLE renders. The above CLE example is rendered in the DOM of this webpage (as are others that follow). Try opening your browser's developer tools and poking around at it!
 
 ## Background
 
@@ -65,33 +65,13 @@ One option would be to port the Observable Color Legend to vanilla JavaScript. T
 
 I do want to mention that CLE shouldn't discount previous legend components or libraries out there. One of which is [Susie Lu](https://susielu.com/)'s [D3 SVG Legend](https://d3-legend.susielu.com/) library, which follows D3's style of method chaining and reusing scales. The D3 SVG Legend implementation also covers more use cases than CLE currently does, such as [graduated circles](https://d3-legend.susielu.com/#size-examples). My intention with CLE is to limit its functionality to using color as the primary form of visual encoding and to decouple it a bit more from D3 (even though it still requires a handful of D3 modules as dependencies). 
 
-Rather than using JavaScript functions, classes, or method chaining, the CLE is most often generated using HTML:
-
-{% highlight html %}
-  <color-legend
-    titletext="Temperature (°C)"
-    scaletype="continuous"
-    tickFormat=".0f"
-    domain="[0, 100]"
-  >
-  </color-legend>
-{% endhighlight %}
-
-<color-legend
-  titletext="Temperature (°C)"
-  scaletype="continuous"
-  tickFormat=".0f"
-  domain="[0, 100]"
->
-</color-legend>
-
-This means you don't necessarily need to be rendering your chart or visualization using D3JS, or even with client side JavaScript for that matter.
+Rather than using JavaScript functions, classes, or method chaining, the CLE will most likely be generated declaratively using HTML. This means you don't necessarily need to be rendering your chart or visualization using D3JS, or even with client side JavaScript for that matter. Rendering Web Components server side seems to be a thing people are growing more excited about.
 
 ## Design Decisions
 
 ### Why Web Components?
 
-First off let me preface the following text by confessing that I am not a Web Components "expert", but that I've learned a thing or two about them. I see both their inherit value and drawbacks, so am neither really for or against them. When building web applications using JavaScript, I typically reach for JS frameworks like React or Svelte, not Web Components, partly because of the ecosystem that exists around those frameworks (e.g. things like component libraries such as Material UI or Carbon Components, as well as starter kits like Create React App and Svelte Kit).
+First off let me preface the following text by confessing that I am not a Web Components "expert", but that I've learned a thing or two about them. I see both their inherit value and drawbacks, so am neither really for or against them. When building web applications using JavaScript, I typically reach for JS frameworks like React or Svelte, not Web Components, partly because of the ecosystem that exists around those frameworks (e.g. things like component libraries such as Material UI or Carbon Components, as well as starter kits like Create React App and Svelte Kit). It's worth mentioning that there is [plenty of](https://thenewobjective.com/web-development/a-criticism-of-web-components) * [criticism](https://lea.verou.me/2020/09/the-failed-promise-of-web-components/) of Web Components (but also [some rebuttals](https://medium.com/swlh/the-failed-criticism-of-web-components-ee94380f3552)). 
 
 The motivation for choosing Web Components as a (non?) "framework" for building the CLE was influenced by my experience working as a UX Engineer at Google. One of the projects I contributed to while working there utilized Custom Elements for its UI, so I had the opportunity to learn the Web Component spec and create some fun and interesting stuff using it. I discovered that the rationale for choosing Web Components as a technology for developing UI is due to it utilizing native Browser APIs such as [Custom Elements][custom-element], [Shadow DOM][shadow-dom], [Slots][slot], and [Templates][template]. One of the core, supporting ideas of choosing Web Components is that by leveraging these native Browser APIs, you are free from relying on JavaScript frameworks that must (well let's face it, should) be kept up date. Frameworks seem to come and go, almost like "fast fashion" these days, so much so it's hard to keep up with them all. Browser APIs on the other hand tend to be a bit more stable and don't go through major breaking changes over the timespan that frameworks such as Angular or React do. For example, think about how many changes those frameworks have been through since the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) has been around.
 
@@ -207,13 +187,15 @@ I didn't get around to everything I would have liked to for the v1 release, so h
 
 ### Accessibility:
 
-After announcing CLE on Twitter, [someone quickly pointed out](#) that relying on color alone does not accomodate users who have vision color deficiencies. One way of accommodating this is by using patterns and symbols in addition to color, which could be enabled with the CLE's categorical scale type.
+After announcing CLE on Twitter, [someone quickly pointed out](https://twitter.com/PhilW_SF/status/1485099145077604353?s=20&t=dP6nqI90nRj8YRQwtDBiWA) that relying on color alone does not accomodate users who have color deficiencies with their vision. One way of accommodating this is by using patterns and symbols in addition to or in place of color, which theoretically could be enabled with the CLE's categorical scale type.
 
 Another trickier piece of A11Y that I have been anticipating is making the SVG elements accessible. This is not trivial and would require some research and user testing to get right. Perhaps at the bare minimum the "continuous" scale type could provide "alt" text that describes the legend. For example, "a graduated color bar transitioning from yellow to green to blue, with a value of zero at yellow, fifty at green, and one hundred at blue." This might also be good for discrete and threshold scales, where alt text could describe the bin values and color for each SVG `rect` element.
 
 ### More Legend Types
 
-Currently the CLE does not support the full range of scales available in the [d3-scale][d3-scale] library. Given the declarative nature of the CLE, I'm not sure supporting every type of D3 scale would make sense. Though I'm interested in adding support for a few more scale types such as [Diverging](https://observablehq.com/@d3/diverging-scales) and [Logarithmic](https://observablehq.com/@d3/continuous-scales#scale_log) scales. These would render similarly to the CLE's existing "continuous" scale type, but would utilize D3's diverging and logarithmic scales under the hood. I think they're common enough in data visualizations that they're worth supporting.
+Currently the CLE does not support the full range of scales available in the [d3-scale][d3-scale] library. Given the declarative nature of the CLE, I'm not sure supporting every type of D3 scale would make sense. Though I'm interested in adding support for a few more scale types such as [Diverging](https://observablehq.com/@d3/diverging-scales) and [Logarithmic](https://observablehq.com/@d3/continuous-scales#scale_log) scales. These would render similarly to the CLE's existing "continuous" scale type, but would utilize D3's diverging and logarithmic scales under the hood. I think they're common enough in data visualizations that they're worth supporting. 
+
+Another option would be to expose the CLE's internal color scale as a property so that it could be set via JavaScript. This way it could be set to any D3 scale, though its rendering could be a little unpredictable depending on what the desired output is. Again, my goal with this project was to simplify how the legend is used and not require someone to be a pro with D3JS in order to use it.
 
 ### Event Handlers
 
