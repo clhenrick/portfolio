@@ -22,14 +22,7 @@ tags:
   }
 </style>
 
-<color-legend
-  titletext="Temperature (°C)"
-  scaletype="continuous"
-  tickFormat=".0f"
-  domain="[0, 100]"
-></color-legend>
-<!-- OR embed tweet? -->
-<!-- Or animated GIF -->
+<img alt="Animation showing the Color Legend Element's many variants." src="{{ site.url }}{{ site.baseurl }}/images/color-legend-element-2022-01-22.gif">
 
 I recently [open sourced and launched](https://twitter.com/chrislhenrick/status/1484987005020766208?s=20) version 1.0 of [Color Legend Element](https://github.com/clhenrick/color-legend-element), a [Custom Element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) that's intended to be used as a legend with data visualizations. I'm fairly satisified with its current functionality which covers common use cases when visualizing continuous, discrete, or categorical data. It's API (attributes and properties) makes it fairly straight forward to use (IMHO) and it is well documented in the [CLE website](#), [Observable Notebook](#), and [Github repository](#).
 
@@ -130,22 +123,90 @@ color-legend {
 
 A big thanks to [Nolan Lawson](#) for his write up on [styling Custom Elements](#), which was influential for how I decided to expose styling the CLE. You can see the full list of CSS Variables for the CLE in the [Readme file](#).
 
+### Inserting Child Content using Slots
+
+I anticipated CLE's markup not suiting every possible use case, so I decided to take advantage of the [HTML slot element](#) to enable the rendering of child elements. The CLE has two slots: one for a "subtitle" that fits between the title and legend area, and another for a "footer" that fits below the legend area. Here is how they are used:
+
+{% highlight html %}
+<color-legend>
+  <small slot="subtitle">
+    Some subtitle text here perhaps?
+  </small>
+  <p slot="footer" class="no-data">
+     = No data
+  </p>
+</color-legend>
+{% endhighlight %}
+
+<style>
+  color-legend p {
+    margin: 0.5rem 0;
+  }
+  color-legend small {
+    font-size: 0.75rem;
+  }
+  p.no-data {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.75rem;
+  }
+  p.no-data:before {
+    content: "";
+    width: 0.75rem;
+    height: 0.75rem;
+    background: #ccc;
+    margin-right: 0.5rem;
+  }
+</style>
+
+<color-legend>
+  <small slot="subtitle">Some subtitle text here perhaps?</small>
+  <p slot="footer" class="no-data"> = No data</p>
+</color-legend>
+
+One thing that's interesting to note about slotted elements is that they are considered part of the "light DOM" and as such may be styled by any global CSS. For example, here's the CSS used for the above slots demo:
+
+{% highlight css %}
+color-legend p {
+  margin: 0.5rem 0;
+}
+color-legend small {
+  font-size: 0.75rem;
+}
+p.no-data {
+  display: inline-flex;
+  align-items: center;
+}
+p.no-data:before {
+  content: "";
+  width: 0.75rem;
+  height: 0.75rem;
+  background: #ccc;
+  margin-right: 0.5rem;
+}
+{% endhighlight %}
+
 ## Roadmap:
 
 I didn't get around to everything I would have liked to for the v1 release, so here are some updates I have in mind.
 
-- A11Y: 
-  - accessible SVG isn't trivial
-  - support for patterns & symbols
-  - aria & roles
-- more legend types
-  - diverging
-  - logarythmic
-- event handlers for clicks, focus, etc.
+### Accessibility:
+
+After announcing CLE on Twitter, [someone quickly pointed out](#) that relying on color alone does not accomodate users who have vision color deficiencies. One way of accommodating this is by using patterns and symbols in addition to color, which could be enabled with the CLE's categorical scale type.
+
+Another trickier piece of A11Y that I have been anticipating is making the SVG elements accessible. This is not trivial and would require some research and user testing to get right. Perhaps at the bare minimum the "continuous" scale type could provide "alt" text that describes the legend. For example, "a graduated color bar transitioning from yellow to green to blue, with a value of zero at yellow, fifty at green, and one hundred at blue." This might also be good for discrete and threshold scales, where alt text could describe the bin values and color for each SVG `rect` element.
+
+### More Legend Types
+
+Currently the CLE does not support the full range of scales available in the [d3-scale](#) library. Given the declarative nature of the CLE, I'm not sure supporting every type of D3 scale would make sense. Though I'm interested in adding support for a few more scale types such as [Diverging](#) and [Logarithmic](#) scales. These would render similarly to the CLE's existing "continuous" scale type, but would utilize D3's diverging and logarithmic scales under the hood. I think they're common enough in data visualizations that they're worth supporting.
+
+### Event Handlers
+
+Interactive legends can really help make a data visualization shine. For example, they can act as filters to enable a user to toggle various categories or groupings of data "on" and "off" in the visualization. Unfortunately the CLE currently does not have any kind of event handling, and while it wouldn't be too difficult to add event handlers for things like clicking and focusing on the legend, it would be tricky to make those handlers accessible. It might mean for instance fussing with roles, ARIA, and implementing keyboard navigation; all of which can be tricky to get right for users of assistive technology when using SVG. It's not to say I'm not up for the challenge, but time is a factor. 
 
 ## Feedback
 
-If you end up trying CLE out please let me know what you think.
+That about sums up Color Legend Element. Please make sure to check out the [CLE website](#) and [Observable Notebook](#) for examples on how to use it (if you're interested that is). To report a bug or make a suggestion, please open an issue in the [Github repository](https://github.com/clhenrick/color-legend-element) or send me a [Tweet](https://twitter.com/chrislhenrick). Lastly, do let me know if it's helped you out at all in a project 🙂, it would be great to see it out in the wild! Thanks for reading!
 
 [lit]: https://lit.dev/
 
