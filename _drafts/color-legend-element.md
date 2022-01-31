@@ -96,6 +96,10 @@ Lit is a tiny library, around 5 KB (minified and compressed), much smaller than 
 
 If you're new to Web Components I'd recommend giving Lit a try. There's a [tutorial](https://lit.dev/tutorial/) and [playground](https://lit.dev/playground/) plus [starter kits](https://lit.dev/docs/tools/starter-kits/) to get you going. Or maybe try the [Open Web Components project generator](https://open-wc.org/docs/development/generator/).
 
+### TypeScript
+
+I chose TypeScript instead of JavaScript for the extra type safety that you get when using it. Luckily, the [Lit][lit] Web Component library is fully typed and they provide a [plugin for VS Code](https://marketplace.visualstudio.com/items?itemName=runem.lit-plugin). The most challenging aspect of using TypeScript in this project was typing the D3 pieces. While D3's third party typings are readily available on [Definitely Typed](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/d3) I find that it can be rather tricky to know how to use them correctly. Looking at the tests in the D3 Definitely Typed packages, such as [this one for d3-shape](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/d3-shape/d3-shape-tests.ts) provides some good hints (hint hint). I'm not a "use TypeScript all the time" type of person; generally speaking, when prototyping something quickly I'll avoid TypeScript. When I'm building something new that I expect to either grow in size or complexity, or be maintained well into the future, I'll reach for TypeScript.
+
 ### Styling with CSS Variables
 
 An interesting aspect of Web Components that I learned while creating CLE was providing a structured mechanism for CSS style overrides. While the main legend area is rendered via CLE's attributes/properties, changing the style of its other internals like fonts, border, and background color reside in the realm of CSS. A result of Shadow DOM encapsulation is that applying styles to the CLE like you would with normal HTML elements doesn't work. 
