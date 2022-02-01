@@ -66,7 +66,7 @@ One option would be to port the Observable Color Legend to vanilla JavaScript. T
 
 I do want to mention that CLE shouldn't discount previous legend components or libraries out there. One of which is [Susie Lu](https://susielu.com/)'s [D3 SVG Legend](https://d3-legend.susielu.com/) library, which follows D3's style of method chaining and reusing scales. The D3 SVG Legend implementation also covers more use cases than CLE currently does, such as [graduated circles](https://d3-legend.susielu.com/#size-examples). My intention with CLE is to limit its functionality to using color as the primary form of visual encoding and to decouple it a bit more from D3 (even though it still requires a handful of D3 modules as dependencies). 
 
-Rather than using JavaScript functions, classes, or method chaining, the CLE will most likely be generated declaratively using HTML. This means you don't necessarily need to be rendering your chart or visualization using D3JS, or even with client side JavaScript for that matter. Rendering Web Components server side seems to be a thing people are growing more excited about.
+Rather than using JavaScript functions, classes, or method chaining, the CLE will most likely be generated declaratively using HTML. This means you don't necessarily need to be rendering your chart or visualization using D3JS, or even with client side JavaScript for that matter.
 
 ## Design Decisions
 
@@ -78,34 +78,36 @@ The motivation for choosing Web Components as a (non?) "framework" for building 
 
 Another benefit of choosing Custom Elements is that they are fairly "cross-platform" in the sense that you can use them with just about any JavaScript framework. This makes them a good choice if you require JS framework flexibility, for example if you're building a design system at a company that uses multiple JS frameworks for different products or internal tools. I think the best part of using Web Components is that you don't even need a framework or frontend build tool to use them at all. A their most basic implementation one only needs to add the necessary `<script>` tag to include a component's JavaScript and instantiate it by writing HTML. One caveat to Web Components is that they are a modern browser technology, so if you need to support older browsers or devices you will need the appropriate polyfills. 
 
-By choosing Web Components as a framework I hope that the CLE can be useful to more folks on the web, rather than say those who use a particular JS framework and to not exclude those who prefer not to use a JS framework. Furthermore, I hope that it means less work on my end to keep it up to date 🙂.
+By choosing Web Components as a framework I hope that the CLE can be useful to more folks on the web, rather than being limited to those who use a particular JS framework, and to not exclude those who prefer not to use a JS framework.
 
 ### Lit & Lit Element
 
 While it's certainly possible to use Web Components via the aforementioned native DOM APIs alone, I found that it is a better developer experience to use a Web Component "wrapper library" such as [Lit][lit]. Aside: I'm not sure if "wrapper library" is the right terminology here, but I think it describes these sorts of Web Component libraries well enough, because ultimately from my understanding they compile down to what the browser sees as native Web Components.
 
-Why did I choose Lit vs. some other Web Component library? Well it happens to be the Web Component library developed at Google, so it was the one I learned while working there and thus am biased towards it. I haven't tried other Web Component libraries like [Stencil](https://stenciljs.com/), and I have yet to try using [Svelte][svelte] to create a Custom Element, so I can't honestly or authoratively give an valid comparison. [Here's an article that summarizes the tech choices (fifty and counting!) you have when working with Web Components](https://webcomponents.dev/blog/all-the-ways-to-make-a-web-component/), in case you're interested.
+Why did I choose Lit vs. some other Web Component library? Well Lit happens to be a Web Component library developed at Google, so it was the one I learned while working there and thus am biased towards it. I haven't tried other Web Component libraries like [Stencil](https://stenciljs.com/), nor have I tried using [Svelte][svelte] to create a Custom Element, so I can't honestly or authoratively give an valid comparison of Web Component libraries. There are a ton of ways to make a Web Component right now. [Here's an article that summarizes the tech choices (fifty and counting!)](https://webcomponents.dev/blog/all-the-ways-to-make-a-web-component/) you have when working with Web Components, in case you're interested.
 
-The benefit of using Lit is that it handles a lot of things for you out of the box that you otherwise would need to handle yourself, such as:
+The benefit of using Lit is that it handles a lot of things for you out of the box that you otherwise would need to implement yourself, such as:
 
 - re-renders when attributes / properties change (reactivity)
 - declarative templating
 - enabling the Shadow DOM by default to encapsulate CSS
 - compiles to standard Custom Elements
 
-Lit is a tiny library, around 5 KB (minified and compressed), much smaller than your average JS framework. While it's most typically used for creating individual components, you can also leverage it to write entire web-apps. Lit can `import` and render other (web) components enabling you to create a UI entirely consisting of Custom Elements. You can even use your favorite state management library as well if you like.
+Lit is a tiny library, around 5 KB (minified and compressed), much smaller than your average JS framework. While it's most typically used for creating individual components, you can also leverage it to write entire web-apps. Lit can `import` and render other (web) components enabling you to create a UI entirely consisting of Web Components. You can even use your favorite state management library as well if you like.
 
 If you're new to Web Components I'd recommend giving Lit a try. There's a [tutorial](https://lit.dev/tutorial/) and [playground](https://lit.dev/playground/) plus [starter kits](https://lit.dev/docs/tools/starter-kits/) to get you going. Or maybe try the [Open Web Components project generator](https://open-wc.org/docs/development/generator/).
 
 ### TypeScript
 
-I chose TypeScript instead of JavaScript for the extra type safety that you get when using it. Luckily, the [Lit][lit] Web Component library is fully typed and they provide a [plugin for VS Code](https://marketplace.visualstudio.com/items?itemName=runem.lit-plugin). The most challenging aspect of using TypeScript in this project was typing the D3 pieces. While D3's third party typings are readily available on [Definitely Typed](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/d3) I find that it can be rather tricky to know how to use them correctly. Looking at the tests in the D3 Definitely Typed packages, such as [this one for d3-shape](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/d3-shape/d3-shape-tests.ts) provides some good hints (hint hint). I'm not a "use TypeScript all the time" type of person; generally speaking, when prototyping something quickly I'll avoid TypeScript. When I'm building something new that I expect to either grow in size or complexity, or be maintained well into the future, I'll reach for TypeScript.
+I chose TypeScript instead of JavaScript for the extra type safety that you get when using it. Luckily, the [Lit][lit] Web Component library is fully typed and they provide a [plugin for VS Code](https://marketplace.visualstudio.com/items?itemName=runem.lit-plugin). The most challenging aspect of using TypeScript in this project was typing the D3 pieces. While D3's third party typings are readily available on [Definitely Typed](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/d3) I find that it can be rather tricky to know how to use them correctly. Looking at the tests in the D3 Definitely Typed packages, such as [this one for d3-shape](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/d3-shape/d3-shape-tests.ts) provides some good hints (hint hint). 
+
+I'm defnitely not a "use TypeScript all the time" type of person. Generally speaking, when prototyping something quickly I may use TypeScript but more often than not will use JavaScript. When I'm building something new that I expect to either grow in size or complexity, or be maintained well into the future, I'll reach for TypeScript.
 
 ### Styling with CSS Variables
 
 An interesting aspect of Web Components that I learned while creating CLE was providing a structured mechanism for CSS style overrides. While the main legend area is rendered via CLE's attributes/properties, changing the style of its other internals like fonts, border, and background color reside in the realm of CSS. A result of Shadow DOM encapsulation is that applying styles to the CLE like you would with normal HTML elements doesn't work. 
 
-For example, the following style rule would have no effect on the CLE's text:
+For example, the following style rule would have no effect on the CLE's default font-family, which is sans-serif:
 
 {% highlight css %}
 color-legend {
@@ -113,7 +115,7 @@ color-legend {
 }
 {% endhighlight %}
 
-One simple solution to this problem is to use CSS variables ("officially" reffered to as [Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)). Just about every style property of the CLE may be overriden using a CSS variable. For example, here's how the same style rules above could be applied using CSS variables:
+One simple solution to this problem is to use CSS variables ([Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)). Just about every style property of the CLE may be overriden using a CSS variable. For example, here's how the same style rules above could be applied using CSS variables:
 
 {% highlight css %}
 color-legend {
@@ -129,7 +131,7 @@ color-legend {
 
 <color-legend class="styled"></color-legend>
 
-A big thanks to [Nolan Lawson](https://nolanlawson.com/) for his write up on [Options for Styling Web Components](https://nolanlawson.com/2021/01/03/options-for-styling-web-components/), which was influential for how I decided to expose styling the CLE. You can see the full list of CSS Variables for the CLE in its [Readme file on Github](https://github.com/clhenrick/color-legend-element#css-variables).
+A big thanks to [Nolan Lawson](https://nolanlawson.com/) for his write up on [Options for Styling Web Components](https://nolanlawson.com/2021/01/03/options-for-styling-web-components/), which was influential for how I decided to expose CLE style overrides. You can see the full list of CSS Variables for the CLE in its [Readme file on Github](https://github.com/clhenrick/color-legend-element#css-variables).
 
 ### Inserting Child Content using Slots
 
@@ -196,29 +198,29 @@ p.no-data:before {
 
 ## Roadmap:
 
-I didn't get around to everything I would have liked to for the v1 release of Color Legend Element, so here are some ideas for updates I have in mind.
+I didn't get around to everything I would have liked to for the v1 release of Color Legend Element. Here are some ideas for updates I have in mind.
 
 ### Accessibility:
 
-After announcing CLE on Twitter, [someone quickly pointed out](https://twitter.com/PhilW_SF/status/1485099145077604353?s=20&t=dP6nqI90nRj8YRQwtDBiWA) that relying on color alone does not accomodate users who have color deficiencies with their vision. One way of accommodating this is by using patterns and symbols in addition to or in place of color. This feature would be a helpful a11y improement for the CLE's categorical, discrete, and threshold scale types.
+After announcing CLE on Twitter, [someone quickly pointed out](https://twitter.com/PhilW_SF/status/1485099145077604353?s=20&t=dP6nqI90nRj8YRQwtDBiWA) that relying on color alone does not accomodate users who have color deficiencies with their vision. One way of accommodating this is by using patterns and symbols in addition to or in place of color. This feature would be a helpful A11Y improvement for the CLE's categorical, discrete, and threshold scale types.
 
 Another trickier piece of A11Y that I have been anticipating is making the SVG elements accessible, which I elaborate on further in the event handlers idea below. This is not trivial and would require some research and user testing to get right. 
 
-At the bare minimum the CLE should provide "alt" text that describes the legend. An example alt text might read "a graduated color bar transitioning from yellow to green to blue, with a value of zero at yellow, fifty at green, and one hundred at blue." This could also work for discrete and threshold scales, where alt text could describe the bin values and color for each SVG `rect` element. Alt text could easily be passed in as an attribute / property, so no big deal there, it would be up to the user of the CLE to apply the correct alt text.
+At the bare minimum the CLE should have a way of providing "alt" text that describes the legend. An example alt text might read "a graduated color bar transitioning from yellow to green to blue, with a value of zero at yellow, fifty at green, and one hundred at blue." This could also work for discrete and threshold scales, where alt text could describe the bin values and color for each SVG `rect` element. Alt text could easily be passed in as an attribute / property, it would be up to the user of the CLE to apply the correct alt text.
 
 ### More Legend Types
 
-Currently the CLE does not support the full range of scales available in the [d3-scale][d3-scale] library. Given that CLE is intended to be simple to use, I'm not sure supporting every type of D3 scale would make sense. I am however interested in adding support for a few more scale types such as [Diverging](https://observablehq.com/@d3/diverging-scales) and [Logarithmic](https://observablehq.com/@d3/continuous-scales#scale_log) scales. These would render similarly to the CLE's existing "continuous" scale type, but would utilize D3's diverging and logarithmic scales under the hood. I think they're common enough in data visualizations that they're worth supporting. 
+Currently the CLE does not support the full range of scales available in the [d3-scale][d3-scale] library. Given that CLE is intended to be simple to use, I'm not sure supporting every type of D3 scale would make sense. I am however interested in adding support for a few more scale types such as [Diverging](https://observablehq.com/@d3/diverging-scales) and [Logarithmic](https://observablehq.com/@d3/continuous-scales#scale_log) scales, which I feel are common enough in data visualizations that they're worth supporting. These would render similarly to the CLE's existing "continuous" scale type, but would utilize D3's diverging and logarithmic scales for placement of the axis ticks.
 
 Another option would be to expose the CLE's internal `colorScale` as a property so that it could be set via JavaScript. This way it could be set to any D3 scale, though its rendering could be a little unpredictable depending on what the desired output is. Again, my goal with this project was to simplify how the legend is used and not require someone to be savy with D3JS in order to use it.
 
 ### Event Handlers
 
-Interactive legends can really help make a data visualization shine. For example, they can act as filters to enable a user to toggle various categories or groupings of data "on" and "off" in the visualization. Unfortunately the CLE currently does not have any kind of event handling, and while it wouldn't be too difficult to add event handlers for things like clicking on and mousing over the legend, it would be tricky to make those handlers accessible. It would mean applying roles and ARIA correctly (_the first rule of ARIA is to not use ARIA (incorrectly)_), as well as implementing keyboard navigation. These tasks can be tricky to get right for users of assistive technology when it comes to SVG. It's not to say I'm not up for the challenge, but time is a factor. 
+Interactive legends can really help make a data visualization shine. For example, they can act as filters to enable a user to toggle various categories or groupings of data "on" and "off" in the visualization. Unfortunately the CLE currently does not have any kind of event handling, and while it wouldn't be too difficult to add event handlers for things like clicking on and mousing over the legend, it would be tricky to make those handlers accessible. It would mean applying roles and ARIA correctly, as well as implementing keyboard navigation. These tasks can be tricky to get right for users of assistive technology when it comes to SVG. It's not to say I'm not up for the challenge, but time is a factor. 
 
 ## Feedback
 
-That about sums up Color Legend Element. Please make sure to check out the [CLE website][cle-website] and [Observable Notebook][cle-notebook] for examples on how to use it (if you're interested that is). To report a bug or make a suggestion, please open an issue in the [Github repository][cle-github] or send me a [Tweet](https://twitter.com/chrislhenrick). Lastly, please do let me know if it's helped you out at all in a project, I would be flattered to see it out in the wild! Thanks for reading 🙏.
+That about sums up Color Legend Element. Please make sure to check out the [CLE website][cle-website] and [Observable Notebook][cle-notebook] for examples on how to use it. To report a bug or make a suggestion, please open an issue in the [Github repository][cle-github] or send me a [Tweet](https://twitter.com/chrislhenrick). Lastly, please do let me know if it's helped you out at all in a project, I would be flattered to see it out in the wild! Thanks for reading 🙏.
 
 [cle-github]: https://github.com/clhenrick/color-legend-element
 [cle-website]: https://clhenrick.github.io/color-legend-element/
