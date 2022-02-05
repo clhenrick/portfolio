@@ -16,7 +16,22 @@ header: no
 *July, 2021 – Present*  
 Berkeley, CA
 
-Contributing Web Development, Data Visualization, and UX Design to [Cal-Adapt](https://cal-adapt.org) and related projects that address the adaptation and mitigation of climate change in California. Team member of the [Geospatial Innovation Facility](http://gif.berkeley.edu/) within the [Rausser College of Natural Resources](https://nature.berkeley.edu/) at UC Berkeley.
+Contributing front-end Web Development, interactive Data Visualization, and UI/UX Design to [Cal-Adapt](https://cal-adapt.org) and related projects that address the adaptation and mitigation of climate change for the public and private sectors in California.
+
+Collaborating with a team of front-end and back-end developers at the [Geospatial Innovation Facility](http://gif.berkeley.edu/) within the [Rausser College of Natural Resources](https://nature.berkeley.edu/) at UC Berkeley, as well as external partners from [Eagle Rock Analytics](http://www.eaglerockanalytics.com).
+
+#### Accomplishments:
+
+Team Development:  
+- Incorporated the use of [Trello](https://trello.com/) boards for project management and integrated Agile/Scrum practices into daily work and planning.
+- Spearheaded bi-weekly sprints and sprint planning to triage, estimate, and track project tasks for Cal-Adapt's website and web applications.
+- Integrated industry sanctioned software development practices such as code reviews, documentation, QA testing, CI/CD, and automated code linting and formatting to make the front-end code for Cal-Adapt more resilient and to foster better collaboration among GIF developers.
+
+Product Contributions:  
+- Performed a UI & UX design audit of Cal-Adapt's website and web applications. Recommended improvements on usability, design layout and consistency, and digital accessibility.
+- Developed ten new pages, five dashboards, fifteen features, and refined the UI/UX design and layout of seven existing pages for Cal-Adapt. Utilized a tech stack consisting of Svelte, Sapper, D3JS, MapboxGLJS, LayerCake, Sass, and the [Carbon Design system](https://www.carbondesignsystem.com).
+- Created over forty high fidelity design mocks for new pages, dashboards, and features for the redesign of Cal-Adapt using [Figma](https://www.figma.com/design/) and the [Carbon Design Kit for Figma](https://www.figma.com/community/file/874592104192380079).
+- Independently designed and developed a new website for [Cal-Adapt Analytics Engine](#) using Figma, Astro, Svelte, TypeScript, Sass, NodeJS, and AWS S3.
 
 ### Google
 **UX Engineer II: Data Visualization**  
