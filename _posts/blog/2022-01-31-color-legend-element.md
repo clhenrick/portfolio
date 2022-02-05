@@ -16,6 +16,8 @@ tags:
 <style>
   color-legend {
     display: block;
+    max-width: min(375px, 100%);
+    overflow-x: auto;
     color: #222;
     margin-bottom: 1rem;
     --cle-border: 1px solid gray;
