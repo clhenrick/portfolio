@@ -16,7 +16,21 @@ header: no
 *July, 2021 – Present*  
 Berkeley, CA
 
-Contributing Web Development, Data Visualization, and UX Design to [Cal-Adapt](https://cal-adapt.org) and related projects that address the adaptation and mitigation of climate change in California. Team member of the [Geospatial Innovation Facility](http://gif.berkeley.edu/) within the [Rausser College of Natural Resources](https://nature.berkeley.edu/) at UC Berkeley.
+Contributing front-end Web Development, interactive Data Visualization, and UI/UX Design to [Cal-Adapt](https://cal-adapt.org) and related projects that address the adaptation and mitigation of climate change in California.
+
+As a team member of the [Geospatial Innovation Facility](http://gif.berkeley.edu/) within the [Rausser College of Natural Resources](https://nature.berkeley.edu/) at UC Berkeley.
+
+#### Accomplishments:
+
+Team Development:  
+- Introduced a project management system (Kaban) and helped the team integrate it into daily work and planning.
+- Introduced bi-weekly sprints and sprint planning to incorporate short term goals & deadlines into the planning process.
+- Put into place industry sanctioned software development practices such as Agile, code reviews, written documentation, code linting and formatting.
+
+Project Contributions:  
+- Developed *n* pages / features for the Cal-Adapt website / webapp using SvelteJS with the Sapper framework, as well as carbon-components-svelte, D3JS, MapboxGLJS, LayerCake, Sass, Git/Github, ES6+, Webpack, zx, etc.
+- Created _n_ high fidelity design mocks using Figma Design for new pages and tools.
+- Performed a high level UI & UX design audit of the existing Cal-Adapt redesign/rewrite effort.
 
 ### Google
 **UX Engineer II: Data Visualization**  
