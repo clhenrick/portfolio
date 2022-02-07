@@ -1,6 +1,18 @@
 {
   "author": "Chris L Henrick",
   "work": [{
+    "title": "Color Legend Element",
+    "tags": ["web", "data-viz"],
+    "description": "A web component suitable for use as a legend in data visualizations",
+    "description_long": "A [Custom Element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) suitable for use as a legend in data visualizations.<br>Built with [Lit/Lit-Element](https://lit.dev/) and [D3JS](https://d3js.org/). Inspired by the [Color Legend](https://observablehq.com/@d3/color-legend) on [Observable](https://observablehq.com) by [Mike Bostock](https://observablehq.com/@mbostock) 🙏.<br>Check out the [Observable Notebook](https://observablehq.com/@clhenrick/color-legend-element) for more on its usage.<br>Read a [blog post]({{ site.url }}{{ site.baseurl }}/color-legend-element/) I wrote about it.",
+    "tech": ["D3JS", "Lit", "TypeScript", "Web Components"],
+    "thumb": "color-legend-element.png",
+    "imgs": ["Color Legend Element 01.png", "Color Legend Element 02.png", "Color Legend Element 03.png", "Color Legend Element 04.png", "Color Legend Element 05.png", "Color Legend Element 06.png", "Color Legend Element 07.png", "Color Legend Element 08.png"],
+    "size": "width3",
+    "date": "2022-02-06",
+    "link": "https://clhenrick.github.io/color-legend-element/"
+  },
+  {
     "title": "HET Data Vis Prototyping",
     "tags": ["web", "data-viz", "cartography"],
     "description": "Data Visualization prototyping for the Satcher Health Leadership Institute's Health Equity Tracker",
