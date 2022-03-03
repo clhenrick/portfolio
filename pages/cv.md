@@ -7,7 +7,6 @@ subheadline: ""
 permalink: "/about/cv/"
 header: no
 ---
-[Download as a PDF]({{site.urlimg}}chris-henrick-resume.pdf)
 
 ## Professional Experience
 
@@ -16,9 +15,7 @@ header: no
 *July, 2021 – Present*  
 Berkeley, CA
 
-Contributing front-end Web Development, interactive Data Visualization, and UI/UX Design to [Cal-Adapt](https://cal-adapt.org) and related projects that address the adaptation and mitigation of climate change for the public and private sectors in California.
-
-Collaborating with a team of front-end and back-end developers at the [Geospatial Innovation Facility](http://gif.berkeley.edu/) within the [Rausser College of Natural Resources](https://nature.berkeley.edu/) at UC Berkeley, as well as external partners from [Eagle Rock Analytics](http://www.eaglerockanalytics.com).
+As a team member of the [Geospatial Innovation Facility](http://gif.berkeley.edu) at UC Berkeley I perform front-end Web Development, interactive Data Visualization, and UI/UX Design for [Cal-Adapt](https://cal-adapt.org) and related projects that utilize climate model data to address the adaptation and mitigation of climate change for the public and private sectors in California.
 
 #### Accomplishments:
 
@@ -29,23 +26,25 @@ Team Development:
 
 Product Contributions:  
 - Performed a UI & UX design audit of Cal-Adapt's website and web applications. Recommended improvements on usability, design layout and consistency, and digital accessibility.
-- Developed ten new pages, five dashboards, fifteen features, and refined the UI/UX design and layout of seven existing pages for Cal-Adapt. Utilized a tech stack consisting of Svelte, Sapper, D3JS, MapboxGLJS, LayerCake, Sass, and the [Carbon Design system](https://www.carbondesignsystem.com).
+- Developed ten new pages, five dashboards, several new features, and refined the UI/UX design and layout of seven existing pages for Cal-Adapt. Utilized a tech stack consisting of Svelte, Sapper, D3JS, MapboxGLJS, LayerCake, Sass, and the [Carbon Design system](https://www.carbondesignsystem.com).
 - Created over forty high fidelity design mocks for new pages, dashboards, and features for the redesign of Cal-Adapt using [Figma](https://www.figma.com/design/) and the [Carbon Design Kit for Figma](https://www.figma.com/community/file/874592104192380079).
-- Independently designed and developed a new website for [Cal-Adapt Analytics Engine](#) using Figma, Astro, Svelte, TypeScript, Sass, NodeJS, and AWS S3.
+- Independently designed and developed a new website for the forthcoming [Cal-Adapt Analytics Engine](http://analytics.cal-adapt.org.s3-website-us-west-1.amazonaws.com) using Figma, Astro, Svelte, TypeScript, Sass, NodeJS, and AWS S3.
 
 ### Google
 **UX Engineer II: Data Visualization**  
 *September, 2018 – June, 2021*  
 San Francisco, CA
 
-User Experience Engineer focusing on data visualization for the [Google Cloud Platform](https://cloud.google.com/). From August – December, 2020 I took part in a [Google.org](https://www.google.org/) fellowship with [Morehouse School of Medicine](https://msm.edu/)'s [Satcher Health Leadership Institute](https://satcherinstitute.org/) to help develop the [Health Equity Tracker](https://healthequitytracker.org/), a web application that uses health related data and data visualization to empower health equity advocates within the U.S.
+User Experience Engineer focused on data visualization for the [Google Cloud Platform](https://cloud.google.com/). 
 
-Primary day to day responsibilities include:
+From August – December, 2020 I took part in a [Google.org](https://www.google.org/) fellowship with [Morehouse School of Medicine](https://msm.edu/)'s [Satcher Health Leadership Institute](https://satcherinstitute.org/) to help develop the [Health Equity Tracker](https://healthequitytracker.org/), a web application that uses health related data and data visualization to empower health equity advocates within the U.S.
 
-- Collaborating with UX Designers, UX Researchers, Data Scientists, Program Managers, and Software Engineers in the product development lifecycle.
-- Creating prototypes at varying levels of fidelity for interactive design concepts using modern web standards and technologies such as React, Angular, D3JS, TypeScript, LitElement, (S)CSS, HTML, etc.
-- Advocating UX Design recommendations to areas such as UI component design, web accessibility, visual design, and interaction design.
-- Anaylzing data and documenting data transformation pipelines using CoLab/Jupyter Notebooks, SQL, Pandas, Altair.
+Primary day to day responsibilities included:
+
+- Collaborated with UX Designers, UX Researchers, Data Scientists, Program Managers, and Software Engineers in the product development lifecycle.
+- Created web prototypes at varying levels of fidelity for interactive design concepts using modern web standards and technologies such as React, Angular, D3JS, TypeScript, LitElement, (S)CSS, HTML, etc.
+- Advocated UX Design to areas such as UI component design, web accessibility, visual design, and interaction design.
+- Anaylzed datasets and documented data transformation pipelines using CoLab/Jupyter Notebooks, SQL, Pandas, Altair.
 
 ### OmniSci
 **Data Visualization Engineer**  
