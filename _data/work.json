@@ -1,6 +1,18 @@
 {
   "author": "Chris L Henrick",
   "work": [{
+    "title": "Observable Notebooks",
+    "tags": ["web", "data-viz"],
+    "description": "Selected Observable notebooks showcasing data viz and related work.",
+    "description_long": "For the past few years many of my data visualization explorations and prototypes have been made using [ObservableHQ](https://observablehq.com). This collection showcases some of my favorite ones.",
+    "tech": ["D3JS", "Arquero", "Observable Notebooks", "Misc"],
+    "thumb": "",
+    "imgs": [],
+    "size": "width3",
+    "date": "2022-03-12",
+    "link": "https://observablehq.com/collection/@clhenrick/featured"
+  },
+  {
     "title": "Color Legend Element",
     "tags": ["web", "data-viz"],
     "description": "A web component suitable for use as a legend in data visualizations",
