@@ -6,7 +6,7 @@ meta_title: "Chris Henrick featured work: Observable Notebooks"
 teaser: "A sampling of Observable notebooks showcasing data viz and related work."
 date: "2022-03-12"
 tags:
-  - web data-viz 
+  - web data-viz cartography 
 category:
   - work
 header: no
@@ -17,7 +17,7 @@ permalink: "/work/observable-notebooks.html"
 
 For the past few years many of my data visualization explorations and prototypes have been developed on [ObservableHQ](https://observablehq.com). The ["featured" collection](https://observablehq.com/collection/@clhenrick/featured) showcases the notebooks I'm the most fond of. Screen captures below show highlights from them.
 
-<strong>Technologies Used:</strong>  - D3JS  - Arquero  - Observable Notebooks  - MapBoxGLJS 
+<strong>Technologies Used:</strong>  - D3JS  - ArqueroJS  - Observable Notebooks  - MapBoxGLJS 
 
 
   <a href="{{site.url}}{{site.baseurl}}/images/observable-notebooks-01.jpg" target="_blank">
