@@ -15,7 +15,7 @@ Modular Scale › http://modularscale.com/scale/?px1=16&px2=36&ra1=1.25&ra2=0
 /* Fonts
 ------------------------------------------------------------------- */
 
-$base-font-size: 18px;
+$base-font-size: 20px;
 $rem-base: $base-font-size;
 // $base-line-height is 24px while $base-font-size is 16px
 $base-line-height: 1.5 !default;
@@ -57,3 +57,6 @@ $font-size-small:   0.8em;
 .font-size-h3   { font-size: $font-size-h3; }
 .font-size-h4   { font-size: $font-size-h4; }
 .font-size-h5   { font-size: $font-size-h5; }
+
+$max-font-width: 70ch !default;
+$max-font-width-headings: 75ch !default;
