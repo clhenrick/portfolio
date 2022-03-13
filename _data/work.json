@@ -3,11 +3,11 @@
   "work": [{
     "title": "Observable Notebooks",
     "tags": ["web", "data-viz"],
-    "description": "Selected Observable notebooks showcasing data viz and related work.",
-    "description_long": "For the past few years many of my data visualization explorations and prototypes have been made using [ObservableHQ](https://observablehq.com). This collection showcases some of my favorite ones.",
-    "tech": ["D3JS", "Arquero", "Observable Notebooks", "Misc"],
-    "thumb": "",
-    "imgs": [],
+    "description": "A sampling of Observable notebooks showcasing data viz and related work.",
+    "description_long": "For the past few years many of my data visualization explorations and prototypes have been developed on [ObservableHQ](https://observablehq.com). The [\"featured\" collection](https://observablehq.com/collection/@clhenrick/featured) showcases the notebooks I'm the most fond of. Screen captures below show highlights from them.",
+    "tech": ["D3JS", "Arquero", "Observable Notebooks", "MapBoxGLJS"],
+    "thumb": "observable-notebooks-thumb.jpg",
+    "imgs": ["observable-notebooks-01.jpg", "observable-notebooks-02.jpg", "observable-notebooks-03.jpg", "observable-notebooks-04.jpg", "observable-notebooks-05.jpg", "observable-notebooks-06.jpg", "observable-notebooks-07.jpg", "observable-notebooks-08.jpg", "observable-notebooks-09.jpg", "observable-notebooks-10.jpg", "observable-notebooks-11.jpg", "observable-notebooks-12.jpg"],
     "size": "width3",
     "date": "2022-03-12",
     "link": "https://observablehq.com/collection/@clhenrick/featured"
