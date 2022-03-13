@@ -24,7 +24,9 @@ Check typography variables › _3_typography_settings.scss
 ------------------------------------------------------------------- */
 
 a,
-a:link {}
+a:link {
+    max-width: $max-font-width;
+}
 
 a:visited {
     border-bottom: $grey-2;
@@ -48,13 +50,14 @@ a:active {
 ------------------------------------------------------------------- */
 
 p {
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
+    // -webkit-hyphens: auto;
+    // -moz-hyphens: auto;
+    // -ms-hyphens: auto;
+    // hyphens: auto;
     -ms-word-break: break-all;
     /* Non standard for webkit */
     word-break: break-word;
+    max-width: $max-font-width;
 }
 p a,
 article a {
@@ -87,6 +90,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     line-height: 1.2em;
     padding: 0;
+    max-width: $max-font-width-headings;
 }
 
 h1 {
@@ -197,6 +201,7 @@ ul, ol {
 }
 li {
     margin-left: 0;
+    max-width: $max-font-width;
 }
 
 .no-bullet {
@@ -237,6 +242,7 @@ blockquote {
     border: none;
     margin: 0 30px 30px 30px;
     // color: #4b4b4d
+    max-width: $max-font-width-headings
 }
 
     blockquote p {font-style: italic; color: $text-color; }
