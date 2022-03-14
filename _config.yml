@@ -233,6 +233,7 @@ disqus_shortname: chrishenrick
 
 sass:
     sass_dir: _sass
+    sourcemap: develpment
     style: :compressed
 
 
