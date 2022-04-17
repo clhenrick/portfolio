@@ -162,7 +162,7 @@ Assisted [DVRPC](http://www.dvrpc.org/)'s Office of Transit, Bicycle, and Pedest
 
 ### Anti-Eviction Mapping Project
 **Web Developer**  
-*February, 2020 – July, 2020  
+*February, 2020 – July, 2020*  
 Remote
 
 Contributed front end web development and cartographic design to the [COVID-19 Emergency Tenants Protections Map]({{site.url}}{{site.baseurl}}/work/aemp-covid-19-tenant-protections-map.html). Worked with a collective of AEMP volunteers to design and develop the project during the start of the COVID-19 pandemic through the summer to map legislation at varying levels of government (and the lack thereof) aimed at protecting tenants from eviction due to pandemic related issues such as loss of employment and illness.
@@ -184,6 +184,20 @@ Consulted with GreenInfo Network on best practices for GIS analysis and data vis
 
 -----
 ## Education:
+
+### Storytelling With Data: Ten Week Course
+**Certificate**  
+Remote
+
+Completed [Storytelling With Data](https://www.storytellingwithdata.com/)'s ten week course in June, 2021. The primary areas of concentration of this course were:
+
+1. Choosing and designing contextually appropriate charts, graphs, and maps for the effective communication and presentation of data.
+
+2. Utilizing the narrative arc as an effective way to engage one's audience and create a memorable experience.
+
+3. Employing strong public speaking techniques and well crafted presentation design to augment the storytelling process.
+
+The final project for this course was a ten minute presentation on a topic of the participant's choosing. Mine was on the [Digital Divide](https://docs.google.com/presentation/d/1IFXkuGSwGduACZhJ_qy3FRrSBz9bN9GdoMKnDC1mRFM/edit?usp=sharing). Learn more about the course in a [blog post](/swd-ten-week-course/) I wrote about it.
 
 ### Parsons, The New School For Design
 **Master of Fine Art in Design and Technology.**  
