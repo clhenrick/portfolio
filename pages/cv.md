@@ -27,7 +27,7 @@ You may skip ahead to a section of this CV using the following links:
 *July, 2021 – Present*  
 Berkeley, CA
 
-As a team member of the [Geospatial Innovation Facility](http://gif.berkeley.edu) at UC Berkeley I perform front-end Web Development, interactive Data Visualization, and UI/UX Design for [Cal-Adapt](https://cal-adapt.org) and related projects that utilize climate model data to address the adaptation and mitigation of climate change for the public and private sectors in California.
+As a team member of the [Geospatial Innovation Facility](http://gif.berkeley.edu) at UC Berkeley's Rausser College of Natural Resources I perform front-end Web Development, interactive Data Visualization, and UI/UX Design for [Cal-Adapt](https://cal-adapt.org) and related projects that utilize climate model data to address the adaptation and mitigation of climate change for the public and private sectors in California.
 
 #### Accomplishments:
 
@@ -40,7 +40,7 @@ Product Contributions:
 - Performed a UI & UX design audit of Cal-Adapt's website and web applications. Recommended improvements on usability, design layout and consistency, and digital accessibility.
 - Developed ten new pages, five dashboards, several new features, and refined the UI/UX design and layout of seven existing pages for Cal-Adapt. Utilized a tech stack consisting of Svelte, Sapper, D3JS, MapboxGLJS, LayerCake, Sass, and the [Carbon Design system](https://www.carbondesignsystem.com).
 - Created over forty high fidelity design mocks for new pages, dashboards, and features for the redesign of Cal-Adapt using [Figma](https://www.figma.com/design/) and the [Carbon Design Kit for Figma](https://www.figma.com/community/file/874592104192380079).
-- Independently designed and developed a new website for the forthcoming [Cal-Adapt Analytics Engine](http://analytics.cal-adapt.org.s3-website-us-west-1.amazonaws.com) using Figma, Astro, Svelte, TypeScript, Sass, NodeJS, and AWS S3.
+- Independently designed and developed a new website for the forthcoming [Cal-Adapt Analytics Engine](https://analytics.cal-adapt.org) using Figma, Astro, Svelte, TypeScript, Sass, NodeJS, and AWS S3.
 
 ### Google
 **UX Engineer II: Data Visualization**  
