@@ -1,13 +1,25 @@
 ---
 layout: page-fullwidth
 show_meta: false
-title: "Chris L Henrick / Curriculum Vitae"
+title: "Chris L Henrick: Curriculum Vitae"
 meta_description: "Curriculum Vitae or Résumé of Chris Henrick"
 subheadline: ""
 permalink: "/about/cv/"
 header: no
 ---
 
+My full work and volunteer experience, educational credentials, and technical skills. View a shortened version of this CV as a [Google Doc](https://docs.google.com/document/d/1bEH7hsQuHtCw0xqk-Td5uCxiNpvLxXXGF24Rfxw7EIQ/edit?usp=sharing).
+
+## Table of Contents
+
+You may skip ahead to a section of this CV using the following links:
+
+- [Professional Experience](#professional-experience)
+- [Volunteer Experience](#volunteer-experience)
+- [Education](#education)
+- [Technical Skills](#technical-skills)
+
+---
 ## Professional Experience
 
 ### University of California, Berkeley
@@ -183,7 +195,7 @@ Performed spatial data analysis and visualization to support [ASIAN Inc](http://
 Consulted with GreenInfo Network on best practices for GIS analysis and data visualization of census and in-house demographic data.
 
 -----
-## Education:
+## Education
 
 ### Storytelling With Data: Ten Week Course
 **Certificate**  
@@ -195,7 +207,7 @@ Completed [Storytelling With Data](https://www.storytellingwithdata.com/)'s ten 
 
 2. Utilizing the narrative arc as an effective way to engage one's audience and create a memorable experience.
 
-3. Employing strong public speaking techniques and well crafted presentation design to augment the storytelling process.
+3. Employing strong public speaking techniques with well crafted presentations to augment the storytelling process.
 
 The final project for this course was a ten minute presentation on a topic of the participant's choosing. Mine was on the [Digital Divide](https://docs.google.com/presentation/d/1IFXkuGSwGduACZhJ_qy3FRrSBz9bN9GdoMKnDC1mRFM/edit?usp=sharing). Learn more about the course in a [blog post](/swd-ten-week-course/) I wrote about it.
 
@@ -233,7 +245,8 @@ GPA 3.49
 Studies included drawing, print making, painting, mixed media, and graphic design.
 
 -----
-## Computer Skills:
+## Technical Skills
+
 - JavaScript (ES5/6+)
 - JavaScript Frameworks: ReactJS, Angular, Vue, LitElement
 - NodeJS and NPM
@@ -241,6 +254,7 @@ Studies included drawing, print making, painting, mixed media, and graphic desig
 - Data Visualization: D3JS, MapBoxGLJS, LeafletJS, Vega / VegaLite
 - CSS and CSS PreProcessors (SCSS, PostCSS)
 - Web Standards (HTML, SVG, ARIA, Browser APIs)
+- Web Accessibility (Semantic HTML, WCAG, Assistive Technology testing)
 - Module Bundlers (Webpack, Rollup)
 - Git & Github
 - SQL (PostgreSQL, MySQL, SQLite)
