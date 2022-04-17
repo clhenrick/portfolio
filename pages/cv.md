@@ -1,13 +1,25 @@
 ---
 layout: page-fullwidth
 show_meta: false
-title: "Chris L Henrick / Curriculum Vitae"
+title: "Chris L Henrick: Curriculum Vitae"
 meta_description: "Curriculum Vitae or Résumé of Chris Henrick"
 subheadline: ""
 permalink: "/about/cv/"
 header: no
 ---
 
+My full work and volunteer experience, educational credentials, and technical skills. View a shortened version of this CV as a [Google Doc](https://docs.google.com/document/d/1bEH7hsQuHtCw0xqk-Td5uCxiNpvLxXXGF24Rfxw7EIQ/edit?usp=sharing).
+
+## Table of Contents
+
+You may skip ahead to a section of this CV using the following links:
+
+- [Professional Experience](#professional-experience)
+- [Volunteer Experience](#volunteer-experience)
+- [Education](#education)
+- [Technical Skills](#technical-skills)
+
+---
 ## Professional Experience
 
 ### University of California, Berkeley
@@ -15,7 +27,7 @@ header: no
 *July, 2021 – Present*  
 Berkeley, CA
 
-As a team member of the [Geospatial Innovation Facility](http://gif.berkeley.edu) at UC Berkeley I perform front-end Web Development, interactive Data Visualization, and UI/UX Design for [Cal-Adapt](https://cal-adapt.org) and related projects that utilize climate model data to address the adaptation and mitigation of climate change for the public and private sectors in California.
+As a team member of the [Geospatial Innovation Facility](http://gif.berkeley.edu) at UC Berkeley's Rausser College of Natural Resources I perform front-end Web Development, interactive Data Visualization, and UI/UX Design for [Cal-Adapt](https://cal-adapt.org) and related projects that utilize climate model data to address the adaptation and mitigation of climate change for the public and private sectors in California.
 
 #### Accomplishments:
 
@@ -28,7 +40,7 @@ Product Contributions:
 - Performed a UI & UX design audit of Cal-Adapt's website and web applications. Recommended improvements on usability, design layout and consistency, and digital accessibility.
 - Developed ten new pages, five dashboards, several new features, and refined the UI/UX design and layout of seven existing pages for Cal-Adapt. Utilized a tech stack consisting of Svelte, Sapper, D3JS, MapboxGLJS, LayerCake, Sass, and the [Carbon Design system](https://www.carbondesignsystem.com).
 - Created over forty high fidelity design mocks for new pages, dashboards, and features for the redesign of Cal-Adapt using [Figma](https://www.figma.com/design/) and the [Carbon Design Kit for Figma](https://www.figma.com/community/file/874592104192380079).
-- Independently designed and developed a new website for the forthcoming [Cal-Adapt Analytics Engine](http://analytics.cal-adapt.org.s3-website-us-west-1.amazonaws.com) using Figma, Astro, Svelte, TypeScript, Sass, NodeJS, and AWS S3.
+- Independently designed and developed a new website for the forthcoming [Cal-Adapt Analytics Engine](https://analytics.cal-adapt.org) using Figma, Astro, Svelte, TypeScript, Sass, NodeJS, and AWS S3.
 
 ### Google
 **UX Engineer II: Data Visualization**  
@@ -162,7 +174,7 @@ Assisted [DVRPC](http://www.dvrpc.org/)'s Office of Transit, Bicycle, and Pedest
 
 ### Anti-Eviction Mapping Project
 **Web Developer**  
-*February, 2020 – July, 2020  
+*February, 2020 – July, 2020*  
 Remote
 
 Contributed front end web development and cartographic design to the [COVID-19 Emergency Tenants Protections Map]({{site.url}}{{site.baseurl}}/work/aemp-covid-19-tenant-protections-map.html). Worked with a collective of AEMP volunteers to design and develop the project during the start of the COVID-19 pandemic through the summer to map legislation at varying levels of government (and the lack thereof) aimed at protecting tenants from eviction due to pandemic related issues such as loss of employment and illness.
@@ -183,7 +195,21 @@ Performed spatial data analysis and visualization to support [ASIAN Inc](http://
 Consulted with GreenInfo Network on best practices for GIS analysis and data visualization of census and in-house demographic data.
 
 -----
-## Education:
+## Education
+
+### Storytelling With Data: Ten Week Course
+**Certificate**  
+Remote
+
+Completed [Storytelling With Data](https://www.storytellingwithdata.com/)'s ten week course in June, 2021. The primary areas of concentration of this course were:
+
+1. Choosing and designing contextually appropriate charts, graphs, and maps for the effective communication and presentation of data.
+
+2. Utilizing the narrative arc as an effective way to engage one's audience and create a memorable experience.
+
+3. Employing strong public speaking techniques with well crafted presentations to augment the storytelling process.
+
+The final project for this course was a ten minute presentation on a topic of the participant's choosing. Mine was on the [Digital Divide](https://docs.google.com/presentation/d/1IFXkuGSwGduACZhJ_qy3FRrSBz9bN9GdoMKnDC1mRFM/edit?usp=sharing). Learn more about the course in a [blog post](/swd-ten-week-course/) I wrote about it.
 
 ### Parsons, The New School For Design
 **Master of Fine Art in Design and Technology.**  
@@ -219,7 +245,8 @@ GPA 3.49
 Studies included drawing, print making, painting, mixed media, and graphic design.
 
 -----
-## Computer Skills:
+## Technical Skills
+
 - JavaScript (ES5/6+)
 - JavaScript Frameworks: ReactJS, Angular, Vue, LitElement
 - NodeJS and NPM
@@ -227,6 +254,7 @@ Studies included drawing, print making, painting, mixed media, and graphic desig
 - Data Visualization: D3JS, MapBoxGLJS, LeafletJS, Vega / VegaLite
 - CSS and CSS PreProcessors (SCSS, PostCSS)
 - Web Standards (HTML, SVG, ARIA, Browser APIs)
+- Web Accessibility (Semantic HTML, WCAG, Assistive Technology testing)
 - Module Bundlers (Webpack, Rollup)
 - Git & Github
 - SQL (PostgreSQL, MySQL, SQLite)
