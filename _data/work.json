@@ -1,6 +1,17 @@
 {
   "author": "Chris L Henrick",
   "work": [{
+    "title": "Cal-Adapt: Analytics Engine",
+    "tags": ["web"],
+    "description": "Website visual design and development.",
+    "description_long": "Website design was done using [Figma](https://www.figma.com/), mainly for creating basic mocks and a style guide (scroll down to view), the rest of the design process was done using HTML and Sass. The website was built using the [Astro](https://astro.build/) static site generator, which uses the concept of \"partial hydration\" to keep client-side JavaScript to a minimum. CAE Jupyter Notebooks were converted to Markdown using Jupyter's [nbconvert](https://pypi.org/project/nbconvert/) utility, allowing for fast loading and previewing of notebook contents.",
+    "tech": ["Astro", "SvelteJS", "TypeScript", "Sass", "Jupyter Notebooks"],
+    "thumb": "cae-website-thumb.jpg",
+    "imgs": ["cae-website-01.jpg","cae-website-2.jpg","cae-website-3.jpg","cae-website-4.jpg","cae-website-5.jpg","cae-website-6.jpg","cae-website-7.jpg","cae-website-8.jpg","cae-website-9.jpg","cae-website-10.jpg","cae-website-11.jpg","cae-website-12.jpg","cae-website-13.jpg"],
+    "size": "width3",
+    "date": "2022-04-17",
+    "link": "https://analytics.cal-adapt.org"
+  },{
     "title": "Observable Notebooks",
     "tags": ["web", "data-viz", "cartography"],
     "description": "A sampling of Observable notebooks showcasing data viz and related work.",
