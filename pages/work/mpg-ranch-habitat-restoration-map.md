@@ -18,7 +18,7 @@ The MPG Ranch Habitat Restoration Map enables a team of environmental scientists
 
  Read more about the project in a [blog post I wrote about it]({{site.url}}/mpg-habitat-restoration-map/).
 
-<strong>Technologies Used:</strong>  - React  - Redux  - Leaflet  - CARTO  - Node JS  - AWS  - Heroku 
+<strong>Technologies Used:</strong>  - React  - Redux  - Leaflet  - CARTO  - NodeJS  - AWS  - Heroku 
 
 
   <a href="{{site.url}}{{site.baseurl}}/images/mpg-habitat02.jpg" target="_blank">
