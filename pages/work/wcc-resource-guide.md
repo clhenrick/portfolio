@@ -16,7 +16,7 @@ permalink: "/work/wcc-resource-guide.html"
 <strong>Project Link:</strong> <a href="http://resourceguide.wccny.org/" target="_blank">WCC Resource Guide</a>
 
 
-<strong>Technologies Used:</strong>  - CartoDB.JS  - Node.JS  - DataTables API  - Twitter Bootstrap 
+<strong>Technologies Used:</strong>  - CartoDB.JS  - NodeJS  - DataTables API  - Twitter Bootstrap 
 
 
   <a href="{{site.url}}{{site.baseurl}}/images/wcc-resource-guide.jpg" target="_blank">

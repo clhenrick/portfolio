@@ -15,9 +15,9 @@ permalink: "/work/cal-adapt-analytics-engine.html"
 
 <strong>Project Link:</strong> <a href="https://analytics.cal-adapt.org" target="_blank">Cal-Adapt: Analytics Engine</a>
 
-Website design was done using [Figma](https://www.figma.com/), mainly for creating basic mocks and a style guide (scroll down to view), the rest of the design process was done using HTML and Sass. The website was built using the [Astro](https://astro.build/) static site generator, which uses the concept of "partial hydration" to keep client-side JavaScript to a minimum. CAE Jupyter Notebooks were converted to Markdown using Jupyter's [nbconvert](https://pypi.org/project/nbconvert/) utility, allowing for fast loading and previewing of notebook contents.
+Website design was done using [Figma](https://www.figma.com/), mainly for creating basic mocks and a style guide (scroll down to view), the rest of the design process was done using Markdown, HTML, and Sass. The website was built using the [Astro](https://astro.build/) static site generator, which uses the concept of "partial hydration" to keep client-side JavaScript to a minimum. CAE Jupyter Notebooks were converted to Markdown using Jupyter's [nbconvert](https://pypi.org/project/nbconvert/) utility, allowing for fast loading and previewing of notebook contents.
 
-<strong>Technologies Used:</strong>  - Astro  - SvelteJS  - TypeScript  - Sass  - Jupyter Notebooks 
+<strong>Technologies Used:</strong>  - Astro  - SvelteJS  - TypeScript  - Sass  - Jupyter Notebooks  - NodeJS 
 
 
   <a href="{{site.url}}{{site.baseurl}}/images/cae-website-01.jpg" target="_blank">
