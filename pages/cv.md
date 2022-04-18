@@ -197,8 +197,8 @@ Consulted with GreenInfo Network on best practices for GIS analysis and data vis
 -----
 ## Education
 
-### Storytelling With Data: Ten Week Course
-**Certificate**  
+### Storytelling With Data
+**SWD Ten Week Course Certificate**  
 Remote
 
 Completed [Storytelling With Data](https://www.storytellingwithdata.com/)'s ten week course in June, 2021. The primary areas of concentration of this course were:
@@ -247,22 +247,22 @@ Studies included drawing, print making, painting, mixed media, and graphic desig
 -----
 ## Technical Skills
 
-- JavaScript (ES5/6+)
-- JavaScript Frameworks: ReactJS, Angular, Vue, LitElement
-- NodeJS and NPM
+- JavaScript (ES6+)
 - TypeScript
-- Data Visualization: D3JS, MapBoxGLJS, LeafletJS, Vega / VegaLite
+- JavaScript Frameworks: React, Angular, Vue, Lit, Svelte
+- JavaScript Module Bundlers (Webpack, Rollup, Parcel, Vite)
+- NodeJS and NPM
+- Data Visualization: D3JS, MapBoxGLJS, Leaflet, Vega / VegaLite
 - CSS and CSS PreProcessors (SCSS, PostCSS)
-- Web Standards (HTML, SVG, ARIA, Browser APIs)
+- Web Standards (HTML, SVG, ARIA, JSON, HTTP, Browser APIs)
 - Web Accessibility (Semantic HTML, WCAG, Assistive Technology testing)
-- Module Bundlers (Webpack, Rollup)
 - Git & Github
-- SQL (PostgreSQL, MySQL, SQLite)
+- SQL (PostgreSQL, SQLite)
 - Geographic Information Systems (QGIS, PostGIS, GDAL)
 - Python (2.x, 3.x)
 - Jupyter Notebooks, Pandas, Geo Pandas, Altair
-- Cloud Computing (AWS, GCP, Digital Ocean, Heroku)
+- Cloud Computing (AWS, GCP, Digital Ocean)
 - CARTO platform, JavaScript SDK, & API's  
-- MapBox platform, JavaScript library, & API's  
-- Adobe Software: Illustrator, Photoshop, and InDesign  
+- Figma and Sketch
+- Adobe Illustrator, Photoshop
 - MAPublisher (GIS & Cartography plug-in for Adobe Illustrator)
