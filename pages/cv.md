@@ -23,7 +23,7 @@ You may skip ahead to a section of this CV using the following links:
 ## Professional Experience
 
 ### University of California, Berkeley
-**Web Application Developer**  
+**Applications Developer 3**  
 *July, 2021 – Present*  
 Berkeley, CA
 
@@ -31,16 +31,16 @@ As a team member of the [Geospatial Innovation Facility](http://gif.berkeley.edu
 
 #### Accomplishments:
 
-Team Development:  
-- Incorporated the use of [Trello](https://trello.com/) boards for project management and integrated Agile/Scrum practices into daily work and planning.
-- Spearheaded bi-weekly sprints and sprint planning to triage, estimate, and track project tasks for Cal-Adapt's website and web applications.
-- Integrated industry sanctioned software development practices such as code reviews, documentation, QA testing, CI/CD, and automated code linting and formatting to make the front-end code for Cal-Adapt more resilient and to foster better collaboration among GIF developers.
-
 Product Contributions:  
 - Performed a UI & UX design audit of Cal-Adapt's website and web applications. Recommended improvements on usability, design layout and consistency, and digital accessibility.
 - Developed ten new pages, five dashboards, several new features, and refined the UI/UX design and layout of seven existing pages for Cal-Adapt. Utilized a tech stack consisting of Svelte, Sapper, D3JS, MapboxGLJS, LayerCake, Sass, and the [Carbon Design system](https://www.carbondesignsystem.com).
 - Created over forty high fidelity design mocks for new pages, dashboards, and features for the redesign of Cal-Adapt using [Figma](https://www.figma.com/design/) and the [Carbon Design Kit for Figma](https://www.figma.com/community/file/874592104192380079).
 - Independently designed and developed a new website for the forthcoming [Cal-Adapt Analytics Engine](https://analytics.cal-adapt.org) using Figma, Astro, Svelte, TypeScript, Sass, NodeJS, and AWS S3.
+
+Team Development:  
+- Incorporated the use of [Trello](https://trello.com/) boards for project management and integrated Agile/Scrum practices into daily work and planning.
+- Spearheaded bi-weekly sprints and sprint planning to triage, estimate, and track project tasks for Cal-Adapt's website and web applications.
+- Integrated industry sanctioned software development practices such as code reviews, documentation, QA testing, CI/CD, and automated code linting and formatting to make the front-end code for Cal-Adapt more resilient and to foster better collaboration among GIF developers.
 
 ### Google
 **UX Engineer II: Data Visualization**  
@@ -56,7 +56,7 @@ Primary day to day responsibilities included:
 - Collaborated with UX Designers, UX Researchers, Data Scientists, Program Managers, and Software Engineers in the product development lifecycle.
 - Created web prototypes at varying levels of fidelity for interactive design concepts using modern web standards and technologies such as React, Angular, D3JS, TypeScript, LitElement, (S)CSS, HTML, etc.
 - Advocated UX Design to areas such as UI component design, web accessibility, visual design, and interaction design.
-- Anaylzed datasets and documented data transformation pipelines using CoLab/Jupyter Notebooks, SQL, Pandas, Altair.
+- Analyzed datasets and documented data transformation pipelines using CoLab/Jupyter Notebooks, SQL, Pandas, Altair.
 
 ### OmniSci
 **Data Visualization Engineer**  
@@ -263,6 +263,5 @@ Studies included drawing, print making, painting, mixed media, and graphic desig
 - Jupyter Notebooks, Pandas, Geo Pandas, Altair
 - Cloud Computing (AWS, GCP, Digital Ocean)
 - CARTO platform, JavaScript SDK, & API's  
-- Figma and Sketch
-- Adobe Illustrator, Photoshop
+- Design software: Figma, Sketch, Adobe Illustrator
 - MAPublisher (GIS & Cartography plug-in for Adobe Illustrator)
