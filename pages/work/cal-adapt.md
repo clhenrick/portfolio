@@ -4,7 +4,7 @@ show_meta: true
 title: "Cal-Adapt"
 meta_title: "Chris Henrick featured work: Cal-Adapt"
 teaser: "Climate data web application and data visualization development."
-date: "2022-06-01"
+date: "2022-07-01"
 tags:
   - web data-viz cartography 
 category:
@@ -15,7 +15,7 @@ permalink: "/work/cal-adapt.html"
 
 <strong>Project Link:</strong> <a href="https://cal-adapt.org" target="_blank">Cal-Adapt</a>
 
-[Cal-Adapt](https://cal-adapt.org) is both a complex web application and content rich website that enables users to access climate data for California in the form of interactive data visualization dashboards, data downloads, and educational content. In 2021 through 2022 Cal-Adapt underwent both a redesign and code refactor to address usability and technical debt. I assisted with this effort, both in the UX design and web application development. For this process we utilized Figma for designing UI mocks, SvelteJS as the frontend framework, SapperJS for SPA like functionality, D3JS and Layer Cake for interactive charts, MapBoxGLJS for interactive geo-visualizations, and the Carbon Design system and component library for the UI. Much of the content is stored as Markdown files which are rendered to HTML serverside during the build process, which helps make the page load time fast.
+Cal-Adapt is both a complex web application and content rich website that enables users to access climate data for California in the form of over a dozen interactive data visualization dashboards, data downloads, and educational content. In 2021 through 2022 Cal-Adapt underwent both a redesign and code refactor to address usability issues and technical debt. I assisted with this effort, both in the UX design and web application development. For this process we utilized Figma for designing UI mocks, SvelteJS as the frontend framework, SapperJS for SPA like functionality, D3JS and Layer Cake for interactive charts, MapBoxGLJS for interactive geo-visualizations, and the Carbon Design system and component library for the UI. Most of the project's content is stored as Markdown files which are rendered to HTML serverside during the build process, which helps make the page load times fast. Deployment is handled using a NodeJS script that enables deploying to various environments (prod, dev, beta, Netlify) and toggling feature flags for particular environments.
 
 <strong>Technologies Used:</strong>  - SvelteJS  - SapperJS  - Sass  - NodeJS 
 
