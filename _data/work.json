@@ -5,7 +5,7 @@
     "tags": ["web", "data-viz", "cartography"],
     "description": "Climate data web application and data visualization development.",
     "description_long": "Cal-Adapt is both a complex web application and content rich website that enables users to access climate data for California in the form of over a dozen interactive data visualization dashboards, data downloads, and educational content. In 2021 through 2022 Cal-Adapt underwent both a redesign and code refactor to address usability issues and technical debt. I assisted with this effort, both in the UX design and web application development. For this process we utilized Figma for designing UI mocks, SvelteJS as the frontend framework, SapperJS for SPA like functionality, D3JS and Layer Cake for interactive charts, MapBoxGLJS for interactive geo-visualizations, and the Carbon Design system and component library for the UI. Most of the project's content is stored as Markdown files which are rendered to HTML serverside during the build process, which helps make the page load times fast. Deployment is handled using a NodeJS script that enables deploying to various environments (prod, dev, beta, Netlify) and toggling feature flags for particular environments.",
-    "tech": ["SvelteJS", "SapperJS", "Sass", "NodeJS"],
+    "tech": ["SvelteJS", "SapperJS", "Sass", "NodeJS", "Webpack", "Carbon Design System"],
     "thumb": "cal-adapt-thumb.jpg",
     "imgs": ["cal-adapt-01.jpg", "cal-adapt-02.jpg", "cal-adapt-03.jpg", "cal-adapt-04.jpg", "cal-adapt-05.jpg", "cal-adapt-06.jpg", "cal-adapt-07.jpg", "cal-adapt-08.jpg", "cal-adapt-09.jpg", "cal-adapt-10.jpg"],
     "size": "width3",
