@@ -1,6 +1,17 @@
 {
   "author": "Chris L Henrick",
   "work": [{
+    "title": "Cal-Adapt",
+    "tags": ["web", "data-viz", "cartography"],
+    "description": "Climate data web application and data visualization development.",
+    "description_long": "[Cal-Adapt](https://cal-adapt.org) is both a complex web application and content rich website that enables users to access climate data for California in the form of interactive data visualization dashboards, data downloads, and educational content. In 2021 through 2022 Cal-Adapt underwent both a redesign and code refactor to address usability and technical debt. I assisted with this effort, both in the UX design and web application development. For this process we utilized Figma for designing UI mocks, SvelteJS as the frontend framework, SapperJS for SPA like functionality, D3JS and Layer Cake for interactive charts, MapBoxGLJS for interactive geo-visualizations, and the Carbon Design system and component library for the UI. Much of the content is stored as Markdown files which are rendered to HTML serverside during the build process, which helps make the page load time fast.",
+    "tech": ["SvelteJS", "SapperJS", "Sass", "NodeJS"],
+    "thumb": "cal-adapt-thumb.jpg",
+    "imgs": ["cal-adapt-01.jpg", "cal-adapt-02.jpg", "cal-adapt-03.jpg", "cal-adapt-04.jpg", "cal-adapt-05.jpg", "cal-adapt-06.jpg", "cal-adapt-07.jpg", "cal-adapt-08.jpg", "cal-adapt-09.jpg", "cal-adapt-10.jpg"],
+    "size": "width3",
+    "date": "2022-06-01",
+    "link": "https://cal-adapt.org"
+  },{
     "title": "Cal-Adapt: Analytics Engine",
     "tags": ["web"],
     "description": "Website visual design and development.",
