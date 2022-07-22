@@ -19,7 +19,7 @@ Am I Rent Stabilized is a web application that encourages New York City tenants 
 
 <strong>Technologies Used:</strong>  - CartoDB.JS  - CartoDB SQL API  - NYC GeoClient API  - GSAP Animation JS  - SCSS  - Handlebars.JS  - Gulp.JS  - AWS S3  - AWS CloudFront 
 
-<strong><a href="https://github.com/clhenrick/am-i-rent-stabilized.git" target="_blank">View code on Github</a></strong>
+<strong><a href="https://github.com/clhenrick/am-i-rent-stabilized" target="_blank">View code on Github</a></strong>
 
   <a href="{{site.url}}{{site.baseurl}}/images/airs01.jpg" target="_blank">
     <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/airs01.jpg" width="100%" height="100%" alt="airs01.jpg">
