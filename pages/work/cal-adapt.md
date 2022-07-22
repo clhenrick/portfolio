@@ -19,6 +19,7 @@ Cal-Adapt is both a complex web application and content rich website that enable
 
 <strong>Technologies Used:</strong>  - SvelteJS  - SapperJS  - Sass  - NodeJS  - Webpack  - Carbon Design System 
 
+<strong><a href="https://github.com/berkeley-gif/caladapt-website-2021/" target="_blank">View code on Github</a></strong>
 
   <a href="{{site.url}}{{site.baseurl}}/images/cal-adapt-01.jpg" target="_blank">
     <img class="portfolio lazy" data-original="{{site.url}}{{site.baseurl}}/images/cal-adapt-01.jpg" width="100%" height="100%" alt="cal-adapt-01.jpg">
