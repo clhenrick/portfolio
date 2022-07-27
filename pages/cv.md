@@ -48,35 +48,33 @@ Team Development:
 *September, 2018 – June, 2021*  
 San Francisco, CA
 
-User Experience Engineer focused on data visualization for the [Google Cloud Platform](https://cloud.google.com/). 
-
-From August – December, 2020 I took part in a [Google.org](https://www.google.org/) fellowship with [Morehouse School of Medicine](https://msm.edu/)'s [Satcher Health Leadership Institute](https://satcherinstitute.org/) to help develop the [Health Equity Tracker](https://healthequitytracker.org/), a web application that uses health related data and data visualization to empower health equity advocates within the U.S.
-
-Primary day to day responsibilities included:
+User Experience Engineer focused on prototyping data visualization UI components and developing internal software for the [Google Cloud Platform](https://cloud.google.com/).
 
 - Collaborated with UX Designers, UX Researchers, Data Scientists, Program Managers, and Software Engineers in the product development lifecycle.
 - Created web prototypes at varying levels of fidelity for interactive design concepts using modern web standards and technologies such as React, Angular, D3JS, TypeScript, LitElement, (S)CSS, HTML, etc.
 - Advocated UX Design to areas such as UI component design, web accessibility, visual design, and interaction design.
 - Analyzed datasets and documented data transformation pipelines using CoLab/Jupyter Notebooks, SQL, Pandas, Altair.
+- From August through December of 2020 took part in a [Google.org](https://www.google.org/) fellowship with [Morehouse School of Medicine](https://msm.edu/)'s [Satcher Health Leadership Institute](https://satcherinstitute.org/) to help develop the [Health Equity Tracker](https://healthequitytracker.org/), a web application that uses health related data and data visualization to empower health equity advocates within the U.S.
 
-### OmniSci
+### Heavy.AI
 **Data Visualization Engineer**  
 *December, 2017 – September, 2018*  
 San Francisco, CA
 
-Data Visualization Engineer at [OmniSci](https://www.omnisci.com/) (formerly MapD), a big data analytics software company. Contributed software development to [OmniSci Immerse](https://www.omnisci.com/platform/immerse/), a data visualization and analytics platform, as well as related open-source libraries:
-- [mapd-connector](https://github.com/omnisci/mapd-connector)
-- [mapd-charting](https://github.com/omnisci/mapd-charting)
-- [mapd-crossfilter](https://github.com/omnisci/mapd-crossfilter)
-- [mapd3](https://github.com/omnisci/mapd3)
+Data Visualization Engineer at [Heavy.AI](https://www.heavy.ai/) (formerly OmniSci, MapD), a big data analytics software company. Contributed software development to [Heavy Immerse](https://www.heavy.ai/product/immerse), a web based data visualization and analytics platform, as well as related open-source libraries:
+- [heavyai-connector](https://github.com/heavyai/heavyai-connector)
+- [heavyai-charting](https://github.com/heavyai/heavyai-charting)
+- [heavyai-crossfilter](https://github.com/heavyai/heavyai-crossfilter)
+- [mapd3](https://github.com/heavyai/mapd3)
 
 ### University of California, Berkeley
 **Lecturer**  
 *August, 2017 – December, 2017*  
 Berkeley, CA  
 
-Taught _Interactive Data Visualization with D3_, for the [School of Information](https://www.ischool.berkeley.edu/) during the Fall semester of 2017. 
-- Through thirteen lectures and fifteen hands on coding assignments, students learned how to create interactive charts, graphs, and geographic maps for display on the web using the popular D3JS Javascript library.
+Independently developed curriculum for and taught a semester long course, _Interactive Data Visualization with D3JS_, for the [School of Information](https://www.ischool.berkeley.edu/) during the Fall semester of 2017. 
+
+Through thirteen weekly lectures and fifteen hands on coding assignments, students learned how to create interactive charts, graphs, and geographic maps for display on the web using the popular D3JS data visualization JavaScript library.
 
 ### GreenInfo Network
 **Full Stack Web Developer**  
