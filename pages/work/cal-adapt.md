@@ -3,7 +3,7 @@ layout: page-fullwidth
 show_meta: true
 title: "Cal-Adapt"
 meta_title: "Chris Henrick featured work: Cal-Adapt"
-teaser: "Exploratory climate change data visualization and web application design and development."
+teaser: "Exploratory climate data visualization and web application design and development."
 date: "2022-07-01"
 tags:
   - web data-viz cartography 
