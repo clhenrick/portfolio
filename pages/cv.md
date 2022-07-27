@@ -39,7 +39,7 @@ Product Contributions:
 - Developed five new Django HTML templates for Plan Alignment guides and an interactive tool in the [Adaptation Clearinghouse](https://resilientca.org/) website from high fidelity design mocks provided by the design agency [Voice and Reason](https://voiceandreason.agency/).
 
 Team Development:
-- Incorporated the use of [Trello](https://trello.com/) boards for project management and integrated Agile/Scrum practices into daily work and planning.
+- Incorporated the use of Trello/Kanban boards for project management and integrated Agile/Scrum practices into daily work and planning.
 - Spearheaded bi-weekly sprints and sprint planning to triage, estimate, and track project tasks for all GIF projects.
 - Integrated industry sanctioned software development practices such as code reviews, documentation, QA testing, CI/CD, and automated code linting and formatting to make the front-end code for Cal-Adapt more resilient and to foster better collaboration among GIF developers.
 
