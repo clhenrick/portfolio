@@ -83,7 +83,7 @@ Oakland, CA
 
 Full stack web developer with [GreenInfo Network](http://greeninfo.org) specializing in building web applications that utilize geo-visualization with open source GIS and web-mapping software, Javascript, Python, SQL, and PHP.
 - Coordinated with a team of GIS specialists, cartographers, designers, and project managers to produce responsive web applications for clients primarily working in the non-profit, NGO, and government sectors.
-- Assisted the Google Earth Outreach team with creating curated "Voyager" content for their 2017 relaunch of Google Earth.
+- Assisted the Google Earth Outreach team with creating curated [Google Earth Voyager](https://support.google.com/earth/answer/7365064?hl=en&co=GENIE.Platform%3DDesktop) content for their 2017 relaunch of Google Earth.
 
 ### Stamen Design
 **Design Technologist**  
