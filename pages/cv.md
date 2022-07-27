@@ -27,16 +27,16 @@ You may skip ahead to a section of this CV using the following links:
 *July, 2021 – Present*  
 Berkeley, CA
 
-As a team member of the [Geospatial Innovation Facility](http://gif.berkeley.edu) at UC Berkeley's Rausser College of Natural Resources I performed front-end Web Development, interactive Data Visualization, and UI/UX Design for [Cal-Adapt](https://cal-adapt.org) and related projects that utilize climate data to address the adaptation and mitigation of climate change for the public and private sectors in California.
+As a team member of the [Geospatial Innovation Facility](http://gif.berkeley.edu) (GIF) at UC Berkeley's Rausser College of Natural Resources I performed front-end Web Development, interactive Data Visualization, and UI/UX Design for [Cal-Adapt](https://cal-adapt.org) and related projects that utilize climate data to address the adaptation and mitigation of climate change for the public and private sectors in California.
 
 #### Accomplishments:
 
 Product Contributions:
-- Performed a UI & UX design audit of Cal-Adapt's website and web applications. Recommended improvements on usability, design layout and consistency, and digital accessibility.
-- Developed ten new pages, five dashboards, several new features, and refined the UI/UX design and layout of seven existing pages for Cal-Adapt. Utilized a tech stack consisting of Svelte, Sapper, D3JS, MapboxGLJS, LayerCake, Sass, and the [Carbon Design system](https://www.carbondesignsystem.com).
+- Performed a UI & UX design audit of Cal-Adapt's website and web applications. Recommended improvements on usability, design layout, consistency, and digital accessibility.
+- Developed ten new pages, five dashboards, several new features, and refined the UI/UX design and layout of seven existing pages for Cal-Adapt utilizing a tech stack consisting of Svelte, Sapper, D3JS, MapboxGLJS, LayerCake, Sass, and the [Carbon Design system](https://www.carbondesignsystem.com).
 - Created over forty high fidelity design mocks for new pages, dashboards, and features for the redesign of Cal-Adapt using [Figma](https://www.figma.com/design/) and the [Carbon Design Kit for Figma](https://www.figma.com/community/file/874592104192380079).
 - Independently designed and developed a new website for the [Cal-Adapt Analytics Engine](https://analytics.cal-adapt.org) using Figma, Astro, Svelte, TypeScript, Sass, NodeJS, and AWS S3.
-- Developed five new Django HTML templates for the Plan Alignment guides and interactive tool in the [Adaptation Clearinghouse](https://resilientca.org/) website from high fidelity design mocks provided by the design agency [Voice and Reason](https://voiceandreason.agency/).
+- Developed five new Django HTML templates for Plan Alignment guides and an interactive tool in the [Adaptation Clearinghouse](https://resilientca.org/) website from high fidelity design mocks provided by the design agency [Voice and Reason](https://voiceandreason.agency/).
 
 Team Development:
 - Incorporated the use of [Trello](https://trello.com/) boards for project management and integrated Agile/Scrum practices into daily work and planning.
