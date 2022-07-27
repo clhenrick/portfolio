@@ -24,7 +24,7 @@ You may skip ahead to a section of this CV using the following links:
 
 ### University of California, Berkeley
 **Applications Developer 3**  
-*July, 2021 – Present*  
+*July, 2021 – July, 2022*  
 Berkeley, CA
 
 As a team member of the [Geospatial Innovation Facility](http://gif.berkeley.edu) (GIF) at UC Berkeley's Rausser College of Natural Resources I performed front-end Web Development, interactive Data Visualization, and UI/UX Design for [Cal-Adapt](https://cal-adapt.org) and related projects that utilize climate data to address the adaptation and mitigation of climate change for the public and private sectors in California.
