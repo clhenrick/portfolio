@@ -9,6 +9,13 @@ permalink: "/about/talks/"
 header: no
 ---
 
+### Using Components in Figma
+*UCUX FigmaFest / Remote / April 13, 2022*
+
+Lightning talk on using components in the UI design software Figma; what they are, why one would want to use them, and how. Given during the University of California's User Experience group's FigmaFest event during the Spring of 2022.
+
+- [Presentation Slides](https://docs.google.com/presentation/d/19CYpG1DaG_cqJVyC6JGgV8t_kc2yWffbkn-goksqgy8/edit?usp=sharing)
+
 ### GeoVisualization Workshop at the I School
 *UC Berkeley School of Information / Berkeley, CA / April 20, 2020*
 
