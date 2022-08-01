@@ -24,22 +24,23 @@ You may skip ahead to a section of this CV using the following links:
 
 ### University of California, Berkeley
 **Applications Developer 3**  
-*July, 2021 – Present*  
+*July, 2021 – July, 2022*  
 Berkeley, CA
 
-As a team member of the [Geospatial Innovation Facility](http://gif.berkeley.edu) at UC Berkeley's Rausser College of Natural Resources I perform front-end Web Development, interactive Data Visualization, and UI/UX Design for [Cal-Adapt](https://cal-adapt.org) and related projects that utilize climate model data to address the adaptation and mitigation of climate change for the public and private sectors in California.
+As a team member of the [Geospatial Innovation Facility](http://gif.berkeley.edu) (GIF) at UC Berkeley's Rausser College of Natural Resources I performed front-end Web Development, interactive Data Visualization, and UI/UX Design for [Cal-Adapt](https://cal-adapt.org) and related projects that utilize climate data to address the adaptation and mitigation of climate change for the public and private sectors in California.
 
 #### Accomplishments:
 
-Product Contributions:  
-- Performed a UI & UX design audit of Cal-Adapt's website and web applications. Recommended improvements on usability, design layout and consistency, and digital accessibility.
-- Developed ten new pages, five dashboards, several new features, and refined the UI/UX design and layout of seven existing pages for Cal-Adapt. Utilized a tech stack consisting of Svelte, Sapper, D3JS, MapboxGLJS, LayerCake, Sass, and the [Carbon Design system](https://www.carbondesignsystem.com).
+Product Contributions:
+- Performed a UI & UX design audit of Cal-Adapt's website and web applications. Recommended improvements on usability, design layout, consistency, and digital accessibility.
+- Developed ten new pages, five dashboards, several new features, and refined the UI/UX design and layout of seven existing pages for Cal-Adapt utilizing a tech stack consisting of Svelte, Sapper, D3JS, MapboxGLJS, LayerCake, Sass, and the [Carbon Design system](https://www.carbondesignsystem.com).
 - Created over forty high fidelity design mocks for new pages, dashboards, and features for the redesign of Cal-Adapt using [Figma](https://www.figma.com/design/) and the [Carbon Design Kit for Figma](https://www.figma.com/community/file/874592104192380079).
-- Independently designed and developed a new website for the forthcoming [Cal-Adapt Analytics Engine](https://analytics.cal-adapt.org) using Figma, Astro, Svelte, TypeScript, Sass, NodeJS, and AWS S3.
+- Independently designed and developed a new website for the [Cal-Adapt Analytics Engine](https://analytics.cal-adapt.org) using Figma, Astro, Svelte, TypeScript, Sass, NodeJS, and AWS S3.
+- Developed five new Django HTML templates for Plan Alignment guides and an interactive tool in the [Adaptation Clearinghouse](https://resilientca.org/) website from high fidelity design mocks provided by the design agency [Voice and Reason](https://voiceandreason.agency/).
 
-Team Development:  
-- Incorporated the use of [Trello](https://trello.com/) boards for project management and integrated Agile/Scrum practices into daily work and planning.
-- Spearheaded bi-weekly sprints and sprint planning to triage, estimate, and track project tasks for Cal-Adapt's website and web applications.
+Team Development:
+- Incorporated the use of Trello/Kanban boards for project management and integrated Agile/Scrum practices into daily work and planning.
+- Spearheaded bi-weekly sprints and sprint planning to triage, estimate, and track project tasks for all GIF projects.
 - Integrated industry sanctioned software development practices such as code reviews, documentation, QA testing, CI/CD, and automated code linting and formatting to make the front-end code for Cal-Adapt more resilient and to foster better collaboration among GIF developers.
 
 ### Google
@@ -47,35 +48,33 @@ Team Development:
 *September, 2018 – June, 2021*  
 San Francisco, CA
 
-User Experience Engineer focused on data visualization for the [Google Cloud Platform](https://cloud.google.com/). 
-
-From August – December, 2020 I took part in a [Google.org](https://www.google.org/) fellowship with [Morehouse School of Medicine](https://msm.edu/)'s [Satcher Health Leadership Institute](https://satcherinstitute.org/) to help develop the [Health Equity Tracker](https://healthequitytracker.org/), a web application that uses health related data and data visualization to empower health equity advocates within the U.S.
-
-Primary day to day responsibilities included:
+User Experience Engineer focused on prototyping data visualization UI components and developing internal software for the [Google Cloud Platform](https://cloud.google.com/).
 
 - Collaborated with UX Designers, UX Researchers, Data Scientists, Program Managers, and Software Engineers in the product development lifecycle.
 - Created web prototypes at varying levels of fidelity for interactive design concepts using modern web standards and technologies such as React, Angular, D3JS, TypeScript, LitElement, (S)CSS, HTML, etc.
 - Advocated UX Design to areas such as UI component design, web accessibility, visual design, and interaction design.
 - Analyzed datasets and documented data transformation pipelines using CoLab/Jupyter Notebooks, SQL, Pandas, Altair.
+- From August through December of 2020 took part in a [Google.org](https://www.google.org/) fellowship with [Morehouse School of Medicine](https://msm.edu/)'s [Satcher Health Leadership Institute](https://satcherinstitute.org/) to help develop the [Health Equity Tracker](https://healthequitytracker.org/), a web application that uses health related data and data visualization to empower health equity advocates within the U.S.
 
-### OmniSci
+### Heavy.AI
 **Data Visualization Engineer**  
 *December, 2017 – September, 2018*  
 San Francisco, CA
 
-Data Visualization Engineer at [OmniSci](https://www.omnisci.com/) (formerly MapD), a big data analytics software company. Contributed software development to [OmniSci Immerse](https://www.omnisci.com/platform/immerse/), a data visualization and analytics platform, as well as related open-source libraries:
-- [mapd-connector](https://github.com/omnisci/mapd-connector)
-- [mapd-charting](https://github.com/omnisci/mapd-charting)
-- [mapd-crossfilter](https://github.com/omnisci/mapd-crossfilter)
-- [mapd3](https://github.com/omnisci/mapd3)
+Data Visualization Engineer at [Heavy.AI](https://www.heavy.ai/) (formerly OmniSci, MapD), a big data analytics software company. Contributed software development to [Heavy Immerse](https://www.heavy.ai/product/immerse), a web based data visualization and analytics platform, as well as related open-source libraries:
+- [heavyai-connector](https://github.com/heavyai/heavyai-connector)
+- [heavyai-charting](https://github.com/heavyai/heavyai-charting)
+- [heavyai-crossfilter](https://github.com/heavyai/heavyai-crossfilter)
+- [mapd3](https://github.com/heavyai/mapd3)
 
 ### University of California, Berkeley
 **Lecturer**  
 *August, 2017 – December, 2017*  
 Berkeley, CA  
 
-Taught _Interactive Data Visualization with D3_, for the [School of Information](https://www.ischool.berkeley.edu/) during the Fall semester of 2017. 
-- Through thirteen lectures and fifteen hands on coding assignments, students learned how to create interactive charts, graphs, and geographic maps for display on the web using the popular D3JS Javascript library.
+Independently developed curriculum for and taught a semester long course, _Interactive Data Visualization with D3JS_, for the [School of Information](https://www.ischool.berkeley.edu/) during the Fall semester of 2017. 
+
+Through thirteen weekly lectures and fifteen hands on coding assignments, students learned how to create interactive charts, graphs, and geographic maps for display on the web using the popular D3JS data visualization JavaScript library.
 
 ### GreenInfo Network
 **Full Stack Web Developer**  
@@ -84,7 +83,7 @@ Oakland, CA
 
 Full stack web developer with [GreenInfo Network](http://greeninfo.org) specializing in building web applications that utilize geo-visualization with open source GIS and web-mapping software, Javascript, Python, SQL, and PHP.
 - Coordinated with a team of GIS specialists, cartographers, designers, and project managers to produce responsive web applications for clients primarily working in the non-profit, NGO, and government sectors.
-- Assisted the Google Earth Outreach team with creating curated "Voyager" content for their 2017 relaunch of Google Earth.
+- Assisted the Google Earth Outreach team with creating curated [Google Earth Voyager](https://support.google.com/earth/answer/7365064?hl=en&co=GENIE.Platform%3DDesktop) content for their 2017 relaunch of Google Earth.
 
 ### Stamen Design
 **Design Technologist**  
