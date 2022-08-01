@@ -9,6 +9,8 @@ permalink: "/about/talks/"
 header: no
 ---
 
+Lectures, presentations, and workshops I've given, listed in reverse chronological order. Most entries contain links to slides, video recordings, and/or workshop materials.
+
 ## Using Components in Figma
 *UCUX FigmaFest / Remote / April 13, 2022*
 
