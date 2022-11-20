@@ -13,6 +13,12 @@
   class: icon-twitter
   title: "Twitter"
 
+# note: mastodon is hardcoded in _footer.html because icon fonts were created by the original author of this code
+# - name: Mastodon
+#   url: https://indieweb.social/@clhenrick
+#   class: icon-mastodon
+#   title: "Mastodon"
+
 # - name: Mixcloud
 #   url: http://www.mixcloud.com/
 #   class: icon-cloud
