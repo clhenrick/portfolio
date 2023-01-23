@@ -2,7 +2,7 @@
 title: "Custom and Accessible Select Menus Aren't Easy: Part One"
 layout: page
 header: no
-date: 2022-01-31
+date: 2023-01-22
 teaser: "Trials and tribulations of building a custom and accessible Select menu UI component."
 comments: true
 tags:
