@@ -69,7 +69,10 @@ In both the native `<select>` and `Combobox`, the `Tab` key will move focus comp
 
 To the WAI APG's credit, they do have a banner on each of their examples warning the visitor of their site that their ARIA patterns are not production ready and should be tested prior to using them. They also make it clear that the first rule of ARIA is "No ARIA is better than bad ARIA." In other words, by using ARIA incorrectly you can actually create a degraded experience for someone using assistive technology like a screen reader. This is because ARIA is powerful; it overrides the default semantics of HTML and modifies the [accessibility tree][accessibility-tree] which is what is used by screen readers to interact with the DOM.
 
-![screen capture of the WAI APG banner]()
+<figure>
+  <img alt="screen capture of the WAI APG pattern disclaimer" src="{{site.urlimg}}wai-apg-pattern-warning.jpg">
+  <caption>The disclaimer that appears on each of the WAI APG's patterns.</caption>
+</figure>
 
 One example of the power of ARIA can be demonstrated with the `<button>` element. For example, let's assume we have an icon button with no label, perhaps there's a pen icon within the button to convey that it enables an "edit" mode for an web application:
 
