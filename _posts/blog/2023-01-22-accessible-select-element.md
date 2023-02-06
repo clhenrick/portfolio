@@ -13,6 +13,8 @@ tags:
   - React
 ---
 
+_Last updated on February 5, 2023_
+
 ## Introduction
 
 When developing User Interface components, developers sometimes face the choice of either using the web browser's native HTML elements or rolling their own custom component. As a contrived example one might choose between a native HTML `<button>` element or a `<div>` element that's been styled to look like a button and respond like a button when one clicks it (_Aside: it's really better **to not to do the clickable div approach**, more on why later_).
@@ -25,7 +27,7 @@ This is a conundrum I experienced recently in my current role at ESRI and in all
 
 The original problem I sought to address was to improve the accessibility of our codebase's `Select` menu component. This component had a few accessibility related issues with it, such as not correctly implementing ARIA, keyboard navigation, and focus management for a select menu or "combobox". These issues stemmed partly from the fact that the component in question was built as a custom select menu from the start and that it happened to be a wrapper component around our `DropDown` menu component. In component oriented UI libraries (such as React.JS) wrapping components to create new components can be a common technique for enhancing or extending a component to do something extra, perhaps something more than it was originally intended to do. Because React encourages [composition over inheritance][react-composition], a React developer may take an existing component and render it inside a new component with some additional features, different styling, and/or behavioral modifications tacked on.
 
-To briefly illustrate this technique let's say you need a button component, but you also need variants of this button component such as "primary", "secondary", and "tertiary" to match your team's design system or style guide. Each of these button variants requires unique styling and to handle options for different sizes (say large, medium, and small), various states (such as disabled or pressed), handle an `aria-label` when displaying an icon, etc. With the component composition design pattern instead of using a single button component to handle all the possible permutations of styles and options, you might first create a `<ButtonBasic />` component which is intended to be wrapped by all subsequent variant button components. This "basic button" component might handle things all the variants have in common, such as removing the default browser button styling, providing a shared properties interface, implementing a more accessibly friendly disabled state that uses `aria-disabled` instead of the `disabled` property, etc.
+To briefly illustrate this technique let's say you need a button component, but you also need variants of this button component such as "primary", "secondary", and "tertiary" to match your team's design system or style guide. Each of these button variants requires unique styling as well as to handle options for different sizes (say large, medium, and small), various states (such as disabled or pressed), handle an `aria-label` when displaying an icon, etc. With component composition, instead of using a single button component to handle all the possible permutations of variant styles and options, you might first create a `<ButtonBasic />` component which is intended to be wrapped by all subsequent variant button components. This "basic button" component might handle things all the variants have in common, such as removing the default browser button styling, providing a shared properties interface, implementing a more accessible friendly disabled state that uses `aria-disabled` instead of the `disabled` property, etc.
 
 {% highlight jsx %}
 // ButtonBasic.jsx
@@ -76,14 +78,18 @@ import "./buttonPrimary.css";
 
 import { ButtonBasic } from "./ButtonBasic.jsx";
 
-export const ButtonPrimary = (props) => {
-  return <ButtonBasic className="Button-Primary" {...props} />;
+// assume ButtonPrimary accepts the same props as ButtonBasic
+export const ButtonPrimary = ({ className, ...otherProps }) => {
+  const classNames = className
+    ? "Button-Primary" + " " + className
+    : "Button-Primary";
+  return <ButtonBasic className={classNames} {...otherProps} />;
 };
 {% endhighlight %}
 
 While there's nothing wrong about this approach (assuming it's done cautiously and thoughtfully) it can easily become abused if care is not taken. Take for example the concept of a "dropdown" menu. The concept of something that "drops down" in User Interface design has different meanings. It could be a submenu that "drops down" below a button in a navigation menu when clicked on. It might be a select menu that displays a list of options after a user opens it. Maybe a developer sees such an existing "dropdown" component in the codebase and thinks "I could use this dropdown component for a dialog menu I need to create (e.g. a popup that appears when clicking on a button somewhere in the UI) because it already handles the behavior I need." Naively speaking, these various "dropdown" patterns sound like they're similar enough that they can use the same underlying component (one that implements the "dropdown" or popup behavior). When taking a closer look however, it is apparent that each of these types of UI components have different semantics and accessibility requirements.
 
-What becomes a problem is if for example the underlying shared component in all of these types of dropdown variants allows for any type of child component(s) to be rendered within it in almost any kind of surrounding UI context. Questions around usability and accessibility immediately surface such as: How do you correctly implement focus management? How do you handle keyboard navigation? What about dynamically adding the correct ARIA attributes for each use case and context? Should multiple instances of the dropdown variants be allowed to be open simultaneously? If not well thought through then abusing the component "composition" pattern can easily lead to usability and accessibility problems in your website or app, especially if you start wrapping components multiple levels deep and sprinkling their instances all over the app's UI making it difficult to track them down later.
+What becomes a problem is if for example the underlying shared component in all of these types of dropdown variants allows for any type of child component(s) to be rendered within it in almost any kind of surrounding UI context. Questions around usability and accessibility immediately surface such as: How do you correctly implement focus management? How do you handle keyboard navigation? What about dynamically adding the correct ARIA attributes for each use case and context? Should multiple instances of the dropdown variants be allowed to be open simultaneously? If not well thought through then overusing the component "composition" pattern can easily lead to usability and accessibility problems in your website or app, especially if you start wrapping components multiple levels deep and sprinkling their instances all over the app's UI making it difficult to track them down later.
 
 ## Getting Solution Oriented
 
@@ -166,6 +172,10 @@ Without the help of `ARIA` (or a visually hidden label in the button that is sti
 
 The native `<button>` element has other accessible benefits. For example it has an implicit role of "button" and also handles key press related events such as using the space bar and enter keys to "click" the button with your keyboard. It is focusable and contains a default CSS `:focus` style. These features are built into the button element because it is part of _semantic HTML_, unlike a `<div>` or `<span>` element which have _no semantic meaning_. This is why one should always use the native `<button>` element (and prefer semantic HTML in general) rather than style a `<div>` or `<span>` to look like a button with an added "click" event handler on it. Doing this will not make the "button like" element focusable (or easily discoverable) to keyboard users, nor will it be conveyed as a button to screen reader users if they do find it, nor will it be "clickable" via the keyboard. We get all these things for free by just using the native `<button>` HTML element.
 
+Before ending this post I'd like to mention that in researching custom select menu patterns I happened to stumble upon [Sarah Higley][sarah-higley]'s very in-depth article [Select Your Poison (part two)][select-your-poison-2]. Sarah did an incredible amount of user testing of various custom select and combobox UI patterns with people who use screen readers and reported her findings in the aforementioned article. Long story short, the best option in terms of accessibility for a select menu happens to be the native `<select>` HTML element. However, in a dramatic twist, Sarah reports that making the native select a multi-select via `<select multiple>` actually results in a degraded user experience for people that use screen readers. The moral of the story to me here is always make sure to test your components, even if you are using the native, semantic HTML element. The web is a complicated place!
+
+## Next
+
 In part two of this blog post I'll describe what we ended up doing to solve our `Select` component conundrum. Thanks for reading!
 
 [accessibility-tree]: https://developer.mozilla.org/en-US/docs/Glossary/Accessibility_tree
@@ -178,7 +188,9 @@ In part two of this blog post I'll describe what we ended up doing to solve our 
 [wai-apg-patterns]: https://www.w3.org/WAI/ARIA/apg/patterns/
 [wai-apg-combobox]: https://www.w3.org/WAI/ARIA/apg/patterns/combobox/
 [wai-apg-select-only]: https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-select-only.html
+[sarah-higley]: https://sarahmhigley.com/
 [select-only-codepen]: https://codepen.io/clhenrick/pen/yLEGEvO
+[select-your-poison-2]: https://www.24a11y.com/2019/select-your-poison-part-2/
 [react-composition]: https://reactjs.org/docs/composition-vs-inheritance.html
 [react-select-only-tippy-codesandbox]: https://codesandbox.io/s/react-combobox-select-only-with-tippy-58p0v1
 [voiceover]: https://support.apple.com/guide/voiceover/welcome/mac
