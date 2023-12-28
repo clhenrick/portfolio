@@ -14,7 +14,7 @@ tags:
 
 ## Introduction
 
-- This was new territory in StoryMaps.com:
+- This was new territory in [StoryMaps.com][smx]:
 	- enabling user provided / uploaded geospatial data for the first time
 	- charting for the first time
 	- dashboard layout for first time
@@ -31,7 +31,7 @@ tags:
 	- determining what semantic HTML and ARIA to use in order to ensure the block is accessible (easier to do with plain HTML vs. front-end UI frameworks that use JSX) and then test it with screen readers like JAWS, NVDA, and VoiceOver
 	- getting a sense of user provided GPX data by using various GPX data from public activities in apps such as Strava, Ride-With-GPS, Cal-Topo, etc.; determine what size limit should be placed on data imports, whether data will have elevation and/or timestamps encoded
 	- understanding how the ArcGIS JS SDK Elevation Profile widget and corresponding view model works: creating samples, statistics, interaction with the map when hovering the chart
-	- developing a custom area chart using D3JS for showing the elevation profile that consumes data provided by the `ElevationProfileWidgetViewModel` and interacts with the map on mouse over
+	- developing a custom area chart using D3JS for showing the elevation profile that consumes data provided by the `ElevationProfileViewModel` and interacts with the map on mouse over
 	- converting GPX (XML) data to GeoJSON prior to use with the JS SDK
 	- theming
 
@@ -47,3 +47,25 @@ tags:
 	- persisting data for the chart and activity statistics
 	- supporting the user agent's locale units (imperial vs. metric)
 	- utilizing our UI theme variables to update the look and feel when a user changes their story's theme (e.g. light, dark, custom)
+
+
+<!-- Links -->
+[aria]: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
+[caltopo]: https://caltopo.com/
+[css-tricks-intrinsic-design]: https://css-tricks.com/new-css-features-are-enhancing-everything-you-know-about-web-design/
+[codepen-activity-map-layout]: https://codepen.io/clhenrick/pen/LYgaJGw
+[flex-wrap]: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap
+[geojson]: https://geojson.org/
+[gpx]: https://en.wikipedia.org/wiki/GPS_Exchange_Format
+[intersection-observer-api]: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+[jssdk]: https://developers.arcgis.com/javascript/latest/
+[jssdk-ep]: https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile.html
+[jssdk-epvm]: https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html
+[jssdk-notebook-collection]: https://observablehq.com/collection/@clhenrick/arcgis-js-api
+[prototype-activity-map]: https://activity-map-viewer-prototype.netlify.app
+[prototype-elev-chart]: https://elev-profile-chart-prototype.netlify.app/
+[ride-with-gps]: https://ridewithgps.com/
+[smx]: https://storymaps.com
+[strava]: https://www.strava.com/
+[svelte]: https://svelte.dev/
+[vite]: https://vitejs.dev/
