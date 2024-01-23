@@ -20,14 +20,26 @@ tags:
 	- dashboard layout for first time
 	- lots of room for things to go wrong both technically and usability wise, so we had to make sure to get it right
 
+## Researching
+- prior to doing any coding work I created a software design document
+- purpose was to make it clear what we were building and what we weren't, the technical considerations and limitations, security concerns, etc.
+- how to utilize GPX data, including the file type (XML), conversion to GeoJSON for usage with the ArcGIS JS SDK via the `toGeoJSON` npm module
+- narrowed down goals and non-goals of the block
+- involved creating Observable notebooks to explore using the ArcGIS JS SDK to create the elevation profile and statistics of geospatial data from the GPX file data
+- exploration of integrating the Strava API to directly import activities
+- identified accessibility: what semantic markup to use, possible author provided `aria-label` text, keyboard interaction for the chart
+
 ## Prototyping
 - prototyping the block before writing production code:
-  - included writing Observable notebooks, Codepens, and even mini web-apps developed using Vite + Svelte
-	- benefits of prototyping: not worried about writing production quality code (type checking, linting, testing, code quality, etc.) or working within the limitations of the production codebase (established patterns), makes it easier to try things quickly, can throw things out if they don't work, reduce uncertainty for what is being built, better understand the problem space
+  - included writing several mini web-apps developed using Vite, TypeScript, CSS, and Svelte which differs from our traditional stack of NextJS, React, TypeScript, CSS in JS.
+	- purpose of prototyping was to explore the design concepts in a more tangible and tactile way, something I learned while working as a UX Engineer at Google.
+	- benefits of prototyping: not worried about writing production quality code (type checking, linting, testing, code quality, etc.) or working within the limitations of the production codebase (beholden to established patterns),
+	- makes it easier to try things quickly, can throw things out if they don't work,
+	- benefit of reducing uncertainty for what is being built, to better understand the problem space
 	- allowed for working with our designer to iron out UI problems like the dashboard layout and how design mocks will hold up with real world data created by real people recording activities in the outdoors
-	- help convey to stakeholders (PEs, leads, designers) how it will work through interactive examples made using code and real data
-  - solving the dashboard layout challenges (image vs. no image, three vs two stats, variance in chart data) by writing HTML and CSS
-	- was able to advocate for intrinsic design principles using a Flex layout to let content wrap when there's not enough room, rather than using lots of breakpoints as first proposed by the designer
+	- help convey to stakeholders (Product Engineers, leads, editorial) how it will work through interactive examples made using code and real data
+  - solving the dashboard layout challenges (image vs. no image, three vs two stats, variance in chart data)
+	- was able to advocate for using an intrinsic design method via a Flexbox layout to let content wrap when there's not enough room, rather than using breakpoints as first proposed by the designer
 	- determining what semantic HTML and ARIA to use in order to ensure the block is accessible (easier to do with plain HTML vs. front-end UI frameworks that use JSX) and then test it with screen readers like JAWS, NVDA, and VoiceOver
 	- getting a sense of user provided GPX data by using various GPX data from public activities in apps such as Strava, Ride-With-GPS, Cal-Topo, etc.; determine what size limit should be placed on data imports, whether data will have elevation and/or timestamps encoded
 	- understanding how the ArcGIS JS SDK Elevation Profile widget and corresponding view model works: creating samples, statistics, interaction with the map when hovering the chart
@@ -69,3 +81,4 @@ tags:
 [strava]: https://www.strava.com/
 [svelte]: https://svelte.dev/
 [vite]: https://vitejs.dev/
+[webgl-contexts]: https://stackoverflow.com/questions/61277222/how-to-determine-number-of-active-webgl-contexts
