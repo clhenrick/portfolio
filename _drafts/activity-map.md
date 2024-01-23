@@ -12,15 +12,14 @@ tags:
   - Prototyping
 ---
 
+<img src="{{site.url}}{{site.baseurl}}/images/activity-map-01.jpg" alt="Screenshot of the Activity Map block in StoryMaps.com">
+
 ## Introduction
 
-- This was new territory in [StoryMaps.com][smx]:
-	- enabling user provided / uploaded geospatial data for the first time
-	- charting for the first time
-	- dashboard layout for first time
-	- lots of room for things to go wrong both technically and usability wise, so we had to make sure to get it right
+The first major feature I worked on with the Esri StoryMaps team in 2023 was the Activity Map block for [StoryMaps.com][smx]. This work began with conceptual and exploratory research early in the year, evolved through several prototypes, and eventually was released as a "beta" feature in November at the end of the year. It was a first for many things in StoryMaps: the first time we enabled users to upload their own geospatial data in the form of a GPX file, the first compound or dashboard like block, and the first time we enabled a chart of some kind to name a few. One might say it was a little ambitious and that this meant there was a lot of room for things to go wrong, both technically and in terms of usability. I am happy to say however that we pulled things off, and in this post I'll go over how I helped the team get there.
 
-## Researching
+
+## Research
 - prior to doing any coding work I created a software design document
 - purpose was to make it clear what we were building and what we weren't, the technical considerations and limitations, security concerns, etc.
 - how to utilize GPX data, including the file type (XML), conversion to GeoJSON for usage with the ArcGIS JS SDK via the `toGeoJSON` npm module
