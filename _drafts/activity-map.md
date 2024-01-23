@@ -1,5 +1,5 @@
 ---
-title: "Story Maps Activity Map block"
+title: "Developing the Activity Map block for StoryMaps.com"
 layout: page
 header: no
 date: 2023-12-26
@@ -65,7 +65,9 @@ Before we get into all the details though, here's a short video that demonstrate
 
 Since I knew that from the start this feature had a ton of complexity to it, prior to doing any coding work I drafted a software design document to help keep the work grounded and to make sure everyone involved was on the same page about what we were building. Writing this doc allowed for explicitly stating aspects of the project like the technical considerations and limitations, security concerns, accessibility requirements, etc.
 
-Since StoryMaps.com doesn't integrate with ArcGIS Online (AGOL) the way ArcGIS StoryMaps does, where AGOL users can insert interactive maps they've created into a story for example, we had to decide on how we were going to provide StoryMaps.com users with an affordance to import geospatial data. Mainly, this came down to how to parse, validate, convert, and then store user provided geo data. In the case of the Activity Map block, the focus was specifically on GPX data, a data that is commonly used by GPS hardware such as Garmin devices. However, the implications of this were seen as being more broad and to eventually allow StoryMaps users to import other types of geo data such as KML, KMZ, and GeoJSON.
+Since StoryMaps.com doesn't integrate with ArcGIS Online (AGOL) the way ArcGIS StoryMaps does, where AGOL users can insert interactive maps they've created into a story for example, we had to decide on how we were going to provide StoryMaps.com users with an affordance to import geospatial data. Mainly, this came down to how to parse, validate, convert, and then store user provided geo data. In the case of the Activity Map block, the focus was specifically on GPX data, a data format that is commonly used by GPS hardware such as Garmin devices. However, the implications of this were seen as being more broad and to eventually allow StoryMaps users to import other types of geo data such as KML, KMZ, Shapefile, and GeoJSON.
+
+Originally we anticipated doing this data conversion work in the frontend, so I explored using solutions from third party libraries such as [toGeoJSON](#). However, our team was already working on a new backend RESTful API to enable various types of media conversion. I suggested that we could take advantage of more powerful geospatial libraries such as GDAL in a server environment rather than having to download more JavaScript and create more work for the frontend. We eventually decided on this latter approach and I was relieved to have this piece of the project off of my plate given how much else there was to do at the time. Additionally, it was fun to collaborate with our backend team to test out the data conversion API and to make sure it worked as expected for use with the Activity Map block. We had to make sure we had a normalized GeoJSON data structure returned from the API that we could use for every block instance, no matter what the user provided GPX data is.
 
 - how to utilize GPX data, including the file type (XML), conversion to GeoJSON for usage with the ArcGIS JS SDK via the `toGeoJSON` npm module
 - narrowed down goals and non-goals of the block
