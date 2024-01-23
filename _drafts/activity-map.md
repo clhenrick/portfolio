@@ -16,12 +16,57 @@ tags:
 
 ## Introduction
 
-The first major feature I worked on with the Esri StoryMaps team in 2023 was the Activity Map block for [StoryMaps.com][smx]. This work began with conceptual and exploratory research early in the year, evolved through several prototypes, and eventually was released as a "beta" feature in November at the end of the year. It was a first for many things in StoryMaps: the first time we enabled users to upload their own geospatial data in the form of a GPX file, the first compound or dashboard like block, and the first time we enabled a chart of some kind to name a few. One might say it was a little ambitious and that this meant there was a lot of room for things to go wrong, both technically and in terms of usability. I am happy to say however that we pulled things off, and in this post I'll go over how I helped the team get there.
+The first major feature I worked on with the Esri StoryMaps team in 2023 was the Activity Map block for [StoryMaps.com][smx]. This work began with conceptual and exploratory research earlier in the year, evolved through the creation of several prototypes, and eventually was released as a "beta" feature in November at the end of the year. It was a first for many things in StoryMaps: the first time we enabled users to upload their own geospatial data, the first compound or dashboard like block, and the first time we enabled a chart of some kind, just to name a few. One might say it was a little ambitious and that this meant there was a lot of room for things to go wrong, both technically and in terms of usability. I am happy to say however that we pulled things off, and in this post I'll go over how I helped the team get there.
+
+Before we get into all the details though, here's a short video that demonstrates creating an Activity Map block in the StoryMaps story editor:
+
+<style>
+  /* Thank you CSS Tricks! https://css-tricks.com/responsive-iframes/ */
+  [style*="--aspect-ratio"] > :first-child {
+    width: 100%;
+  }
+  [style*="--aspect-ratio"] > img {
+    height: auto;
+  }
+  @supports (--custom:property) {
+    [style*="--aspect-ratio"] {
+      position: relative;
+      margin-bottom: 3rem;
+    }
+    [style*="--aspect-ratio"]::before {
+      content: "";
+      display: block;
+      padding-bottom: calc(100% / (var(--aspect-ratio)));
+    }
+    [style*="--aspect-ratio"] > :first-child {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }
+  }
+</style>
+
+<div style="--aspect-ratio: 16/9;">
+	<iframe
+		width="960"
+		height="569"
+		src="https://www.youtube.com/embed/fzCpzTGhM6M?si=N6ieIVfP267kzhYS&autoplay=1"
+		srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/fzCpzTGhM6M?si=N6ieIVfP267kzhYS&autoplay=1><img src={{site.url}}{{site.baseurl}}/images/activity-map-01.jpg alt='Screen recording of the StoryMaps.com Activity Map block demo'><span>▶</span></a>"
+		frameborder="0"
+		allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+		allowfullscreen
+		title="StoryMaps: Activity Map block demo"
+	></iframe>
+</div>
 
 
 ## Research
-- prior to doing any coding work I created a software design document
-- purpose was to make it clear what we were building and what we weren't, the technical considerations and limitations, security concerns, etc.
+
+Since I knew that from the start this feature had a ton of complexity to it, prior to doing any coding work I drafted a software design document to help keep the work grounded and to make sure everyone involved was on the same page about what we were building. Writing this doc allowed for explicitly stating aspects of the project like the technical considerations and limitations, security concerns, accessibility requirements, etc.
+
+Since StoryMaps.com doesn't integrate with ArcGIS Online (AGOL) the way ArcGIS StoryMaps does, where AGOL users can insert interactive maps they've created into a story for example, we had to decide on how we were going to provide StoryMaps.com users with an affordance to import geospatial data. Mainly, this came down to how to parse, validate, convert, and then store user provided geo data. In the case of the Activity Map block, the focus was specifically on GPX data, a data that is commonly used by GPS hardware such as Garmin devices. However, the implications of this were seen as being more broad and to eventually allow StoryMaps users to import other types of geo data such as KML, KMZ, and GeoJSON.
+
 - how to utilize GPX data, including the file type (XML), conversion to GeoJSON for usage with the ArcGIS JS SDK via the `toGeoJSON` npm module
 - narrowed down goals and non-goals of the block
 - involved creating Observable notebooks to explore using the ArcGIS JS SDK to create the elevation profile and statistics of geospatial data from the GPX file data
