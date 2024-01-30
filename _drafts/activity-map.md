@@ -63,17 +63,63 @@ Before we get into all the details though, here's a short video that demonstrate
 
 ## Research
 
-Since I knew that from the start this feature had a ton of complexity to it, prior to doing any coding work I drafted a software design document to help keep the work grounded and to make sure everyone involved was on the same page about what we were building. Writing this doc allowed for explicitly stating aspects of the project like the technical considerations and limitations, security concerns, accessibility requirements, etc.
+I began work on the Activity Map by drafting a software design document to keep the work grounded and to make sure everyone involved was on the same page about what we were building. Writing this doc allowed for explicitly stating aspects of the project like the technical considerations and limitations, security concerns, accessibility requirements, goals and non-goals, etc. The concept of writing a software design doc was new to the development team at the time but welcomed. We now incorporate software design documents into all new feature work in the StoryMaps ecosystem.
 
-Since StoryMaps.com doesn't integrate with ArcGIS Online (AGOL) the way ArcGIS StoryMaps does, where AGOL users can insert interactive maps they've created into a story for example, we had to decide on how we were going to provide StoryMaps.com users with an affordance to import geospatial data. Mainly, this came down to how to parse, validate, convert, and then store user provided geo data. In the case of the Activity Map block, the focus was specifically on GPX data, a data format that is commonly used by GPS hardware such as Garmin devices. However, the implications of this were seen as being more broad and to eventually allow StoryMaps users to import other types of geo data such as KML, KMZ, Shapefile, and GeoJSON.
+Since StoryMaps.com doesn't integrate with ArcGIS Online (AGOL) the way ArcGIS StoryMaps does, where AGOL users can insert interactive maps they've created into their story for example, we had to determine how we were going to provide StoryMaps.com users with an affordance to import geospatial data. This boiled down to figuring out how we would parse, validate, convert, and store user provided geo data. In the case of the Activity Map block, the focus was specifically on GPX data, a data format that is commonly used by GPS hardware such as Garmin devices. However, the implications of this were seen as being more broad to eventually allow StoryMaps users to import other types of geo data such as KML, KMZ, Shapefile, and GeoJSON into our "Express Maps" block which is a more generic interactive map that a user may add to a story.
 
-Originally we anticipated doing this data conversion work in the frontend, so I explored using solutions from third party libraries such as [toGeoJSON](#). However, our team was already working on a new backend RESTful API to enable various types of media conversion. I suggested that we could take advantage of more powerful geospatial libraries such as GDAL in a server environment rather than having to download more JavaScript and create more work for the frontend. We eventually decided on this latter approach and I was relieved to have this piece of the project off of my plate given how much else there was to do at the time. Additionally, it was fun to collaborate with our backend team to test out the data conversion API and to make sure it worked as expected for use with the Activity Map block. We had to make sure we had a normalized GeoJSON data structure returned from the API that we could use for every block instance, no matter what the user provided GPX data is.
+Originally we anticipated doing the geo data conversion work in the browser, so I explored using solutions from third party libraries such as [toGeoJSON](#). However, our team was already beginning work on a new RESTful API to enable various types of media conversion for video and image types that are not fully supported by the browser. I suggested that we could take advantage of powerful geospatial libraries such as [GDAL](#) in a server environment rather than requiring the user to download more JavaScript to parse the data client side. We eventually decided on this approach and I was relieved to have this piece of the project off of my plate given how much else there was to sort out at the beginning of the project. It was fun to collaborate with our backend team to test out the data conversion API and to make sure it worked as expected for use with the Activity Map block. We had to make sure we had a normalized GeoJSON data structure returned from the API that we could use for every block instance, no matter the user provided GPX data.
 
-- how to utilize GPX data, including the file type (XML), conversion to GeoJSON for usage with the ArcGIS JS SDK via the `toGeoJSON` npm module
-- narrowed down goals and non-goals of the block
-- involved creating Observable notebooks to explore using the ArcGIS JS SDK to create the elevation profile and statistics of geospatial data from the GPX file data
-- exploration of integrating the Strava API to directly import activities
-- identified accessibility: what semantic markup to use, possible author provided `aria-label` text, keyboard interaction for the chart
+As part of the initial research I created around a dozen [Observable Notebooks](#) that explored using the ArcGIS JavaScript SDK to accomplish requirements of the Activity Map. This primarily had to do with computing summary statistics of the users GPX data such as total elevation gain and total distance, but also the data used to render an area chart of the activity's elevation profile. I preferred to use Observable Notebooks for this part of the search as I could "fork" an existing notebook to make some additions or changes. This made doing exploratory work go much more quickly and served as a convenient way to document my research and share it with my colleagues.
+
+Another important aspect of the initial research included accessibility. I often find when using JavaScript frameworks such as React within existing production code, it can feel difficult to determine what the correct semantic HTML for a feature should be due to the abstractions of HTML such frameworks provide. By stubbing out the HTML on its own I can more easily determine what type of semantic markup should be "compiled" at runtime by a JS framework in the client. I can then try out the test markup with a screen reader to see if it behaves as intended. I settled on using the HTML `<article>` element as the container for the Activity Map, since it is a composite of various "widgets" such as an interactive map and elevation profile chart. For the summary statistics I decided on using the description list (`<dl>`) with its corresponding `<dd>` and `<dt>` child elements to show the stats as key value pairs. Lastly, I researched how to render the chart as an accessible SVG element using an `aria-label` for its accessible name and the `<desc>` SVG child element to provide an accessible description.
+
+<style>
+	figcaption {
+		color: rgb(221, 221, 221);
+		font-size: 1em;
+		font-style: italic;
+		margin-bottom: 1em;
+	}
+</style>
+
+<figure>
+  <figcaption>Basic semantic HTML structure of the Activity Map block:</figcaption>
+{% highlight html %}
+<article aria-label="My Awesome Activity">
+  <div class="row">
+    <img
+      alt="A view from the top of some hill during my activity"
+      src="photo.jpg"
+    >
+    <div
+      tabindex="0"
+      role="application"
+      aria-label="An interactive geographic map of My Activity"
+    >
+    </div>
+  </div>
+  <div class="row">
+    <dl>
+      <dt>Distance</dt>
+      <dd>24 km</dd>
+      <dt>Time</dt>
+      <dd>2:25:00</dd>
+      <dt>Elevation Gain</dt>
+      <dd>1,250 m</dd>
+    </dl>
+    <svg
+      role="image"
+      aria-label="elevation profile chart"
+      aria-describedby="chart-description"
+    >
+      <desc id="chart-description">
+        A line chart showing a variance from 100 to 1400 meters in elevation change on the y-axis from 0 to 24 kilometers on the x axis.
+      </desc>
+    </svg>
+  </div>
+</article>
+{% endhighlight %}
+</figure>
 
 ## Prototyping
 - prototyping the block before writing production code:
