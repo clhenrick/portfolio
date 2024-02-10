@@ -48,16 +48,16 @@ Before we get into all the details though, here's a short video that demonstrate
 </style>
 
 <div style="--aspect-ratio: 16/9;">
-	<iframe
-		width="960"
-		height="569"
-		src="https://www.youtube.com/embed/fzCpzTGhM6M?si=N6ieIVfP267kzhYS&autoplay=1"
-		srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/fzCpzTGhM6M?si=N6ieIVfP267kzhYS&autoplay=1><img src={{site.url}}{{site.baseurl}}/images/activity-map-01.jpg alt='Screen recording of the StoryMaps.com Activity Map block demo'><span>▶</span></a>"
-		frameborder="0"
-		allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-		allowfullscreen
-		title="StoryMaps: Activity Map block demo"
-	></iframe>
+  <iframe
+    width="960"
+    height="569"
+    src="https://www.youtube.com/embed/fzCpzTGhM6M?si=N6ieIVfP267kzhYS&autoplay=1"
+    srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/fzCpzTGhM6M?si=N6ieIVfP267kzhYS&autoplay=1><img src={{site.url}}{{site.baseurl}}/images/activity-map-01.jpg alt='Screen recording of the StoryMaps.com Activity Map block demo'><span>▶</span></a>"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    title="StoryMaps: Activity Map block demo"
+  ></iframe>
 </div>
 
 
@@ -71,26 +71,30 @@ Originally we anticipated doing the geo data conversion work in the browser, so 
 
 As part of the initial research I created around a dozen [Observable Notebooks](#) that explored using the ArcGIS JavaScript SDK to accomplish requirements of the Activity Map. This primarily had to do with computing summary statistics of the users GPX data such as total elevation gain and total distance, but also the data used to render an area chart of the activity's elevation profile. I preferred to use Observable Notebooks for this part of the search as I could "fork" an existing notebook to make some additions or changes. This made doing exploratory work go much more quickly and served as a convenient way to document my research and share it with my colleagues.
 
-Another important aspect of the initial research included accessibility. I often find when using JavaScript frameworks such as React within existing production code, it can feel difficult to determine what the correct semantic HTML for a feature should be due to the abstractions of HTML such frameworks provide. By stubbing out the HTML on its own I can more easily determine what type of semantic markup should be "compiled" at runtime by a JS framework in the client. I can then try out the test markup with a screen reader to see if it behaves as intended. I settled on using the HTML `<article>` element as the container for the Activity Map, since it is a composite of various "widgets" such as an interactive map and elevation profile chart. For the summary statistics I decided on using the description list (`<dl>`) with its corresponding `<dd>` and `<dt>` child elements to show the stats as key value pairs. Lastly, I researched how to render the chart as an accessible SVG element using an `aria-label` for its accessible name and the `<desc>` SVG child element to provide an accessible description.
+Another important aspect of the initial research included ensuring the Activity Map would be accessible. The primary way I approached this was determining what semantic HTML to use for its structure. Rather than wait until writing production code and piecing things together using various React components (which IMO makes generating semantic HTML more cognitively taxing), I stubbed out the HTML for the Activity Map in a few different ways. What I eventually landed on was the following:
 
 <style>
-	figcaption {
-		color: rgb(221, 221, 221);
-		font-size: 1em;
-		font-style: italic;
-		margin-bottom: 1em;
-	}
+  figcaption {
+    color: rgb(221, 221, 221);
+    font-size: 1em;
+    font-style: italic;
+    margin-bottom: 1em;
+  }
 </style>
 
 <figure>
   <figcaption>Basic semantic HTML structure of the Activity Map block:</figcaption>
 {% highlight html %}
+<!-- container element for the block -->
 <article aria-label="My Awesome Activity">
+  <!-- top row on desktop, child elements stack on narrower viewports -->
   <div class="row">
+    <!-- an optional image the user may upload to associate with their activity -->
     <img
-      alt="A view from the top of some hill during my activity"
+      alt="A view from the top of some hill during My Activity"
       src="photo.jpg"
     >
+    <!-- container representing the interactive web map -->
     <div
       tabindex="0"
       role="application"
@@ -98,25 +102,39 @@ Another important aspect of the initial research included accessibility. I often
     >
     </div>
   </div>
+  <!-- bottom row on desktop, child elements stack on narrower viewports -->
   <div class="row">
-    <dl>
-      <dt>Distance</dt>
-      <dd>24 km</dd>
-      <dt>Time</dt>
-      <dd>2:25:00</dd>
-      <dt>Elevation Gain</dt>
-      <dd>1,250 m</dd>
+    <!-- activity statistics description list -->
+    <dl aria-label="Summary statistics of My Activity">
+      <div>
+        <dt>Distance</dt>
+        <dd>24 km</dd>
+      </div>
+      <div>
+        <dt>Time</dt>
+        <dd>2:25:00</dd>
+      </div>
+      <div>
+        <dt>Elevation Gain</dt>
+        <dd>1,250 m</dd>
+      </div>
     </dl>
+    <!-- elevation profile line chart -->
     <svg
       role="image"
-      aria-label="elevation profile chart"
+      aria-label="Elevation profile line chart of My Activity"
       aria-describedby="chart-description"
     >
       <desc id="chart-description">
-        A line chart showing a variance from 100 to 1400 meters in elevation change on the y-axis from 0 to 24 kilometers on the x axis.
+        A line chart showing variance from 100 to 1400 meters in elevation change on the y-axis and 0 to 24 kilometers on the x axis.
       </desc>
+      <!-- more chart related markup here -->
     </svg>
   </div>
+  <!-- an optional caption for the activity -->
+  <footer>
+    <p>Here's a caption describing My Activity in a little more detail</p>
+  </footer>
 </article>
 {% endhighlight %}
 </figure>
