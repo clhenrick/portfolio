@@ -71,7 +71,9 @@ Originally we anticipated doing the geo data conversion work in the browser, so 
 
 As part of the initial research I created around a dozen [Observable Notebooks](#) that explored using the ArcGIS JavaScript SDK to accomplish requirements of the Activity Map. This primarily had to do with computing summary statistics of the users GPX data such as total elevation gain and total distance, but also the data used to render an area chart of the activity's elevation profile. I preferred to use Observable Notebooks for this part of the search as I could "fork" an existing notebook to make some additions or changes. This made doing exploratory work go much more quickly and served as a convenient way to document my research and share it with my colleagues.
 
-Another important aspect of the initial research included ensuring the Activity Map would be accessible. The primary way I approached this was determining what semantic HTML to use for its structure. Rather than wait until writing production code and piecing things together using various React components (which IMO makes generating semantic HTML more cognitively taxing), I stubbed out the HTML for the Activity Map in a few different ways. What I eventually landed on was the following:
+### Accessibility
+
+An important aspect of the initial research to me included ensuring the Activity Map would be accessible to users of assistive technologies like screen readers. The primary way I approached this was determining what semantic HTML to use for its basic structure, almost like an outline for an essay. Rather than wait until writing production code and piecing things together using various React components (which in my opinion makes piecing together semantic HTML for a composite UI element or feature more cognitively taxing), I stubbed out the HTML for the Activity Map in a few different ways. What I eventually landed on was the following:
 
 <style>
   figcaption {
@@ -138,6 +140,12 @@ Another important aspect of the initial research included ensuring the Activity 
 </article>
 {% endhighlight %}
 </figure>
+
+<!-- When using JavaScript frameworks such as React, I find it difficult to think about the mental model within existing production code, it can feel difficult to determine what the correct semantic HTML for a feature should be due to the abstractions of HTML such frameworks provide.  -->
+
+By going through the exercise of writing out the semantic HTML separately from using a JavaScript framework like React, I was able to more easily determine what markup should be "compiled" by the framework. Another benefit of this approach is that I can then try out the HTML with various screen reader software to see if it behaves as intended. Fortunately there's nothing fancy going on in the HTML structure so I had fairly good results with my tests. We probably could have done away with so many `aria-label` attributes by utilizing heading level elements, but alas our design did not call for visible title text in the Activity Map or its sub-components.
+
+I settled on using the HTML `<article>` element as the container for the Activity Map, since it is a composite of "widgets" such as an interactive map, a list of statistics, and an elevation profile chart. For the summary statistics I decided on using the description list element (`<dl>`) with its corresponding `<dd>` and `<dt>` child elements to show the data as key value pairs. Lastly, I researched how to render the chart as an accessible SVG element using an `aria-label` for its accessible name and the `<desc>` SVG child element to provide an accessible description.
 
 ## Prototyping
 
