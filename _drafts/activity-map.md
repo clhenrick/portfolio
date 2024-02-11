@@ -73,7 +73,9 @@ As part of the initial research I created around a dozen [Observable Notebooks](
 
 ### Accessibility
 
-An important aspect of the initial research to me included ensuring the Activity Map would be accessible to users of assistive technologies like screen readers. The primary way I approached this was determining what semantic HTML to use for its basic structure, almost like an outline for an essay. Rather than wait until writing production code and piecing things together using various React components (which in my opinion makes piecing together semantic HTML for a composite UI element or feature more cognitively taxing), I stubbed out the HTML for the Activity Map in a few different ways. What I eventually landed on was the following:
+A personally important aspect of the initial research to me included ensuring the Activity Map would be accessible to users of assistive technologies like screen readers. The primary way I approached this was by determining what semantic HTML to use for its structure. One might consider this process akin to writing an outline for an essay. Rather than wait until writing production code to piece the HTML together as separate UI components, I stubbed out the raw HTML for the Activity Map in a Codepen. I feel this approach makes structuring semantic HTML for a composite UI much less cognitively taxing, as you're not having to think about both the underlying HTML and how to break the whole thing up into separate UI components at the same time.
+
+What I eventually decided on for the Activity Map's HTML is the following:
 
 <style>
   figcaption {
@@ -143,9 +145,13 @@ An important aspect of the initial research to me included ensuring the Activity
 
 <!-- When using JavaScript frameworks such as React, I find it difficult to think about the mental model within existing production code, it can feel difficult to determine what the correct semantic HTML for a feature should be due to the abstractions of HTML such frameworks provide.  -->
 
-By going through the exercise of writing out the semantic HTML separately from using a JavaScript framework like React, I was able to more easily determine what markup should be "compiled" by the framework. Another benefit of this approach is that I can then try out the HTML with various screen reader software to see if it behaves as intended. Fortunately there's nothing fancy going on in the HTML structure so I had fairly good results with my tests. We probably could have done away with so many `aria-label` attributes by utilizing heading level elements, but alas our design did not call for visible title text in the Activity Map or its sub-components.
+I settled on using the HTML `<article>` element as the container for the Activity Map, since it is a composite of "widgets" such as an interactive map, a list of statistics, and an elevation profile chart. [According to MDN][mdn-article], the `<article>` element is not just for content such as blog posts. In fact the example they give on their page is a weather forecast widget.
 
-I settled on using the HTML `<article>` element as the container for the Activity Map, since it is a composite of "widgets" such as an interactive map, a list of statistics, and an elevation profile chart. For the summary statistics I decided on using the description list element (`<dl>`) with its corresponding `<dd>` and `<dt>` child elements to show the data as key value pairs. Lastly, I researched how to render the chart as an accessible SVG element using an `aria-label` for its accessible name and the `<desc>` SVG child element to provide an accessible description.
+For the Activity Map's summary statistics (elevation gain, distance, and elapsed time) I decided on using the [description list element][mdn-dl] (`<dl>`) with its corresponding `<dd>` and `<dt>` child elements. The `<dl>` element is fairly similar to the more commonly used `<ul>` and `<ol>` elements, but with the advantage of semantically structuring data or content in the form of key, value pairs.
+
+Lastly, I researched how to render the elevation profile chart as an accessible SVG element using an `aria-label` for its accessible name and the `<desc>` SVG child element to provide an accessible description. Adding the `role="image"` attribute on the `<svg>` tag means assistive tech will announce the chart as an image and hide all of its child elements. One aspect of the chart I have not yet gotten around to making accessible is its interactive tooltips that appear when mousing over (hovering) the chart. Making this part accessible would require a bit more research and work, which unfortunately I was not allocated time for prior to the Activity Map being released.
+
+In summary, by writing out the semantic HTML separately from using a JavaScript framework like React, I was able to more easily determine what the ideal markup should be output by the framework. This simplified the process of breaking up the Activity Map into separate UI components when it came to writing the production code. Another benefit of this approach is that I can test the HTML with various screen reader software to see if it behaves as intended. Fortunately there's nothing too fancy going on in the HTML so I had fairly good results with my tests. I probably could have done away with so many `aria-label` attributes by utilizing heading level elements, but unfortunately our UI designs did not call for visible title text in the Activity Map or its sub-components. What was quite tricky however was writing the CSS to accommodate the fluid layout of the Activity Map. I ended up tackling that in the prototyping phase.
 
 ## Prototyping
 
@@ -200,6 +206,8 @@ Doing this work outside of the production codebase (which for the record consist
 [jssdk-ep]: https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile.html
 [jssdk-epvm]: https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html
 [jssdk-notebook-collection]: https://observablehq.com/collection/@clhenrick/arcgis-js-api
+[mdn-article]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article
+[mdn-dl]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl
 [prototype-activity-map]: https://activity-map-viewer-prototype.netlify.app
 [prototype-elev-chart]: https://elev-profile-chart-prototype.netlify.app/
 [ride-with-gps]: https://ridewithgps.com/
