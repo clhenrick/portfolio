@@ -163,34 +163,34 @@ Generally speaking, these prototypes served more of the purpose of being design 
 
 - prototyping the block before writing production code:
   - included writing several mini web-apps developed using Vite, TypeScript, CSS, and Svelte which differs from our traditional stack of NextJS, React, TypeScript, CSS in JS.
-	- purpose of prototyping was to explore the design concepts in a more tangible and tactile way, something I learned while working as a UX Engineer at Google.
-	- also helped uncover some technical problems such as the EPVM's elevation chart's limit on the number of nodes in a path, and theming issues with the chart. This lead us to decide to develop our own custom line area chart using D3JS and React. This saved us time by encountering it before working on the production code, since production code can be expensive to change.
-	- benefits of prototyping: not worried about writing production quality code (type checking, linting, testing, code quality, etc.) or working within the limitations of the production codebase (beholden to established patterns or waiting for changes to appear in the browser because of slower rebuild times that come with large codebases),
-	- makes it easier to try things quickly, can throw things out if they don't work,
-	- benefit of reducing uncertainty for what is being built, to better understand the problem space
-	- allowed for working with our designer to iron out UI problems like the dashboard layout and how design mocks will hold up with real world data created by real people recording activities in the outdoors
-	- help convey to stakeholders (Product Engineers, leads, editorial) how it will work through interactive examples made using code and real data
+  - purpose of prototyping was to explore the design concepts in a more tangible and tactile way, something I learned while working as a UX Engineer at Google.
+  - also helped uncover some technical problems such as the EPVM's elevation chart's limit on the number of nodes in a path, and theming issues with the chart. This lead us to decide to develop our own custom line area chart using D3JS and React. This saved us time by encountering it before working on the production code, since production code can be expensive to change.
+  - benefits of prototyping: not worried about writing production quality code (type checking, linting, testing, code quality, etc.) or working within the limitations of the production codebase (beholden to established patterns or waiting for changes to appear in the browser because of slower rebuild times that come with large codebases),
+  - makes it easier to try things quickly, can throw things out if they don't work,
+  - benefit of reducing uncertainty for what is being built, to better understand the problem space
+  - allowed for working with our designer to iron out UI problems like the dashboard layout and how design mocks will hold up with real world data created by real people recording activities in the outdoors
+  - help convey to stakeholders (Product Engineers, leads, editorial) how it will work through interactive examples made using code and real data
   - solving the dashboard layout challenges (image vs. no image, three vs two stats, variance in chart data)
-	- was able to advocate for using an intrinsic design method via a Flexbox layout to let content wrap when there's not enough room, rather than using breakpoints as first proposed by the designer
-	- determining what semantic HTML and ARIA to use in order to ensure the block is accessible (easier to do with plain HTML vs. front-end UI frameworks that use JSX) and then test it with screen readers like JAWS, NVDA, and VoiceOver
-	- getting a sense of user provided GPX data by using various GPX data from public activities in apps such as Strava, Ride-With-GPS, Cal-Topo, etc.; determine what size limit should be placed on data imports, whether data will have elevation and/or timestamps encoded
-	- understanding how the ArcGIS JS SDK Elevation Profile widget and corresponding view model works: creating samples, statistics, interaction with the map when hovering the chart
-	- developing a custom area chart using D3JS for showing the elevation profile that consumes data provided by the `ElevationProfileViewModel` and interacts with the map on mouse over
-	- converting GPX (XML) data to GeoJSON prior to use with the JS SDK
-	- theming
+  - was able to advocate for using an intrinsic design method via a Flexbox layout to let content wrap when there's not enough room, rather than using breakpoints as first proposed by the designer
+  - determining what semantic HTML and ARIA to use in order to ensure the block is accessible (easier to do with plain HTML vs. front-end UI frameworks that use JSX) and then test it with screen readers like JAWS, NVDA, and VoiceOver
+  - getting a sense of user provided GPX data by using various GPX data from public activities in apps such as Strava, Ride-With-GPS, Cal-Topo, etc.; determine what size limit should be placed on data imports, whether data will have elevation and/or timestamps encoded
+  - understanding how the ArcGIS JS SDK Elevation Profile widget and corresponding view model works: creating samples, statistics, interaction with the map when hovering the chart
+  - developing a custom area chart using D3JS for showing the elevation profile that consumes data provided by the `ElevationProfileViewModel` and interacts with the map on mouse over
+  - converting GPX (XML) data to GeoJSON prior to use with the JS SDK
+  - theming
 
 ## Moving to Production
 - production tweaks and problems:
   - stack consists of React, NextJS, TypeScript, CSS in JS; plus our own "block" API that handles adding, updating, and removing blocks from stories
-  	- "viewer" and "builder" modes
-		- print preview
-	- using the `IntersectionObserver` API for "lazy loading" the map
-  	- two many WebGL contexts can cause problems, so we disable maps that are not within the viewport
-	- considerations for print view and mobile app
-	- persisting the GPX data as GeoJSON
-	- persisting data for the chart and activity statistics
-	- supporting the user agent's locale units (imperial vs. metric)
-	- utilizing our UI theme variables to update the look and feel when a user changes their story's theme (e.g. light, dark, custom)
+    - "viewer" and "builder" modes
+    - print preview
+  - using the `IntersectionObserver` API for "lazy loading" the map
+    - two many WebGL contexts can cause problems, so we disable maps that are not within the viewport
+  - considerations for print view and mobile app
+  - persisting the GPX data as GeoJSON
+  - persisting data for the chart and activity statistics
+  - supporting the user agent's locale units (imperial vs. metric)
+  - utilizing our UI theme variables to update the look and feel when a user changes their story's theme (e.g. light, dark, custom)
 
 
 <!-- Links -->
