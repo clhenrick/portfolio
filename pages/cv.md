@@ -27,7 +27,18 @@ You may skip ahead to a section of this CV using the following links:
 *August, 2022 – present*  
 Redlands, CA / Remote
 
-Senior Software Engineer working on [ArcGIS StoryMaps](https://storymaps.arcgis.com/) and [StoryMaps.com](https://storymaps.com) with a focus on feature development relating to interactive geographic maps and geospatial data visualization.
+Senior Software Engineer on the Story Maps team with a focus on feature development relating to interactive geographic maps and geospatial data visualization.
+
+- Contributing front-end engineering to both the [ArcGIS StoryMaps](https://storymaps.arcgis.com/) and [StoryMaps.com](https://storymaps.com) web applications using a tech stack consisting of React, TypeScript, CSS in JS, NextJS, Testing Library, Jest, NodeJS, Yarn, TurboRepo, Webpack, and the ArcGIS JS SDK.
+- Designing and building out features related to interactive geographic maps, (geo) data visualization, and digital accessibility.
+- Utilizing asynchronous, object oriented, and functional programming methods for application development and version control using Git and Github.
+- Prototyping new features externally from production code using web technology such as HTML, CSS, JavaScript, D3JS, ReactJS, and/or SvelteJS to evaluate usability, technical feasibility, accessibility, integration with live data, responsive design in order to reduce risk and uncertainty in production and gain stakeholder alignment.
+- Collaborating and coordinating with the backend, mobile, and design teams to ensure consistency in product development, user experience, and accessibility.
+- Conducting code reviews to help enforce best practices relating to code quality, automated testing, type safety, writing DRY and reusable code.
+- Mentoring junior developers in tasks such as feature work, bug fixes, accessibility, UI component design, and writing tests.
+- Liaison to the design team advising on digital accessibility, interactive mapping UX and IDX, and technical feasibility of proposed UI designs.
+- Leading the team's Accessibility Working Group to discuss accessibility topics and brainstorm on how to improve digital accessibility in the Story Maps web, tablet, and mobile apps.
+- Coordinating with the Esri Accessibility team to ensure Story Maps adopts and follows best practices for WCAG conformance, accessibility testing (manual and automated), and adequately addressing customer provided feedback on accessibility issues.
 
 ### University of California, Berkeley
 **Applications Developer 3**  
