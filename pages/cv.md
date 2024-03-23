@@ -264,18 +264,19 @@ Studies included drawing, print making, painting, mixed media, and graphic desig
 -----
 ## Technical Skills
 
-- JavaScript (ES6+)
-- TypeScript
-- JavaScript Frameworks: React, Angular, Vue, Lit, Svelte
-- JavaScript Module Bundlers (Webpack, Rollup, Parcel, Vite)
-- NodeJS and NPM
-- Data Visualization: D3JS, MapBoxGLJS, Leaflet, Vega / VegaLite
-- CSS and CSS PreProcessors (SCSS, PostCSS)
-- Web Standards (HTML, SVG, ARIA, JSON, HTTP, Browser APIs)
-- Web Accessibility (Semantic HTML, WCAG, Assistive Technology testing)
-- Git & Github
+- TypeScript and JavaScript (ES6+)
+- JavaScript front-end frameworks: React, Angular, Vue, Lit, Svelte
+- JavaScript module bundlers: Webpack, Rollup, Parcel, Vite
+- NodeJS development and the NPM ecosystem
+- Data Visualization using D3JS, Vega / VegaLite, Observable
+- Interactive web mapping and geospatial visualization using Leaflet, MapBoxGLJS, ArcGIS JS SDK, d3-geo
+- CSS, CSS PreProcessors (SCSS, PostCSS), CSS in JS
+- Web Standards: HTML, SVG, ARIA, JSON, HTTP, web browser APIs, Web Components
+- Web Accessibility and screen reader software (Semantic HTML, ARIA, WCAG, VoiceOver, NVDA, JAWS)
+- Version control using Git & Github
+- Command Line Interface (Unix, Bash)
 - SQL (PostgreSQL, SQLite)
-- Geographic Information Systems (QGIS, PostGIS, GDAL)
+- Geographic Information Systems software (QGIS, PostGIS, GDAL)
 - Python (2.x, 3.x)
 - Jupyter Notebooks, Pandas, Geo Pandas, Altair
 - Cloud Computing (AWS, GCP, Digital Ocean)
