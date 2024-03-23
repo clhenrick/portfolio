@@ -8,7 +8,7 @@ permalink: "/about/cv/"
 header: no
 ---
 
-My full work and volunteer experience, educational credentials, and technical skills. View a shortened version of this CV as a [Google Doc](https://docs.google.com/document/d/1bEH7hsQuHtCw0xqk-Td5uCxiNpvLxXXGF24Rfxw7EIQ/edit?usp=sharing).
+My full work and volunteer experience, educational credentials, and technical skills. You may view a shortened version of this CV as a [Google Doc](https://docs.google.com/document/d/1bEH7hsQuHtCw0xqk-Td5uCxiNpvLxXXGF24Rfxw7EIQ/edit?usp=sharing).
 
 ## Table of Contents
 
@@ -22,12 +22,22 @@ You may skip ahead to a section of this CV using the following links:
 ---
 ## Professional Experience
 
-### ESRI StoryMaps  
+### Esri  
 **Senior Software Development Engineer**  
 *August, 2022 – present*  
-Redlands, CA / Remote
+Remote
 
-Senior Software Engineer working on [ArcGIS StoryMaps](https://storymaps.arcgis.com/) and [StoryMaps.com](https://storymaps.com) with a focus on feature development relating to interactive geographic maps and geospatial data visualization.
+Senior Software Engineer on the Story Maps team with a focus on feature development relating to interactive geographic maps, (geo) data visualization, and accessibility.
+
+- Contributing front-end engineering to both the [ArcGIS StoryMaps](https://storymaps.arcgis.com/) and [StoryMaps.com](https://storymaps.com) web applications using a tech stack consisting of React, TypeScript, CSS in JS, NextJS, Testing Library, Jest, NodeJS, Yarn, TurboRepo, Webpack, and the ArcGIS JS SDK.
+- Utilizing asynchronous, object oriented, and functional programming methods for application development and version control using Git and Github.
+- Prototyping new features externally from production code using web technology such as HTML, CSS, JavaScript, D3JS, ReactJS, and/or SvelteJS to evaluate usability, technical feasibility, accessibility, integration with live data, and/or responsive design in order to reduce risk and uncertainty in production and gain stakeholder alignment.
+- Collaborating and coordinating with the backend, mobile, and design teams to ensure consistency in product development, user experience, and accessibility.
+- Conducting code reviews to help enforce best practices relating to code quality, automated testing, type safety, writing DRY and reusable code.
+- Mentoring junior developers in tasks such as feature work, bug fixes, accessibility, UI component design, and writing tests.
+- Liaison to the design team advising on digital accessibility, interactive mapping UX and IDX, and technical feasibility of proposed UI designs.
+- Leading the team's Accessibility Working Group to discuss accessibility topics and brainstorm on how to improve digital accessibility in the Story Maps web, tablet, and mobile apps.
+- Coordinating with the Esri Accessibility team to ensure Story Maps adopts and follows best practices for WCAG conformance, accessibility testing (manual and automated), and adequately addressing customer provided feedback on accessibility issues.
 
 ### University of California, Berkeley
 **Applications Developer 3**  
@@ -253,18 +263,19 @@ Studies included drawing, print making, painting, mixed media, and graphic desig
 -----
 ## Technical Skills
 
-- JavaScript (ES6+)
-- TypeScript
-- JavaScript Frameworks: React, Angular, Vue, Lit, Svelte
-- JavaScript Module Bundlers (Webpack, Rollup, Parcel, Vite)
-- NodeJS and NPM
-- Data Visualization: D3JS, MapBoxGLJS, Leaflet, Vega / VegaLite
-- CSS and CSS PreProcessors (SCSS, PostCSS)
-- Web Standards (HTML, SVG, ARIA, JSON, HTTP, Browser APIs)
-- Web Accessibility (Semantic HTML, WCAG, Assistive Technology testing)
-- Git & Github
+- TypeScript and JavaScript (ES6+)
+- JavaScript front-end frameworks: React, Angular, Vue, Lit, Svelte
+- JavaScript module bundlers: Webpack, Rollup, Parcel, Vite
+- NodeJS development and the NPM ecosystem
+- Data Visualization using D3JS, Vega / VegaLite, Observable
+- Interactive web mapping and geospatial visualization using Leaflet, MapBoxGLJS, ArcGIS JS SDK, d3-geo
+- CSS, CSS PreProcessors (SCSS, PostCSS), CSS in JS
+- Web Standards: HTML, SVG, ARIA, JSON, HTTP, web browser APIs, Web Components
+- Web Accessibility and screen reader software (Semantic HTML, ARIA, WCAG, VoiceOver, NVDA, JAWS)
+- Version control using Git & Github
+- Command Line Interface (Unix, Bash)
 - SQL (PostgreSQL, SQLite)
-- Geographic Information Systems (QGIS, PostGIS, GDAL)
+- Geographic Information Systems software (QGIS, PostGIS, GDAL)
 - Python (2.x, 3.x)
 - Jupyter Notebooks, Pandas, Geo Pandas, Altair
 - Cloud Computing (AWS, GCP, Digital Ocean)
