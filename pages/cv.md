@@ -22,10 +22,10 @@ You may skip ahead to a section of this CV using the following links:
 ---
 ## Professional Experience
 
-### ESRI StoryMaps  
+### Esri  
 **Senior Software Development Engineer**  
 *August, 2022 – present*  
-Redlands, CA / Remote
+Remote
 
 Senior Software Engineer on the Story Maps team with a focus on feature development relating to interactive geographic maps, (geo) data visualization, and accessibility.
 
