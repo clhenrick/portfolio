@@ -10,26 +10,32 @@ format: blog-index
 </div><!-- /#header-home -->
 
 
+<style>
+  ul.widget-list {
+    list-style: none;
+  }
+</style>
+
 {% comment %}
 *
 * First check, if widget is empty or not by checking if there is a title
 *
 {% endcomment %}
-<div class="row t60">
-	{% if page.widget1.title %}
-		{% include _frontpage-widget.html widget=page.widget1 %}
-	{% endif %}
+<ul class="row t60 widget-list" role="list">
+  {% if page.widget1.title %}
+    {% include _frontpage-widget.html widget=page.widget1 %}
+  {% endif %}
 
 
-	{% if page.widget2.title %}
-		{% include _frontpage-widget.html widget=page.widget2 %}
-	{% endif %}
+  {% if page.widget2.title %}
+    {% include _frontpage-widget.html widget=page.widget2 %}
+  {% endif %}
 
 
-	{% if page.widget3.title %}
-		{% include _frontpage-widget.html widget=page.widget3 %}
-	{% endif %}
-</div><!-- /.row -->
+  {% if page.widget3.title %}
+    {% include _frontpage-widget.html widget=page.widget3 %}
+  {% endif %}
+</ul><!-- /.row -->
 
 
 {% comment %}
