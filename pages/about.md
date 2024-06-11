@@ -1,9 +1,9 @@
 ---
 layout: page
-title: "About"
+title: "about Chris Henrick"
 subheadline: ""
 teaser: ""
-meta_description: "About Chris Henrick, front-end web developer and design engineer"
+meta_description: "A short bio of Chris Henrick, front-end web developer and design engineer"
 permalink: "/about/"
 header: no
 ---
