@@ -1,3 +1,5 @@
+> ARCHIVED: My personal website and portfolio have been migrated to a [new repository](https://github.com/clhenrick/clhenrick.io), using EleventyJS. This repository has now been archived and will no longer be updated.
+
 # Portfolio
 Personal portfolio and blog of Chris Henrick using the [Feeling Resposive](http://phlow.github.io/feeling-responsive/) Jekyll theme with some added style tweaks (dark theme) and personal touches. Forked from [Phlow](https://github.com/Phlow/feeling-responsive).
 
